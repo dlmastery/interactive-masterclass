@@ -1,0 +1,30 @@
+[
+  {
+    "file": "Part 1 Data and Architecture.ipynb",
+    "sha256": "d981d8cbf18423146dc7975b57ace335d1568006c7a6def3fab338c5326447f3",
+    "cell_indexing": "zero-based across all cells",
+    "source_ref": "master at retrieval, not commit-pinned",
+    "inspected": "all markdown/movie text and selected code; not executed"
+  },
+  {
+    "file": "Part 3 Gradient Descent.ipynb",
+    "sha256": "b5351e5adadf0caae2a7e6a372a78e4c51554cda7d2436f892353031ade765b7",
+    "cell_indexing": "zero-based across all cells",
+    "source_ref": "master at retrieval, not commit-pinned",
+    "inspected": "all markdown/movie text and selected code; not executed"
+  },
+  {
+    "file": "Part 5 Numerical Gradient Checking.ipynb",
+    "sha256": "abf3620810d8174d83c974003b870c91f1cc2e44847df8f5d8b5ee94cea5aae8",
+    "cell_indexing": "zero-based across all cells",
+    "source_ref": "master at retrieval, not commit-pinned",
+    "inspected": "all markdown/movie text and selected code; not executed"
+  },
+  {
+    "file": "Part 7 Overfitting, Testing, and Regularization.ipynb",
+    "sha256": "e02f7ef43d1b97c926c5875a1f184a54a68c99a2438277d03ece0c808026d4d5",
+    "cell_indexing": "zero-based across all cells",
+    "source_ref": "master at retrieval, not commit-pinned",
+    "inspected": "all markdown/movie text and selected code; not executed"
+  }
+]

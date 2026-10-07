@@ -1,0 +1,322 @@
+[
+  [
+    "What is PCA?",
+    "Rotate one line through a measured cloud. Watch four observations become four scores.",
+    "PCA finds new perpendicular axes, ordered by variance. Keeping fewer axes reduces the number of values per observation."
+  ],
+  [
+    "One number is a position on a line",
+    "Select an observation. Link its point, projection, and single stored score.",
+    "The point and its score refer to the same observation."
+  ],
+  [
+    "Some views lose more than others",
+    "Compare 45\u00b0 and 135\u00b0 with the same scale in both score plots.",
+    "A useful projection keeps a large part of the original squared spread."
+  ],
+  [
+    "A projection follows a perpendicular",
+    "Move one point to its closest position on the chosen line.",
+    "The line is the axis that we KEEP; the viewing direction is perpendicular to it."
+  ],
+  [
+    "What does one score lose?",
+    "Hide the original points. Reveal the possible points that share a score.",
+    "A score cannot recover movement across its axis."
+  ],
+  [
+    "Turn the axes, then remove one",
+    "Switch between two rotated coordinates and one retained coordinate.",
+    "Rotation alone loses nothing. Removing a coordinate can lose detail."
+  ],
+  [
+    "What will best mean?",
+    "Compare kept squared spread with squared reconstruction error.",
+    "These are two equivalent PCA objectives under the same Euclidean scale."
+  ],
+  [
+    "See the whole method once",
+    "Step through center \u2192 find axes \u2192 keep scores \u2192 reconstruct.",
+    "The next chapters explain how to compute this result."
+  ],
+  [
+    "Measure change from a shared center",
+    "Translate the cloud without changing its shape.",
+    "The PCA direction describes variation around the mean."
+  ],
+  [
+    "Find the center of this cloud",
+    "Highlight one column and calculate its mean.",
+    "Introduce the mean only because we need this center."
+  ],
+  [
+    "Move the center to zero",
+    "Scrub the translation. Keep observation labels fixed.",
+    "Subtract the corresponding feature mean from each observation."
+  ],
+  [
+    "The distances do not change",
+    "Select two observations before and after translation.",
+    "Centering changes the origin, not the relative positions."
+  ],
+  [
+    "Describe the line with two numbers",
+    "Rotate a unit arrow. Its horizontal and vertical parts update.",
+    "The vector w gives a direction and has length one."
+  ],
+  [
+    "Calculate one score",
+    "Select A. Multiply each centered coordinate by its direction weight.",
+    "The dot product gives signed distance along a unit axis."
+  ],
+  [
+    "Use one rule for every observation",
+    "Link each row of Xc to its score in Xc w.",
+    "Rows are observations; columns are features. Show the matrix shapes here."
+  ],
+  [
+    "Keep the ruler length fixed",
+    "Double the direction length without changing its angle.",
+    "Without the unit constraint, scores and variance can grow without limit."
+  ],
+  [
+    "How spread out are the scores?",
+    "Compare scores around zero at two angles.",
+    "Centered input produces scores whose mean is zero."
+  ],
+  [
+    "Signs cancel; squares do not",
+    "Switch signed contributions to square areas.",
+    "Squaring measures both directions and supports the distance identity used later."
+  ],
+  [
+    "Give spread a number",
+    "Add four squared scores and divide by three.",
+    "Use sample variance throughout. An optional note explains n\u22121; changing it to n does not change the best axis."
+  ],
+  [
+    "Search with a variance curve",
+    "Rotate the line. Link the angle to a point on the variance curve.",
+    "The highest point gives our numerical target. We still need a general method."
+  ],
+  [
+    "Open one squared score",
+    "Reveal each term in (w1 a + w2 b)\u00b2.",
+    "Show the two identical cross-products before replacing them with a factor of two."
+  ],
+  [
+    "Add the same terms across rows",
+    "Select one observation in the sum. Then group matching terms.",
+    "The weights are shared by all observations, so they can leave the sum."
+  ],
+  [
+    "Two familiar sums and one new sum",
+    "Link the first and last terms to the two feature variances.",
+    "The middle sum measures how the two centered features vary together."
+  ],
+  [
+    "Build covariance from signed products",
+    "Select observations in each quadrant. Flip the second feature.",
+    "Same signs give positive products; opposite signs give negative products."
+  ],
+  [
+    "Variance alone cannot tell the tilt",
+    "Compare two clouds with the same marginal variances and opposite covariance.",
+    "The cross-term distinguishes these clouds."
+  ],
+  [
+    "Store the three quantities in S",
+    "Select a covariance matrix entry to reveal its products.",
+    "The diagonal stores variances. Both off-diagonal entries store the same covariance."
+  ],
+  [
+    "Compute S with one matrix product",
+    "Animate a selected row of Xc\u1d40 meeting a column of Xc.",
+    "Transpose and multiplication are compact ways to do the sums we already used."
+  ],
+  [
+    "Read w\u1d40 S w from inside out",
+    "Calculate Sw, then the dot product with w.",
+    "The compact formula is exactly the expanded variance expression."
+  ],
+  [
+    "Check both routes with real numbers",
+    "Compare direct squared scores with w\u1d40 S w at any angle.",
+    "The two calculations agree because we derived their identity."
+  ],
+  [
+    "State the optimization problem",
+    "Show a unit circle of permitted directions and a variance curve.",
+    "Maximize w\u1d40 S w with w\u1d40 w = 1."
+  ],
+  [
+    "What does S do to an arrow?",
+    "Move w around the unit circle. Show Sw on a common labeled scale.",
+    "A matrix is also a rule that maps one vector to another."
+  ],
+  [
+    "At an optimum, turning cannot help",
+    "Compare a direction with small clockwise and counterclockwise turns.",
+    "The allowed change runs along the circle. At an optimum its first-order gain is zero."
+  ],
+  [
+    "Find the variance slope",
+    "Differentiate the two-coordinate quadratic one term at a time.",
+    "The gradient is (2S11w1+2S12w2, 2S12w1+2S22w2) = 2Sw."
+  ],
+  [
+    "Find the constraint direction",
+    "Differentiate w1\u00b2+w2\u00b2. Show the normal arrow to the circle.",
+    "The gradient 2w points outward; allowed small changes point perpendicular to it."
+  ],
+  [
+    "Match the two normal directions",
+    "Align the gradient arrows at a stationary point.",
+    "2Sw = 2\u03bbw, so Sw = \u03bbw. This finds candidates; it does not yet prove a maximum."
+  ],
+  [
+    "Name the equation after it appears",
+    "Compare w and Sw at both stationary directions.",
+    "An eigenvector keeps its direction under S. Its eigenvalue is the scale factor."
+  ],
+  [
+    "Find the possible scale factors",
+    "Subtract \u03bb on the diagonal. Expand the 2\u00d72 determinant.",
+    "A nonzero solution requires S\u2212\u03bbI to be singular. Explain determinant only here."
+  ],
+  [
+    "Solve our two eigenvalues",
+    "Factor (10/3\u2212\u03bb)\u00b2\u2212(8/3)\u00b2. Link each root to the curve.",
+    "The roots are 6 and 2/3."
+  ],
+  [
+    "Find and normalize the directions",
+    "Solve w2=w1 and w2=\u2212w1. Set each vector length to one.",
+    "The directions are (1,1)/\u221a2 and (1,\u22121)/\u221a2."
+  ],
+  [
+    "A candidate can be a minimum",
+    "Select each eigenvector and compare its variance.",
+    "The eigenvector equation alone does not choose PC1."
+  ],
+  [
+    "Why are these directions perpendicular?",
+    "Expand q1\u1d40Sq2 in two ways and compare.",
+    "Symmetry gives (\u03bb1\u2212\u03bb2)q1\u1d40q2=0. Distinct eigenvalues imply perpendicular eigenvectors."
+  ],
+  [
+    "Build any unit direction from them",
+    "Rotate w and show coefficients a and b on the two eigenvectors.",
+    "w=aq1+bq2 and a\u00b2+b\u00b2=1. State the symmetric-matrix basis theorem for higher dimensions."
+  ],
+  [
+    "Expand variance in the new basis",
+    "Open four terms. Cancel both cross-terms with orthogonality.",
+    "The result is \u03bb1a\u00b2+\u03bb2b\u00b2."
+  ],
+  [
+    "Prove the largest value wins",
+    "Move the squared-weight allocation between \u03bb1 and \u03bb2.",
+    "A weighted average cannot exceed its largest entry. Equality at q1 proves global optimality."
+  ],
+  [
+    "What if the eigenvalues tie?",
+    "Change to an isotropic cloud. Rotate freely.",
+    "All directions in a tied eigenspace give the same variance. A unique PC1 is not guaranteed."
+  ],
+  [
+    "Find the next component",
+    "Restrict the next direction to the perpendicular space.",
+    "Maximize remaining variance there. In two dimensions the remaining axis is fixed up to sign."
+  ],
+  [
+    "Read the PCA coordinates",
+    "Rotate both axes, then relabel the plot as PC1 and PC2.",
+    "Loadings describe axes. Scores describe observations."
+  ],
+  [
+    "Check the new covariance",
+    "Select an entry of Q\u1d40SQ. See the off-diagonal product sum vanish.",
+    "The score columns are uncorrelated. This does not generally mean independent."
+  ],
+  [
+    "Explain the 90 percent",
+    "Connect eigenvalue bars to the sum of squared centered distances.",
+    "6/(6+2/3)=90%. This is a fraction of variance, not prediction accuracy."
+  ],
+  [
+    "Rebuild an observation from its score",
+    "Select A. Multiply its score by q1, then add the mean.",
+    "The reconstructed point lies on the retained line."
+  ],
+  [
+    "Draw the missing part",
+    "Show the original vector, projection, and residual as a right triangle.",
+    "Orthogonality gives original squared length = kept squared length + lost squared length."
+  ],
+  [
+    "Prove the second objective",
+    "Add the triangle identity across all observations.",
+    "Total squared length is fixed, so maximizing kept variance minimizes squared reconstruction error."
+  ],
+  [
+    "Recover both coordinates",
+    "Switch between k=0, k=1, and k=2.",
+    "Two orthonormal coordinates recover the original centered vector."
+  ],
+  [
+    "Choose how much to keep",
+    "Set a retained-variance target and select k.",
+    "The task determines an acceptable error. A percentage alone does not prove usefulness."
+  ],
+  [
+    "Extend from two features to p",
+    "Keep the top k eigenvalues in a larger spectrum.",
+    "For orthonormal W, retained variance is tr(W\u1d40SW). The top k eigenvectors maximize it; discarded eigenvalues give the loss."
+  ],
+  [
+    "Connect the result to SVD",
+    "Substitute Xc=U\u03a3V\u1d40 into S=Xc\u1d40Xc/(n\u22121).",
+    "The columns of V are PCA directions. Eigenvalues equal squared singular values divided by n\u22121."
+  ],
+  [
+    "Use the axes on a new observation",
+    "Enter a new observation and apply the training mean and axes.",
+    "Fit preprocessing and PCA on training data. Reuse those values for later observations."
+  ],
+  [
+    "Decide what units mean",
+    "Change one feature scale, then compare standardization.",
+    "Standardization changes the question. It gives each nonconstant feature unit variance."
+  ],
+  [
+    "Large variance is not always useful",
+    "Reveal a distant observation and then category labels.",
+    "Outliers can dominate squared spread. A useful label can lie in a low-variance direction."
+  ],
+  [
+    "A line cannot follow every shape",
+    "Compare a ring with the elongated cloud.",
+    "PCA is linear. Two components may be necessary even if a curve has one intrinsic parameter."
+  ],
+  [
+    "Change the real notebook data",
+    "Use native marimo controls to change an observation.",
+    "Python recomputes mean, covariance, directions, scores, and reconstruction."
+  ],
+  [
+    "Solve a fresh geometric problem",
+    "Choose a direction for a rotated, unseen cloud before seeing its optimum.",
+    "Require a prediction and a reason; then compare with the computed result."
+  ],
+  [
+    "Produce the calculation yourself",
+    "Compute a covariance entry, a score, and a reconstruction for new values.",
+    "Record numeric correctness separately from the learner\u2019s written explanation."
+  ],
+  [
+    "Teach PCA back in your own words",
+    "Explain purpose \u2192 objective \u2192 covariance \u2192 eigenvectors \u2192 loss.",
+    "Use new examples and name one limit. Reopen the exact relevant scene after a miss."
+  ]
+]

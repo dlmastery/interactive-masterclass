@@ -1,0 +1,28 @@
+V3 REVIEW DISPOSITIONS
+
+1. Thirty-candidate discovery floor
+User requirement: for substantial flagship explainers, investigate at least30 possible relevant videos where available; named examples are seeds.
+Research reviewer suggestion: uncertainty/diversity rather than a mandatory source count.
+Decision: DO NOT ADOPT removal of the floor. Preserve the user's30-candidate requirement with source-scarcity handling. Adopt the distinction between discovery and actual content/visual/oral inspection. Count alone is not educational evidence. The original tutoring-research.md remains an unchanged review record.
+
+2. Quality and repeated failures
+User requirement: quality over time, slide count, and implementation simplicity.
+Decision: remove invented global time/slide/attempt ceilings. Retain the two-failed-repair strategy checkpoint because it requires a new hypothesis and fresh pilot while allowing continued quality work. Actual user/tool/compute/evaluation constraints remain.
+
+3. Full breadth without encyclopedia structure
+Decision: adopt17 coverage dimensions and map them to connected questions, scenes, decisions, and evidence. Do not force each dimension onto every small lesson or use checklists as learner-facing narration. Justified exclusions must be explicit.
+
+4. Narration evidence
+Decision: exact event-cued notes, animatic and rehearsal, silent/audio/combined/cold-presenter reviews. Written notes do not establish actual spoken performance. No audio performance was tested in this skill revision.
+
+5. Reusable across1000 topics
+Decision: adapt evidence form and route to domain. Preserve different treatment for mathematics, empirical science, history, craft, and argument. Limited forward tests support sampled behavior, not universal generalization.
+
+6. Publication ambition
+Decision: pursue high quality and audience satisfaction, prepare honest packaging and post-publication measurement. Do not guarantee ratings, views, or a time to viral reach; do not publish/schedule/purchase from this aspiration alone.
+
+7. Exact deltas
+Decision: preserve before snapshots, current and historical unified patches, HTMLdiffs, file hashes, and bundle. Leave prior retrospective outputs intact; v3report explicitly supersedes narrower prior guidance.
+
+8. Forward-test mismatch and repair
+The audio excerpt had a sound A/B procedure but left the gain-versus-mixture contrast implicit. The hidden key specifically required that contrast more narrowly than the public prompt. Preserve REVISE against that diagnostic, and do not generalize it into failure of all practical teaching. Add the transferable rule to state the explanatory relation/rival cause when it matters. Also require reviewers to link blocking criteria to public objectives; hidden keys must not introduce undisclosed deliverable requirements. Any follow-up repair is supervised, not a fresh blind success.

@@ -1,0 +1,20 @@
+# Final targeted integration review
+
+6 October 2026. Author-informed review: I previously contributed course code, the guardrail, and narration-process research. This pass inspected the named canonical references, updated codelab shared sections, report HTML source, and relevant saved evidence. It did not repeat the research, inspect the rendered report, run a learner study, or assess an actual narrated lesson. No installed file or course was changed.
+
+## Finding to address before packaging
+
+**Evidence-package guidance conflict — work/tutor-retrospective-v3/tutoring-research.md:61.** The report links this research note as supporting evidence. Its final synthesis says search breadth should follow uncertainty and diversity, “not a mandatory source count.” Canonical SKILL.md, research-debate.md, and the research-funnel critique correctly preserve this user's minimum of 30 relevant candidates where available. Without disposition, the linked note can be read as permission to bypass that explicit requirement. Preserve the historical research note, but append a coordinator disposition or annotate the published copy: the suggestion against a minimum count was not adopted; fulfill the breadth floor, then use unresolved obligations to guide depth and further expansion. This is a clarification of adopted versus proposed guidance, not a demand to rewrite the research history.
+
+## Checks that were consistent
+
+- **Discovery versus understanding:** REPORT.html clearly states all 31 entries are metadata-level discovery in this pass, two prior transcript records are separate, ten candidates await deeper inspection, and no video was watched/listened to. Recomputed ledger counts support 31 unique IDs, 23 known creator names, two unknown-creator entries, 29 view counts, 26 like counts, and ten shortlisted candidates. Every current access record is metadata; none claims a current transcript or viewed segment. Indexed counts are explicitly not live metrics or quality ratings.
+- **Quality and real limits:** canonical and codelab guidance permit 100-plus slides and substantive continued iteration, prohibit invented global time/effort cutoffs, and retain actual user/tool/resource constraints. The two-failure strategy transition permits further work after a fresh pilot; the report correctly says semantics are unchanged. Experimental budgets and matched-time comparisons are not presented as course-size limits.
+- **Full subject coverage:** content-contract, execution-quality, review, adaptive tutoring, and shared codelab sections consistently require substantive application, limitation, diagnostic, mitigation, residual tradeoff, alternative, and transfer coverage. They do not demand repeating every dimension on every slide or impose mathematical proof on interpretive subjects.
+- **Oration:** exact cue notes, actual rehearsal/listening, combined timing, and exported-note checks are distinct. The report labels its cue example illustrative and explicitly discloses no listened-to course rehearsal. No source-code or script-only review is upgraded into performed delivery.
+- **Claims:** tutoring references distinguish frameworks, specific studies, and the proposed synthesis. Reported study limitations match the saved research note. Neither skill nor report promises universal teaching superiority, 1,000-topic validation, guaranteed ratings, or millions of views. Human learning, retention, simulated review, and audience response remain separate.
+- **Scope:** the report excludes PCA rebuilding and the separate canvas project; skills preserve plan/review dependencies and require actual authorization for publishing or scheduling.
+
+## Pending completion, not a discovered failure
+
+The validation section and final package were intentionally pending. At this snapshot the report's linked diff, bundle, landscape, and published evidence files were not yet present in outputs. Verify those links and insert final test results after packaging. This review does not certify those future files, final rendering, source-study truth independently, or the requested 80% prose target; the report appropriately leaves that target unverified.

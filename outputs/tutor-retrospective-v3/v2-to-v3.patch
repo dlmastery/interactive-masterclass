@@ -1,0 +1,823 @@
+--- before/build-interactive-masterclass/SKILL.md
++++ after/build-interactive-masterclass/SKILL.md
+@@ -1,63 +1,60 @@
+ ---
+ name: build-interactive-masterclass
+-description: Research, compare, plan, build, and evaluate substantial interactive tutorials with progressive explanation and derivation. Also audit and improve their teaching process. Start from learner purpose; test difficult conceptual bridges before expanding. Not for brief factual answers or routine cosmetic edits.
++description: Research, design, build, and review substantial interactive or narrated explainers and masterclasses. Uses broad explainer research, complete subject coverage, progressive justification, purposeful illustrations, speaker notes, and iterative teaching review. Also audits and improves this process. Not for brief factual answers or cosmetic edits.
+ ---
+ 
+-# Build an interactive masterclass
++# Build an exceptional explainer
+ 
+-The goal is a usable mental model: the target learner can explain why the idea matters, predict with it, justify its key steps, apply it without copying, and recognize its limits. Retention requires later evidence. Length, correct equations, attractive screens, and working controls establish different things.
++Aim for the strongest explanation available for the stated audience and promise: lasting intuition, rigorous understanding, sound decisions, independent application, and engaging delivery. Quality has priority over authoring speed, slide count, or implementation simplicity. The user's ambition is a leading public explainer; ratings, reach, and millions of views are goals to investigate, never guaranteed outcomes.
+ 
+-This is the canonical teaching process, version 2. `build-intuition-masterclass` is a compatible entrypoint, not a second process to run.
++This is canonical teaching protocol version 3. `build-intuition-masterclass` is a compatible entrypoint. `build-research-codelabs` retains its execution/science requirements and reuses this teaching standard. Do not run duplicate research pipelines.
+ 
+-## Choose scope before acting
++## Scope, audience, and quality
+ 
+-Recover purpose, audience, available learning time, required depth, format, feedback, and useful existing work. Age is not prerequisite evidence. Ask only for unknowns that materially change the route; otherwise label assumptions.
++Recover purpose, audience, prior knowledge, output modes, depth, constraints, prior feedback, and useful existing work. Age is context, not demonstrated preparation. Distinguish authoring time from learner time. A complex subject may need 100-plus slides, extensive notes, experiments, and many revisions. Do not impose an arbitrary duration or size cap; organize the experience into coherent chapters and routes.
+ 
+-- **Brief answer / small edit:** do it directly and check the affected claim. Do not start a course pipeline.
+-- **Plan:** research and inspect the route on paper; stop before implementation.
+-- **Retrospective / skill update:** inspect evidence, challenge causes, revise the process, and test it in isolation. Do not change the lesson or start its rebuild.
+-- **Build / substantial redesign:** use the loops below. An internal gate is not a new permission request. An explicit user review-before-build instruction is a pending dependency.
++Keep explicit user/resource/tool limits. Quality-first does not authorize purchases, publishing, background scheduling, or unrelated projects. A retrospective/skill update does not authorize rebuilding the course. A plan-only request stops before implementation. Small questions and edits receive proportionate direct work.
+ 
+-Honor the chosen medium. Prefer native marimo-studio for this user's notebook/slide requests; read [the adapter](references/marimo-studio.md) for that medium. Do not silently replace it. Preserve a working visual baseline until a representative comparison supports changing it.
++## Required references by phase
+ 
+-## Outer loop: choose a strategy that survives a pilot
++- At intake and planning: [complete content contract](references/content-contract.md), [broad research and synthesis](references/research-debate.md), [execution and quality loops](references/execution-quality.md).
++- For the learning route and critical bridges: [lesson design](references/lesson-design.md) and [human/AI tutoring evidence](references/tutoring-evidence.md).
++- For a narrated or publication-ready explainer: [narration and production](references/narration-production.md). Speaker notes, illustrations, and spoken transitions are first-class deliverables.
++- For live feedback or authored branches: [adaptive tutoring](references/adaptive-tutoring.md).
++- For evaluation: [review standards](references/review.md). For recorded workflow state: [harness](references/harness.md).
++- For notebook/slides: [native marimo-studio adapter](references/marimo-studio.md). Honor other requested media.
+ 
+-Read [research and comparison](references/research-debate.md) and [the harness contract](references/harness.md) for substantial work.
++## End-to-end working route
+ 
+-1. **Define purpose and evidence.** State the learner's real problem or intellectual puzzle, what the lesson enables, and the central question. Define prediction, explanation/argument, application, boundary, and transfer tasks appropriate to that promise. Identify the hardest inference before allocating effort.
+-2. **Inspect contrasting explainers.** Compare substantive explanations and an authoritative subject source. Record material actually accessed. Titles, snippets, and transcripts do not establish animation quality. Extract teaching moves and their limits; do not copy a script.
+-3. **Propose two serious routes.** Obtain separate proposals before sharing the preferred route where agents are available. Give each a strongest objection and a discriminating pilot. Decide with reasons, not vote count. Label author-informed or same-context reviews honestly.
+-4. **Make a compact inference route.** Follow [lesson design](references/lesson-design.md). Connect the initial model to the promised capability. Attach needed background to the step it unlocks. Reserve the central argument and transfer before adding refreshers or polish.
+-5. **Pilot before expansion.** Test an opening that earns the goal, the hardest representation-to-reasoning bridge, and a fresh application or failure case. Include immediate prerequisites and next use. Check the medium's feasibility early. A polished introduction does not validate a proof route.
+-6. **Keep, revise, or abandon the route.** Use learner-visible evidence and [review standards](references/review.md). Record what could falsify the choice. User rejection reopens the affected decision. Permit provisional expansion at the stated review level; do not pretend unavailable human evidence exists.
++1. **Earn the purpose.** State why learn this, the problem or puzzle, what the learner gains, and where the idea fits. Define observable capabilities and transfer before choosing screens.
++2. **Cover the whole promise.** Map what/why/when/where/how, necessary foundations, formal justification, worked examples, applications and modern uses, assumptions, limitations, diagnostics, mitigations, alternatives, best practices, misconceptions, and transfer. Mark justified exclusions explicitly. Weave these into the route rather than append disconnected lists.
++3. **Survey broadly.** For flagship work discover at least 30 unique relevant video candidates where available, including popular/well-received sources and distinctive rigorous approaches. The user's examples are seeds. Record actual metadata and access depth; missing views/ratings remain unknown. Screen substantive material and deeply inspect complementary strong approaches, including actual visual/oral segments for visual/oral claims. Expand research when coverage or pilots expose gaps. Do not mistake 30 URLs for 30 understood lessons.
++4. **Verify and synthesize.** Check technical/current claims against primary sources. Compare serious competing teaching routes. Preserve their strongest objections. Build an original, coherent narrative with stable notation and representations; do not assemble a collage of copied best moments.
++5. **Design the inference graph.** Connect learner need to mechanism, justification, application, failure, mitigation, and choice among alternatives. Insert background where it unlocks the next step. Reserve the central derivation and practical judgment; do not spend all attention on preparation.
++6. **Pilot the explanatory burden.** Build an opening, the hardest bridge with immediate context, and a decision/transfer scene. Probe the actual delivery medium early. For video, also test a narrated sequence with synchronized visuals. Compare the pilot with strong reference explanations and the stated learner promise.
++7. **Expand and refine.** Continue until the authorized scope and required quality checks are satisfied. More rounds are appropriate when they improve the explanation. After repeated failure, change the hypothesis, example, representation, sequence, or reviewer; do not repeat unchanged polish. Do not use a retry count as permission to deliver known slop.
++8. **Review the complete experience.** Check correctness, breadth, conceptual continuity, transfer, limitations/alternatives, meaningful interaction, visual attention, oration/notes, language, accessibility, and real runtime separately. Trace the whole route after local repairs. Preserve objections and verify fixes on the current revision.
++9. **Deliver a reviewable package.** Include the requested course/deck, source, illustrations, narration/notes, launch/navigation paths, research ledger, coverage/decision map, evidence, and precise remaining limits. Publish only when authorized. If changing the skill, provide exact before/after diffs, rationale, tests, and a versioned handoff.
+ 
+-The aim to exceed an expert tutorial is a benchmark hypothesis, not a release adjective. Match audience, goal, depth, time, and assessment. A longer course with more controls has not thereby won.
++## Three distinct improvement loops
+ 
+-## Inner loop: earn one conceptual inference
++**External authoring strategy:** learner contract → broad landscape → competing routes → critical pilot → comparative/cold review → strategic revision → full-course review. Its unit of change is the explanatory approach.
+ 
+-For each difficult bridge: identify the question and likely wrong model → choose a discriminating example or worked explanation → produce the learner-visible scene → obtain an uncoached attempt on a new case → inspect reasoning and attention burden → make one causal repair → recheck that obligation.
++**Internal explanation repair:** one failed inference → likely wrong model → discriminating example or direct explanation → learner-visible attempt → specific feedback/evidence → causal repair → recheck. Its unit is one bridge, not the whole theme.
+ 
+-Use direct instruction when knowledge is missing. Do not turn every scene into a guessing game. A useful interaction tests a belief, compares alternatives, exposes a mechanism, supports construction, or diagnoses failure. Software doing the calculation is not evidence that the learner inferred the relation.
++**Learner runtime:** readiness → model/scaffold as needed → attempt and reasoning → contingent help → less-assisted retry → new context → later reconstruction when in scope. Its unit is the learner's current knowledge state. A static course can supply authored branches; it is not automatically a general adaptive tutor.
+ 
+-Show why each new representation or operation serves the original purpose. Connect symbols to objects, track assumptions and invariants, and distinguish examples from proof. Preserve requested rigor. More algebraic lines do not automatically explain why those lines solve the problem.
++For tutoring systems, also distinguish the practice-selection outer loop from the step-feedback inner loop. Read adaptive-tutoring.md for how they connect without confusing learner adaptation with authoring revision.
+ 
+-Default to at most two unsuccessful causal repairs to the same inference before reopening the strategy or representation. This is a work limit, not a learning law. Rendering repairs have separate findings. Do not erase failure by renaming an issue. Declare bounded research, pilot, repair, and verification allocations; do not invent a user token allowance. At a cap, preserve the draft and provide the diagnosis and exact next test.
++## Non-negotiable evidence boundaries
+ 
+-## Separate authoring from tutoring
++A control must help the learner test, inspect, construct, discriminate, or explain. Software doing arithmetic is not learner reasoning. An equation must be connected to the object/operation and why it serves the purpose. A limitation needs its mechanism and response, not a disclaimer at the end.
+ 
+-Authoring loops design the experience. The learner runtime loop is different: diagnose readiness → explain/model as needed → attempt → response-specific feedback → unaided retry → new case → later retrieval if in scope. Read [adaptive tutoring](references/adaptive-tutoring.md) only for branches, live tutoring, or stateful feedback.
++Use fresh-context reviewers where possible, with learner-facing material and neutral tasks before author diagnoses. Record prior authorship/shared context. AI knowledge can conceal a bad lesson; require visible warrants and held-out tasks. Agreement is not proof.
+ 
+-A static course may contain authored branches. A planning file is not a deployed adaptive tutor. A correct number with a wrong explanation, assisted success, and independent transfer are different evidence.
++Keep software verification, explanation review, simulated tasks, human learning, comparative preference, delayed retention, and audience reach separate. The CLI checks registered records, not truth or learning. No claim of universal superiority or virality follows from an AI rubric.
+ 
+-## Review and deliver
++Use clear, natural, precise language. Preserve this user's 80% ASD-STE100-compatible prose target with an honest full-coverage audit; sentence length alone does not prove it. Spoken mathematics also needs words, pauses, and visual referents, not just symbol reading.
+ 
+-Use separate correctness, teaching, visual/interaction, and runtime checks. Reviewers cite a scene, observed behavior, learner consequence, and repair test. Include a cold whole-route walkthrough; many locally valid steps can still lose the main question. Preserve consequential disagreement.
++Record durable decisions and next actions for long work. Preserve user review dependencies. Stop only for achieved scope, a real external limit, user direction, or a genuine missing prerequisite to continue—not because an arbitrary slide or effort target was reached.
+ 
+-At least one unfamiliar-context review should receive learner-facing material without the author's diagnosis where available. Otherwise disclose the limitation. Require the reviewer to cite the visible warrant for each inference; a knowledgeable AI can solve a task from prior knowledge despite a bad lesson.
+-
+-Keep claims separate: software verified; explanation reviewed; simulated learner reviewed; human learner observed; comparative learning tested; delayed transfer tested. Never promote the first three into the last three. The CLI checks registered records and dependencies; it cannot verify truth or prevent direct tool edits.
+-
+-Deliver source, launch/navigation instructions where relevant, current evidence, and the strongest remaining limitation. For this user's 80% ASD-STE100 target, apply [review standards](references/review.md); sentence length alone is insufficient.
+-
+-Update this process from demonstrated failure or useful forward tests. Test substantial changes on unfamiliar quantitative and nonmathematical bridges plus scope/stop cases. Publish outputs and provenance. Prefer a simpler process if added machinery does not improve the result.
+-
+--- before/build-interactive-masterclass/references/adaptive-tutoring.md
++++ after/build-interactive-masterclass/references/adaptive-tutoring.md
+@@ -2,7 +2,13 @@
+ 
+ Read only for authored branches, student questions, live tutoring, or stateful feedback. This skill and its CLI do not implement a runtime tutor.
+ 
++Use [tutoring-evidence.md](tutoring-evidence.md) for evidence-informed practices and their limits. Distinguish authoring revision from two learner loops: the learner outer loop selects the next problem/concept/representation/support level; the learner inner loop responds to a step within the current problem. Both should change behavior based on evidence, not merely follow a script.
++
+ Maintain goal, problem version, current question, representation state, learner attempt, reasoning evidence, assistance, pending action, detour stack, and return point. Separate observations from inferred mastery. Avoid unnecessary personal data. Explain storage lifetime; microphone or tab capture needs a user start action and consent.
++
++Across problems maintain demonstrated capabilities, uncertain prerequisites, recurring wrong rules, assistance needed, contexts tried, use/no-use judgments, mitigation/alternative choices, and later-revisit evidence. Record observable evidence and uncertainty rather than an invented precise mastery score. Select a new task that resolves the important uncertainty while preserving the learner's purpose.
++
++The practice-selection outer loop chooses among prerequisite support, another guided case, a varied independent problem, a boundary/alternative decision, more distant transfer, or consolidation/revisit. Use several observations where feasible; one lucky answer does not establish readiness. Do not keep serving easy repeats to inflate apparent success. Progression should reduce assistance and vary context when evidence supports it, or reopen the relevant prerequisite when it does not. Preserve meaningful learner choice and permit an honest skipped/unverified state.
+ 
+ | Observed state | Tutor response | Evidence to continue |
+ |---|---|---|
+@@ -19,6 +25,10 @@
+ 
+ Use worked example → completion task → unaided problem → transfer when suitable. Retrieval should reconstruct and use a model, not only labels. Later retrieval checks retention; schedule it only when requested. Immediate correctness is not delayed retention.
+ 
++Distinguish a calculation slip, missing prerequisite, wrong relation, inappropriate strategy, confusing wording, and a defensible alternative solution. Verify model-generated hints against checked reference content and the current state. Make practitioner thinking visible: recognize conditions, select a method, check the result, detect a limitation, choose a mitigation or alternative. Assess those decisions in addition to answers. For interpretive subjects, permit multiple well-supported conclusions rather than exact-string grading.
++
++Support human tutors with reasons for suggested next moves and preserve their ability to edit or reject them. Respond respectfully to uncertainty and frustration without inferring an emotional diagnosis. Direct explanation or a worked answer is appropriate when needed; “never give answers” and endless Socratic questioning are not universal rules.
++
+ Static courses must state which branches they support. Free-form model feedback needs the exact problem and visible state, uncertainty handling, and tests for right-answer/wrong-reason, ambiguity, contradiction, and off-topic input. A few multiple-choice branches are not general adaptation.
+ 
+ Verify interruption, restart, back/forward, detour return, feedback invalidation, and failure fallback in the actual interface. If implementation is out of scope, label this a runtime design and leave execution checks unperformed.
+--- before/build-interactive-masterclass/references/content-contract.md
++++ after/build-interactive-masterclass/references/content-contract.md
+@@ -0,0 +1,73 @@
++# Complete subject coverage without a disconnected encyclopedia
++
++Read at intake and before final course acceptance. The question is what the learner can explain and decide, not whether a heading exists. A flagship explainer needs breadth, depth, natural progression, and an appropriate route through them.
++
++## Coverage map
++
++For each dimension below record: the topic-specific learner question; a scene/problem ID; the explanatory witness or evidence; a check when useful; source/date where needed; and status (planned, authored, reviewed, verified, unverified, not applicable). “Not applicable” needs a subject-specific reason. Do not silently omit a dimension or mark a title as coverage.
++
++| Dimension | Learner question and required substance |
++|---|---|
++| Purpose and gain | Why learn this? What can I explain, decide, build, or notice afterward? State the promise and fulfill it. |
++| What it is and is not | What problem/idea/method is this? Define scope, neighboring concepts, and a common mistaken identity. |
++| Why it exists | What inadequacy, puzzle, constraint, or historical need made it useful? Explain why the chosen goal/criterion addresses that need. |
++| When to use it | Which conditions make it appropriate? What signs should trigger consideration? Include a use/no-use decision. |
++| Where it fits | Where does it sit in a larger system, workflow, discipline, or argument? Identify inputs, outputs, upstream/downstream consequences. |
++| Mechanism and intuition | What changes, what remains, and what causes or warrants the result? Use a representation the learner can reconstruct. |
++| Foundations at use | What background unlocks the next inference? Supply it at the point of need and return to the main question. |
++| Derivation or justification | Why does it work? Preserve requested mathematical proof, empirical warrant, interpretive argument, or procedural rationale. State assumptions and omitted proof obligations. |
++| Complete worked case | Trace one case from initial question through setup, method, result, interpretation, and decision. Do not stop at producing a number. |
++| Applications | What concrete task benefits? Explain the mapping from real task to method, why it is chosen, and how success is judged. Names of industries alone are insufficient. |
++| Current/modern applications | What meaningful current uses, developments, or debates change today's decision? Verify dates and primary evidence; separate adoption, prototype, research claim, and speculation. |
++| Assumptions and limitations | Which conditions support the claims? How can they fail? Separate inherent limitations, poor implementation, weak data, and misuse. |
++| Detection and mitigation | How can a learner notice failure? Which mitigation addresses its mechanism, with what cost and remaining weakness? Include “no adequate mitigation” where true. |
++| Alternatives and tradeoffs | What serious competing approaches or simpler baselines exist? Compare them on the same task, assumptions, resources, and success criteria. Explain when another choice wins. |
++| Best practices | Which practices matter, why, when they apply, how to check them, and when the advice changes? Avoid context-free tips. |
++| Misconceptions and boundaries | What plausible wrong rule produces a wrong decision? Supply discriminating cases and analogy limits. |
++| Transfer and retention | Can the learner select, adapt, explain, and reject the method on a new case? Include unaided tasks, later reconstruction where in scope, and next-step routes. |
++
++Completeness is evaluated across the course, not mechanically repeated on every slide. A narrowly scoped lesson can mark dimensions outside its promise with a reason. A full masterclass must not use narrow-lesson exemptions to evade the user's requested breadth.
++
++## Weave the breadth into the reasoning
++
++Start with purpose and a revealing use. Return to application after deriving the method. Introduce a limitation when the mechanism makes its cause visible. Introduce a mitigation as a response to that failure, then show its tradeoff. Introduce an alternative when it solves a remaining problem. Finish with a decision and transfer, not a pile of disconnected “advanced topics.”
++
++Use a main route for the promised understanding and optional branches for specialized cases. A 100-plus-slide course is appropriate when the subject needs it. Chapters, pauses, worked examples, and navigation manage length; do not compress the central proof to preserve an arbitrary duration. Do not inflate length with redundant definitions.
++
++## Limitation-to-decision chain
++
++For each consequential limitation record:
++
++1. Assumption or constraint.
++2. Failure mechanism and concrete case.
++3. Observable symptom or diagnostic; what that test can miss.
++4. Mitigation and why it targets that mechanism.
++5. Cost, tradeoff, and residual limitation.
++6. Alternative or decision to avoid the method.
++7. Transfer question that asks the learner to choose and justify a response.
++
++A mitigation is not automatically a cure. Standardizing inputs, collecting more data, changing the objective, or adding automation can solve different problems and introduce others. For a historical or interpretive subject, mitigation may mean triangulating evidence, narrowing a claim, or exposing an unresolved dispute rather than fixing a mechanism.
++
++## Applications with substance
++
++An application record states context/date, actor or user, decision, inputs/evidence, method role, why it is suitable, outcome measure, failure case, alternative, and source. Use an accessible running case plus varied transfer contexts. Distinguish pedagogical toy examples from documented deployment and from proposed future uses.
++
++For modern claims, inspect current primary papers, official technical documentation, standards, or original practitioners' evidence appropriate to the subject. Verify “widely used,” “state of the art,” or “industry standard” before using it. A company's announcement is evidence of its announcement, not independent proof of the benefit. Stable topics may need a current application rather than a recent change to the foundational theory.
++
++## Fair alternatives and best practices
++
++Compare strong conventional baselines as well as sophisticated methods. Use dimensions that matter to the learner: suitability, assumptions, interpretability, accuracy or evidential strength, data, compute, cost, latency, reliability, constraints, and maintenance where relevant. Do not invent benchmark numbers. A decision table should explain choices rather than crown one universal winner.
++
++A practice has a rationale, trigger, implementation, verification, and exception. Where expert practice is contested, show the competing reasons and evidence rather than turning one source's preference into a rule.
++
++## Adaptation across subject families
++
++- Mathematics: definitions, invariants, proofs, necessary/sufficient conditions, constructive examples, limits, applications.
++- Empirical science: mechanism/model, observation, experimental design, uncertainty, competing explanations, scale and validity.
++- Engineering/software: system location, interface, failure modes, diagnosis, tradeoffs, implementation, operational practice.
++- History/humanities: question, chronology/context, source provenance, competing interpretations, warrant, uncertainty and consequences. Do not invent a single settled causal proof.
++- Practical craft: demonstrated technique, sensory/decision cues, practice with feedback, failure diagnosis, alternative techniques, transfer.
++- Ethics/policy: competing values, stakeholders, consequences, constraints, strong opposing arguments, evidence versus normative judgment.
++
++The same coverage questions can be useful across these subjects; the kind of evidence and explanation changes. Do not transplant PCA's sequence, diagram, calculus, or optimization objective.
++
+--- before/build-interactive-masterclass/references/execution-quality.md
++++ after/build-interactive-masterclass/references/execution-quality.md
+@@ -0,0 +1,80 @@
++# Quality-first preparation, execution, and external review
++
++Read for a substantial course. This is an execution guide, not proof that a learner will succeed.
++
++## The acceptance contract
++
++Record audience/readiness, purpose, promised capabilities, media, required depth, complete coverage map, current-source needs, language/accessibility requirements, and explicit resource constraints. Identify what counts as a critical failure: false central claim, unsupported key inference, missing requested coverage, misleading figure, unusable interaction, or a narration/visual mismatch that breaks understanding.
++
++Quality takes priority over fast generation and small outputs. Authoring may need many sessions or a day of work. Do not invent a deadline, slide ceiling, source ceiling, or token budget. A user-specified resource boundary still applies; save a clear checkpoint if execution cannot continue. Long work needs compact durable state, not repeated rediscovery.
++
++## Outer authoring loop
++
++1. Recover the brief, useful baseline, failures, and acceptance evidence.
++2. Build the broad research landscape and subject reference set.
++3. Develop competing routes with full coverage, bottleneck, strongest objection, and falsifying pilot.
++4. Choose an initial route provisionally and record why.
++5. Implement representative purpose, mechanism/proof, application/limit, and narrated/interactive scenes.
++6. Obtain separate initial reviews before cross-critique where feasible.
++7. Decide which objection requires local repair and which invalidates the route.
++8. Revise and retest; expand supported patterns.
++9. Walk the complete course cold, including transitions and promised payoff.
++10. Reopen the relevant decision when new evidence or user feedback warrants it.
++
++A pilot is a risk-reduction step, not a substitute for the complete authorized course. When the full build is authorized, continue through completion without inventing approval stops. Honor a user-requested review-before-build or review-before-publication dependency.
++
++## Inner authoring loop
++
++Use a stable finding ID and record observed learner-visible failure, affected capability, plausible cause, repair hypothesis, change, and discriminating recheck. Preserve unsuccessful attempts; do not reset history by changing filenames.
++
++Distinguish:
++- Content failure: claim, proof, or application wrong/incomplete.
++- Explanatory failure: correct material lacks a bridge or purpose.
++- Representation failure: diagram implies the wrong relation.
++- Attention failure: the needed evidence is hidden, split, or rushed.
++- Runtime failure: control/state/navigation does not work.
++- Delivery failure: spoken script and visual state disagree.
++- Assessment failure: the task can be passed by copying or a wrong rule.
++
++Two unsuccessful causal repairs to the same teaching failure are a diagnostic trigger to reconsider the strategy. They are not a cap on total quality work. The existing CLI enforces a new strategy plus fresh pilot after that trigger; a successful new pilot permits continued work. Overall authoring continues within authorization until acceptance or a real blocking limit. If more unchanged attempts yield no new information, change the test/representation/reviewer rather than simply generating more.
++
++## Quality reviews with distinct jobs
++
++Assign roles according to the actual project; separate people/agents when available:
++- Subject specialist: truth, scope, assumptions, current evidence, proof/argument.
++- Educator: purpose, readiness, inference sequence, misconceptions, transfer.
++- Practitioner: when/where, realistic applications, failures, mitigations, alternatives, best practices.
++- Visual/oral editor: semantic fidelity, attention, readability, speaking, timing, event cues.
++- Learner-interface reviewer: attempts, feedback, accessibility, navigation, notebook return.
++- Independent evaluator: fresh tasks and strongest rival explanation.
++
++A role label is not a credential. One reviewer can cover several jobs when suitable; six roles do not automatically mean six agents or six long documents. Preserve provenance and disagreement. A review that merely says “excellent” or supplies an average score cannot close a critical finding.
++
++## The quality ladder
++
++1. Source and coverage review: the promised subject is represented accurately and completely.
++2. Critical bridge review: learner-visible warrants support the difficult steps.
++3. Artifact review: visuals, script, notes, interactions, and assessments align.
++4. Rehearsal/runtime review: actual performance or rendered interface matches the artifact.
++5. Unfamiliar reviewer/learner pilot: observe reasoning and friction with no author coaching.
++6. Comparative learning and delayed transfer: obtain suitable human evidence when those claims are in scope.
++7. Publication feedback: evaluate reach, satisfaction, confusion, and corrections after authorized release.
++
++Do not force unavailable human evidence into a fake pass. Deliver an accurately labeled reviewed candidate when authorized; describe what would be needed for stronger claims. A lack of human testing does not justify ignoring artifact defects.
++
++## End-to-end records and dependencies
++
++Use one compact project record with links to real outputs: user requirements, research inventory, coverage/inference map, route decisions, storyboard/notes, artifacts, findings, tested revisions, and next action. Keep source/evidence manifests complete enough that changing content invalidates affected reviews. Required breadth dimensions need scene/proof/application coverage, not just field names.
++
++After a local repair, recheck affected outputs plus any global dependency: changing an example may change calculations, proof notation, speaker notes, illustrations, quiz feedback, and exported notes. Preserve valid unrelated work. Test a rendered final candidate, not only its authoring source.
++
++A handoff states the exact accepted revision, open findings, scope, research access limits, what was genuinely tested, and what remains to do. Include decisions and rejected routes so the next model does not repeat known failures.
++
++## Perfection without an endless cosmetic loop
++
++“Best” requires a defined audience and promise. Seek a distinguished result: a clear original explanatory advantage, full substance, memorable mental models, disciplined delivery, and a usable artifact. Do not substitute an ever-growing deck for that result.
++
++Continue while material gaps remain or a plausible change addresses a supported quality concern. Stop repeating a passed check unless something relevant changed. When all in-scope artifact obligations pass, deliver them with honest evidence limits rather than withholding useful work for an untestable universal perfection claim. Do not let enthusiasm for reach override accuracy, respect, or source integrity.
++
++No automatic publishing, paid promotion, purchases, or scheduled future runs follow from the aspiration for a highly viewed video. The publication plan can be prepared within scope; external actions follow actual authorization.
++
+--- before/build-interactive-masterclass/references/harness.md
++++ after/build-interactive-masterclass/references/harness.md
+@@ -6,9 +6,9 @@
+ 
+ A small answer or correction does not need a run directory. For a substantial build or process audit, keep one compact contract in the project's work area: scope/mode, learner purpose, audience/readiness assumptions, promised capabilities, central inferences, source decisions, pilot obligations, constraints, work limits, and next action. Existing project formats can hold teaching detail; the JSON below only captures machine-checkable obligations.
+ 
+-Read research-debate.md before selecting a route; lesson-design.md for critical bridges; review.md for acceptance evidence. Give independent initial proposers the same brief without a favored answer, then cross-critique. Two serious routes and a bounded pilot normally suffice; do not create empty documents or extra agents to fill a template.
++Read research-debate.md before selecting a route; content-contract.md for full coverage; lesson-design.md for critical bridges; execution-quality.md and review.md for acceptance evidence. Give separate initial proposers the same brief without a favored answer, then cross-critique. Start with serious alternatives and expand when unresolved strategic questions warrant it. Do not treat a small source/pilot count as a quality ceiling.
+ 
+-Protect the core argument and verification budget. Declare bounded research, pilot, and repair allocations. Those are action limits, not a user token allowance. Stop unchanged reviews. A cap returns a diagnosis and the next discriminating test; it does not imply completion.
++Protect the core argument, full subject coverage, narration, and verification. Quality takes priority over an arbitrary production time or slide count. Record real user/tool/resource limits; do not invent a user token allowance or automatic global stop. Two failed local repairs trigger a different strategy and fresh pilot, not delivery of an unresolved explanation. Continue authorized work when new evidence supports a useful next iteration. Stop unchanged reviews; a genuine external limit requires a checkpoint with the remaining quality gap, not a false completion claim.
+ 
+ ## Version 2 CLI
+ 
+@@ -27,6 +27,10 @@
+ `check` returns the current node revision and input hashes. It checks declared scope and accepted dependencies before the requested action. It allows work to repair an open finding, while `record` refuses affected acceptance until blocking findings are resolved. Neither command executes the action. `status` distinguishes accepted records, blocked nodes, stale receipts, and unverified claims. Acceptance means the required current attestations exist, not that teaching succeeds.
+ 
+ ## Contract schema
++
++For a flagship version-3 run, declare obligations for the research landscape and inspected technique ledger; the full content-contract map; critical conceptual bridges; applications/current evidence; limitations/mitigations/alternatives; storyboard and speaker notes when commissioned; real visual/oral/runtime review; and final route/transfer review. Link their actual inputs and dependencies. Use existing artifact/check/inference kinds and appropriate required claims. The CLI does not automatically infer these nodes from the topic or enforce the semantic completeness of the coverage map; the coordinator and reviewers must check that before recording acceptance.
++
++Bind the script, storyboard, illustration sources, exported notes, audio/rendered sequence, and subject evidence to affected nodes. A changed example should reopen its narration and assessments as well as its equation checks. Counted source discovery and deeply inspected source evidence need different nodes/receipts if both are claimed. Thirty metadata entries cannot supply a deep-review receipt truthfully.
+ 
+ This is a small build example, not a prefilled real pass. Replace placeholders with actual work and include all relevant sources/components/environment files as declared inputs.
+ 
+@@ -85,7 +89,7 @@
+ 
+ A repair file contains `issue`, `outcome` (failed/resolved), causal `change`, and hashed `evidence`. To resolve, also give `resolution_receipts`: paths to current receipts covering all affected nodes. Each receipt names the finding in `resolves`. A resolved finding can reopen when its resolution evidence becomes stale. Clearing a finding does not automatically supply every missing acceptance claim.
+ 
+-After two failed repairs in the current strategy, another repair requires a strategy record: `issue`, a new `hypothesis`, a declared `pilot_node`, and changed hashed `evidence` for the strategy decision. The alternative pilot must be evaluable independently of the failed branch. After recording the strategy, change the pilot's actual input artifact and obtain fresh required pilot receipts. Reusing an old accepted pilot or merely changing a label cannot reset the cap. The finding remains open until its specific recheck resolves it.
++After two failed repairs in the current strategy, another repair requires a strategy record: `issue`, a new `hypothesis`, a declared `pilot_node`, and changed hashed `evidence` for the strategy decision. The alternative pilot must be evaluable independently of the failed branch. After recording the strategy, change the pilot's actual input artifact and obtain fresh required pilot receipts. Reusing an old accepted pilot or merely changing a label cannot satisfy this strategy-review requirement. The finding remains open until its specific recheck resolves it. This checkpoint permits continued quality work after a new strategy; it is not a total attempt limit.
+ 
+ Keep stable issue IDs; renaming a problem does not resolve the old finding. The tool preserves event history in an atomically replaced state file, but it is not tamper-proof or an authenticated audit service. Overall effort limits, completeness of the inference graph, and user-review requirements remain coordinator obligations.
+ 
+--- before/build-interactive-masterclass/references/lesson-design.md
++++ after/build-interactive-masterclass/references/lesson-design.md
+@@ -1,4 +1,6 @@
+ # Design the inference, then its presentation
++
++Read [content-contract.md](content-contract.md) alongside this reference. The inference route must support the complete promise, including when/where to use the idea, applications, limitations, mitigations, alternatives, and best practices. These are connected decisions, not an appendix added after the mathematical explanation.
+ 
+ ## Purpose before the syllabus
+ 
+@@ -10,11 +12,13 @@
+ 
+ Maintain a compact route first. Add fields or generated views only where dependencies, revisions, or runtime branches justify them. Do not require three separate graph documents.
+ 
+-1. **Outcome and inference view:** changes in what the learner can reason about. Edge meanings include requires, motivates, represents, justifies, contrasts, transfers. Prerequisite edges are acyclic within the chosen entry contract; revisits can loop. Break apparent prerequisite cycles with an entry example or provisional model, marking what is deferred.
++1. **Outcome and inference view:** changes in what the learner can reason about. Edge meanings include requires, motivates, represents, justifies, applies-in, fails-when, detected-by, mitigated-by, trades-off-with, alternative-to, and transfers. Prerequisite edges are acyclic within the chosen entry contract; revisits can loop. Break apparent prerequisite cycles with an entry example or provisional model, marking what is deferred.
+ 2. **Per-problem state view:** attempt, uncertainty, feedback, help, detour, retry, transfer. The same answer may have different causes. Use adaptive-tutoring.md when these transitions must run in an application.
+ 3. **Artifact dependency view:** contracts, content, code, reviews, and evidence depend on exact revisions. Changed inputs reopen affected claims. This view is distinct from concept dependencies.
+ 
+ The learner sees a short route of useful questions and their location. An internal dependency graph is not the learning map.
++
++A full route connects purpose → method → validity → application → failure → diagnosis → mitigation with residual cost → alternative decision → transfer. Not every subject has the same kind of proof or mitigation. Add current-evidence links to modern application nodes. Link spoken script, figure state, and assessment to the same scene ID so a changed example cannot leave stale narration unnoticed.
+ 
+ ## Critical bridge contract
+ 
+@@ -38,6 +42,8 @@
+ 
+ Reserve the main mechanism, proof/argument, limits, and transfer before expanding preparation. A minimum slide count is a format constraint, not a sequence generator. Add screens to resolve inference or attention demands.
+ 
++There is no generic slide ceiling. Use 100-plus slides when the explanatory depth warrants it, with chapters and progressive layers to protect learner attention. Audience routes may share a core without forcing every learner through every specialist branch. Do not remove a promised derivation or application to fit an arbitrary run time.
++
+ ## Formal reasoning without hidden bridges
+ 
+ For an important mathematical step show the current question, operation, reason it is valid, assumptions, and meaning in the original problem. Map symbols, dimensions, indices, and units to the example. Distinguish definition, observation, identity, approximation, theorem invoked, necessary condition, and sufficient/global guarantee.
+--- before/build-interactive-masterclass/references/narration-production.md
++++ after/build-interactive-masterclass/references/narration-production.md
+@@ -0,0 +1,95 @@
++# Narration, illustration, and publication-quality delivery
++
++Read for an explainer intended for presentation or video. Speaker notes are part of the teaching design, not an afterthought. The goal is an accurate, memorable, coherent explanation a presenter can actually deliver.
++
++## Plan the spoken promise
++
++Specify the target listener, initial question, promised capability, difficult inferences, applications, limits, and closing payoff. Design chapters around questions resolved, not equal slide counts. A course may exceed 100 slides; the relevant test is whether each scene helps and the whole route remains usable.
++
++Develop exact narration with the visual sequence. Use natural speech, precise referents, and causal transitions. Explain why the next operation is useful. Avoid reciting slide bullets, repeated promises, hype, “obviously,” and formulas without meaning. A surprising opening must be truthful and pay off in the lesson.
++
++Do not imitate a named creator's voice or copy their script. Study techniques and create an original argument, example set, visual grammar, and speaker identity.
++
++## Event-cued speaker notes
++
++For each meaningful scene/cue include:
++
++| Field | What a second presenter needs |
++|---|---|
++| Scene/cue ID and learning job | The inference or decision served |
++| Exact spoken text | Natural sentences, with pronunciation help for unfamiliar names/symbols when needed |
++| Visual before/after | Objects, labels, values, annotations, and retained reference state |
++| Action and pointer | Named target, reveal, transformation, control movement, or annotation |
++| Pause/pace/emphasis | Where to let the learner inspect or think, and what deserves emphasis |
++| Learner prompt and response | Prediction or task, plausible responses, feedback, help/re-entry cues |
++| Transition | Why the next scene follows and what remains unresolved |
++| Evidence and boundary | Source/credit, assumptions, and limits relevant to the spoken claim |
++| Timing | Estimated initially; measured after actual rehearsal |
++
++Separate internal production cues from spoken language. “Point there” or “explain covariance” is not a usable note. A presenter should know exactly what to say, show, point at, wait for, and do next. Keep notes connected to the current selected state in an interactive version.
++
++Example cue structure, not a reviewed lesson:
++- SAY: “These two routes share the same original report. If that report is wrong, both copies can repeat its error.”
++- SHOW: one source node feeding two branches; preserve the original claim text.
++- POINT: original source node, then both branches.
++- PAUSE: allow the viewer to trace the shared origin.
++- ASK: “Would a third copy settle the claim?”
++- FOLLOW: explain why a source with independent event evidence changes the situation.
++
++## Speak mathematics and technical reasoning
++
++State what an expression measures before reading it. Map symbols to the actual objects, units, dimensions, indices, and assumptions. Explain why a term, denominator, sign, constraint, or operation appears. Preserve the previous line when comparison carries the argument.
++
++Speak the reasoning, not every glyph: name a sum's population, a derivative's change, a constraint's purpose, or a matrix product's pairing. Define names consistently across audio, notation, diagrams, and feedback. Distinguish definition, numerical illustration, general identity, approximation, necessary condition, and sufficient/global proof.
++
++Use pauses at genuine inferential demands. Do not prescribe one words-per-minute rate for a familiar recap and a new proof. A pause or extra slide should give the viewer something specific to inspect or reconstruct.
++
++When a demonstration can be explained by a plausible competing cause, include a cue that distinguishes it: state what changed, what stayed comparable, and why the observation supports this conclusion rather than the rival. Do not leave the listener to invent that bridge. Reviewers must tie a demanded contrast to the public learner objective; a hidden rubric's extra preference is not automatically a defect in the lesson. This applies to confounding factors, alternative interpretations, and misleading perceptual comparisons without imposing the same example on every topic.
++
++## Produce an animatic before expensive polish
++
++Combine rough accurate visuals with the intended narration. Rehearse the opening, hardest bridge, application/limit decision, and transfer first; then rehearse the complete route. Read aloud or generate and actually listen to the intended audio when tools permit. A written script review cannot be relabeled as listened-to delivery.
++
++Record actual stumbling, unclear referents, breath/phrase problems, pronunciation, rushed inferences, premature answers, dead time, and competing reading/listening demands. Estimated duration remains an estimate until rehearsal. Revise the script, timing, or representation based on observed problems. Maintain measured timings and resolved findings with the artifact revision.
++
++Produce final illustrations after the core argument and rough sequence work. Use precise code-native diagrams for exact geometry, data, labels, and transformations when appropriate; use other original/licensed imagery where it serves the explanation. A style preference does not excuse misleading structure.
++
++## Review through distinct channels
++
++1. **Silent-picture review:** trace objects, changes, comparisons, scale, labels, and visual questions in the rendered sequence. Not every argument must be recoverable without audio; the picture must support rather than contradict it.
++2. **Audio-only review:** listen for purpose, logical sequence, reference clarity, vocabulary, and transitions. Identify essential visual information needing description or an accessible alternative.
++3. **Combined timed review:** play actual audio and visuals together. Check pointer/reveal alignment, time to inspect, caption correctness, pronunciation, diagram/formula agreement, and attention overload.
++4. **Cold-presenter handoff:** have another presenter use the notes and operational cues without author coaching where feasible. If only an AI reads the notes, label that narrower inspection.
++5. **Learner reasoning review:** obtain uncoached prediction, explanation, use/no-use judgment, failure diagnosis, and transfer. Record help. Knowledgeable AI answers are not evidence of novice learning.
++6. **Whole-course review:** verify the opening promise, complete argument, breadth, transitions, and ending payoff after local repairs.
++
++Unperformed tests stay unperformed. If audio tools are unavailable, complete script/storyboard review and state the oral-test gap. Do not claim oration is perfected from a word count or screenshot.
++
++## Two delivery paths
++
++**Linear video:** author a deliberate demonstration path, chosen inputs, contrasts, failure cases, pause-and-predict moments, and explained answers. It cannot react to a viewer's unobserved response. Include useful chapters and a companion practice route where commissioned.
++
++**Interactive tutor/slides:** couple narration and feedback to actual state. A changed input must update dependent words, figures, formulas, and verdicts. Student interruption stops stale speech/pointing. Save the pending task and return point. Test authored branches, detours, back/forward, reset, and unsupported responses. Never play unconditional “correct” feedback.
++
++Share the conceptual route and source assets; do not assume a notebook export is an edited video or that a video script is an adaptive tutor.
++
++## Accessibility and delivery package
++
++Plan readable text/equations, contrast, non-color distinctions, purposeful motion, keyboard access for interactions, clear audio, relevant visual description, captions, and transcript. Inspect the actual target viewport; a large authoring monitor is not sufficient. See [W3C audio/video content guidance](https://www.w3.org/WAI/media/av/av-content/) and [integrated descriptions](https://www.w3.org/WAI/WCAG22/Techniques/general/G226). These are design inputs, not proof of completed accessibility compliance.
++
++Deliver the requested editable deck/notebook, event-cued notes, script, storyboard, illustration sources, credits/licenses, launch or demonstration path, and review evidence. Include actual audio/video and corrected captions when commissioned and produced. Verify exported speaker notes, links, figure proportions, and chapter/navigation behavior. Keep delivered-file checks separate from source-file checks.
++
++## Public success and the post-publication loop
++
++Quality, demonstrated learning, and distribution are separate outcomes. [YouTube's recommendation guidance](https://support.google.com/youtube/answer/16533387?hl=en) describes audience relevance and long-term satisfaction; it provides no guaranteed path to a view count.
++
++Use truthful titles/thumbnails that communicate the audience, puzzle, and payoff. Avoid a more dramatic promise than the lesson fulfills. Search demand, topic size, existing audience, traffic source, competing material, language, and timing affect reach. Do not guarantee millions of views or a date for top ratings.
++
++After authorized publication, inspect appropriate metrics and qualitative feedback:
++- [Retention](https://support.google.com/youtube/answer/9314415?hl=en): link dips, spikes, and strong moments to scene IDs; replay can indicate confusion as well as interest.
++- [CTR and impressions](https://support.google.com/youtube/answer/7628154?hl=en): interpret by traffic/audience context, not as a universal quality threshold.
++- [Title/thumbnail experiments](https://support.google.com/youtube/answer/16391400?hl=en): use platform-supported tests for honest packaging; their outcome is not a learning measure.
++- Comments and questions: treat as leads to investigate, not representative proof of mastery.
++
++Form a specific hypothesis, revise the relevant scene or packaging, compare suitable evidence, and retain corrections. Never remove a necessary justification solely to improve watch metrics. Publication, paid promotion, and scheduled follow-up require actual authorization; preparing this plan does not perform those actions.
++
+--- before/build-interactive-masterclass/references/research-debate.md
++++ after/build-interactive-masterclass/references/research-debate.md
+@@ -1,32 +1,77 @@
+-# Research, challenge, compare
++# Broad discovery, deep inspection, original synthesis
+ 
+-## Inspect explanations, not reputations
++Read for a flagship tutorial, masterclass, or substantial redesign. The user's named examples are seeds, not a closed source list. This user's quality preference requires a broad field survey before choosing the teaching route.
+ 
+-For substantial courses, seek contrasting teaching routes (often three useful exemplars) and authoritative subject evidence. Stop when another source is unlikely to resolve the route's important uncertainty. Source count and view count are discovery signals, not learning scores.
++## 1. Build a landscape of at least 30 video candidates
+ 
+-Record URL/title, inspected pages or timestamps, access modality, purpose/opening, prerequisite assumptions, example/representation, hardest bridge, learner work, limits, and the decision informed. Metadata supports discovery; transcripts support wording and sequence; viewed segments support claims about those visuals and pacing. Do not claim to have watched unseen animation. Disclose inaccessible sources and use accessible alternatives.
++For a substantial flagship explainer, discover at least 30 unique relevant YouTube/video candidates where they exist. Search multiple query families: plain-language intuition; visual explanation; derivation/proof; worked examples; implementation; applications/current practice; limitations/failure cases; alternatives; full university lectures; expert practitioner demonstrations. Expand terminology and appropriate languages when access supports meaningful evaluation.
+ 
+-Look for what makes an inference possible: an inadequacy exposed, invariant isolated, contrast constructed, representation mapped, or argument warranted. Do not copy a presenter's chapter order without checking audience and desired depth. Verify technical statements against primary sources. Synthesize original lessons.
++Prioritize discoverable high-view and well-received explanations, while retaining technically strong, distinctive, or newer lower-view work. Include multiple creators and audience levels. Do not use 30 duplicates, clips of the same lesson, unrelated acronym matches, or 30 near-identical introductions to meet the number. A playlist is a discovery source; individual relevant lessons are candidates.
+ 
+-## Competing routes and adjudication
++Log canonical URL/video ID, title, creator when verified, duration/date if available, topic/audience, source of metadata, access date, visible views/likes and how observed, and selection status. Missing metrics remain unknown. Relative views depend on age, channel, language, distribution, and topic size. Do not label a search result set the global top 30. “Rated” requires a named observed metric, not an invented quality score or inaccessible dislike ratio. Audience comments may reveal confusion but are not representative learning evidence.
+ 
+-For a full redesign, propose two materially different plausible routes. Each includes purpose, central sequence, bottleneck, likely failure, strongest objection, and pilot that could disconfirm it. Prefer separate initial proposals without the coordinator's favored answer. Cross-critique afterward. Label reused authors and same-context perspectives honestly.
++Distinguish topic scarcity from blocked inspection. If 30 relevant videos can be identified but playback/transcripts are blocked, discovery can meet its floor while content review remains incomplete. Do not lower the discovery count to the number successfully played. If a niche topic genuinely yields fewer than 30 relevant candidates after broad queries, document the queries, unique count, access failures, and scarcity. Expand into original lectures, papers, books, demonstrations, or adjacent explanatory techniques; report those separately, without relabeling them as topic videos. Do not stall or fabricate a count. A short answer or small edit does not trigger a 30-video project.
+ 
+-Separate subject validity, teaching progression, and visual/interaction concerns; one reviewer may cover several if cost or staffing warrants. Preserve disagreement and decide which observation could resolve it. Do not average scores or incorporate every suggestion into a bloated hybrid. A cold whole-route walkthrough checks coherence after local repairs.
++## 2. Separate discovery, screening, and actual understanding
+ 
+-## Fair comparison with an expert tutorial
++Use explicit access states:
+ 
+-Define the bounded learning obligation before seeing results. Match audience preparation, promised depth, time including navigation, and outcome tasks. Allow video pause/replay. A short introductory video cannot be the sole comparator for a requested full proof; assemble a relevant reference path and disclose its scope.
++- Discovered: metadata/search result only.
++- Screened: inspected substantive transcript passages, creator text, or video segments sufficient to judge relevance and a proposed teaching move.
++- Deeply analyzed: traced the relevant argument/sequence, examples, prerequisites, transitions, limits, and learner work.
++- Visually reviewed: inspected actual representative visual states and their changes.
++- Orally reviewed: listened to actual delivery for pacing, pauses, pronunciation, and synchronization.
+ 
+-Use unseen prediction, explanation, calculation/argument, boundary, and transfer tasks suited to the subject. Score assistance, correctness, reasoning, confidence, navigation burden, time, and preference separately. Hide author identity and blind scoring where feasible; disclose what remained recognizable.
++These are overlapping evidence dimensions, not automatic upgrades. Captions do not prove visual or oral quality. A handful of thumbnails does not establish animation timing. Record timestamps/pages and access limits. Do not say “reviewed 30 videos” when only 30 URLs were found.
+ 
+-AI judges are not novice learners. Require learner-visible warrants so prior topic knowledge cannot silently fill gaps. Fresh context reduces anchoring; shared models can still share errors. An A/B preference judgment is not a learning study. Same-topic sequential viewing has carryover; counterbalancing does not remove it. Actual comparative learning needs an appropriate human study design, such as separate randomized groups or matched tasks, with stated uncertainty. Small qualitative pilots identify defects; they do not establish universal superiority.
++Screen the relevant candidate set and deeply analyze the strongest and most complementary routes. A shortlist of roughly 8–12 may be a useful starting allocation, but it is neither a ceiling nor a certificate. Expand when a key application, proof, limit, mitigation, alternative, or audience need remains unsupported. Inspect actual visual/oral segments before making claims about those qualities. Do not reduce the entire research stage to the three user-named presenters.
+ 
+-## Learning research: bounds on inference
++## 3. Extract teaching mechanisms, not scripts
+ 
+-Direct instruction, worked examples, guided experiments, and retrieval have different jobs. Novices may need a model before making useful predictions. Delayed recall evidence does not automatically establish conceptual transfer or efficiency.
++For each inspected source identify:
+ 
+-When citing a study, record population, material, comparison, timing, measured outcome, and limits. Separate reported finding from proposed design implication. For example, Roediger & Karpicke (2006), Experiment 2, tested prose recall in undergraduates; its five-minute and one-week groups were separate, and study/recall periods differed in duration. Do not translate its percentages into universal retention, an AI advantage, or proof of a particular role workflow.
++- The promise, opening question, and purpose-to-method connection.
++- The assumed starting model and diagnostic opportunities.
++- Example lifecycle and representation choice.
++- What insufficiency makes the next idea necessary.
++- The hardest bridge and the precise move that supports it.
++- Prerequisites introduced, claims justified/deferred, and analogy limits.
++- What the learner predicts, constructs, explains, or diagnoses.
++- Treatment of when/where, applications, limitations, mitigations, alternatives, and practice.
++- Visual/oral techniques actually observed.
++- A weakness, excluded audience, or missing obligation.
++- The proposed design decision this source informs.
+ 
+-Do not impose a universal story, animation quota, quiz frequency, visual style, or interaction count. Let the learner obligation select the teaching method.
++Use brief source-linked notes. Do not copy a teacher's script, voice, signature sequence, or protected visuals. Extract principles and develop original examples/diagrams. Track licenses and attribution for assets reused with permission.
+ 
++## 4. Verify subject substance beyond video popularity
++
++Use authoritative primary subject references for correctness and current claims. Read relevant methods, assumptions, proofs, evaluations, and limitations. Keep foundations and current applications separately dated. Search contrary evidence, failures, and strong alternatives, not only sources that support the preferred story.
++
++A high-view video can be an excellent pacing reference while omitting the proof this learner needs. A recent technical paper can substantiate an application without providing an approachable teaching route. Give each source the job its evidence supports.
++
++## 5. Synthesize a coherent route, not a best-moments collage
++
++Prepare materially different serious routes. Normally begin with two or more; add another when an unresolved strategic choice warrants it. Each has a central learner question, coverage map, example/representation, bottlenecks, strongest objection, and a pilot that could reject it.
++
++Compare techniques in a matrix: learner obligation → candidate teaching move → observed support → conflict with other moves → original adaptation → test. Choose a consistent notation, example lifecycle, voice, and visual grammar. Combining every admired technique can overload the lesson or produce contradictory assumptions.
++
++Get separate initial proposals before sharing the coordinator's preference where possible. Cross-critique afterward. Preserve unresolved disagreement and minority objections. Author-informed and same-model reviews are not independent novice learning studies. Decide with observations, not vote count.
++
++## 6. Benchmark the actual promise
++
++Compare matched audience, prior knowledge, learning obligation, depth, and assessment. Use two complementary evaluations:
++
++- A bounded matched-time comparison for a particular bridge, including navigation and video replay.
++- A full-promise review for completeness, coherence, and independent capability, with actual learner time reported.
++
++Equal-time testing is a comparison method, not a cap on the finished course. A 100-plus-slide masterclass can be justified; it cannot claim to beat a ten-minute introduction merely by covering more material. Nor should the central proof be removed to fit the comparator's length.
++
++Separate correctness, explanation quality, preference, immediate performance, delayed recall, and transfer. Same-topic sequential exposure causes carryover; counterbalancing alone does not eliminate it. Use appropriate human study designs for comparative learning claims. AI judges must cite visible warrants and cannot establish what a novice learned.
++
++## Research acceptance
++
++The ledger, inspection notes, coverage map, dissent, and route decision must show why research changed the design. Candidate count is a breadth floor, not proof of quality. Uninspected or blocked content remains a gap. Research is ready for provisional authoring when important obligations have credible support and competing routes can be tested; it reopens when pilot evidence exposes a gap.
++
++Read tutoring-evidence.md for learning-science constraints and narration-production.md for spoken/video evaluation. Never report future/source-study intentions as executed research.
++
+--- before/build-interactive-masterclass/references/review.md
++++ after/build-interactive-masterclass/references/review.md
+@@ -7,7 +7,11 @@
+ | Subject correctness | Valid claims, assumptions, units, argument/proof, primary references, relevant edge checks |
+ | Explanatory adequacy | Learner-visible warrant for each critical bridge; missing prerequisites and wrong-rule cases |
+ | Whole-route coherence | Cold walkthrough: why this lesson, why these steps, how the final method answers the opening question |
++| Complete subject coverage | Content-contract map linked to actual scenes, applications, limits, diagnostics, mitigations, alternatives, practices, and transfer; justified exclusions |
++| Research breadth and depth | At least 30 unique relevant video candidates where available, source-access states, substantive screening/deep notes, primary verification, and coherent synthesis |
++| Practical judgment | Cases requiring when/where, use/no-use, failure detection, mitigation with residual cost, and a fair alternative choice |
+ | Visual/interaction usability | Rendered meaningful states at intended sizes; actual control use, labels, coupled outputs, attention burden |
++| Narration and notes | Exact event-cued script, visual/audio synchronization, actual rehearsal/listening where performed, cold-presenter usability, checked exported notes |
+ | Runtime | Clean start, real navigation, persistence/reset, notebook return, failure recovery |
+ | Simulated learner review | Recorded uncoached task attempts with warrants; disclose existing topic knowledge and model/context |
+ | Human learning | Actual audience, baseline, tasks, help, observations, scoring, limits |
+@@ -16,27 +20,37 @@
+ 
+ False central claims, missing requested argument, broken critical controls, hidden required prerequisites, or unreadable critical scenes block a ready artifact claim. Human efficacy can remain unverified in a clearly labeled reviewed candidate. Do not let available software tests stand in for missing teaching evidence.
+ 
++For flagship work, also block an unqualified ready claim when a required application/limit/alternative has no substance, the research breadth claim exceeds actual access, or the promised speaker notes are unusable reminders. Do not average those failures away with aesthetic or runtime scores. Quality-first permits extensive revision; it does not turn an arbitrary number of reviews into acceptance.
++
+ ## Review protocol
+ 
+ Give an unfamiliar reviewer only the audience, task, learner-visible artifact, and neutral criteria for the first pass. Do not supply the author's diagnosis or desired verdict. Obtain separate initial observations, then cross-critique. Record prior authorship, shared history/model, assistance, and source access. “Elite educator” is a role request, not a credential.
+ 
+ Hold back new assessment cases and expected reasoning from the author where feasible. A knowledgeable AI may answer correctly without learning anything: require a pointer to the visible explanation that warrants the inference, and preserve failures. After repair, repeat the affected test; also trace global coherence if the route changed. Do not repeat unchanged reviews for reassurance.
+ 
++Hidden assessments may withhold answers and fresh cases, not silently add a narrower deliverable requirement or one preferred analogy. Tie each blocking criterion to the public learner objective. If a frozen key demands a specific bridge that the prompt did not require, report the mismatch and distinguish failure of that diagnostic from failure of the requested lesson. A repair after feedback is supervised revision, not a new blind pass; preserve the first output and verdict.
++
+ A user's rejection reopens the relevant acceptance. It need not negate valid mathematical or runtime evidence. Tie the next change to a falsifiable teaching hypothesis.
++
++Use [narration-production.md](narration-production.md) for silent-picture, audio-only, combined timed, and cold-presenter reviews. Record written script review separately from actual listening/performance. Use [content-contract.md](content-contract.md) for coverage and [execution-quality.md](execution-quality.md) for continuing strategy revisions without an arbitrary total-effort cutoff.
+ 
+ ## Plain language and the 80% target
+ 
+ Use short active sentences, stable terms, one main idea, defined symbols, and concrete instructions. Preserve mathematical precision. ASD-STE100-inspired wording is not formal compliance.
+ 
+-For this user's 80% compatibility target, the denominator is all learner-facing prose sentences in slides, controls, feedback, and refreshers. Exclude equations/code, but review their labels. Mark each sentence compatible, incompatible, or unverified, with technical-name exceptions and reasons. Unknown sentences are not passes. Report compatible/total and review coverage.
++For this user's 80% compatibility target, audit learner-facing prose in slides, controls, feedback, refreshers, the spoken portion of speaker notes, captions, and transcripts. State sentence-count denominators by delivered surface and how identical reused text is deduplicated; do not inflate compatibility by repeating an easy sentence. Exclude internal production cues and equations/code, but review learner-facing labels. Mark each sentence compatible, incompatible, or unverified, with technical-name exceptions and reasons. Unknown sentences are not passes. Report compatible/total and coverage; keep prose and spoken-delivery quality distinct.
+ 
+ Use the actual applicable standard and vocabulary/usage rules if available. Sentence-length checks alone cannot establish compliance. If the full audit is unavailable, improve the wording, report measured checks, and leave the percentage unverified.
+ 
+ ## Behavior tests for a changed skill
+ 
+-Use isolated artifacts. Include an unfamiliar quantitative bridge and a nonmathematical explanation; request real learner-facing samples, not only plans. Add a brief factual answer, retrospective-only request, inaccessible video, correct-answer/wrong-reason, capped repeated failure, stale artifact, and detour return where relevant.
++Use isolated artifacts. Include unfamiliar quantitative, empirical/interpretive, and practical topics across repeated evaluations; request learner-facing samples, not only plans. Test modern application evidence, limitations-to-mitigations, serious alternatives, and event-cued notes. Add a brief answer, retrospective-only request, scarce video landscape, metadata-only access, correct-answer/wrong-reason, repeated failure requiring strategy revision, stale artifact, and detour return where relevant. A few passing topics do not demonstrate robustness across 1,000 subjects.
+ 
+ Record prompts, outputs, held-out criteria, observations, repairs, exact inspected skill revision, candidate model/context when available, and review provenance. Label each result as written response inspected, execution independently verified, or learner performance observed. A written scope promise does not prove the action was executed. Structural validation proves packaging; CLI tests prove specified guardrail behavior; forward tests show behavior on sampled requests. None proves durable human intuition or superiority to expert teaching.
+ 
+ Use evidence labels such as planned, working draft, reviewed candidate, simulated-review completed, learner-observed, or comparative-study completed. Avoid “expert-reviewed” unless the reviewer's expertise and actual review are defensible.
+ 
++## Reviewable skill changes
++
++Before editing the teaching bundle, snapshot the exact installed files. Deliver an immutable updated bundle, machine-readable file hashes, a unified patch, and an accessible file-by-file diff view. Map each user requirement to changed files/sections, intended behavior, test result, and remaining gap. Distinguish this revision's delta from cumulative historical changes. Preserve prior reports and label superseded guidance; do not silently rewrite history. Package only relevant skills and explain their shared canonical ownership.
++
+--- before/build-interactive-masterclass/references/tutoring-evidence.md
++++ after/build-interactive-masterclass/references/tutoring-evidence.md
+@@ -0,0 +1,57 @@
++# Human and AI tutoring: evidence and design rules
++
++Read when choosing pedagogy, feedback, assessment, and adaptation. This is a practical synthesis, not proof that the combined protocol outperforms every teacher or generalizes to 1,000 topics. Verify updates before making current research claims.
++
++## Evidence that changes decisions
++
++| Source and type | Relevant observation | Design implication and limit |
++|---|---|---|
++| [IES practice guide, 2007](https://ies.ed.gov/ncee/wwc/Docs/PracticeGuide/20072004.pdf), official synthesis | Addresses spacing, worked examples with problems, concrete/abstract representations, and explanatory questions, with different evidence ratings. | Combine explanation and practice; ask deep questions once the learner has enough topic knowledge. It does not validate an AI prompt or a universal lesson rhythm. |
++| [Collins, Brown, Newman, 1987](https://files.eric.ed.gov/fulltext/ED284181.pdf), cognitive apprenticeship framework | Makes expert activity visible through modeling, coaching, scaffolding, articulation, reflection, and exploration. | Show how a practitioner recognizes conditions, chooses, checks, and recovers; fade support. This is a design framework, not a causal estimate for this skill. |
++| [Black and Wiliam, 2009](https://kclpure.kcl.ac.uk/ws/files/9119063/Black2009_Developing_the_theory_of_formative_assessment.pdf), formative-assessment theory | Evidence about current understanding informs the next instructional decision. | A quiz becomes formative when its result changes what happens next. Do not equate quiz presence with responsive teaching. Subject norms still matter. |
++| [Chi and Wylie, 2014](https://education.asu.edu/sites/default/files/lcl/chiwylie2014icap_2.pdf), ICAP framework | Distinguishes manipulating material, generating inferences, and jointly developing ideas; discusses boundary conditions. | Inspect the learner's cognitive work. Sliders do not automatically make learning “interactive” in this sense; dialogue alone is not a guarantee. |
++| [Kestin et al., 2025](https://doi.org/10.1038/s41598-025-97652-6), physics RCT | A structured AI tutoring package improved immediate performance in two introductory physics lessons against the tested active-class comparison. | Ground a tutor in verified content and reliable sequencing. This result does not isolate prompt quality, prove delayed retention, or establish superiority across subjects. |
++| [Bastani et al., 2025](https://doi.org/10.1073/pnas.2422633122), classroom RCT | Assisted practice improved with both GPT conditions; the unrestricted condition harmed subsequent unassisted performance. The guarded tutor's unassisted estimate was statistically indistinguishable from control. | Evaluate after support is removed. Safeguards mitigating harm are not evidence of improved independent learning. Do not universalize this particular school/model/task result. |
++| [Tutor CoPilot, 2025 version](https://scale.stanford.edu/sites/default/files/ai24_1054_v2.pdf), field experiment/working paper | Human tutors with access improved session exit-ticket results; the updated version reports over 700 tutors and 1,000 students and no significant end-of-year test improvement. | Human selection/override and session outcomes matter. Do not mix versions or equate a human+AI package with an autonomous tutor or long-term gains. |
++| [Roediger and Karpicke, 2006](https://learninglab.psych.purdue.edu/downloads/2006/2006_Roediger_Karpicke_PsychSci.pdf), retrieval experiment | Testing schedules affected delayed recall of prose; immediate fluency and later recall diverged. | Reconstruct and use the taught model later. The study is not a universal retention rate, equal-time productivity estimate, or proof of mathematical transfer. |
++
++The specific protocol below is a design inference informed by these sources. It still requires topic-specific tests. The sources disagree in setting and outcome; preserve those differences.
++
++## Human tutoring practices to reproduce thoughtfully
++
++Make expertise visible: verbalize what feature matters, how it changes the choice, what a good result should look like, how to check it, and what would trigger another method. Include uncertainty and legitimate alternatives. A polished final solution hides the recognition and monitoring that learners need.
++
++Use a small readiness diagnostic, a worked case, or a labeled assumption. Do not infer readiness from age or one correct answer. Diagnose slips, prerequisite gaps, faulty relations, inappropriate strategy, misunderstood language, and defensible alternate interpretations differently.
++
++Alternate modeling, coached completion, independent attempts, reflection, and transfer as useful. Fade help based on evidence. A beginner may need direct explanation; an experienced learner may need a difficult contrast. Do not force every learner through the same hint ladder.
++
++Give specific, actionable feedback tied to the current attempt. Ask one diagnostic question if the cause is unclear. Let a learner state uncertainty. Use respectful encouragement without praising wrong reasoning or claiming understanding from “yes.”
++
++Choose examples with variation: a clean case establishes the structure; contrasting/boundary cases distinguish where it applies; unfamiliar cases test transfer. Vary one important feature when isolating its effect, then deliberately vary multiple features for transfer. Do not mistake routine repetition for generalization.
++
++## Additional requirements for AI tutoring
++
++Use checked reference content, solutions, assumptions, common wrong rules, and known alternative methods. Generate feedback against the actual problem and learner state; do not infer it from a generic persona. Verify dynamic substitutions and tool results before teaching from them.
++
++Separate learning from task completion. An answer can be useful when the user requests it, but completion with assistance cannot be scored as independent capability. Provide a worked answer when instruction requires it; do not adopt an absolute “never give answers” rule.
++
++Keep explicit state and response branches; test contradictory explanations, partially correct work, right answer/wrong reason, guessing, requests for help, and nonstandard valid solutions. Allow uncertainty rather than invent a diagnosis. When relevant, route unresolved domain judgments to suitable human expertise.
++
++A human+AI tutor should expose the reason for a suggested next move and allow the human to select, edit, or reject it. Do not represent assistant access as a replacement for the human's judgment.
++
++## Two learner loops, distinct from authoring loops
++
++The learner **outer loop** selects the next problem, concept, representation, level of support, or revisit based on evidence, prerequisites, purpose, and transfer needs. It considers what remains uncertain across several attempts. No arbitrary fixed mastery threshold should be invented.
++
++The learner **inner loop** responds within the current problem: inspect the attempt → interpret the reason → choose a hint/model/contrast → retry with adjusted support → check and record evidence.
++
++The authoring external/inner loops instead improve the course and explanation. Keep the terminology explicit in plans so a course revision is not confused with a learner's practice selection. A notebook with authored branches does not implement general practice selection by itself.
++
++## Measurement and correction
++
++Inspect learner-produced reasoning, not just correct outputs, completion, confidence, enjoyment, or clicks. Test interpretation, method choice, use/no-use decisions, failure diagnosis, mitigation choice, and new contexts. Separate assisted, immediately unassisted, delayed recall, and delayed transfer evidence.
++
++For a history or writing lesson, valid reasoning may admit multiple conclusions. Use source warrants, coherent argument, constraints, and comparison rather than a rigid exact-answer grader. For practical skills, observe performance and recovery; verbal fluency alone is insufficient.
++
++Record the evidence level and the strongest remaining uncertainty. Reuse validated teaching moves while allowing the subject and actual learner to change the route.
++
+--- before/build-interactive-masterclass/scripts/harness.py
++++ after/build-interactive-masterclass/scripts/harness.py
+@@ -214,7 +214,7 @@
+     require(all(statuses[d]['state'] == 'accepted' for d in nodes[key]['depends_on']), 'Unaccepted or stale prerequisite.')
+     for issue in s['findings'].values():
+         if unresolved(issue, c, nodes, base) and affected(issue, key, ancestors) and failed_count(issue) >= 2:
+-            require(strategy_ready(issue, s, statuses), 'Repair cap reached; changed strategy and fresh pilot required.')
++            require(strategy_ready(issue, s, statuses), 'Strategy review required; changed hypothesis and fresh pilot needed before another local repair.')
+     return {'permitted': action, 'node': key, 'outputs': nodes[key]['outputs'], **snapshot(key, c, nodes, base), 'qualification': LIMIT}
+ 
+ 
+@@ -296,7 +296,7 @@
+     require(value.get('outcome') in {'failed', 'resolved'} and nonempty(value.get('change')), 'Repair needs outcome and causal change.')
+     statuses = inspect_state(s, c, nodes, ancestors, base)
+     if failed_count(issue) >= 2:
+-        require(strategy_ready(issue, s, statuses), 'Repair cap reached; changed strategy and fresh pilot required.')
++        require(strategy_ready(issue, s, statuses), 'Strategy review required; changed hypothesis and fresh pilot needed before another local repair.')
+         issue['active_strategy'] = issue['strategies'][-1]['seq']
+     value['evidence'] = evidence(value.get('evidence'), Path(file).resolve().parent)
+     if value['outcome'] == 'resolved':
+--- before/build-interactive-masterclass/scripts/test_harness.py
++++ after/build-interactive-masterclass/scripts/test_harness.py
+@@ -189,23 +189,23 @@
+         self.issue()
+         self.failed()
+         self.failed()
+-        with self.assertRaisesRegex(ValueError, 'cap'):
++        with self.assertRaisesRegex(ValueError, 'Strategy review required'):
+             self.failed()
+         self.new_strategy()
+         self.accept('pilot')  # A later receipt alone is not a changed pilot.
+-        with self.assertRaisesRegex(ValueError, 'cap'):
++        with self.assertRaisesRegex(ValueError, 'Strategy review required'):
+             h.permit(self.run, 'bridge', 'review')
+         self.contract['nodes'][3]['hypothesis_label'] = 'Renaming a strategy is not a new prototype.'
+         self.write('contract.json', self.contract)
+         self.accept('pilot')
+-        with self.assertRaisesRegex(ValueError, 'cap'):
++        with self.assertRaisesRegex(ValueError, 'Strategy review required'):
+             h.permit(self.run, 'bridge', 'review')
+         (self.root / 'pilot.txt').write_text('Changed prototype for the new hypothesis.', encoding='utf-8')
+         self.accept('pilot')
+         self.assertEqual(h.permit(self.run, 'bridge', 'review')['permitted'], 'review')
+         self.failed()
+         self.failed()
+-        with self.assertRaisesRegex(ValueError, 'cap'):
++        with self.assertRaisesRegex(ValueError, 'Strategy review required'):
+             self.failed()  # The same successful pilot cannot reset repeatedly.
+         finding = h.read(self.run / 'run.json')['findings']['wrong-model']
+         self.assertEqual(len(finding['attempts']), 4)
+--- before/build-intuition-masterclass/SKILL.md
++++ after/build-intuition-masterclass/SKILL.md
+@@ -9,6 +9,8 @@
+ 
+ Start with why the learner needs the idea and what it enables. Introduce background when it unlocks a needed inference. Preserve the requested depth and test transfer before revealing its answer.
+ 
++Apply version 3's complete coverage: why/when/where, mechanism and justification, applications and current uses, limitations with diagnostics and mitigations, alternatives, best practices, and transfer. For flagship work, the user's named explainers seed at least 30 relevant video candidates where available; access depth stays explicit. Quality takes priority over arbitrary duration or slide count. Read the canonical narration/production reference for speaker notes and public video work.
++
+ Honor scope: an assessment or process update does not authorize rebuilding the lesson. Small answers and edits do not need the full pipeline.
+ 
+ For student questions, branching feedback, or per-problem state, also read [adaptive tutoring](../build-interactive-masterclass/references/adaptive-tutoring.md). Old links in [teaching-contract.md](references/teaching-contract.md) route to these maintained references.
+--- before/build-research-codelabs/SKILL.md
++++ after/build-research-codelabs/SKILL.md
+@@ -4,6 +4,12 @@
+ ---
+ 
+ # Build research codelabs
++
++## Shared teaching standard, version 3
++
++Use [the canonical masterclass protocol](../build-interactive-masterclass/SKILL.md) for substantial teaching design and review. This codelab skill adds scientific execution, laptop paths, research freshness, and provenance; do not run two duplicate research or planning pipelines. Read its content-contract and research-debate references for complete why/when/where coverage, applications and modern uses, limitations with diagnostics and mitigations, alternatives, best practices, and at least 30 relevant video candidates for flagship work where available. User examples seed discovery; they do not bound it.
++
++Quality takes priority over authoring speed, lesson/slide count, and implementation simplicity. Long courses and repeated substantive refinement are appropriate. Actual compute, tool, user, and experimental-evaluation limits still apply. A repeated failure triggers a new approach rather than acceptance of weak teaching. For speaker notes, slides, or publication-ready video, also use the canonical narration-production reference and its rehearsal checks. Highly viewed publication is an ambition, not a guaranteed result.
+ 
+ ## Final outcome
+ 
+@@ -38,7 +44,7 @@
+ 3. Map prerequisite concepts and common misconceptions. Start with a simple process or baseline. Add one conceptual change when the prior method exposes a reason for it.
+ 4. Organize the path into themed directories. Give each theme a README, a short sequence, and a clear transition. Avoid a large flat lesson directory or competing reading orders.
+ 5. Design each lab around an observation, a mental model, a counterexample or limit, and a transfer question. Include the exact run path, expected artifacts, and assessment.
+-6. Sweep the last month of primary research, prioritizing the latest two weeks. Map papers to mechanisms and evidence. New publications should change the teaching where useful, not merely lengthen the bibliography.
++6. Match research freshness to the topic and request. For frontier/recent-research courses or an explicit current-month requirement, sweep the last month and prioritize the latest two weeks. For stable foundations, retain authoritative older sources and verify current applications/tools where they can change. Map papers to mechanisms and evidence; novelty alone should not lengthen the bibliography.
+ 7. Specify the agent skills, generated tools, evaluation boundaries, laptop resource limits, and path to larger jobs.
+ 8. Include a README storyboard, visual brief, representative lesson outline, implementation order, validation plan, and acceptance criteria.
+ 
+@@ -76,6 +82,8 @@
+ 
+ Update the work log, requirement coverage, artifact index, and restart instructions. Commit all task-produced intermediate and final artifacts that can be published within the authorized scope. Use an authorized artifact store plus a checked-in manifest for files unsuitable for ordinary Git. Push and verify the remote commit before claiming a GitHub backup.
+ 
++When this skill itself changes, preserve the prior revision and provide exact file diffs, a requirement-to-change map, tests and limits, and the updated bundle. A summary of changes alone is not an inspectable delta.
++
+ Report what is complete, what was checked, and any material gap. Link the course, skill, plan, and provenance as relevant. Name any skill or plugin that authorized external publication when applicable; this skill does not itself authorize sending messages to other people.
+ 
+ ## Example requests
+--- before/build-research-codelabs/references/course-standard.md
++++ after/build-research-codelabs/references/course-standard.md
+@@ -3,6 +3,8 @@
+ Read this when starting or substantially revising a course. These requirements capture the user's reusable guidance. Apply them to the chosen subject rather than copying an unrelated course's structure.
+ 
+ ## Teaching outcome
++
++Apply the shared [complete content contract](../../build-interactive-masterclass/references/content-contract.md). At course level map why/when/where, mechanism and justification, applications and current uses, assumptions, limitations, diagnostics, mitigations and residual tradeoffs, serious alternatives, best practices, misconceptions, and transfer to actual lessons and checks. Weave these through the explanatory route; do not satisfy them with a final list of buzzwords. Use the same coverage record rather than duplicating paperwork.
+ 
+ Combine careful research with expert teaching. Aim for a masterclass whose explanations are simple enough for a newcomer to the subject and precise enough for an advanced student. “Zero to hero” means a gradual path from the stated starting knowledge to independent practice, not exaggerated claims of expertise after following instructions.
+ 
+@@ -111,7 +113,7 @@
+ 
+ When the user wants early visual feedback, finish and show the overview maps and major mechanisms before the full execution pass. Include an overall mindmap, clear course-location links at each theme and lab, and expanded maps for the advanced studio and capstones. Introduce course objectives, prerequisites, and a clearly labelled duration estimate near the start. An inventory alone is not a guided course map.
+ 
+-Use generation calls carefully. Before the first call, verify the figure against its lesson: exact labels, arrow directions, sequence, changed and fixed objects, version identity, and scientific claims. Supply a reviewed label list and tell the generator not to invent technical details. Aim for one usable draft; combine substantive corrections into one targeted edit and use no more than three outputs per figure. Do not regenerate for cosmetic alternatives. If the third output still has a material error, keep it as an unselected draft, explain the issue, and revise the specification before seeking further attempts. Preserve all outputs and the review record. This is the user's cost-and-quality preference for this course-authoring workflow.
++Use generation calls carefully. Before the first call, verify the figure against its lesson: exact labels, arrow directions, sequence, changed and fixed objects, version identity, and scientific claims. Supply a reviewed label list and tell the generator not to invent technical details. Combine related corrections and inspect the whole result after each edit. The user's current quality-first preference supersedes the old generic three-output ceiling: continue substantive improvement within actual authorized resource limits. Repeated failures require a revised specification, representation, or tool strategy rather than another unchanged prompt. Preserve drafts and the review record; do not select an incorrect image merely because an arbitrary attempt count was reached.
+ 
+ The saved preference is **Imagen 2.5**, a white background, professional composition, and rich but readable detail. Verify access to the requested generator. If unavailable, state the precise gap and preserve the requirement. Do not silently use another model while claiming compliance.
+ 
+@@ -138,6 +140,8 @@
+ For diagrams with several procedural levels, check what each procedure acts on. A task skill can fit models; an updater proposes and checks edits to skills. Do not give both the same checklist. Show the candidate before its check, preserve the changed rule at later use, and ensure rejection cannot lead to activation. Check accompanying run prompts for the same mechanism; a correct picture cannot repair a missing execution instruction.
+ 
+ ## Presentation and benchmark follow-through
++
++Use [narration and production](../../build-interactive-masterclass/references/narration-production.md) for the spoken script, event-cued speaker notes, illustrations, pacing, rehearsal, captions, and final audiovisual review. A deck may exceed 100 slides when its teaching needs justify the length; use chapters and clear routes rather than compressing the central explanation. A full course and a recorded video may share content but require different pacing and interaction handling.
+ 
+ When requested, provide a PowerPoint presentation with the approved course
+ infographics, explanatory slides and speaker notes on every slide. Notes
+--- before/build-research-codelabs/references/research-and-evidence.md
++++ after/build-research-codelabs/references/research-and-evidence.md
+@@ -1,8 +1,14 @@
+ # Research and evidence
++
++## Broad explainer discovery complements research-paper discovery
++
++For flagship courses, also follow [the shared video research protocol](../../build-interactive-masterclass/references/research-debate.md): at least 30 unique relevant candidates where available, broad teaching approaches, observed popularity metadata, explicit discovery/screening/deep/visual/oral access states, and coherent original synthesis. The user's examples are seeds. Papers verify subject claims; strong explainers inform teaching. Neither set replaces the other. The count is a breadth floor, not a quality score, and source scarcity/access limits must be reported honestly.
++
++Research applications, limitations, diagnostics, mitigations, strong alternatives, and best practices as well as the central mechanism. Distinguish current deployment from demonstrations, proposals, and older foundations. Keep the codelab's requested freshness and scientific-evidence boundaries below.
+ 
+ ## Freshness and coverage
+ 
+-Anchor discovery to the date of the run. Search the preceding month and prioritize the latest two weeks. Put explicit start and end dates in every discovery query and use a recency filter where supported. State the dates in the inventory.
++Anchor discovery to the date of the run. For frontier subjects or an explicit recent-research requirement, search the preceding month and prioritize the latest two weeks. Use explicit date ranges and recency filters for that sweep and state them in the inventory. Stable foundations need authoritative foundational sources; current applications, tools, standards, and disputed claims need appropriate fresh verification. Do not impose a last-month-only evidence base on an enduring topic.
+ 
+ Verify publication and revision dates on primary sources. A search filter can fail. A recent crawl, news mention, or social repost does not make old research new. Record the original date and the relevant update separately.
+ 
+--- before/build-research-codelabs/references/topic-adaptation.md
++++ after/build-research-codelabs/references/topic-adaptation.md
+@@ -1,6 +1,8 @@
+ # Adapt the method to a new subject
+ 
+ Preserve the teaching and execution standards. Change the concept sequence and task to fit the subject. Do not turn the RSI example into a universal technical ladder.
++
++Use [the shared content contract](../../build-interactive-masterclass/references/content-contract.md) to adapt why/when/where, applications, limitations, mitigations, alternatives, and best practices to the subject. A limitation should lead to a detectable failure, a response, its remaining cost, and a choice among methods. Preserve requested rigor and contemporary relevance without forcing a research-codelab workflow onto a short explanation or a non-experimental topic.
+ 
+ ## Choose the right task
+ 
+@@ -12,7 +14,7 @@
+ 
+ ## Example adaptations
+ 
+-These are starting design choices, not claims about the latest literature. Search the current month before selecting research or software.
++These are starting design choices, not claims about the latest literature. Verify current research/software where it can change; use a current-month sweep for frontier topics or when requested. Preserve authoritative older foundations for stable concepts.
+ 
+ | Topic | Small task to consider | Conceptual path to develop | Larger extension |
+ |---|---|---|---|

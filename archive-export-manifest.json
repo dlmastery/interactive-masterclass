@@ -1,0 +1,2135 @@
+{
+  "snapshot_date": "2026-10-07",
+  "included_generated_artifacts": [
+    {
+      "path": "outputs/build-interactive-masterclass.zip",
+      "sha256": "398dd41a11df3635b31cf8c0578c115e16f22fddaa33ca10bbdc955b2d493947",
+      "bytes": 14961
+    },
+    {
+      "path": "outputs/pca-masterclass-preview.png",
+      "sha256": "fc97858affb94746eb694452f73fe24933e28dde64ae937dddf6c440dd52732b",
+      "bytes": 65658
+    },
+    {
+      "path": "outputs/pca-preview.png",
+      "sha256": "38ac70cc5be5b6db2b707f5a3c2b24d732f650906d56b4754403bb36bd0dcf65",
+      "bytes": 67143
+    },
+    {
+      "path": "outputs/pca-studio-source.zip",
+      "sha256": "c5b39ef807051df71f982b75cc8f3b8a670be84b8776827d7a24993da0487f60",
+      "bytes": 705851
+    },
+    {
+      "path": "outputs/PCA-TEACHING-ASSESSMENT.html",
+      "sha256": "3ad0cdd5ae277826d03825b3c899089e00a82f199dae0e82df38d8e779e88eea",
+      "bytes": 5630
+    },
+    {
+      "path": "outputs/tutorial-skill-validation.json",
+      "sha256": "a6e181abccb87a2e540c74d3cace8d10b54ce3798bebd690d29ba79b5b526f31",
+      "bytes": 2370
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/SKILL.md",
+      "sha256": "398e940a4ede7ecf94bc0da78baab2ef6c21eca0e010b1595f08ddec0f5ec9d3",
+      "bytes": 6663
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+      "bytes": 320
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/references/harness.md",
+      "sha256": "cdf646b0712676f61604fbef5471b8db87eafa661861e07c1c9135e7a24661ce",
+      "bytes": 4252
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "84b72a8c8b3e88fe49141db871f69286bc0bdf80ea244524a5e6db81181aed6c",
+      "bytes": 4345
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "38b9a4f7ca3bc191e743b54c6b8fe15df97bac8d87dd8ec644514ff0323e8f5c",
+      "bytes": 2841
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/references/research-debate.md",
+      "sha256": "d231704b95599d6a460ee8792c39d54435dc7e407f0520e8acba81b26c523c72",
+      "bytes": 2552
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/references/review.md",
+      "sha256": "e04dea002100feabe8e25655bce23f6b83e3c286b8f38e5ab968a079812f52a3",
+      "bytes": 3475
+    },
+    {
+      "path": "outputs/build-interactive-masterclass/scripts/harness.py",
+      "sha256": "bdaa3fc1b05809c6b4b0e3702887155b6088a94e6bd023219ca4173ae49aab82",
+      "bytes": 5415
+    },
+    {
+      "path": "outputs/pca-studio/browser-audit.json",
+      "sha256": "fc6f8921ae176c6c2795b9528477d21dc364be5edb73beec5f6ad1dc95f04835",
+      "bytes": 27080
+    },
+    {
+      "path": "outputs/pca-studio/course-v2.json",
+      "sha256": "9aa844eb648949438f697e3bdefaa2549116bf6740c9145f96bd32bcbcaad4a4",
+      "bytes": 46975
+    },
+    {
+      "path": "outputs/pca-studio/language-review.json",
+      "sha256": "f5f7920951ff005d6e0803883f373514eb4c6333ecf6f024276f9b4d7a96f858",
+      "bytes": 593
+    },
+    {
+      "path": "outputs/pca-studio/pca-first-slide.png",
+      "sha256": "a4417b41a951a1a64d96274ccf6128240960091a40cf6109d77ef858612fab50",
+      "bytes": 42045
+    },
+    {
+      "path": "outputs/pca-studio/pca-notebook.png",
+      "sha256": "ebbd0e7498dea0a34c1ed24000bcd32b7261e35c47fb0aa2adf1baa9fc8c0c81",
+      "bytes": 33488
+    },
+    {
+      "path": "outputs/pca-studio/pca-proof.png",
+      "sha256": "4efcb29b6108484fa124f379fc559e0d44487fd748c2ea111fa94e1c15498d9d",
+      "bytes": 65582
+    },
+    {
+      "path": "outputs/pca-studio/PCA-TEACHING-PLAN.html",
+      "sha256": "c62af2bd10270d770b6e1132adc4aa5fe6d483bac4ca32f65fc6ec9ed5bb5d6d",
+      "bytes": 34209
+    },
+    {
+      "path": "outputs/pca-studio/pca_lesson.py",
+      "sha256": "94e52be87d5f5e0cc69f5450432d4425785091e4fd4716b4ee63b9f061fde7bf",
+      "bytes": 48252
+    },
+    {
+      "path": "outputs/pca-studio/production-build.json",
+      "sha256": "3346a6741287fb2f1e3bb7c019468e59ee94c3839f7cd7ecddc248929805dbc4",
+      "bytes": 175
+    },
+    {
+      "path": "outputs/pca-studio/README.md",
+      "sha256": "697db684ae3494f42d892f8c7d949bf026149d7d4605c3109fec0bc4eef6686c",
+      "bytes": 6257
+    },
+    {
+      "path": "outputs/pca-studio/repair-browser-audit.json",
+      "sha256": "e706bcca2166bcdbb5079ac6b01e7098a760bbacf61e4575d8a36fa2c9066406",
+      "bytes": 11183
+    },
+    {
+      "path": "outputs/pca-studio/repaired-app-panel.png",
+      "sha256": "7d946a9eaa31573446f65b1b9d15deb03e522b0a4be8b71493c34836b3c55dbe",
+      "bytes": 65613
+    },
+    {
+      "path": "outputs/pca-studio/repaired-bound.png",
+      "sha256": "67da55a3a427879f1c970a54ef2630c2695f12734d4fc4db125ffa69c507dcc1",
+      "bytes": 101956
+    },
+    {
+      "path": "outputs/pca-studio/repaired-covariance.png",
+      "sha256": "d0393dcd15bdfb6e35e32926b936a07c5bb23285ccd983bece168225f4deb816",
+      "bytes": 106141
+    },
+    {
+      "path": "outputs/pca-studio/repaired-notebook.png",
+      "sha256": "5b4b22196eefaefff37e3ec16bf1461282d0078bf1a5ce44978eb8e1f6efc179",
+      "bytes": 61865
+    },
+    {
+      "path": "outputs/pca-studio/repaired-opening.png",
+      "sha256": "cd058061c4fdd1f418140333dd8703c4b8830612038b602e84a243ae86a4c8d7",
+      "bytes": 84759
+    },
+    {
+      "path": "outputs/pca-studio/repaired-stationarity.png",
+      "sha256": "45752ff1d102051421a7d39e144600778826a554bceedba3b30a888a0ddf23a9",
+      "bytes": 102219
+    },
+    {
+      "path": "outputs/pca-studio/runtime-validation.json",
+      "sha256": "e209c0d0335a6b70ac14e9e4ff176bd613343f8b78ebd76bdfc0a971f4b3ff89",
+      "bytes": 2345
+    },
+    {
+      "path": "outputs/pca-studio/serve_lesson.py",
+      "sha256": "7f9a22523aace02480a281aeb1b1eb6528ad0c448cdd9e8c982e03e2b84adf7c",
+      "bytes": 3324
+    },
+    {
+      "path": "outputs/pca-studio/Start-Lesson.ps1",
+      "sha256": "b226067e19df92f5aac842cf111adb9b6e7445987953888b27dfa6024b6a3eca",
+      "bytes": 663
+    },
+    {
+      "path": "outputs/pca-studio/TEACHING-MAP.md",
+      "sha256": "8d2a4d0414e3dced1a1f9fdcd7162e4e0275d6b19c2690795031ab627569dcc0",
+      "bytes": 18959
+    },
+    {
+      "path": "outputs/pca-studio/verification.json",
+      "sha256": "7c640d3bc692a7d6e1359a8a79b0f192a79aaddbb91d8d8f72cb7f58f3b5385d",
+      "bytes": 14825
+    },
+    {
+      "path": "outputs/pca-studio/verify_derivation_visuals.py",
+      "sha256": "45054afde161a0e37dd5b53226094977d35e7fae5d5fb430af5622741be3fa15",
+      "bytes": 3722
+    },
+    {
+      "path": "outputs/pca-studio/verify_mathematics.py",
+      "sha256": "e0a58b63431ea40af20117da37ccbea2fdc96ec63d36c7db7fc8fa9eaebe361a",
+      "bytes": 3082
+    },
+    {
+      "path": "outputs/pca-studio/archive-v1/Assessment.tsx",
+      "sha256": "9c1cc378ad741372596b1a3ae2502bbc22e7c4f2e33029a7bafaf3a6341da4e7",
+      "bytes": 4132
+    },
+    {
+      "path": "outputs/pca-studio/archive-v1/BridgeLabs.tsx",
+      "sha256": "0b6609e26924fe48fdf1f3c8f5367189b28136d3d09047fa1c9141f3c7f5d79d",
+      "bytes": 13725
+    },
+    {
+      "path": "outputs/pca-studio/archive-v1/CoreLabs.tsx",
+      "sha256": "66e0871f80192844f339e1f9e1fdcd31fe5a7b73c53a7e75b9bda1b1638876ea",
+      "bytes": 25371
+    },
+    {
+      "path": "outputs/pca-studio/archive-v1/Masterclass.tsx",
+      "sha256": "c9acbeb8059131e6dbb5b44f7df0d8a6ffbb00c2a980be30fef68c0fb459e705",
+      "bytes": 16268
+    },
+    {
+      "path": "outputs/pca-studio/archive-v1/pca_lesson-before-cleanup.py",
+      "sha256": "6a85f22a6e8ce263828e977c79c434e776a47b1f8e86fec6defe2baa6468e9f1",
+      "bytes": 89117
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/pca_lesson.py",
+      "sha256": "5963c9033ea4928f2c1b972ee6d702969b6eb5d87cc5a70f8486076cb855f9dd",
+      "bytes": 16800
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/README.md",
+      "sha256": "b7d9df0c54c33826ba4afa2c68169113c025e9b08f5ec0d0bf70c7bbea008ea2",
+      "bytes": 2634
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/recovery-manifest.json",
+      "sha256": "2ee03b6e94e541cb657e165b67f4f1276a06fa9ba73b98fb0bd28b0fa3740d97",
+      "bytes": 8653
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/deno.json",
+      "sha256": "2aff2ddbfb869e5a7c28f824dd0d67baf7a5061b4ae40d546f0e10986fd0dc29",
+      "bytes": 919
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/deno.lock",
+      "sha256": "8b326935518a26fc0285d5058cb3b69964c48130fc68cd34f1e6dfff2574c82d",
+      "bytes": 3298
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/view.toml",
+      "sha256": "9a39f94cb4936863e0b3d861ed329e4f3b23cd9a8f3c472d1721b0dc0de4a3d2",
+      "bytes": 44
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/src/index.html",
+      "sha256": "0a2fb423e6ed09faac69a8710632dedcf3548d1eb9e7ff2f6755a155ca3df9b0",
+      "bytes": 517
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/src/lesson.css",
+      "sha256": "b7d8253bae90f1d4a569490549e904b7aa9eaba59469aef4677a9bab3f894b43",
+      "bytes": 9212
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/src/Lesson.tsx",
+      "sha256": "475b2a783ea753533d7da0cb789fdbe1284989e7486f7a22b15d66fd5f7f66ef",
+      "bytes": 15069
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/src/LessonText.tsx",
+      "sha256": "f59943575c547bec56434164fd880543297d7cf5cae9c45834d8805c9bf31073",
+      "bytes": 1692
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/src/main.tsx",
+      "sha256": "e1e1c764a6a585415e9e643aac6f937fe2e0efc48fb50cf4da1f4cde0f6456fa",
+      "bytes": 271
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/src/marimo-studio.d.ts",
+      "sha256": "178dea65e415eaa105354eb0a4af9ff72f8de193cb6397e2bc43fb2cf0c39185",
+      "bytes": 563
+    },
+    {
+      "path": "outputs/pca-studio/original-first-version/v/lesson/src/lib/use-marimo-value.ts",
+      "sha256": "9f343eb980e88fed6e3d09a55359a5794581d480cf583601787897911ef7ab48",
+      "bytes": 3585
+    },
+    {
+      "path": "outputs/pca-studio/v/.gitignore",
+      "sha256": "2e9601066e260e73837ab63c05e697d305ad08fad54931ae40276f79cefbf968",
+      "bytes": 23
+    },
+    {
+      "path": "outputs/pca-studio/v/.locks/.catalog.lock",
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "bytes": 1
+    },
+    {
+      "path": "outputs/pca-studio/v/.locks/lesson.artifacts.lock",
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "bytes": 1
+    },
+    {
+      "path": "outputs/pca-studio/v/.locks/lesson.build.lock",
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "bytes": 1
+    },
+    {
+      "path": "outputs/pca-studio/v/.locks/lesson.lock",
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "bytes": 1
+    },
+    {
+      "path": "outputs/pca-studio/v/.owners/lesson.toml",
+      "sha256": "e94d631b1ff00c30e6c977760127a82097ab6c52bcacd1fb976ef92ab0401649",
+      "bytes": 106
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/AGENTS.md",
+      "sha256": "6909f3f3d4952d3e35b79c14bc751b0cbe9465e5a745613e20c579cdf1d72393",
+      "bytes": 2093
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/deno.json",
+      "sha256": "2aff2ddbfb869e5a7c28f824dd0d67baf7a5061b4ae40d546f0e10986fd0dc29",
+      "bytes": 919
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/deno.lock",
+      "sha256": "8b326935518a26fc0285d5058cb3b69964c48130fc68cd34f1e6dfff2574c82d",
+      "bytes": 3298
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/DESIGN.md",
+      "sha256": "883e3040250dbdca3bab8ae8e38cd99f79e1557a85e8c04ffed854e7d63fdf7a",
+      "bytes": 1232
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/view.toml",
+      "sha256": "9a39f94cb4936863e0b3d861ed329e4f3b23cd9a8f3c472d1721b0dc0de4a3d2",
+      "bytes": 44
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/App.tsx",
+      "sha256": "38ffb6d38429a9133ffb2a5a086548e8e3a49a2cefa2d4806b025fa4976c1d5f",
+      "bytes": 37
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/derivation.css",
+      "sha256": "71ebb2b75b3dbfd3b2ebd87ceb153d1bba4f31f8aa07e9991bc99a5edc086ec7",
+      "bytes": 8429
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/index.html",
+      "sha256": "0a2fb423e6ed09faac69a8710632dedcf3548d1eb9e7ff2f6755a155ca3df9b0",
+      "bytes": 517
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/LabComponents.tsx",
+      "sha256": "8414588dc3626b01f470fdf1f4999a6dec7984e360ded3ac3cd8e187ff1653f4",
+      "bytes": 20637
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/lesson.css",
+      "sha256": "b7d8253bae90f1d4a569490549e904b7aa9eaba59469aef4677a9bab3f894b43",
+      "bytes": 9212
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/Lesson.tsx",
+      "sha256": "5899a8b8306d6b4092c77ee5fdf4690ccf5b5b5f615cc9707d59767e1883b2ae",
+      "bytes": 39
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/LessonText.tsx",
+      "sha256": "f59943575c547bec56434164fd880543297d7cf5cae9c45834d8805c9bf31073",
+      "bytes": 1692
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/main.tsx",
+      "sha256": "40c71dc4b9b49a87e6f264fb418696118b055fed5a186496dac1776d72b06a3e",
+      "bytes": 268
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/marimo-studio.d.ts",
+      "sha256": "178dea65e415eaa105354eb0a4af9ff72f8de193cb6397e2bc43fb2cf0c39185",
+      "bytes": 563
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/masterclass.css",
+      "sha256": "5b277e574cc4d9104fc84a2c2233b53e58538aaf4fe70b954a6413f0f036abb2",
+      "bytes": 22549
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/pca.css",
+      "sha256": "247b113820c63a873ccb085f61410b371cb0915a17d097d4b3ae0af1e6826acb",
+      "bytes": 35909
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/PcaCourse.tsx",
+      "sha256": "6364bcee7a48da068f1bab5bd0d3e9e372e4e65b04ebc6cf99c3fc726d1305a0",
+      "bytes": 13036
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/PcaDerivationVisuals.tsx",
+      "sha256": "ba37caa66cbe87f771d3dedef3802c0d09f8b58f622c84b4b3cb149cc5637b70",
+      "bytes": 20840
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/PcaProductExpansion.tsx",
+      "sha256": "c0ee5e2691249d193b96e516e51ef39dee2e259492d1eca8d620750e2037f9f4",
+      "bytes": 6199
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/PcaScenes.tsx",
+      "sha256": "d2e8cf4d67fc3822e7effff26654ce193f6fd02f7424c4fee00d8bcb747cf0b9",
+      "bytes": 58580
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/product-expansion.css",
+      "sha256": "6f7205d3104f8e85638136a116ff7bef99d9ea0cfd5540c7d0ac89db12b86d47",
+      "bytes": 4440
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/style.css",
+      "sha256": "d930480c74219b43d68f1aa6ba27f424a69d464e55ba8589a517398865c19d82",
+      "bytes": 25
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/src/lib/use-marimo-value.ts",
+      "sha256": "9f343eb980e88fed6e3d09a55359a5794581d480cf583601787897911ef7ab48",
+      "bytes": 3585
+    },
+    {
+      "path": "outputs/tutor-retrospective/HANDOFF.txt",
+      "sha256": "ee72f61988b3a2fd4da99468d7f5e217fe68ad4f4b3fffdd7127087dd6a41f8e",
+      "bytes": 5225
+    },
+    {
+      "path": "outputs/tutor-retrospective/REPORT.html",
+      "sha256": "c6c69541f64cad47e82c280b57af5489ac2f23bcf63e4ecdbfe41cf0a81180fc",
+      "bytes": 39475
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills.zip",
+      "sha256": "d4be11709ba54f7669d51bc7feb295f82486c1bdd2ccaa66fa62f18761ff4873",
+      "bytes": 28913
+    },
+    {
+      "path": "outputs/tutor-retrospective/VALIDATION.json",
+      "sha256": "dc7dd24fd7b9aa5e241667debb75fc121458145d44382cbab20ebd0cc4674b5a",
+      "bytes": 2850
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/SKILL.md",
+      "sha256": "398e940a4ede7ecf94bc0da78baab2ef6c21eca0e010b1595f08ddec0f5ec9d3",
+      "bytes": 6663
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+      "bytes": 320
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/references/harness.md",
+      "sha256": "cdf646b0712676f61604fbef5471b8db87eafa661861e07c1c9135e7a24661ce",
+      "bytes": 4252
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "84b72a8c8b3e88fe49141db871f69286bc0bdf80ea244524a5e6db81181aed6c",
+      "bytes": 4345
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "38b9a4f7ca3bc191e743b54c6b8fe15df97bac8d87dd8ec644514ff0323e8f5c",
+      "bytes": 2841
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/references/research-debate.md",
+      "sha256": "d231704b95599d6a460ee8792c39d54435dc7e407f0520e8acba81b26c523c72",
+      "bytes": 2552
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/references/review.md",
+      "sha256": "e04dea002100feabe8e25655bce23f6b83e3c286b8f38e5ab968a079812f52a3",
+      "bytes": 3475
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-interactive-masterclass/scripts/harness.py",
+      "sha256": "bdaa3fc1b05809c6b4b0e3702887155b6088a94e6bd023219ca4173ae49aab82",
+      "bytes": 5415
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-intuition-masterclass/SKILL.md",
+      "sha256": "b7dd9fab8012bc5e5eac3d811c90579a72f3a498b18fd3ff2c0723b4ac0ed5d3",
+      "bytes": 13006
+    },
+    {
+      "path": "outputs/tutor-retrospective/before-skills/build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "3e9da153c91de7bce49dbf8efd6a4b2bacba3e4764c031e5be39ca9210d58ca6",
+      "bytes": 5544
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/course-before.json",
+      "sha256": "3e4c3f0c7ee46c30f1658e0e85d26bdeeb2fb9adb70c100c2433e4a915f4436d",
+      "bytes": 15075
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/course-scope-check.json",
+      "sha256": "86fd419eb6113f4dcf7ed62d3e9e62b1e7846e3527caa6ce277bd61f65c14a91",
+      "bytes": 192
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/forward-nonmathematical.txt",
+      "sha256": "41fd5a2bb769702ee38aeda0ae65b700aefffdb3b9ddc68e618114ab284eb4a2",
+      "bytes": 3424
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/forward-provenance.json",
+      "sha256": "0bbf6e8ca6389cea16b571ec4a74652fd2289a847fdfb29f56015887194937ac",
+      "bytes": 1630
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/forward-quantitative.txt",
+      "sha256": "209f524e2f81074742534abe2cf626f690f876da76795f5d82ab58c4b26f76bf",
+      "bytes": 2840
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/forward-scope-cases.txt",
+      "sha256": "c8e4763012eda54d06460fbbf53b1ea2632da18320bfad953577bb703d7444c1",
+      "bytes": 2217
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/harness-v1-preserved.py",
+      "sha256": "bdaa3fc1b05809c6b4b0e3702887155b6088a94e6bd023219ca4173ae49aab82",
+      "bytes": 5415
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/harness-v2-test-results.txt",
+      "sha256": "57150104034fa884077af9d9e7b677500223ebef62dc87bd3443cee27395084a",
+      "bytes": 2504
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/harness-v2-usage.txt",
+      "sha256": "22c030c491eb0a3160233c4846ff4fe25f1a733f105c53f181c08da671f1adb6",
+      "bytes": 10871
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/holdout-key.md",
+      "sha256": "301825f875b89a6eb95969add80aa9ef67c9ebf0fc65062b474106546a431fe1",
+      "bytes": 8135
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/holdout-prompts.txt",
+      "sha256": "ba5640355bb893b3f164c2f8d0d9c07f46fb4d8a8f9baa36c6b069f7d924f77f",
+      "bytes": 2092
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/package_review.py",
+      "sha256": "5b800a79bd04ecd56c3483a382c7d67d748f42f67aea99e37f57259b3923ee99",
+      "bytes": 2879
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/proposed-process.txt",
+      "sha256": "e08f045123d303a8bbc141fbf7a892eb4373eb6b28ec7a8b52d86e1440f696c5",
+      "bytes": 4381
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/report-audit.txt",
+      "sha256": "fb3594d03f6c3abec47395625b2d7c9d9cd896a8d459f7f243ecf7023570cf5d",
+      "bytes": 2007
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round1-comparators.md",
+      "sha256": "c8006003e0d19271b3b115389763acdec5ab8cdd857fd902a60f508bafdfc78c",
+      "bytes": 10390
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round1-educator.md",
+      "sha256": "b4f70fae724efd51ef9e29103fb3bbde13ac5b333476d5b448276fbd2a6938c2",
+      "bytes": 9954
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round1-process.md",
+      "sha256": "06d81b426d6791d65afa68d0d02481372b110beba721a5b392c5611aaac47309",
+      "bytes": 10174
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round2-comparators.md",
+      "sha256": "a3bfb34e925399643d7fe34f9003c98ecd1f6cecb8e54163bf20ea2da01515bc",
+      "bytes": 5887
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round2-educator.md",
+      "sha256": "0018dfa06b075f9aca502f3f3ae693de14dc5c626eed64bcbbbe32744a786eab",
+      "bytes": 6000
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round2-process.md",
+      "sha256": "c47703894d429ab6dbf9a4b8dcdc096b1aa7a63a1133cb77f92769a15361616c",
+      "bytes": 5505
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round3-evaluation.md",
+      "sha256": "fe9fb1eedef006b847628e04270d91819d4ea10dc2541652e523c9464fa57420",
+      "bytes": 6243
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/round3-frozen-hashes.json",
+      "sha256": "b9b353033ccab60ff7a180eaa71a84650543cab0562fd693da48ac608493913f",
+      "bytes": 793
+    },
+    {
+      "path": "outputs/tutor-retrospective/evidence/test_harness_v2.py",
+      "sha256": "683bce3015852cee4d3f5dbc7f8c84af7f25d55d56fd5b79448e832ceae27e85",
+      "bytes": 15538
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/SKILL.md",
+      "sha256": "0d386408d235bea5228e5fff7333e7c6fed84495e015dfcf3787f8b8809a7c67",
+      "bytes": 7534
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+      "bytes": 320
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "0d7d84977a4ec65347561455992a55efef01b31c0590cbd86308b3fa6a85c584",
+      "bytes": 2365
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/references/harness.md",
+      "sha256": "a54d23126f8f4d5362a9d8a16effcaa3cb5bea21f8ff12eb04c87f8baf17d443",
+      "bytes": 8948
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "6360d486728505b54e697caae71f7989142f7ef01b22e3cb7de92f552e8cdf52",
+      "bytes": 5171
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974",
+      "bytes": 2878
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/references/research-debate.md",
+      "sha256": "618b9f21ab95afbfdaea0e3d6d0fbfc960d21345079851e45fdce8f9945f1192",
+      "bytes": 4031
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/references/review.md",
+      "sha256": "64a63573a14ab89862038efb6df0387dc240204f1bf4fb849c5fcd0084fded5e",
+      "bytes": 4694
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/scripts/harness.py",
+      "sha256": "7f1f4e497724f67a5452add38c578225b5df930d956efc46505e67e0c3e6b129",
+      "bytes": 18896
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-interactive-masterclass/scripts/test_harness.py",
+      "sha256": "21bc8e712e90fdfbd169b8be51384571ac3a673ea1ace98178f41cdf68eccb08",
+      "bytes": 15493
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-intuition-masterclass/SKILL.md",
+      "sha256": "339a56acf75e199832f29fcbeb06a140f3d5624331fac3dd37b6a7e81fe18e4b",
+      "bytes": 1348
+    },
+    {
+      "path": "outputs/tutor-retrospective/updated-skills/build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223",
+      "bytes": 569
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/CHANGE-MANIFEST.json",
+      "sha256": "e884066ff45e02dcb53ca529b3b3570cb057a75155324e7f091bef8b016d3db0",
+      "bytes": 13570
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/DECISIONS.txt",
+      "sha256": "37da1de21d2be765b1ae7c6b62b86c677ac3e2cb069381552e6cf5a5c82d0bfc",
+      "bytes": 2883
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/DELTAS.html",
+      "sha256": "393dcc278cda552dc8515e0485e76c34d8795325546055430b70302470d018a3",
+      "bytes": 547842
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/EARLIER-DIFFS.html",
+      "sha256": "26d73c953b4cfc895cd500b2575642052ffb2ac792e3f3af8a6f04b6a3485e30",
+      "bytes": 660774
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/earlier-v1-to-v2.patch",
+      "sha256": "c4a11f4d3c918cddb53879dcca3a67c7ad66c07d1aaed855c5a4d38daf943387",
+      "bytes": 123977
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/HANDOFF.txt",
+      "sha256": "4c7ce0e2cde855868651ea82b2d7ee0f2822cc874f017695f18b2d8b2b96d7f7",
+      "bytes": 6516
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/PREVIOUS-REPORT.html",
+      "sha256": "c6c69541f64cad47e82c280b57af5489ac2f23bcf63e4ecdbfe41cf0a81180fc",
+      "bytes": 39475
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/REPORT.html",
+      "sha256": "4e9e9b39c17e7e7ca05037f83ab44e79228df8400b9b53a46edbe98905ea858e",
+      "bytes": 32464
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills.zip",
+      "sha256": "b37893e26d239f066034276e0dff749da5730b55aece6e49cbac9cc79717077b",
+      "bytes": 76544
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/v2-to-v3.patch",
+      "sha256": "88e718d5aed07f3420da32196af9a86ef059a6ffcf038362ce23cd253c22e17f",
+      "bytes": 101345
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/VALIDATION.json",
+      "sha256": "ef32e99e8880c115cba94689e18d354552cfad3ae3c75f2e77d97bfc4eab99fe",
+      "bytes": 2173
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/VIDEO-LANDSCAPE.html",
+      "sha256": "f40f03bbbb3ffa69ce369b9840e1ddbf5833fa9a22875cbad56f4c209f568cc7",
+      "bytes": 18920
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/SKILL.md",
+      "sha256": "0d386408d235bea5228e5fff7333e7c6fed84495e015dfcf3787f8b8809a7c67",
+      "bytes": 7534
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+      "bytes": 320
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "0d7d84977a4ec65347561455992a55efef01b31c0590cbd86308b3fa6a85c584",
+      "bytes": 2365
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/references/harness.md",
+      "sha256": "a54d23126f8f4d5362a9d8a16effcaa3cb5bea21f8ff12eb04c87f8baf17d443",
+      "bytes": 8948
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "6360d486728505b54e697caae71f7989142f7ef01b22e3cb7de92f552e8cdf52",
+      "bytes": 5171
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974",
+      "bytes": 2878
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/references/research-debate.md",
+      "sha256": "618b9f21ab95afbfdaea0e3d6d0fbfc960d21345079851e45fdce8f9945f1192",
+      "bytes": 4031
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/references/review.md",
+      "sha256": "64a63573a14ab89862038efb6df0387dc240204f1bf4fb849c5fcd0084fded5e",
+      "bytes": 4694
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/scripts/harness.py",
+      "sha256": "7f1f4e497724f67a5452add38c578225b5df930d956efc46505e67e0c3e6b129",
+      "bytes": 18896
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/scripts/test_harness.py",
+      "sha256": "21bc8e712e90fdfbd169b8be51384571ac3a673ea1ace98178f41cdf68eccb08",
+      "bytes": 15493
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-intuition-masterclass/SKILL.md",
+      "sha256": "339a56acf75e199832f29fcbeb06a140f3d5624331fac3dd37b6a7e81fe18e4b",
+      "bytes": 1348
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223",
+      "bytes": 569
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-research-codelabs/SKILL.md",
+      "sha256": "608a5c464025baed822f4142fbde131b9b79e528342e91abbd3da2a63cf60a7a",
+      "bytes": 9783
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-research-codelabs/agents/openai.yaml",
+      "sha256": "a45c794b3802b7ad556bdb6d348f9a005fa1913c199d6177c614d3a60109c4f2",
+      "bytes": 304
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-research-codelabs/references/course-standard.md",
+      "sha256": "543cf1aae086c2004b99cf9b9d9db72106a007ef5e3bd800899e98f0b2db1cf5",
+      "bytes": 21193
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-research-codelabs/references/provenance.md",
+      "sha256": "efe036cff500f5d1199e8f6423dbff5e4783444601b15baed9d45d3eaa62bd16",
+      "bytes": 4939
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-research-codelabs/references/research-and-evidence.md",
+      "sha256": "f64e966b3ded62b73d004a70124532157fad84b20490c7af13b452767fb3e34d",
+      "bytes": 5546
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-research-codelabs/references/rsi-preset.md",
+      "sha256": "35775b1a2d8592db7ac0b849df09207980000f02ca3a974bb1ed7d79447e2cdb",
+      "bytes": 8652
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-research-codelabs/references/topic-adaptation.md",
+      "sha256": "7244ee8b3e728f65fd84ef71696d3c0d5ba73054e462b3b4924762f7869048f5",
+      "bytes": 3671
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/course-before.json",
+      "sha256": "3e4c3f0c7ee46c30f1658e0e85d26bdeeb2fb9adb70c100c2433e4a915f4436d",
+      "bytes": 15075
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/course-scope-check.json",
+      "sha256": "8045898fa8620e68ee80b931556c6b396a42283811e46e365ec8ea5f51a77f7c",
+      "bytes": 192
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-alignment.txt",
+      "sha256": "5a2350e1726f252c27c58c123bbd5103a413ebad8b450f56cf3e47ed1357844f",
+      "bytes": 4222
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-audio-recheck.md",
+      "sha256": "a96d1da84929a2c5fc98a41f004e67c9ddde454ad0e70671ac324c7ef506ab7b",
+      "bytes": 2440
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-audio-repair.provenance.json",
+      "sha256": "659dcab736eb66b6aeb0d498e2995febaa8b96df7d05f4e787b1fce7f1b8258b",
+      "bytes": 1024
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-audio-repair.txt",
+      "sha256": "ce43070ae6d382c4b9ee32851319c5e8b3bde8cde8f94daeceb24f660ad7467b",
+      "bytes": 4041
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-evaluation-hashes.json",
+      "sha256": "d7f87de23eb8d7572b930ac59ec3d25ab9cd8f4bfddc2b94ce9037ac8b343c15",
+      "bytes": 457
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-evaluation.md",
+      "sha256": "aad7ca905a14914d5ced041e9cdb7e03a296bd091dce0faa00ea11cff0f37569",
+      "bytes": 8074
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-outputs.txt",
+      "sha256": "c2f98dacaf71de75859bc660843c4e4d93abde8f8b257d85c7014c303fa98bc2",
+      "bytes": 14654
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-prompts.txt",
+      "sha256": "c147ebab8a5c5b8aca3586e6e31c864ffb6bf103bcd01b133e00f781bb25a5ee",
+      "bytes": 4816
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-provenance.json",
+      "sha256": "4fdb7ba99084090abc52f051106116b5f2c6d8744e05fa78a33d8c19c7da68b5",
+      "bytes": 6392
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/forward-test-frozen.json",
+      "sha256": "a37fe766d73c894c9814d61e38a45b040e9389daf6aa525c5a7c1ded98b60290",
+      "bytes": 407
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/harness-tests.txt",
+      "sha256": "0ec3764c4129c886f0834461d348830107e320b622e5a4476a9560842fc1d478",
+      "bytes": 2504
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/hiddenforward-key.md",
+      "sha256": "199c1dce111d63849333b219d82e9c9770b04a9199e4d396984c40fca3013252",
+      "bytes": 13840
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/integration-review.md",
+      "sha256": "f5b535bb5aada1cf70c7f066822ba8e0712c70028ddd00d895df0a4fea401bc6",
+      "bytes": 4164
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/narration-research.md",
+      "sha256": "9b91b13cf4a3b5da92642f40ab432c9a062e90906bed9ed0154be12eb7f3f2c4",
+      "bytes": 14255
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/package_v3.py",
+      "sha256": "99cc0b01bc68405f87206b1887eede2785308c35da6a63cc2405c001b6042d46",
+      "bytes": 7449
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/pca-video-candidates.json",
+      "sha256": "55e31d2ab005ffd92d8910dfaf72c318ac943f2624411eb768f926727663cb23",
+      "bytes": 64189
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/pca-video-candidates.md",
+      "sha256": "64c30ec5b2d94e7c98d4b92a541bd18ed538db0771aac21f99944d6528dd0718",
+      "bytes": 16056
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/quality-wording-audit.md",
+      "sha256": "b037f516ab2bdc8bfbcfaa4d38a6d6207144dd52f5d17c5310a8506de8b31e43",
+      "bytes": 2405
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/research-funnel-critique.md",
+      "sha256": "86cfccb8b8ba7e2538413c6a8c64fc1819a2975b1656111c47d024592cb3b167",
+      "bytes": 4063
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/tutoring-research.md",
+      "sha256": "cd9530ac4dab16464ec33998f30abf5dde9396704b561f1a97fa3954edfe5aef",
+      "bytes": 15056
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/evidence/validate_delivery.py",
+      "sha256": "c13f45b2e890560a327fa244e64a051ebeedc249a6f227e5bb3f047c36a07867",
+      "bytes": 4140
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/SKILL.md",
+      "sha256": "90435be3bd9da9b4b413dd7c59963a2171ca8d20f87051efae181cdf7635ec09",
+      "bytes": 8421
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+      "bytes": 320
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "97fb800fc8d4ed0cf12f59e9465dc2bc441f2d244eff4a2e2fae7aede59a532f",
+      "bytes": 4622
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/content-contract.md",
+      "sha256": "d3a3e2ff97f90275d3b4bb645ad95d9e845573852b66ad5b7c8c6ecdf23ca631",
+      "bytes": 7888
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/execution-quality.md",
+      "sha256": "3f91de0a76f41eae9fbc98f093229cc589558a0e8f9f1242060ab36a4bb26270",
+      "bytes": 7065
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/harness.md",
+      "sha256": "92a3f44b7b90d8e861dfc31a1ccc9aa853042c8074c60d92c1c247a5386163a0",
+      "bytes": 10553
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "f1953ca930d66ba8fa5239ed5e07c0a51dcef6a06963e3cc2d0d00b54bd16a2a",
+      "bytes": 6336
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974",
+      "bytes": 2878
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/narration-production.md",
+      "sha256": "ddbee8d6c5c222e4ab353f74a9745876ad751faac4dd5fbb8d5bc1cd34869ab0",
+      "bytes": 10186
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/research-debate.md",
+      "sha256": "4c240781c3832920a0bd0d85aa9dc9ee778e910f9e891199c87111294a7b45f6",
+      "bytes": 8045
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/review.md",
+      "sha256": "fd3c9e6943249f2c5d9dd8832e2762f8e1f85f8bba91ed7e296f7197c0fce4f6",
+      "bytes": 7754
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/references/tutoring-evidence.md",
+      "sha256": "5f8252bad8cded9d2a7f4f27531519620f13c9d7f21677a396871b5face4d99a",
+      "bytes": 8214
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/scripts/harness.py",
+      "sha256": "952b9aaddf83650b7892be6fe39e3d3fc6b00b960f7833c74a06973ca57ba27d",
+      "bytes": 18964
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-interactive-masterclass/scripts/test_harness.py",
+      "sha256": "ae155536383280d0b8c627c4b6589fb4c3108b2bf8f91f5fbceef42ab4c3c655",
+      "bytes": 15577
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-intuition-masterclass/SKILL.md",
+      "sha256": "aef4a898cd5e404629c914f19d81d2ce8eb4e218068da0052332cfb6015dc5bb",
+      "bytes": 1842
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223",
+      "bytes": 569
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-research-codelabs/SKILL.md",
+      "sha256": "cd94db1e5411543d6b9c9f1e5f1dcb8ee8028938a21a2e01ed7413e7ac1074ea",
+      "bytes": 11365
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-research-codelabs/agents/openai.yaml",
+      "sha256": "a45c794b3802b7ad556bdb6d348f9a005fa1913c199d6177c614d3a60109c4f2",
+      "bytes": 304
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-research-codelabs/references/course-standard.md",
+      "sha256": "ef651534ebaafd227116b794757fac295cc077fabcb7a14f6bad98241bf0b90f",
+      "bytes": 22252
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-research-codelabs/references/provenance.md",
+      "sha256": "efe036cff500f5d1199e8f6423dbff5e4783444601b15baed9d45d3eaa62bd16",
+      "bytes": 4939
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-research-codelabs/references/research-and-evidence.md",
+      "sha256": "a8d5a31e2da237a15435e8ee054fcc8ebf366626c5412c6bd3c8f5c83b613ef3",
+      "bytes": 6754
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-research-codelabs/references/rsi-preset.md",
+      "sha256": "35775b1a2d8592db7ac0b849df09207980000f02ca3a974bb1ed7d79447e2cdb",
+      "bytes": 8652
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/updated-skills/build-research-codelabs/references/topic-adaptation.md",
+      "sha256": "f55ef095e3a571413354471a31ee0f589651397e510e02cb45fd6546ce91fe4b",
+      "bytes": 4265
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/CHANGE-MANIFEST.json",
+      "sha256": "c0d0c0d3421bc9ecf9895e86e3b7fc300b5f48d8c7fe6afd7b6c47c105233d04",
+      "bytes": 7713
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/DELTAS.html",
+      "sha256": "a3496069a776d1d6f66b250edfa581131cdc99532bb024e622b39086c33c30f5",
+      "bytes": 237921
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/HANDOFF.txt",
+      "sha256": "8e94de1e15edf17d8212342ef8f42a5e3f59d94a5fcf826fc890e957162025b1",
+      "bytes": 4230
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/REPORT.html",
+      "sha256": "10e584e2caa2c728adbc2596a4ab8d20439675f73ee77a1fe28f8e541b3b0c5e",
+      "bytes": 15163
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills.zip",
+      "sha256": "f93f1656dd75ba38c042e4ccb7cd49855a790a6510f4e7ec2825f2b0b827c177",
+      "bytes": 88403
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/v3-to-v3-1.patch",
+      "sha256": "e001eb9a4df4bc9cef6eac116885740e33b3fea129e2ca5a00e6007d892fded8",
+      "bytes": 41378
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/VALIDATION.json",
+      "sha256": "8b98a96ececce4dda9016909f8b370c4d9874113bd05937e9b88539b322ed10f",
+      "bytes": 1406
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/SKILL.md",
+      "sha256": "90435be3bd9da9b4b413dd7c59963a2171ca8d20f87051efae181cdf7635ec09",
+      "bytes": 8421
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+      "bytes": 320
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "97fb800fc8d4ed0cf12f59e9465dc2bc441f2d244eff4a2e2fae7aede59a532f",
+      "bytes": 4622
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/content-contract.md",
+      "sha256": "d3a3e2ff97f90275d3b4bb645ad95d9e845573852b66ad5b7c8c6ecdf23ca631",
+      "bytes": 7888
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/execution-quality.md",
+      "sha256": "3f91de0a76f41eae9fbc98f093229cc589558a0e8f9f1242060ab36a4bb26270",
+      "bytes": 7065
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/harness.md",
+      "sha256": "92a3f44b7b90d8e861dfc31a1ccc9aa853042c8074c60d92c1c247a5386163a0",
+      "bytes": 10553
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "f1953ca930d66ba8fa5239ed5e07c0a51dcef6a06963e3cc2d0d00b54bd16a2a",
+      "bytes": 6336
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974",
+      "bytes": 2878
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/narration-production.md",
+      "sha256": "ddbee8d6c5c222e4ab353f74a9745876ad751faac4dd5fbb8d5bc1cd34869ab0",
+      "bytes": 10186
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/research-debate.md",
+      "sha256": "4c240781c3832920a0bd0d85aa9dc9ee778e910f9e891199c87111294a7b45f6",
+      "bytes": 8045
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/review.md",
+      "sha256": "fd3c9e6943249f2c5d9dd8832e2762f8e1f85f8bba91ed7e296f7197c0fce4f6",
+      "bytes": 7754
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/references/tutoring-evidence.md",
+      "sha256": "5f8252bad8cded9d2a7f4f27531519620f13c9d7f21677a396871b5face4d99a",
+      "bytes": 8214
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/scripts/harness.py",
+      "sha256": "952b9aaddf83650b7892be6fe39e3d3fc6b00b960f7833c74a06973ca57ba27d",
+      "bytes": 18964
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-interactive-masterclass/scripts/test_harness.py",
+      "sha256": "ae155536383280d0b8c627c4b6589fb4c3108b2bf8f91f5fbceef42ab4c3c655",
+      "bytes": 15577
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-intuition-masterclass/SKILL.md",
+      "sha256": "aef4a898cd5e404629c914f19d81d2ce8eb4e218068da0052332cfb6015dc5bb",
+      "bytes": 1842
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223",
+      "bytes": 569
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-research-codelabs/SKILL.md",
+      "sha256": "cd94db1e5411543d6b9c9f1e5f1dcb8ee8028938a21a2e01ed7413e7ac1074ea",
+      "bytes": 11365
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-research-codelabs/agents/openai.yaml",
+      "sha256": "a45c794b3802b7ad556bdb6d348f9a005fa1913c199d6177c614d3a60109c4f2",
+      "bytes": 304
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-research-codelabs/references/course-standard.md",
+      "sha256": "ef651534ebaafd227116b794757fac295cc077fabcb7a14f6bad98241bf0b90f",
+      "bytes": 22252
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-research-codelabs/references/provenance.md",
+      "sha256": "efe036cff500f5d1199e8f6423dbff5e4783444601b15baed9d45d3eaa62bd16",
+      "bytes": 4939
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-research-codelabs/references/research-and-evidence.md",
+      "sha256": "a8d5a31e2da237a15435e8ee054fcc8ebf366626c5412c6bd3c8f5c83b613ef3",
+      "bytes": 6754
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-research-codelabs/references/rsi-preset.md",
+      "sha256": "35775b1a2d8592db7ac0b849df09207980000f02ca3a974bb1ed7d79447e2cdb",
+      "bytes": 8652
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/before-skills/build-research-codelabs/references/topic-adaptation.md",
+      "sha256": "f55ef095e3a571413354471a31ee0f589651397e510e02cb45fd6546ce91fe4b",
+      "bytes": 4265
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/creator-research-a.md",
+      "sha256": "8119a2d9f70ce0178e87fad2da8c9b9f342db869fda2fade1a19973c4e81a1dc",
+      "bytes": 6430
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/creator-research-b.md",
+      "sha256": "5fbca8fd2e695c4fc53c03a97cc11330f846e61dbf9e1c40ad84e452a933f8ba",
+      "bytes": 6293
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/creator-research-root.md",
+      "sha256": "011c51ca7574e8e08821cd2641eff6e10b40359f008ec06a82de78a256acbbac",
+      "bytes": 3800
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/integration-recheck.md",
+      "sha256": "8878bcd644080282fdbfc493f8126e5e7deb078fb8d4b7e93b0ada80466ec599",
+      "bytes": 2701
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/integration-review.md",
+      "sha256": "61142af7072d1ae489cfd92b49a335bb77f0423c9ca015c1ebf7f6fda4a2bbc6",
+      "bytes": 3028
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/package_revision.py",
+      "sha256": "81993ef4bc54c6c4eb0360003e22f68b36b85c6f2a1aebbc06b627eb5bb860cc",
+      "bytes": 7764
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/welch-patterns.md",
+      "sha256": "dfac3546e98ed03d3b8269cedac5340b597754b6803e36cbb86c351756560c19",
+      "bytes": 8708
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/welch-static-inspection.txt",
+      "sha256": "8b6b7df70885361bab77e27eeb0efc023da22cddf6f1c0dc61d99816a7fd8061",
+      "bytes": 1243
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/evidence/welch-source-inspection/access-manifest.json",
+      "sha256": "b7a7f6064bb98e87053f39498c4fd8dfb0abd8b477ea60f65b403133c1b455bb",
+      "bytes": 1363
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/SKILL.md",
+      "sha256": "ff21936cef821b5390239062455116fb6fcf00d7e66581e7aa73a75bcfa2f4e8",
+      "bytes": 9423
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+      "bytes": 320
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "f3833f2b1e815432a3d2cf42fc41746f65eebe1960f5e08d5ffecaa3fc702482",
+      "bytes": 5125
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/content-contract.md",
+      "sha256": "685624789f9b6283d1b8b6f8edc8717aafbe6e2db94160dcd3d9dff1d6341ed1",
+      "bytes": 8452
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/execution-quality.md",
+      "sha256": "3f91de0a76f41eae9fbc98f093229cc589558a0e8f9f1242060ab36a4bb26270",
+      "bytes": 7065
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/explainer-craft.md",
+      "sha256": "5c20a8b6892a0d7f5183ff3b997cd38bca8016121359076569bd7d38469065e8",
+      "bytes": 12800
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/explanation-depth.md",
+      "sha256": "5143aec019a4c1b15cc0089ab9facf03cf38e3a51b7ed3f577a5505ae5e7224b",
+      "bytes": 8266
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/harness.md",
+      "sha256": "92a3f44b7b90d8e861dfc31a1ccc9aa853042c8074c60d92c1c247a5386163a0",
+      "bytes": 10553
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "1a5bc98e719dcb3c825179d8648ebb1842327e90b044d5a9aa342183b0301c75",
+      "bytes": 7462
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974",
+      "bytes": 2878
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/narration-production.md",
+      "sha256": "432ab1a1c7df4532048a2f4542ae051193b283ef22d3f1488eda67f96aea1200",
+      "bytes": 10810
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/research-debate.md",
+      "sha256": "4c240781c3832920a0bd0d85aa9dc9ee778e910f9e891199c87111294a7b45f6",
+      "bytes": 8045
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/review.md",
+      "sha256": "d89f88fbd61893bfd9c96b87d03dcdcc8f65500da764d4812d79a20d183d4766",
+      "bytes": 9116
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/references/tutoring-evidence.md",
+      "sha256": "5f8252bad8cded9d2a7f4f27531519620f13c9d7f21677a396871b5face4d99a",
+      "bytes": 8214
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/scripts/harness.py",
+      "sha256": "952b9aaddf83650b7892be6fe39e3d3fc6b00b960f7833c74a06973ca57ba27d",
+      "bytes": 18964
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-interactive-masterclass/scripts/test_harness.py",
+      "sha256": "ae155536383280d0b8c627c4b6589fb4c3108b2bf8f91f5fbceef42ab4c3c655",
+      "bytes": 15577
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-intuition-masterclass/SKILL.md",
+      "sha256": "fb7a5e10f8c12cf914fef7171b9f1821c1a43490b9db01f99a24cca87cb7df77",
+      "bytes": 2258
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223",
+      "bytes": 569
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-research-codelabs/SKILL.md",
+      "sha256": "e88256a8431fc4474640936e6aa829ec1b2820cbbe229c2a5ae6fadb5ebd067c",
+      "bytes": 11894
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-research-codelabs/agents/openai.yaml",
+      "sha256": "a45c794b3802b7ad556bdb6d348f9a005fa1913c199d6177c614d3a60109c4f2",
+      "bytes": 304
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-research-codelabs/references/course-standard.md",
+      "sha256": "ef651534ebaafd227116b794757fac295cc077fabcb7a14f6bad98241bf0b90f",
+      "bytes": 22252
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-research-codelabs/references/provenance.md",
+      "sha256": "efe036cff500f5d1199e8f6423dbff5e4783444601b15baed9d45d3eaa62bd16",
+      "bytes": 4939
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-research-codelabs/references/research-and-evidence.md",
+      "sha256": "a8d5a31e2da237a15435e8ee054fcc8ebf366626c5412c6bd3c8f5c83b613ef3",
+      "bytes": 6754
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-research-codelabs/references/rsi-preset.md",
+      "sha256": "35775b1a2d8592db7ac0b849df09207980000f02ca3a974bb1ed7d79447e2cdb",
+      "bytes": 8652
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3-1/updated-skills/build-research-codelabs/references/topic-adaptation.md",
+      "sha256": "f55ef095e3a571413354471a31ee0f589651397e510e02cb45fd6546ce91fe4b",
+      "bytes": 4265
+    },
+    {
+      "path": "work/audit_pca_language.py",
+      "sha256": "993ba4c0a5776f153a9f8907330f518246a44e0e2edad02791490cda9f99425d",
+      "bytes": 1444
+    },
+    {
+      "path": "work/bootstrap.py",
+      "sha256": "c9ab79753a2724b830a0b27362563ba1cf25df66a3da1834d45de2b082676274",
+      "bytes": 825
+    },
+    {
+      "path": "work/check_learner_copy.py",
+      "sha256": "be16e72927cf5ab536d02d41ab97dd2f4163db30aa1dc2a8545b23b39ef4f215",
+      "bytes": 1030
+    },
+    {
+      "path": "work/check_masterclass_live.py",
+      "sha256": "ea7b4ee4c311ef81ce88826efc277dc617fc20696f0c6b8e22c0663458fc7d0e",
+      "bytes": 462
+    },
+    {
+      "path": "work/check_pca_v2.py",
+      "sha256": "5b65fc2388b170856fd2bc5da86b45661493a9c516a3f122e4c03d61aca3aa8b",
+      "bytes": 482
+    },
+    {
+      "path": "work/clean_pca_notebook.py",
+      "sha256": "f7783c1d876638c27178d1753dd3905a2d32d4d63b59ec05f73ae90e82402acf",
+      "bytes": 3118
+    },
+    {
+      "path": "work/compact_opening.py",
+      "sha256": "c6bb4ca8293c68997323db84ef2477edcc49e0ca1fdfb2cbd9fe12f0081801c0",
+      "bytes": 1384
+    },
+    {
+      "path": "work/course-before-learner-copy.json",
+      "sha256": "e98b2e817db45f26c1824c685adcf7679321a7721d842575aba15f5d2671a66a",
+      "bytes": 40896
+    },
+    {
+      "path": "work/diagnose_editor_http.py",
+      "sha256": "556440947d668806cefb4b7a3c11550ff14f3479dc5155ba4373fffa17709410",
+      "bytes": 2419
+    },
+    {
+      "path": "work/editor-connection-diagnosis.md",
+      "sha256": "793279139691e23c6ccc27fa1ed851ef300b1f45c503f5077d37f11bef3bd4e0",
+      "bytes": 2912
+    },
+    {
+      "path": "work/editor-http-diagnosis.jsonl",
+      "sha256": "c5575e3c9dd732b0cb401cc338e3c7016a4ed983f3e9c83fad94d88b7fddf30d",
+      "bytes": 5680
+    },
+    {
+      "path": "work/final-dev-build.json",
+      "sha256": "015ce22ac65700ab4c0d1d255e650e5d123825a24387c34bccab9eb1813bb2f0",
+      "bytes": 178
+    },
+    {
+      "path": "work/final-dev-build.log",
+      "sha256": "ce1e9652e4b7be04fff0b466081b00645568d0a2b64e26dffd6883f7cce842e1",
+      "bytes": 1586
+    },
+    {
+      "path": "work/final-production-build.json",
+      "sha256": "2ac13c0263252f3cc7724926a590b4445f68a6e5cc1b9cbdf3e9a6ccbb979735",
+      "bytes": 177
+    },
+    {
+      "path": "work/final-production-build.log",
+      "sha256": "3cd0aa9af8f5c63668778a9d1f1e96d73b8dee68525f62b2e8e1279de5c0a6c4",
+      "bytes": 1586
+    },
+    {
+      "path": "work/finalize_pca_docs.py",
+      "sha256": "3b10413017db8e8847ec4854624aa4ded663c1b5a104768dc147ea0f5dd642e5",
+      "bytes": 10800
+    },
+    {
+      "path": "work/finalize_pca_repair.py",
+      "sha256": "44d2fb32a51539c0eca2983a79cee0a6e4229236b7dae677dd95a4117dffca3e",
+      "bytes": 4613
+    },
+    {
+      "path": "work/finish_masterclass.py",
+      "sha256": "c8a4f0dec0bc8f18392caaa89c794a489ffc044ff62f562160e976b8baf2c31a",
+      "bytes": 141
+    },
+    {
+      "path": "work/fix_reveal_regions.py",
+      "sha256": "8f130af216f28a3bf2e271e8710fac56a70f96d5bd259db20961faaad4b7c647",
+      "bytes": 2411
+    },
+    {
+      "path": "work/inspect_original_sources.py",
+      "sha256": "019e175aedad5b1e13dd7abbf7480aa90ad0c7a929e006a4dc7c6ac50e03423d",
+      "bytes": 1452
+    },
+    {
+      "path": "work/install_masterclass.py",
+      "sha256": "fd85cac0b0a6bb5375d6d3e89b697839ad8aaaf6cdd61a2daa3714760a30c285",
+      "bytes": 961
+    },
+    {
+      "path": "work/install_pca_v2.py",
+      "sha256": "1e7e423ce379b72b7cc178071570365fd72e9469f8073c7db080a0d87fad1d9f",
+      "bytes": 697
+    },
+    {
+      "path": "work/integrate_derivation.py",
+      "sha256": "bc8af4b1276fb2349cb3de5b92dec7968e642c896afa9c9b8caa93c0876fd819",
+      "bytes": 1160
+    },
+    {
+      "path": "work/integrate_expansion.py",
+      "sha256": "1a68d65878ba8c959acf2b6d01fd71ebbfac3bd296842a44ff162acbfa89ff2d",
+      "bytes": 876
+    },
+    {
+      "path": "work/learner-copy-repair.md",
+      "sha256": "49741d1b5191bb700d6f0ecc8f3bc641857f03ef27a6c83cd0565dd966e836a6",
+      "bytes": 2753
+    },
+    {
+      "path": "work/lesson_cells.py",
+      "sha256": "57115155733878abed820e76d2c7ce1c750af997efb69edec1c0b1314271179f",
+      "bytes": 11146
+    },
+    {
+      "path": "work/live-check.json",
+      "sha256": "7478f10de818f0a787c3db3b0743155526e8efe4e410d381749b817c990792f6",
+      "bytes": 508
+    },
+    {
+      "path": "work/live-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/masterclass-build.json",
+      "sha256": "95345eaf72de544d423eac6e8bf02fe12ef198ef90b7d3205946453b1f60f499",
+      "bytes": 177
+    },
+    {
+      "path": "work/masterclass-build.log",
+      "sha256": "ba7264ba02435f287965380da1784cd9474f49c12099f89d1777b06618f9fdd6",
+      "bytes": 1586
+    },
+    {
+      "path": "work/masterclass-validation.json",
+      "sha256": "ffa9eeccdb8b911a239d4e9ae3d6fa9d71aa8ab7ba595476810866170138f414",
+      "bytes": 2263
+    },
+    {
+      "path": "work/masterclass-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/masterclass_bridges.py",
+      "sha256": "7d5860843df026e21ba1a9c559131b4610216b3728ca017b25329daadc87380d",
+      "bytes": 14417
+    },
+    {
+      "path": "work/masterclass_content.py",
+      "sha256": "301c0681c73ccd7efae8c017827dead72167024d25eb87a2b47767158d746299",
+      "bytes": 17626
+    },
+    {
+      "path": "work/masterclass_data.py",
+      "sha256": "8112e0abbcca7702d3f46add2696c21eb0f5a5621612ccd3c2095565bd20cdcc",
+      "bytes": 1798
+    },
+    {
+      "path": "work/masterclass_model.py",
+      "sha256": "c937bbd0abbdc9a28ac3fe95aff01a483136ce2d90aa2978a2fdbfde88ab3c27",
+      "bytes": 2405
+    },
+    {
+      "path": "work/masterclass_readme.md",
+      "sha256": "87f7e82f92fb72ea4fbeb37a413d53970c53b6fa49eaed01105b25c2c9df3b6d",
+      "bytes": 7462
+    },
+    {
+      "path": "work/masterclass_sandbox.py",
+      "sha256": "f3cd63d3f4b917eb05f3fee7a0fbb32853b3ead44899ceaa36c1b3764e354184",
+      "bytes": 88
+    },
+    {
+      "path": "work/masterclass_sandbox_control.py",
+      "sha256": "e57c40d26b394cbc4359f79afc1a238ac72d1ef894db9c412c6c557d3809cdfd",
+      "bytes": 224
+    },
+    {
+      "path": "work/package_lesson.py",
+      "sha256": "f112e34e35de4f838873b1a1d879821ba0de1879f91bdd8366a3672419cb1423",
+      "bytes": 720
+    },
+    {
+      "path": "work/package_original_recovery.py",
+      "sha256": "70603a706da81708b5fe44ac8b4044ccdb5d91113e64ec1de2e2c9b3136d3412",
+      "bytes": 7181
+    },
+    {
+      "path": "work/package_tutor_skill.py",
+      "sha256": "f3a66582c1dab2bac8f03b6e0c715cca5f2d769f25fba2fd690932d79ad9dd1c",
+      "bytes": 2473
+    },
+    {
+      "path": "work/pca-repair-build.json",
+      "sha256": "fe9226f1edf309fbbe46d8ccf3e837c0155e5720c93f1cc05ee1a98283d4d42a",
+      "bytes": 177
+    },
+    {
+      "path": "work/pca-repair-build.log",
+      "sha256": "5039a4ded5de4344e930876c349d92e0d0da5c930c91947bad3527b6ef310186",
+      "bytes": 1586
+    },
+    {
+      "path": "work/pca-repair-runtime.json",
+      "sha256": "e209c0d0335a6b70ac14e9e4ff176bd613343f8b78ebd76bdfc0a971f4b3ff89",
+      "bytes": 2345
+    },
+    {
+      "path": "work/pca-v2-build.json",
+      "sha256": "0c11e372033a36a19fc9e9ee0a769dca630190c84dc5e056a303315f9d17ee15",
+      "bytes": 177
+    },
+    {
+      "path": "work/pca-v2-build.log",
+      "sha256": "a0f25479cd09542caaf222c17f451d898fecaba955213cd8e9bfb98a3de1cb3f",
+      "bytes": 1586
+    },
+    {
+      "path": "work/pca-v2-math-check.txt",
+      "sha256": "794161c09566b960ba47f585a7b3d2372d44681f85946503a207df95d99e4497",
+      "bytes": 209
+    },
+    {
+      "path": "work/pca-v2-runtime-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/pca-v2-runtime-check.txt",
+      "sha256": "40cda0559b7bee06b84fa276bd955993f3749bc93b9c1f3bd1874cb22a5f7769",
+      "bytes": 2345
+    },
+    {
+      "path": "work/pca-v2-show.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/pca-v2-show.txt",
+      "sha256": "d9e433a525ef6bd080bc07d7b5e993ad1204a2329a0955de937d9bfcbb839ddd",
+      "bytes": 2591
+    },
+    {
+      "path": "work/pca-v2-validation.json",
+      "sha256": "2fd9cafe59ee2152cf56ecf8c247e0e0c815037aab759c85bde26fefd97dd5ce",
+      "bytes": 2345
+    },
+    {
+      "path": "work/pca_alternatives_v2.py",
+      "sha256": "dfa36f4c67dc140dc4f9977432997ec46b902053d18f2175d2c60c1d2ba9a2a9",
+      "bytes": 1480
+    },
+    {
+      "path": "work/pca_course_v2.py",
+      "sha256": "deb28090902316b87ba8d811af32f439f073d08cefd05042757e4735592cb8f6",
+      "bytes": 38523
+    },
+    {
+      "path": "work/project_content.py",
+      "sha256": "6fcd8f2e9eb68704f3852adf1ce5df4f1b7a94b5876d9cf263a7b8e8aa840361",
+      "bytes": 1092
+    },
+    {
+      "path": "work/recover_pca_css.py",
+      "sha256": "e5c3b8d82a0ff12051ac8e0a8b5b19bf6c799c5f2c74ead76892322faf14327e",
+      "bytes": 14165
+    },
+    {
+      "path": "work/redesign_content.py",
+      "sha256": "1a0b51d32e182165557a15d4e728d5e868df9e60023b0dbfaf61c2622f3ef05f",
+      "bytes": 15993
+    },
+    {
+      "path": "work/redesign_plan.py",
+      "sha256": "6df3b3ef1d0e1ce42f564c82be8d12fce548d651b1c860f469eea09fd242198d",
+      "bytes": 19711
+    },
+    {
+      "path": "work/redesign_storyboard.json",
+      "sha256": "bc376aecbc7c02c0b0665c56aadcc9d0691e64154098ea68226a0724228980d3",
+      "bytes": 12634
+    },
+    {
+      "path": "work/refine_notebook.py",
+      "sha256": "b7786b2fa14b9a2c1eb4ab23d314422d6453790da6f22b127f9ddac2519c622e",
+      "bytes": 600
+    },
+    {
+      "path": "work/repair-review-recovery.md",
+      "sha256": "f2e495a726d1f6c3573dee47ca62bb321cfc91483ecfd3c06096689f5a1672ca",
+      "bytes": 5263
+    },
+    {
+      "path": "work/repair-review-teaching.md",
+      "sha256": "36fcaeb025bb30a66b1e03571001d8d4889b001cc9fb5908fea75e99e1dc929a",
+      "bytes": 13015
+    },
+    {
+      "path": "work/repair-review-visual.md",
+      "sha256": "b93b8f65613f0266b4a2723f61d3a142467a8d11d6da9c19b83a7f5a429d0764",
+      "bytes": 6146
+    },
+    {
+      "path": "work/repair_geometry.py",
+      "sha256": "909d2354abc34904739ef4da47aeb73556626ecad868b58b7e1d29778c4410b1",
+      "bytes": 2295
+    },
+    {
+      "path": "work/repair_learner_copy.py",
+      "sha256": "3a1d2b80beff1ee6deaacb0515b24ac68d2222d7396c82ff44d884cea1d778d7",
+      "bytes": 25183
+    },
+    {
+      "path": "work/repair_math.py",
+      "sha256": "3d7d5fef7a044142a2bdd24a4e0d31dfef9c3f913236155e45b67afcfc78d36c",
+      "bytes": 1075
+    },
+    {
+      "path": "work/sync_course_offline.py",
+      "sha256": "82812716f73f03bff39d2abe97c08f6cc4086f7a633f8d9e6306f44d5d70fe4a",
+      "bytes": 715
+    },
+    {
+      "path": "work/sync_repaired_course.py",
+      "sha256": "a21088016bc91140350cb312f12f40b9c545176c709440cd2f7d77f6f29cd064",
+      "bytes": 422
+    },
+    {
+      "path": "work/test_tutorial_harness.py",
+      "sha256": "07e71389c6c4c195acdd433a4415c8451f30bb12d13c9dd7e60fc46f88f0645c",
+      "bytes": 2911
+    },
+    {
+      "path": "work/update_rendering.py",
+      "sha256": "3f4817c03968dcd6cb93612316a9ff7d2a043b7a066dba5c0a858e0a682e193f",
+      "bytes": 3284
+    },
+    {
+      "path": "work/update_repair_docs.py",
+      "sha256": "883d388763a7bec610f45a9e3a712f22d1dba850173ae30ca4acc002f6480d1b",
+      "bytes": 11713
+    },
+    {
+      "path": "work/verify_derivation_visuals.py",
+      "sha256": "1d2bbe8d3613121166150095e2b95254242a8f260445b950a283eb5c75b130b8",
+      "bytes": 3743
+    },
+    {
+      "path": "work/verify_math.py",
+      "sha256": "c7b2f12d23200f8d491d563d21d05d991a85512085b398341a80edec727c7204",
+      "bytes": 1767
+    },
+    {
+      "path": "work/pca-before-repair/course-v2.json",
+      "sha256": "e98b2e817db45f26c1824c685adcf7679321a7721d842575aba15f5d2671a66a",
+      "bytes": 40896
+    },
+    {
+      "path": "work/pca-before-repair/pca.css",
+      "sha256": "c461842bdf3a912f020b8c3bbb339418b721904bbb55a9a17b7a655b4c834e68",
+      "bytes": 19628
+    },
+    {
+      "path": "work/pca-before-repair/PcaCourse.tsx",
+      "sha256": "f8d275fb75409f7f21d4352d0a53bf7452e40820a33014cc280140a18fa33669",
+      "bytes": 12026
+    },
+    {
+      "path": "work/pca-before-repair/PcaScenes.tsx",
+      "sha256": "e1e3fc67fdcad974c794e00e339ca383d93975b9296982bca860f9b69179a5db",
+      "bytes": 52916
+    },
+    {
+      "path": "work/pca-before-repair/pca_lesson.py",
+      "sha256": "21a86529ac7d99ea63e2a0f1e41656d101026700ac5e6193cfac85f1ece84023",
+      "bytes": 42175
+    },
+    {
+      "path": "work/pca-before-repair/verification.json",
+      "sha256": "231e7621e4f0aa044782941ef54ced1f4e0a0f040d62545d1a39df3a309daefc",
+      "bytes": 2391
+    },
+    {
+      "path": "work/recovered-original/Lesson-695f66a6d749.tsx",
+      "sha256": "695f66a6d749732d42ee432f912640011c0cb27221fd31282c706dd56f440514",
+      "bytes": 16000
+    },
+    {
+      "path": "work/recovered-original/Lesson-90182957b033.tsx",
+      "sha256": "90182957b0332bb3cde6e570269c56a5394bd18517987daab40cbcf00b983504",
+      "bytes": 17366
+    },
+    {
+      "path": "work/recovered-original/Lesson-cd4aee2df30c.tsx",
+      "sha256": "cd4aee2df30cc8863dd9b92f4af7e02f9dd2a3469b50252f55ce86f9d0ea071f",
+      "bytes": 16029
+    },
+    {
+      "path": "work/recovered-original/manifest.json",
+      "sha256": "2d4ca023a8baea1973d02baad8eff3fb7c8b7340d96ef78469997748cbc08ab9",
+      "bytes": 24318
+    },
+    {
+      "path": "work/recovered-original/pca_lesson.py",
+      "sha256": "5963c9033ea4928f2c1b972ee6d702969b6eb5d87cc5a70f8486076cb855f9dd",
+      "bytes": 16800
+    },
+    {
+      "path": "work/tutor-retrospective/course-before.json",
+      "sha256": "3e4c3f0c7ee46c30f1658e0e85d26bdeeb2fb9adb70c100c2433e4a915f4436d",
+      "bytes": 15075
+    },
+    {
+      "path": "work/tutor-retrospective/course-scope-check.json",
+      "sha256": "86fd419eb6113f4dcf7ed62d3e9e62b1e7846e3527caa6ce277bd61f65c14a91",
+      "bytes": 192
+    },
+    {
+      "path": "work/tutor-retrospective/forward-nonmathematical.txt",
+      "sha256": "41fd5a2bb769702ee38aeda0ae65b700aefffdb3b9ddc68e618114ab284eb4a2",
+      "bytes": 3424
+    },
+    {
+      "path": "work/tutor-retrospective/forward-provenance.json",
+      "sha256": "0bbf6e8ca6389cea16b571ec4a74652fd2289a847fdfb29f56015887194937ac",
+      "bytes": 1630
+    },
+    {
+      "path": "work/tutor-retrospective/forward-quantitative.txt",
+      "sha256": "209f524e2f81074742534abe2cf626f690f876da76795f5d82ab58c4b26f76bf",
+      "bytes": 2840
+    },
+    {
+      "path": "work/tutor-retrospective/forward-scope-cases.txt",
+      "sha256": "c8e4763012eda54d06460fbbf53b1ea2632da18320bfad953577bb703d7444c1",
+      "bytes": 2217
+    },
+    {
+      "path": "work/tutor-retrospective/harness-v1-preserved.py",
+      "sha256": "bdaa3fc1b05809c6b4b0e3702887155b6088a94e6bd023219ca4173ae49aab82",
+      "bytes": 5415
+    },
+    {
+      "path": "work/tutor-retrospective/harness-v2-test-results.txt",
+      "sha256": "57150104034fa884077af9d9e7b677500223ebef62dc87bd3443cee27395084a",
+      "bytes": 2504
+    },
+    {
+      "path": "work/tutor-retrospective/harness-v2-usage.txt",
+      "sha256": "22c030c491eb0a3160233c4846ff4fe25f1a733f105c53f181c08da671f1adb6",
+      "bytes": 10871
+    },
+    {
+      "path": "work/tutor-retrospective/holdout-key.md",
+      "sha256": "301825f875b89a6eb95969add80aa9ef67c9ebf0fc65062b474106546a431fe1",
+      "bytes": 8135
+    },
+    {
+      "path": "work/tutor-retrospective/holdout-prompts.txt",
+      "sha256": "ba5640355bb893b3f164c2f8d0d9c07f46fb4d8a8f9baa36c6b069f7d924f77f",
+      "bytes": 2092
+    },
+    {
+      "path": "work/tutor-retrospective/package_review.py",
+      "sha256": "5b800a79bd04ecd56c3483a382c7d67d748f42f67aea99e37f57259b3923ee99",
+      "bytes": 2879
+    },
+    {
+      "path": "work/tutor-retrospective/proposed-process.txt",
+      "sha256": "e08f045123d303a8bbc141fbf7a892eb4373eb6b28ec7a8b52d86e1440f696c5",
+      "bytes": 4381
+    },
+    {
+      "path": "work/tutor-retrospective/report-audit.txt",
+      "sha256": "fb3594d03f6c3abec47395625b2d7c9d9cd896a8d459f7f243ecf7023570cf5d",
+      "bytes": 2007
+    },
+    {
+      "path": "work/tutor-retrospective/round1-comparators.md",
+      "sha256": "c8006003e0d19271b3b115389763acdec5ab8cdd857fd902a60f508bafdfc78c",
+      "bytes": 10390
+    },
+    {
+      "path": "work/tutor-retrospective/round1-educator.md",
+      "sha256": "b4f70fae724efd51ef9e29103fb3bbde13ac5b333476d5b448276fbd2a6938c2",
+      "bytes": 9954
+    },
+    {
+      "path": "work/tutor-retrospective/round1-process.md",
+      "sha256": "06d81b426d6791d65afa68d0d02481372b110beba721a5b392c5611aaac47309",
+      "bytes": 10174
+    },
+    {
+      "path": "work/tutor-retrospective/round2-comparators.md",
+      "sha256": "a3bfb34e925399643d7fe34f9003c98ecd1f6cecb8e54163bf20ea2da01515bc",
+      "bytes": 5887
+    },
+    {
+      "path": "work/tutor-retrospective/round2-educator.md",
+      "sha256": "0018dfa06b075f9aca502f3f3ae693de14dc5c626eed64bcbbbe32744a786eab",
+      "bytes": 6000
+    },
+    {
+      "path": "work/tutor-retrospective/round2-process.md",
+      "sha256": "c47703894d429ab6dbf9a4b8dcdc096b1aa7a63a1133cb77f92769a15361616c",
+      "bytes": 5505
+    },
+    {
+      "path": "work/tutor-retrospective/round3-evaluation.md",
+      "sha256": "fe9fb1eedef006b847628e04270d91819d4ea10dc2541652e523c9464fa57420",
+      "bytes": 6243
+    },
+    {
+      "path": "work/tutor-retrospective/round3-frozen-hashes.json",
+      "sha256": "b9b353033ccab60ff7a180eaa71a84650543cab0562fd693da48ac608493913f",
+      "bytes": 793
+    },
+    {
+      "path": "work/tutor-retrospective/test_harness_v2.py",
+      "sha256": "683bce3015852cee4d3f5dbc7f8c84af7f25d55d56fd5b79448e832ceae27e85",
+      "bytes": 15538
+    },
+    {
+      "path": "work/tutor-retrospective-v3/course-before.json",
+      "sha256": "3e4c3f0c7ee46c30f1658e0e85d26bdeeb2fb9adb70c100c2433e4a915f4436d",
+      "bytes": 15075
+    },
+    {
+      "path": "work/tutor-retrospective-v3/course-scope-check.json",
+      "sha256": "8045898fa8620e68ee80b931556c6b396a42283811e46e365ec8ea5f51a77f7c",
+      "bytes": 192
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-alignment.txt",
+      "sha256": "5a2350e1726f252c27c58c123bbd5103a413ebad8b450f56cf3e47ed1357844f",
+      "bytes": 4222
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-audio-recheck.md",
+      "sha256": "a96d1da84929a2c5fc98a41f004e67c9ddde454ad0e70671ac324c7ef506ab7b",
+      "bytes": 2440
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-audio-repair.provenance.json",
+      "sha256": "659dcab736eb66b6aeb0d498e2995febaa8b96df7d05f4e787b1fce7f1b8258b",
+      "bytes": 1024
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-audio-repair.txt",
+      "sha256": "ce43070ae6d382c4b9ee32851319c5e8b3bde8cde8f94daeceb24f660ad7467b",
+      "bytes": 4041
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-evaluation-hashes.json",
+      "sha256": "d7f87de23eb8d7572b930ac59ec3d25ab9cd8f4bfddc2b94ce9037ac8b343c15",
+      "bytes": 457
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-evaluation.md",
+      "sha256": "aad7ca905a14914d5ced041e9cdb7e03a296bd091dce0faa00ea11cff0f37569",
+      "bytes": 8074
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-outputs.txt",
+      "sha256": "c2f98dacaf71de75859bc660843c4e4d93abde8f8b257d85c7014c303fa98bc2",
+      "bytes": 14654
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-prompts.txt",
+      "sha256": "c147ebab8a5c5b8aca3586e6e31c864ffb6bf103bcd01b133e00f781bb25a5ee",
+      "bytes": 4816
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-provenance.json",
+      "sha256": "4fdb7ba99084090abc52f051106116b5f2c6d8744e05fa78a33d8c19c7da68b5",
+      "bytes": 6392
+    },
+    {
+      "path": "work/tutor-retrospective-v3/forward-test-frozen.json",
+      "sha256": "a37fe766d73c894c9814d61e38a45b040e9389daf6aa525c5a7c1ded98b60290",
+      "bytes": 407
+    },
+    {
+      "path": "work/tutor-retrospective-v3/harness-tests.txt",
+      "sha256": "0ec3764c4129c886f0834461d348830107e320b622e5a4476a9560842fc1d478",
+      "bytes": 2504
+    },
+    {
+      "path": "work/tutor-retrospective-v3/hiddenforward-key.md",
+      "sha256": "199c1dce111d63849333b219d82e9c9770b04a9199e4d396984c40fca3013252",
+      "bytes": 13840
+    },
+    {
+      "path": "work/tutor-retrospective-v3/integration-review.md",
+      "sha256": "f5b535bb5aada1cf70c7f066822ba8e0712c70028ddd00d895df0a4fea401bc6",
+      "bytes": 4164
+    },
+    {
+      "path": "work/tutor-retrospective-v3/narration-research.md",
+      "sha256": "9b91b13cf4a3b5da92642f40ab432c9a062e90906bed9ed0154be12eb7f3f2c4",
+      "bytes": 14255
+    },
+    {
+      "path": "work/tutor-retrospective-v3/package_v3.py",
+      "sha256": "99cc0b01bc68405f87206b1887eede2785308c35da6a63cc2405c001b6042d46",
+      "bytes": 7449
+    },
+    {
+      "path": "work/tutor-retrospective-v3/pca-video-candidates.json",
+      "sha256": "55e31d2ab005ffd92d8910dfaf72c318ac943f2624411eb768f926727663cb23",
+      "bytes": 64189
+    },
+    {
+      "path": "work/tutor-retrospective-v3/pca-video-candidates.md",
+      "sha256": "64c30ec5b2d94e7c98d4b92a541bd18ed538db0771aac21f99944d6528dd0718",
+      "bytes": 16056
+    },
+    {
+      "path": "work/tutor-retrospective-v3/quality-wording-audit.md",
+      "sha256": "b037f516ab2bdc8bfbcfaa4d38a6d6207144dd52f5d17c5310a8506de8b31e43",
+      "bytes": 2405
+    },
+    {
+      "path": "work/tutor-retrospective-v3/research-funnel-critique.md",
+      "sha256": "86cfccb8b8ba7e2538413c6a8c64fc1819a2975b1656111c47d024592cb3b167",
+      "bytes": 4063
+    },
+    {
+      "path": "work/tutor-retrospective-v3/tutoring-research.md",
+      "sha256": "cd9530ac4dab16464ec33998f30abf5dde9396704b561f1a97fa3954edfe5aef",
+      "bytes": 15056
+    },
+    {
+      "path": "work/tutor-retrospective-v3/validate_delivery.py",
+      "sha256": "c13f45b2e890560a327fa244e64a051ebeedc249a6f227e5bb3f047c36a07867",
+      "bytes": 4140
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/creator-research-a.md",
+      "sha256": "8119a2d9f70ce0178e87fad2da8c9b9f342db869fda2fade1a19973c4e81a1dc",
+      "bytes": 6430
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/creator-research-b.md",
+      "sha256": "5fbca8fd2e695c4fc53c03a97cc11330f846e61dbf9e1c40ad84e452a933f8ba",
+      "bytes": 6293
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/creator-research-root.md",
+      "sha256": "011c51ca7574e8e08821cd2641eff6e10b40359f008ec06a82de78a256acbbac",
+      "bytes": 3800
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/integration-recheck.md",
+      "sha256": "8878bcd644080282fdbfc493f8126e5e7deb078fb8d4b7e93b0ada80466ec599",
+      "bytes": 2701
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/integration-review.md",
+      "sha256": "61142af7072d1ae489cfd92b49a335bb77f0423c9ca015c1ebf7f6fda4a2bbc6",
+      "bytes": 3028
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/package_revision.py",
+      "sha256": "81993ef4bc54c6c4eb0360003e22f68b36b85c6f2a1aebbc06b627eb5bb860cc",
+      "bytes": 7764
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/welch-patterns.md",
+      "sha256": "dfac3546e98ed03d3b8269cedac5340b597754b6803e36cbb86c351756560c19",
+      "bytes": 8708
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/welch-static-inspection.txt",
+      "sha256": "8b6b7df70885361bab77e27eeb0efc023da22cddf6f1c0dc61d99816a7fd8061",
+      "bytes": 1243
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/welch-source-inspection/access-manifest.json",
+      "sha256": "b7a7f6064bb98e87053f39498c4fd8dfb0abd8b477ea60f65b403133c1b455bb",
+      "bytes": 1363
+    }
+  ],
+  "excluded": [
+    {
+      "path": "outputs/build-interactive-masterclass/scripts/__pycache__",
+      "reason": "generated cache or session state"
+    },
+    {
+      "path": "outputs/pca-studio/__marimo__",
+      "reason": "generated cache or session state"
+    },
+    {
+      "path": "outputs/pca-studio/__pycache__",
+      "reason": "generated cache or session state"
+    },
+    {
+      "path": "outputs/pca-studio/v/lesson/.artifacts",
+      "reason": "generated cache or session state"
+    },
+    {
+      "path": "outputs/tutor-retrospective-v3/before-skills/build-interactive-masterclass/scripts/__pycache__",
+      "reason": "generated cache or session state"
+    },
+    {
+      "path": "work/marimo-studio-docs.txt",
+      "reason": "downloaded third-party full-text/source; provenance and links retained"
+    },
+    {
+      "path": "work/tutor-retrospective-v3/PMC12179260.xml",
+      "reason": "downloaded third-party full-text/source; provenance and links retained"
+    },
+    {
+      "path": "work/tutor-retrospective-v3/PMC12232635.xml",
+      "reason": "downloaded third-party full-text/source; provenance and links retained"
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/welch-source-inspection/Part 1 Data and Architecture.ipynb",
+      "reason": "downloaded third-party full-text/source; provenance and links retained"
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/welch-source-inspection/Part 3 Gradient Descent.ipynb",
+      "reason": "downloaded third-party full-text/source; provenance and links retained"
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/welch-source-inspection/Part 5 Numerical Gradient Checking.ipynb",
+      "reason": "downloaded third-party full-text/source; provenance and links retained"
+    },
+    {
+      "path": "work/tutor-retrospective-v3-1/welch-source-inspection/Part 7 Overfitting, Testing, and Regularization.ipynb",
+      "reason": "downloaded third-party full-text/source; provenance and links retained"
+    },
+    {
+      "path": "tmp/pdfs/welch",
+      "reason": "downloaded third-party workbook and rendered pages; public source link retained"
+    }
+  ],
+  "note": "Historical artifacts preserve their original bytes, local paths, and original evidence limits. skills/ is the current portable entrypoint. Third-party sources are linked rather than redistributed."
+}

@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-10-07T03:23:26.6716515Z",
+  "inspected_skill_files": [
+    {
+      "path": "C:/Users/abhir/.codex/skills/build-interactive-masterclass/SKILL.md",
+      "sha256": "0D386408D235BEA5228E5FFF7333E7C6FED84495E015DFCF3787F8B8809A7C67"
+    },
+    {
+      "path": "C:/Users/abhir/.codex/skills/build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "6360D486728505B54E697CAAE71F7989142F7EF01B22E3CB7DE92F552E8CDF52"
+    },
+    {
+      "path": "C:/Users/abhir/.codex/skills/build-interactive-masterclass/references/review.md",
+      "sha256": "150A58FE137DD36667A3C1D100042622C701E8D81909155D5DAD7C4678E12BD0"
+    },
+    {
+      "path": "C:/Users/abhir/.codex/skills/build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "0D7D84977A4EC65347561455992A55EFEF01B31C0590CBD86308B3FA6A85C584"
+    }
+  ],
+  "key_access": "Executor reports no access to holdout-key.md; author was sent prompts only",
+  "evidence_level": "written response inspected; not observed human learning",
+  "context": "Author-informed; participated in earlier course repair and process discussion",
+  "executor": "/root/teaching_repair_review",
+  "evaluator": "/root/retrospect_educator; wrote hidden key, did not author outputs; informed protocol context",
+  "model": "Inherited root model; exact model ID not exposed in this record; no model or effort override was requested",
+  "snapshot_note": "Recorded after outputs frozen; these inspected files had no intervening edits. The review reference will receive only a provenance-label clarification after this snapshot."
+}

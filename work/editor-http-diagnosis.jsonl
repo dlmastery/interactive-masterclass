@@ -1,0 +1,246 @@
+{
+  "request": "http://localhost:2718/studio/lesson/",
+  "final": "http://localhost:2718/studio/lesson/",
+  "status": 200,
+  "headers": [
+    [
+      "server",
+      "uvicorn"
+    ],
+    [
+      "referrer-policy",
+      "same-origin"
+    ],
+    [
+      "content-security-policy",
+      "frame-ancestors 'self'"
+    ],
+    [
+      "content-type",
+      "text/html; charset=utf-8"
+    ]
+  ],
+  "body_markers": {
+    "marimo-studio-editor": true,
+    "marimo-studio-presentation": false,
+    "login": false,
+    "Sign in": false,
+    "<marimo": false,
+    "marimo-code": false,
+    "marimo-filename": false
+  },
+  "frames": [
+    {
+      "id": "marimo-studio-editor",
+      "src": "http://localhost:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+      "sandbox": null
+    }
+  ],
+  "meta_csp": [],
+  "script_origins": [
+    "localhost:2718"
+  ]
+}
+{
+  "request": "http://localhost:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+  "final": "http://localhost:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+  "status": 200,
+  "headers": [
+    [
+      "server",
+      "uvicorn"
+    ],
+    [
+      "referrer-policy",
+      "same-origin"
+    ],
+    [
+      "content-type",
+      "text/html; charset=utf-8"
+    ],
+    [
+      "content-security-policy",
+      "frame-ancestors 'self'"
+    ]
+  ],
+  "body_markers": {
+    "marimo-studio-editor": false,
+    "marimo-studio-presentation": false,
+    "login": false,
+    "Sign in": false,
+    "<marimo": true,
+    "marimo-code": false,
+    "marimo-filename": true
+  },
+  "frames": [],
+  "meta_csp": [],
+  "script_origins": [
+    "localhost:2718"
+  ]
+}
+{
+  "request": "http://localhost:2718/",
+  "final": "http://localhost:2718/studio/lesson/",
+  "status": 200,
+  "headers": [
+    [
+      "server",
+      "uvicorn"
+    ],
+    [
+      "referrer-policy",
+      "same-origin"
+    ],
+    [
+      "content-security-policy",
+      "frame-ancestors 'self'"
+    ],
+    [
+      "content-type",
+      "text/html; charset=utf-8"
+    ]
+  ],
+  "body_markers": {
+    "marimo-studio-editor": true,
+    "marimo-studio-presentation": false,
+    "login": false,
+    "Sign in": false,
+    "<marimo": false,
+    "marimo-code": false,
+    "marimo-filename": false
+  },
+  "frames": [
+    {
+      "id": "marimo-studio-editor",
+      "src": "http://localhost:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+      "sandbox": null
+    }
+  ],
+  "meta_csp": [],
+  "script_origins": [
+    "localhost:2718"
+  ]
+}
+{
+  "request": "http://127.0.0.1:2718/studio/lesson/",
+  "final": "http://127.0.0.1:2718/studio/lesson/",
+  "status": 200,
+  "headers": [
+    [
+      "server",
+      "uvicorn"
+    ],
+    [
+      "referrer-policy",
+      "same-origin"
+    ],
+    [
+      "content-security-policy",
+      "frame-ancestors 'self'"
+    ],
+    [
+      "content-type",
+      "text/html; charset=utf-8"
+    ]
+  ],
+  "body_markers": {
+    "marimo-studio-editor": true,
+    "marimo-studio-presentation": false,
+    "login": false,
+    "Sign in": false,
+    "<marimo": false,
+    "marimo-code": false,
+    "marimo-filename": false
+  },
+  "frames": [
+    {
+      "id": "marimo-studio-editor",
+      "src": "http://127.0.0.1:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+      "sandbox": null
+    }
+  ],
+  "meta_csp": [],
+  "script_origins": [
+    "127.0.0.1:2718"
+  ]
+}
+{
+  "request": "http://127.0.0.1:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+  "final": "http://127.0.0.1:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+  "status": 200,
+  "headers": [
+    [
+      "server",
+      "uvicorn"
+    ],
+    [
+      "referrer-policy",
+      "same-origin"
+    ],
+    [
+      "content-type",
+      "text/html; charset=utf-8"
+    ],
+    [
+      "content-security-policy",
+      "frame-ancestors 'self'"
+    ]
+  ],
+  "body_markers": {
+    "marimo-studio-editor": false,
+    "marimo-studio-presentation": false,
+    "login": false,
+    "Sign in": false,
+    "<marimo": true,
+    "marimo-code": false,
+    "marimo-filename": true
+  },
+  "frames": [],
+  "meta_csp": [],
+  "script_origins": [
+    "127.0.0.1:2718"
+  ]
+}
+{
+  "request": "http://127.0.0.1:2718/",
+  "final": "http://127.0.0.1:2718/studio/lesson/",
+  "status": 200,
+  "headers": [
+    [
+      "server",
+      "uvicorn"
+    ],
+    [
+      "referrer-policy",
+      "same-origin"
+    ],
+    [
+      "content-security-policy",
+      "frame-ancestors 'self'"
+    ],
+    [
+      "content-type",
+      "text/html; charset=utf-8"
+    ]
+  ],
+  "body_markers": {
+    "marimo-studio-editor": true,
+    "marimo-studio-presentation": false,
+    "login": false,
+    "Sign in": false,
+    "<marimo": false,
+    "marimo-code": false,
+    "marimo-filename": false
+  },
+  "frames": [
+    {
+      "id": "marimo-studio-editor",
+      "src": "http://127.0.0.1:2718/_marimo-studio/editor/?[query keys: file,marimo_studio_client,marimo_studio_server,session_id,marimo_studio_editor]",
+      "sandbox": null
+    }
+  ],
+  "meta_csp": [],
+  "script_origins": [
+    "127.0.0.1:2718"
+  ]
+}

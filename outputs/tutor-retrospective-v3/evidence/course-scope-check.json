@@ -1,0 +1,11 @@
+{
+  "exclusions": [
+    "__pycache__",
+    "__marimo__",
+    ".artifacts"
+  ],
+  "changed_or_missing": [],
+  "extra_files": [],
+  "files_compared": 71,
+  "course_unchanged": true
+}

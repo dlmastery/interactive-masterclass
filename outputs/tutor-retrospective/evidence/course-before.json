@@ -1,0 +1,286 @@
+[
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\browser-audit.json",
+    "sha256": "FC6F8921AE176C6C2795B9528477D21DC364BE5EDB73BEEC5F6AD1DC95F04835"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\course-v2.json",
+    "sha256": "9AA844EB648949438F697E3BDEFAA2549116BF6740C9145F96BD32BCBCAAD4A4"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\language-review.json",
+    "sha256": "F5F7920951FF005D6E0803883F373514EB4C6333ECF6F024276F9B4D7A96F858"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\pca_lesson.py",
+    "sha256": "94E52BE87D5F5E0CC69F5450432D4425785091E4FD4716B4EE63B9F061FDE7BF"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\pca-first-slide.png",
+    "sha256": "A4417B41A951A1A64D96274CCF6128240960091A40CF6109D77EF858612FAB50"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\pca-notebook.png",
+    "sha256": "EBBD0E7498DEA0A34C1ED24000BCD32B7261E35C47FB0AA2ADF1BAA9FC8C0C81"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\pca-proof.png",
+    "sha256": "4EFCB29B6108484FA124F379FC559E0D44487FD748C2EA111FA94E1C15498D9D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\PCA-TEACHING-PLAN.html",
+    "sha256": "C62AF2BD10270D770B6E1132ADC4AA5FE6D483BAC4CA32F65FC6EC9ED5BB5D6D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\production-build.json",
+    "sha256": "3346A6741287FB2F1E3BB7C019468E59EE94C3839F7CD7ECDDC248929805DBC4"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\README.md",
+    "sha256": "697DB684AE3494F42D892F8C7D949BF026149D7D4605C3109FEC0BC4EEF6686C"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\repair-browser-audit.json",
+    "sha256": "E706BCCA2166BCDBB5079AC6B01E7098A760BBACF61E4575D8A36FA2C9066406"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\repaired-app-panel.png",
+    "sha256": "7D946A9EAA31573446F65B1B9D15DEB03E522B0A4BE8B71493C34836B3C55DBE"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\repaired-bound.png",
+    "sha256": "67DA55A3A427879F1C970A54EF2630C2695F12734D4FC4DB125FFA69C507DCC1"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\repaired-covariance.png",
+    "sha256": "D0393DCD15BDFB6E35E32926B936A07C5BB23285CCD983BECE168225F4DEB816"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\repaired-notebook.png",
+    "sha256": "5B4B22196EEFAEFFF37E3EC16BF1461282D0078BF1A5CE44978EB8E1F6EFC179"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\repaired-opening.png",
+    "sha256": "CD058061C4FDD1F418140333DD8703C4B8830612038B602E84A243AE86A4C8D7"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\repaired-stationarity.png",
+    "sha256": "45752FF1D102051421A7D39E144600778826A554BCEEDBA3B30A888A0DDF23A9"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\runtime-validation.json",
+    "sha256": "E209C0D0335A6B70AC14E9E4FF176BD613343F8B78EBD76BDFC0A971F4B3FF89"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\serve_lesson.py",
+    "sha256": "7F9A22523AACE02480A281AEB1B1EB6528AD0C448CDD9E8C982E03E2B84ADF7C"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\Start-Lesson.ps1",
+    "sha256": "B226067E19DF92F5AAC842CF111ADB9B6E7445987953888B27DFA6024B6A3ECA"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\TEACHING-MAP.md",
+    "sha256": "8D2A4D0414E3DCED1A1F9FDCD7162E4E0275D6B19C2690795031AB627569DCC0"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\verification.json",
+    "sha256": "7C640D3BC692A7D6E1359A8A79B0F192A79AADDBB91D8D8F72CB7F58F3B5385D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\verify_derivation_visuals.py",
+    "sha256": "45054AFDE161A0E37DD5B53226094977D35E7FAE5D5FB430AF5622741BE3FA15"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\verify_mathematics.py",
+    "sha256": "E0A58B63431EA40AF20117DA37CCBEA2FDC96EC63D36C7DB7FC8FA9EAEBE361A"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\archive-v1\\Assessment.tsx",
+    "sha256": "9C1CC378AD741372596B1A3AE2502BBC22E7C4F2E33029A7BAFAF3A6341DA4E7"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\archive-v1\\BridgeLabs.tsx",
+    "sha256": "0B6609E26924FE48FDF1F3C8F5367189B28136D3D09047FA1C9141F3C7F5D79D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\archive-v1\\CoreLabs.tsx",
+    "sha256": "66E0871F80192844F339E1F9E1FDCD31FE5A7B73C53A7E75B9BDA1B1638876EA"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\archive-v1\\Masterclass.tsx",
+    "sha256": "C9ACBEB8059131E6DBB5B44F7DF0D8A6FFBB00C2A980BE30FEF68C0FB459E705"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\archive-v1\\pca_lesson-before-cleanup.py",
+    "sha256": "6A85F22A6E8CE263828E977C79C434E776A47B1F8E86FEC6DEFE2BAA6468E9F1"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\pca_lesson.py",
+    "sha256": "5963C9033EA4928F2C1B972EE6D702969B6EB5D87CC5A70F8486076CB855F9DD"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\README.md",
+    "sha256": "B7D9DF0C54C33826BA4AFA2C68169113C025E9B08F5EC0D0BF70C7BBEA008EA2"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\recovery-manifest.json",
+    "sha256": "2EE03B6E94E541CB657E165B67F4F1276A06FA9BA73B98FB0BD28B0FA3740D97"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\deno.json",
+    "sha256": "2AFF2DDBFB869E5A7C28F824DD0D67BAF7A5061B4AE40D546F0E10986FD0DC29"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\deno.lock",
+    "sha256": "8B326935518A26FC0285D5058CB3B69964C48130FC68CD34F1E6DFFF2574C82D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\view.toml",
+    "sha256": "9A39F94CB4936863E0B3D861ED329E4F3B23CD9A8F3C472D1721B0DC0DE4A3D2"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\src\\index.html",
+    "sha256": "0A2FB423E6ED09FAAC69A8710632DEDCF3548D1EB9E7FF2F6755A155CA3DF9B0"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\src\\lesson.css",
+    "sha256": "B7D8253BAE90F1D4A569490549E904B7AA9EABA59469AEF4677A9BAB3F894B43"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\src\\Lesson.tsx",
+    "sha256": "475B2A783EA753533D7DA0CB789FDBE1284989E7486F7A22B15D66FD5F7F66EF"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\src\\LessonText.tsx",
+    "sha256": "F59943575C547BEC56434164FD880543297D7CF5CAE9C45834D8805C9BF31073"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\src\\main.tsx",
+    "sha256": "E1E1C764A6A585415E9E643AAC6F937FE2E0EFC48FB50CF4DA1F4CDE0F6456FA"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\src\\marimo-studio.d.ts",
+    "sha256": "178DEA65E415EAA105354EB0A4AF9FF72F8DE193CB6397E2BC43FB2CF0C39185"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\original-first-version\\v\\lesson\\src\\lib\\use-marimo-value.ts",
+    "sha256": "9F343EB980E88FED6E3D09A55359A5794581D480CF583601787897911EF7AB48"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\.gitignore",
+    "sha256": "2E9601066E260E73837AB63C05E697D305AD08FAD54931AE40276F79CEFBF968"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\.locks\\.catalog.lock",
+    "sha256": "6E340B9CFFB37A989CA544E6BB780A2C78901D3FB33738768511A30617AFA01D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\.locks\\lesson.artifacts.lock",
+    "sha256": "6E340B9CFFB37A989CA544E6BB780A2C78901D3FB33738768511A30617AFA01D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\.locks\\lesson.build.lock",
+    "sha256": "6E340B9CFFB37A989CA544E6BB780A2C78901D3FB33738768511A30617AFA01D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\.locks\\lesson.lock",
+    "sha256": "6E340B9CFFB37A989CA544E6BB780A2C78901D3FB33738768511A30617AFA01D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\.owners\\lesson.toml",
+    "sha256": "E94D631B1FF00C30E6C977760127A82097AB6C52BCACD1FB976EF92AB0401649"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\AGENTS.md",
+    "sha256": "6909F3F3D4952D3E35B79C14BC751B0CBE9465E5A745613E20C579CDF1D72393"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\deno.json",
+    "sha256": "2AFF2DDBFB869E5A7C28F824DD0D67BAF7A5061B4AE40D546F0E10986FD0DC29"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\deno.lock",
+    "sha256": "8B326935518A26FC0285D5058CB3B69964C48130FC68CD34F1E6DFFF2574C82D"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\DESIGN.md",
+    "sha256": "883E3040250DBDCA3BAB8AE8E38CD99F79E1557A85E8C04FFED854E7D63FDF7A"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\view.toml",
+    "sha256": "9A39F94CB4936863E0B3D861ED329E4F3B23CD9A8F3C472D1721B0DC0DE4A3D2"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\App.tsx",
+    "sha256": "38FFB6D38429A9133FFB2A5A086548E8E3A49A2CEFA2D4806B025FA4976C1D5F"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\derivation.css",
+    "sha256": "71EBB2B75B3DBFD3B2EBD87CEB153D1BBA4F31F8AA07E9991BC99A5EDC086EC7"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\index.html",
+    "sha256": "0A2FB423E6ED09FAAC69A8710632DEDCF3548D1EB9E7FF2F6755A155CA3DF9B0"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\LabComponents.tsx",
+    "sha256": "8414588DC3626B01F470FDF1F4999A6DEC7984E360DED3AC3CD8E187FF1653F4"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\lesson.css",
+    "sha256": "B7D8253BAE90F1D4A569490549E904B7AA9EABA59469AEF4677A9BAB3F894B43"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\Lesson.tsx",
+    "sha256": "5899A8B8306D6B4092C77EE5FDF4690CCF5B5B5F615CC9707D59767E1883B2AE"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\LessonText.tsx",
+    "sha256": "F59943575C547BEC56434164FD880543297D7CF5CAE9C45834D8805C9BF31073"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\main.tsx",
+    "sha256": "40C71DC4B9B49A87E6F264FB418696118B055FED5A186496DAC1776D72B06A3E"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\marimo-studio.d.ts",
+    "sha256": "178DEA65E415EAA105354EB0A4AF9FF72F8DE193CB6397E2BC43FB2CF0C39185"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\masterclass.css",
+    "sha256": "5B277E574CC4D9104FC84A2C2233B53E58538AAF4FE70B954A6413F0F036ABB2"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\pca.css",
+    "sha256": "247B113820C63A873CCB085F61410B371CB0915A17D097D4B3AE0AF1E6826ACB"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\PcaCourse.tsx",
+    "sha256": "6364BCEE7A48DA068F1BAB5BD0D3E9E372E4E65B04EBC6CF99C3FC726D1305A0"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\PcaDerivationVisuals.tsx",
+    "sha256": "BA37CAA66CBE87F771D3DEDEF3802C0D09F8B58F622C84B4B3CB149CC5637B70"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\PcaProductExpansion.tsx",
+    "sha256": "C0EE5E2691249D193B96E516E51EF39DEE2E259492D1ECA8D620750E2037F9F4"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\PcaScenes.tsx",
+    "sha256": "D2E8CF4D67FC3822E7EFFFF26654CE193F6FD02F7424C4FEE00D8BCB747CF0B9"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\product-expansion.css",
+    "sha256": "6F7205D3104F8E85638136A116FF7BEF99D9EA0CFD5540C7D0AC89DB12B86D47"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\style.css",
+    "sha256": "D930480C74219B43D68F1AA6BA27F424A69D464E55BA8589A517398865C19D82"
+  },
+  {
+    "path": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\lib\\use-marimo-value.ts",
+    "sha256": "9F343EB980E88FED6E3D09A55359A5794581D480CF583601787897911EF7AB48"
+  }
+]

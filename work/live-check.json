@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "output": null,
+  "stdout": "masterclass_model idle []\nmasterclass_controls idle []\nmasterclass_sandbox idle []\nmasterclass_data idle []\nmasterclass_guide idle []\ncontext readers ['globals: dict[str, Any]', \"set_ui_value(element: 'Any', value: 'Any') -> 'None'\"]\nViewBuild(view='lesson', profile='development', revision='sha256:034ed188532501386eb43e84e45405d34e4ea4302736dff4566c31c315f24096', issues=())\n",
+  "stderr": "",
+  "session": {
+    "id": "s_444tw9"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-04",
+  "course": {"slides": 64, "equation_steps": 79, "notebook_cells": 10},
+  "production_build": {"issues": [], "revision": "sha256:f0a8e5024eb15453b5886828dd936cbbb04e0f8bb57cc97db16c317116f9c5fc"},
+  "development_build": {"issues": [], "revision": "sha256:5446cc80444ad2c1f90d65cbdba8f728ffeb0dabfff43ad5667b6f5c7e7efa99"},
+  "studio_validation": {"level": "runtime", "ok": true, "native_cell_sites": 1, "value_projection_sites": 6},
+  "mathematics": {
+    "result": "pass",
+    "projection_frames": 1629,
+    "combined_projection_bytes": 940547,
+    "checks": ["covariance", "unit directions", "scores", "gradient", "global variance bound", "reconstruction", "SVD", "standardization"]
+  },
+  "browser": {
+    "slide_titles_matched": "64/64",
+    "states_in_equation_sweep": 94,
+    "katex_errors": 0,
+    "wide_equations": 0,
+    "interactions_verified": [
+      "Rotation preserves both coordinates; dropping one at 45 degrees retains 90%",
+      "Direction length changes arrow, score, and squared variance consistently",
+      "Opposite covariance pattern changes products and matrix entry",
+      "Scale and standardization change covariance and PC1 angle",
+      "Eigenbasis weight reaches the variance upper bound",
+      "Native marimo data control changes the Python mean and PC1",
+      "Standalone outer-page link opens the native notebook",
+      "Native editor contains revised introduction, model results, and course content",
+      "Studio Visible surface dropdown switches between Notebook and live Preview"
+    ],
+    "layout_repairs_rechecked": [6, 16, 30, 32, 40, 48],
+    "desktop_slide_canvas": "1440x850",
+    "narrow_viewport": "430px: stacked content, no page-width overflow; vertical scrolling expected",
+    "viewport_override_reset": true,
+    "initial_sweep_details": "browser-audit.json"
+  },
+  "language": {
+    "sentences_checked": 358,
+    "sentences_within_length_limits": 358,
+    "formal_80_percent_STE_compatibility": "not established",
+    "note": "Sentence lengths are checked with a simple whitespace counter. Approved vocabulary, meanings, and parts of speech require a separate full review."
+  },
+  "limits": ["No learner effectiveness study", "No static export, WASM, public deployment, or offline-font verification", "Written explanations require human review", "Keep both local servers running for notebook navigation"]
+}

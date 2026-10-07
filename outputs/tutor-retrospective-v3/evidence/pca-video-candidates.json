@@ -1,0 +1,1291 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Breadth-first PCA video discovery demonstration for skill revision only; no course rebuild",
+  "author_relationship": "Author-informed: this executor contributed earlier PCA teaching repairs and retrospective analysis.",
+  "scope": {
+    "candidate_count": 31,
+    "unique_youtube_ids": 31,
+    "known_creator_count": 23,
+    "metadata_only_current_pass": 31,
+    "new_transcripts_inspected": 0,
+    "new_video_segments_viewed": 0,
+    "prior_selected_transcript_records": 2,
+    "globally_top_30": false
+  },
+  "cautions": [
+    "This is a candidate ledger, not a ranking or completed expert-video review.",
+    "Counts are observed indexed snapshots with an unknown underlying counter date; they are not verified current counters.",
+    "Likes are not a formal rating, dislike denominator, or evidence of learning quality.",
+    "Audience labels marked inferred are selection hypotheses, not verified prerequisites.",
+    "No 3Blue1Brown PCA video was verified in this search; the earlier Bayes article remains a separate technique reference and is not counted.",
+    "Several videos share creators or source lineage. Unique URLs do not imply independent teaching methods.",
+    "Direct opening of eight identified YouTube URLs produced six fetch/rate-limit errors and two page shells; indexed metadata, not successful playback, supports these discovery entries."
+  ],
+  "discovery_dimensions": [
+    "Purpose and geometry",
+    "Variance/covariance and eigenvectors",
+    "Mathematical derivation",
+    "SVD and numerical implementation",
+    "Interpretation and preprocessing",
+    "Practical biological and finance use",
+    "Limitations, robust PCA, kernel PCA and probabilistic PCA"
+  ],
+  "search_biases": [
+    "Primarily English search phrases and familiar creator seeds; not a platform-wide enumeration.",
+    "Search surfaces many repetitions and metadata instead of full content.",
+    "Underrepresented: formal global-optimality walkthroughs, accessible visual alternatives, non-English explainers and large-scale modern implementations."
+  ],
+  "shortlist_status": "Ten candidates selected for deeper segment inspection; inspection has not been executed in this pass.",
+  "candidates": [
+    {
+      "candidate_id": "PCA-01",
+      "youtube_id": "HMOI_lkzW08",
+      "url": "https://www.youtube.com/watch?v=HMOI_lkzW08",
+      "title": "StatQuest: PCA main ideas in only 5 minutes!!!",
+      "creator": "StatQuest with Josh Starmer",
+      "publication_date": "2017-12-04",
+      "observed_metrics": {
+        "views": 1638367,
+        "likes": 32000,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"StatQuest: PCA main ideas\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "overview"
+      ],
+      "audience": "Newcomers (inferred from five-minute title)",
+      "supported_metadata_observation": "Description chapters cover motivation, correlations, plotting and interpretation.",
+      "candidate_value_inference": "Short purpose-and-interpretation comparator.",
+      "inspection_limit": "Intro scope; not evidence of covariance proof.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "StatQuest with Josh Starmer",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-02",
+      "youtube_id": "5HNr_j6LmPc",
+      "url": "https://www.youtube.com/watch?v=5HNr_j6LmPc",
+      "title": "Visual Explanation of Principal Component Analysis, Covariance, SVD",
+      "creator": "Em Freedman",
+      "publication_date": "2018-05-09",
+      "observed_metrics": {
+        "views": 108798,
+        "likes": 3100,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Visual Explanation of Principal Component Analysis\"",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "geometry",
+        "covariance",
+        "SVD"
+      ],
+      "audience": "Linear algebra students; description names Olin Linearity I.",
+      "supported_metadata_observation": "Description joins variance, covariance, eigenvectors, PCA interpretation and SVD.",
+      "candidate_value_inference": "Candidate for inspecting the visual bridge across representations.",
+      "inspection_limit": "Visual quality and the actual transitions are uninspected.",
+      "initial_shortlist": true,
+      "next_inspection_question": "What visual and symbolic transitions actually connect covariance, eigenvectors and SVD?",
+      "source_family": "Em Freedman",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-03",
+      "youtube_id": "OFyyWcw2cyM",
+      "url": "https://www.youtube.com/watch?v=OFyyWcw2cyM",
+      "title": "Dimensional Reduction| Principal Component Analysis",
+      "creator": "Krish Naik",
+      "publication_date": "2019-02-02",
+      "observed_metrics": {
+        "views": 171485,
+        "likes": 3100,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Principal Component Analysis\" \"Krish Naik\" site:youtube.com/watch",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "general",
+        "dimensionality reduction"
+      ],
+      "audience": "ML learners (inferred)",
+      "supported_metadata_observation": "Description advertises a detailed dimensionality-reduction explanation and code link.",
+      "candidate_value_inference": "Alternative long-form overview.",
+      "inspection_limit": "Description does not expose the proof route.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Krish Naik",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-04",
+      "youtube_id": "iRbsBi5W0-c",
+      "url": "https://www.youtube.com/watch?v=iRbsBi5W0-c",
+      "title": "Principle Component Analysis  (PCA) | Part 1 | Geometric Intuition",
+      "creator": "CampusX",
+      "publication_date": "2021-05-06",
+      "observed_metrics": {
+        "views": 268390,
+        "likes": 5400,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "CampusX PCA geometric intuition YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "geometry",
+        "purpose",
+        "variance"
+      ],
+      "audience": "Beginning ML learners (inferred)",
+      "supported_metadata_observation": "Chapters separate what PCA is, benefits, geometry and variance.",
+      "candidate_value_inference": "Inspect how practical purpose precedes variance.",
+      "inspection_limit": "Language, pacing and prerequisite fit require direct inspection.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "CampusX",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-05",
+      "youtube_id": "8klqIM9UvAc",
+      "url": "https://www.youtube.com/watch?v=8klqIM9UvAc",
+      "title": "Machine Learning Tutorial Python - 19: Principal Component Analysis (PCA) with Python Code",
+      "creator": "codebasics",
+      "publication_date": "2021-10-09",
+      "observed_metrics": {
+        "views": 280076,
+        "likes": null,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"19. Principal Component Analysis\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "practical",
+        "Python",
+        "classification"
+      ],
+      "audience": "Python/ML learners (inferred)",
+      "supported_metadata_observation": "Description compares handwritten-digit classification before and after PCA; exercise listed.",
+      "candidate_value_inference": "Inspect a measurable practical use and its exercise.",
+      "inspection_limit": "Advertised comparison does not establish causal performance improvement.",
+      "initial_shortlist": true,
+      "next_inspection_question": "How is the classifier comparison scoped, and does the exercise require a decision rather than copied code?",
+      "source_family": "codebasics",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-06",
+      "youtube_id": "Rjr62b_h7S4",
+      "url": "https://www.youtube.com/watch?v=Rjr62b_h7S4",
+      "title": "How to implement PCA (Principal Component Analysis) from scratch with Python",
+      "creator": "AssemblyAI",
+      "publication_date": "2022-09-18",
+      "observed_metrics": {
+        "views": 24987,
+        "likes": null,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Python Engineer PCA from scratch YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "implementation",
+        "NumPy"
+      ],
+      "audience": "Learners able to code in Python/NumPy (inferred)",
+      "supported_metadata_observation": "Description identifies a from-scratch PCA implementation in an ML series.",
+      "candidate_value_inference": "Check whether implementation reveals matrix operations.",
+      "inspection_limit": "Code accuracy and derivation depth uninspected.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "AssemblyAI",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-07",
+      "youtube_id": "5vgP05YpKdE",
+      "url": "https://www.youtube.com/watch?v=5vgP05YpKdE",
+      "title": "Principal Component Analysis (PCA) - easy and practical explanation",
+      "creator": "Biostatsquid",
+      "publication_date": "2022-11-13",
+      "observed_metrics": {
+        "views": 171328,
+        "likes": 4900,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Biostatsquid PCA easy practical explanation YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "application",
+        "biology",
+        "interpretation"
+      ],
+      "audience": "Biological-data learners; description names that use.",
+      "supported_metadata_observation": "Description promises PCA explanation for visualizing biological data.",
+      "candidate_value_inference": "Candidate for meaningful plot interpretation in a real domain.",
+      "inspection_limit": "Description alone cannot establish statistical caveat coverage.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Biostatsquid",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-08",
+      "youtube_id": "Oi4SJqJIL2E",
+      "url": "https://www.youtube.com/watch?v=Oi4SJqJIL2E",
+      "title": "Principal Component Analysis (PCA) 1 [Python]",
+      "creator": "Steve Brunton",
+      "publication_date": "2020-02-06",
+      "observed_metrics": {
+        "views": 57331,
+        "likes": 878,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "principal component analysis PCA eigenfaces Steve Brunton Python YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "SVD",
+        "implementation",
+        "Python"
+      ],
+      "audience": "Python/scientific-computing learners (inferred)",
+      "supported_metadata_observation": "Description explicitly connects SVD to PCA in Python.",
+      "candidate_value_inference": "Inspect the computational bridge from mathematical factors to scores.",
+      "inspection_limit": "Part 1 belongs to a series; prerequisite context may be external.",
+      "initial_shortlist": true,
+      "next_inspection_question": "Can the learner map the computed SVD arrays to directions, scores and retained variance?",
+      "source_family": "Steve Brunton",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-09",
+      "youtube_id": "4GBWRkS6GdM",
+      "url": "https://www.youtube.com/watch?v=4GBWRkS6GdM",
+      "title": "PCA limitations you should know",
+      "creator": "Data Science in your pocket",
+      "publication_date": "2022-12-04",
+      "observed_metrics": {
+        "views": 346,
+        "likes": 2,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "PCA limitations pitfalls YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "limits"
+      ],
+      "audience": "PCA users (inferred)",
+      "supported_metadata_observation": "Title and description explicitly target PCA limitations.",
+      "candidate_value_inference": "Counterweight to introductory benefit-focused candidates.",
+      "inspection_limit": "Specific flaws and their correctness are unknown until inspected.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Data Science in your pocket",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-10",
+      "youtube_id": "ZgyY3JuGQY8",
+      "url": "https://www.youtube.com/watch?v=ZgyY3JuGQY8",
+      "title": "Principal Component Analysis (PCA) Explained: Simplify Complex Data for Machine Learning",
+      "creator": "IBM Technology",
+      "publication_date": "2024-06-10",
+      "observed_metrics": {
+        "views": 97405,
+        "likes": 2600,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Principal Component Analysis IBM Technology YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "applications",
+        "industry"
+      ],
+      "audience": "Data-science/ML enthusiasts; description names them.",
+      "supported_metadata_observation": "Description lists finance, healthcare, noise filtering and visualization.",
+      "candidate_value_inference": "Candidate for broad purpose examples.",
+      "inspection_limit": "Benefits are promotional description claims, not verified outcomes.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "IBM Technology",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-11",
+      "youtube_id": "FgakZw6K1QQ",
+      "url": "https://www.youtube.com/watch?v=FgakZw6K1QQ",
+      "title": "StatQuest: Principal Component Analysis (PCA), Step-by-Step",
+      "creator": "StatQuest with Josh Starmer",
+      "publication_date": "2018-04-02",
+      "observed_metrics": {
+        "views": 3709751,
+        "likes": 73000,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "Selected authored/unspecified transcript passages inspected in preceding retrospective: 0:30–3:25, 5:53–7:32, 9:55–12:23. Provenance: ../tutor-retrospective/round1-comparators.md; no video inspection."
+      },
+      "discovery_query": "Principal Component Analysis PCA Normalized Nerd explained step by step YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "geometry",
+        "algebra",
+        "interpretation"
+      ],
+      "audience": "Beginning PCA learners (inferred)",
+      "supported_metadata_observation": "Chapters move from 2D PC1 to vectors/loadings, PC2 and scree plots.",
+      "candidate_value_inference": "Prior transcript inspection found a fixed-distance triangle and naming after a mixing operation.",
+      "inspection_limit": "Prior transcript is not video inspection or a complete covariance/global proof.",
+      "initial_shortlist": true,
+      "next_inspection_question": "How is the right-triangle invariant isolated and reused before the terminology?",
+      "source_family": "StatQuest with Josh Starmer",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-12",
+      "youtube_id": "YepECGlOl4Y",
+      "url": "https://www.youtube.com/watch?v=YepECGlOl4Y",
+      "title": "Dimensionality Reduction: Principal Component Analysis (PCA) & kernel PCA",
+      "creator": "NPTEL-NOC IITM",
+      "publication_date": "2025-03-18",
+      "observed_metrics": {
+        "views": 2317,
+        "likes": 38,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Kernel principal component analysis YouTube NPTEL",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "extensions",
+        "kernel PCA"
+      ],
+      "audience": "Dimensionality-reduction learners (inferred)",
+      "supported_metadata_observation": "Description lists motivation, PCA, kernel PCA and an example.",
+      "candidate_value_inference": "Inspect the transition from a linear limitation to an extension.",
+      "inspection_limit": "Example, correctness and prerequisite load uninspected.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "NPTEL-NOC IITM",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-13",
+      "youtube_id": "fKivxsVlycs",
+      "url": "https://www.youtube.com/watch?v=fKivxsVlycs",
+      "title": "PCA 4: principal components = eigenvectors",
+      "creator": "Victor Lavrenko",
+      "publication_date": "2014-01-19",
+      "observed_metrics": {
+        "views": 137039,
+        "likes": 1100,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "PCA eigenvectors eigenvalues Normalized Nerd YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "covariance",
+        "eigenvectors"
+      ],
+      "audience": "Learners with basic linear algebra (inferred)",
+      "supported_metadata_observation": "Description links directions of variance to covariance eigenvectors.",
+      "candidate_value_inference": "Focused covariance-to-direction comparator.",
+      "inspection_limit": "A stated connection is not a verified derivation.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Victor Lavrenko",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-14",
+      "youtube_id": "oRvgq966yZg",
+      "url": "https://www.youtube.com/watch?v=oRvgq966yZg",
+      "title": "StatQuest: PCA - Practical Tips",
+      "creator": "StatQuest with Josh Starmer",
+      "publication_date": "2018-04-09",
+      "observed_metrics": {
+        "views": 228426,
+        "likes": 4800,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"PCA - Practical Tips\" \"StatQuest\"",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "preprocessing",
+        "component selection",
+        "limits"
+      ],
+      "audience": "PCA learners continuing the main lesson.",
+      "supported_metadata_observation": "Description and chapters target scaling, centering and component count.",
+      "candidate_value_inference": "Inspect the boundary conditions omitted by many introductions.",
+      "inspection_limit": "Advice must be checked for conditions; it is not a universal scaling rule.",
+      "initial_shortlist": true,
+      "next_inspection_question": "Are centering, unit scaling and the available number of components explained with counterexamples and conditions?",
+      "source_family": "StatQuest with Josh Starmer",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-15",
+      "youtube_id": "ey2PE5xi9-A",
+      "url": "https://www.youtube.com/watch?v=ey2PE5xi9-A",
+      "title": "Lecture 14 | Machine Learning (Stanford)",
+      "creator": "Stanford",
+      "publication_date": "2008-07-22",
+      "observed_metrics": {
+        "views": 115562,
+        "likes": 410,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"principal component analysis\" \"Stanford\" lecture 14 YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "theory",
+        "PCA",
+        "factor analysis"
+      ],
+      "audience": "CS229 course learners; Andrew Ng named by Stanford.",
+      "supported_metadata_observation": "Description places PCA after factor analysis and EM.",
+      "candidate_value_inference": "Potential formal comparison and alternative statistical framing.",
+      "inspection_limit": "Long course context; PCA segment boundaries and beginner suitability uninspected.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Stanford",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-16",
+      "youtube_id": "TJdH6rPA-TI",
+      "url": "https://www.youtube.com/watch?v=TJdH6rPA-TI",
+      "title": "Data Analysis 6: Principal Component Analysis (PCA) - Computerphile",
+      "creator": "Computerphile",
+      "publication_date": "2019-07-09",
+      "observed_metrics": {
+        "views": 183027,
+        "likes": 5400,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"PCA\" \"Computerphile\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "applied data analysis"
+      ],
+      "audience": "Data-analysis learners (inferred)",
+      "supported_metadata_observation": "Description identifies Mike Pound, a data-analysis series and music dataset.",
+      "candidate_value_inference": "Inspect a concrete application-led explanation.",
+      "inspection_limit": "Metadata does not show how the music example carries the argument.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Computerphile",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-17",
+      "youtube_id": "ne6vnKoTHwk",
+      "url": "https://www.youtube.com/watch?v=ne6vnKoTHwk",
+      "title": "Principal Component Analysis (PCA) | Dimensionality Reduction Techniques  (2/5)",
+      "creator": "unknown",
+      "publication_date": "unknown",
+      "observed_metrics": {
+        "views": null,
+        "likes": null,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title/snippet only.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Principal Component Analysis PCA proof Lagrange multipliers YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "derivation candidate"
+      ],
+      "audience": "Unknown; mathematical topic inferred from indexed snippet.",
+      "supported_metadata_observation": "Indexed snippet names a spectral-theorem chapter and Lagrange-multiplier link.",
+      "candidate_value_inference": "Possible proof-focused route pending fuller access.",
+      "inspection_limit": "Creator, counts and actual argument unverified; title/snippet only.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "unknown",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-18",
+      "youtube_id": "t5UA3xWDGZI",
+      "url": "https://www.youtube.com/watch?v=t5UA3xWDGZI",
+      "title": "Principal Component Analysis (PCA) — Topic 40 of Machine Learning Foundations",
+      "creator": "Jon Krohn",
+      "publication_date": "2021-04-13",
+      "observed_metrics": {
+        "views": 9795,
+        "likes": 217,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Principal Component Analysis PCA explained mathematical derivation Jon Krohn YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "code",
+        "linear algebra"
+      ],
+      "audience": "ML-foundations learners; matrix-operations unit identified.",
+      "supported_metadata_observation": "Description advertises visual Python demonstrations within Linear Algebra II.",
+      "candidate_value_inference": "Candidate for explanation-to-code coupling.",
+      "inspection_limit": "Visual effectiveness is an advertised feature, not an observed result.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Jon Krohn",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-19",
+      "youtube_id": "yDpz0PqULXQ",
+      "url": "https://www.youtube.com/watch?v=yDpz0PqULXQ",
+      "title": "Robust Principal Component Analysis (RPCA)",
+      "creator": "Steve Brunton",
+      "publication_date": "2021-01-29",
+      "observed_metrics": {
+        "views": 78461,
+        "likes": 2500,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Robust principal component analysis Steve Brunton YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "extensions",
+        "robustness"
+      ],
+      "audience": "Data-driven science/engineering learners (inferred)",
+      "supported_metadata_observation": "Description discusses robustness, corruption/missing entries and applications.",
+      "candidate_value_inference": "Inspect how failure conditions motivate a different PCA formulation.",
+      "inspection_limit": "Do not infer the exact corruption or missing-data guarantees from metadata.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Steve Brunton",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-20",
+      "youtube_id": "D1j90fHAkC8",
+      "url": "https://www.youtube.com/watch?v=D1j90fHAkC8",
+      "title": "PCA Plot for Single-cell RNA-seq (scRNAseq) in R | Seurat Tutorial",
+      "creator": "Botany Research Solutions",
+      "publication_date": "2025-04-20",
+      "observed_metrics": {
+        "views": 61,
+        "likes": null,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Principal component analysis PCA single cell RNA seq YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "application",
+        "biology",
+        "R"
+      ],
+      "audience": "Bioinformaticians, researchers and students; explicitly named.",
+      "supported_metadata_observation": "Description lists Seurat preprocessing, PCA plotting and interpretation.",
+      "candidate_value_inference": "Domain workflow candidate with a distinct tool context.",
+      "inspection_limit": "Low observed reach; no quality judgment or validation of analysis workflow.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Botany Research Solutions",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-21",
+      "youtube_id": "MNbJTYnYN0E",
+      "url": "https://www.youtube.com/watch?v=MNbJTYnYN0E",
+      "title": "PCA is Just Eigenvectors of the Covariance Matrix",
+      "creator": "DataMListic",
+      "publication_date": "2026-06-14",
+      "observed_metrics": {
+        "views": 5732,
+        "likes": 338,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"PCA is Just Eigenvectors of the Covariance Matrix\"",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "geometry",
+        "covariance",
+        "eigenvectors"
+      ],
+      "audience": "PCA/linear-algebra learners (inferred)",
+      "supported_metadata_observation": "Description proposes sweeping a unit vector, tracking projected spread, then deriving the eigenproblem.",
+      "candidate_value_inference": "Promising small-reach candidate for the exact geometry-to-proof bottleneck.",
+      "inspection_limit": "The advertised derivation is short; validity and omitted assumptions need inspection.",
+      "initial_shortlist": true,
+      "next_inspection_question": "Does sweeping direction into the eigenproblem justify the maximum or merely announce stationarity?",
+      "source_family": "DataMListic",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-22",
+      "youtube_id": "uFbDWu0tDrE",
+      "url": "https://www.youtube.com/watch?v=uFbDWu0tDrE",
+      "title": "Principal Component Analysis (PCA) from Scratch in Python",
+      "creator": "Bhavesh Bhatt",
+      "publication_date": "2019-06-20",
+      "observed_metrics": {
+        "views": 12860,
+        "likes": 290,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Principal Component Analysis\" \"Sebastian Raschka\" lecture YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "implementation",
+        "component selection"
+      ],
+      "audience": "Python learners (inferred)",
+      "supported_metadata_observation": "Description names a from-scratch component-selection walkthrough based on Raschka's blog.",
+      "candidate_value_inference": "Compare computation with component-count decisions.",
+      "inspection_limit": "An adaptation shares a source lineage; it is not independent evidence of a method.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Bhavesh Bhatt",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-23",
+      "youtube_id": "oiusrJ0btwA",
+      "url": "https://www.youtube.com/watch?v=oiusrJ0btwA",
+      "title": "Machine Learning in Python: Principal Component Analysis (PCA) for Handling High-Dimensional Data",
+      "creator": "unknown",
+      "publication_date": "unknown",
+      "observed_metrics": {
+        "views": null,
+        "likes": null,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title/snippet only.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Principal Component Analysis\" \"Data Science from Scratch\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "practical",
+        "Python",
+        "high dimensions"
+      ],
+      "audience": "Python/data learners (inferred from title)",
+      "supported_metadata_observation": "Indexed title identifies PCA for high-dimensional data in Python.",
+      "candidate_value_inference": "Practical alternative pending fuller access.",
+      "inspection_limit": "Creator and counts not returned; hashtags are insufficient creator verification.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "unknown",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-24",
+      "youtube_id": "g-Hb26agBFg",
+      "url": "https://www.youtube.com/watch?v=g-Hb26agBFg",
+      "title": "Principal Component Analysis (PCA)",
+      "creator": "Luis Serrano Academy",
+      "publication_date": "2019-02-09",
+      "observed_metrics": {
+        "views": 463413,
+        "likes": 15000,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "Selected auto-generated transcript passages inspected in preceding retrospective: 0:45–1:58, 2:03–2:48, 8:29–10:40, 14:53–17:37. Provenance: ../tutor-retrospective/round1-comparators.md; no video inspection."
+      },
+      "discovery_query": "\"Principal Component Analysis (PCA)\" \"Serrano\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "purpose",
+        "covariance",
+        "geometry"
+      ],
+      "audience": "Concept-first PCA learners (inferred)",
+      "supported_metadata_observation": "Chapters include camera, housing, variance, covariance matrix and eigenvectors.",
+      "candidate_value_inference": "Prior transcript inspection found purpose and equal-variance/different-tilt contrasts.",
+      "inspection_limit": "Prior captions were auto-generated; visual timing and full proof uninspected.",
+      "initial_shortlist": true,
+      "next_inspection_question": "Does the camera/housing opening earn the variance criterion? Inspect the actual same-variance/different-tilt visuals.",
+      "source_family": "Luis Serrano Academy",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-25",
+      "youtube_id": "fkf4IBRSeEc",
+      "url": "https://www.youtube.com/watch?v=fkf4IBRSeEc",
+      "title": "Principal Component Analysis (PCA)",
+      "creator": "Steve Brunton",
+      "publication_date": "2020-01-27",
+      "observed_metrics": {
+        "views": 492349,
+        "likes": 8000,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Principal Component Analysis\" \"Brunton\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "theory",
+        "scientific computing"
+      ],
+      "audience": "Data-driven science/engineering learners; book context stated.",
+      "supported_metadata_observation": "Description focuses on dominant correlation patterns in high-dimensional data.",
+      "candidate_value_inference": "Candidate for a scientific-computing route alongside its implementation.",
+      "inspection_limit": "Same creator/book lineage as the Python and robust variants.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Steve Brunton",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-26",
+      "youtube_id": "dhK8nbtii6I",
+      "url": "https://www.youtube.com/watch?v=dhK8nbtii6I",
+      "title": "Principal Component Analysis (The Math) : Data Science Concepts",
+      "creator": "ritvikmath",
+      "publication_date": "2019-09-23",
+      "observed_metrics": {
+        "views": 122105,
+        "likes": 3100,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Principal Component Analysis\" \"ritvikmath\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "mathematical derivation"
+      ],
+      "audience": "PCA learners seeking mathematics (inferred from title)",
+      "supported_metadata_observation": "Title and description explicitly target the mathematics of PCA.",
+      "candidate_value_inference": "Potential algebraic comparator to geometric introductions.",
+      "inspection_limit": "Description does not establish specific steps, rigor or clarity.",
+      "initial_shortlist": true,
+      "next_inspection_question": "Which assumptions and steps connect constrained variance optimization to a global optimum?",
+      "source_family": "ritvikmath",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-27",
+      "youtube_id": "FD4DeN81ODY",
+      "url": "https://www.youtube.com/watch?v=FD4DeN81ODY",
+      "title": "Principal Component Analysis (PCA)",
+      "creator": "Visually Explained",
+      "publication_date": "2021-09-29",
+      "observed_metrics": {
+        "views": 433841,
+        "likes": 8400,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Principal Component Analysis (PCA)\" \"Visually Explained\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "application",
+        "geometry"
+      ],
+      "audience": "Introductory audience; description says gentle introduction.",
+      "supported_metadata_observation": "Description uses World Happiness Report data; chapters cover projection and optimization.",
+      "candidate_value_inference": "Inspect purpose through a dataset and the move into optimization.",
+      "inspection_limit": "Description's language about what makes countries happy must not be adopted as causality.",
+      "initial_shortlist": true,
+      "next_inspection_question": "How does the happiness dataset motivate a projection without confusing descriptive patterns with causes?",
+      "source_family": "Visually Explained",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-28",
+      "youtube_id": "CechARGinR4",
+      "url": "https://www.youtube.com/watch?v=CechARGinR4",
+      "title": "Lecture 9: Principal Component Analysis in Finance",
+      "creator": "MIT OpenCourseWare",
+      "publication_date": "2025-12-03",
+      "observed_metrics": {
+        "views": 12474,
+        "likes": 224,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Lecture 9: Principal Component Analysis in Finance\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "application",
+        "finance",
+        "theory"
+      ],
+      "audience": "Finance/mathematics course learners; course identified.",
+      "supported_metadata_observation": "MIT description names yield curves, factor interpretation, challenges and foundations.",
+      "candidate_value_inference": "Inspect why component directions matter for a domain decision.",
+      "inspection_limit": "Advanced context; current description does not establish beginner suitability.",
+      "initial_shortlist": true,
+      "next_inspection_question": "How do yield-curve components answer a practical question, and which limitations are explicit?",
+      "source_family": "MIT OpenCourseWare",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-29",
+      "youtube_id": "pmG4K79DUoI",
+      "url": "https://www.youtube.com/watch?v=pmG4K79DUoI",
+      "title": "Basics of PCA (Principal Component Analysis) : Data Science Concepts",
+      "creator": "ritvikmath",
+      "publication_date": "2019-09-09",
+      "observed_metrics": {
+        "views": 119685,
+        "likes": 2700,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"Basics of PCA\" \"ritvikmath\"",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "introductory concepts"
+      ],
+      "audience": "Introductory learners; description says gentle introduction.",
+      "supported_metadata_observation": "Title and description identify a PCA introduction.",
+      "candidate_value_inference": "Companion baseline for the same creator's mathematical treatment.",
+      "inspection_limit": "Companion videos are a related route, not independent endorsements.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "ritvikmath",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-30",
+      "youtube_id": "_UVHneBUBW0",
+      "url": "https://www.youtube.com/watch?v=_UVHneBUBW0",
+      "title": "Principal Component Analysis (PCA) clearly explained (2015)",
+      "creator": "StatQuest with Josh Starmer",
+      "publication_date": "2015-08-13",
+      "observed_metrics": {
+        "views": 1057041,
+        "likes": 15000,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "Principal Component Analysis covariance matrix proof StatLect YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "biology",
+        "covariance",
+        "interpretation",
+        "historical"
+      ],
+      "audience": "RNA-seq readers; description names this application.",
+      "supported_metadata_observation": "Description lists plot interpretation and marks the 2018 video as its update.",
+      "candidate_value_inference": "Historical contrast: covariance/loadings chapter before the later step-by-step treatment.",
+      "inspection_limit": "Superseded by its creator; keep lineage explicit, not another independent route.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "StatQuest with Josh Starmer",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    },
+    {
+      "candidate_id": "PCA-31",
+      "youtube_id": "lJ0cXPoEozg",
+      "url": "https://www.youtube.com/watch?v=lJ0cXPoEozg",
+      "title": "Factor Analysis and Probabilistic PCA",
+      "creator": "Mutual Information",
+      "publication_date": "2021-11-08",
+      "observed_metrics": {
+        "views": 30557,
+        "likes": 1100,
+        "rating": "unknown",
+        "observation_window_utc": {
+          "start": "2026-10-07T04:11:24Z",
+          "end": "2026-10-07T04:15:01Z"
+        },
+        "underlying_counter_snapshot_time": "unknown",
+        "provenance": "Indexed YouTube metadata returned by web search; not live-page counters. Null means not returned, never zero."
+      },
+      "access": {
+        "current_pass": "metadata",
+        "details": "Indexed primary-video title, creator, description/chapters and any available counts.",
+        "transcript_this_pass": false,
+        "viewed_segment_this_pass": false,
+        "prior_access": "none recorded"
+      },
+      "discovery_query": "\"PCA\" \"Mutual Information\" YouTube",
+      "source_basis": "primary creator video page as indexed; URL and title matched in tool result",
+      "topic_angle": [
+        "extensions",
+        "probabilistic PCA",
+        "factor analysis"
+      ],
+      "audience": "Learners with linear algebra/probability (inferred from described sources)",
+      "supported_metadata_observation": "Description contrasts factor analysis and probabilistic PCA with cited technical sources.",
+      "candidate_value_inference": "Inspect assumptions and what the probabilistic formulation adds.",
+      "inspection_limit": "Advanced extension; not a replacement for the beginner PCA route.",
+      "initial_shortlist": false,
+      "next_inspection_question": "Inspect the relevant segment before using its proposed technique or treating it as a quality recommendation.",
+      "source_family": "Mutual Information",
+      "quality_status": "unscored candidate; no learning effectiveness or animation-quality judgment"
+    }
+  ]
+}

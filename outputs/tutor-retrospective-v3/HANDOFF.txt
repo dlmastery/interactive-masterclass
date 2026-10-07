@@ -1,0 +1,45 @@
+VERSION 3 — FUTURE EXPLAINER / SKILL REFINEMENT HANDOFF
+Prepared for the user's review. No future chat, model change, course rebuild, publication, or scheduled run has been started.
+
+Purpose
+The user's ambition is a leading explainer: lasting intuition, natural flow, full subject understanding, rigorous justification, practical judgment, outstanding illustrations, and excellent spoken delivery. Quality takes priority over authoring speed, output size, and implementation simplicity. A complex subject may need 100-plus slides and sustained revision. Top ratings and millions of views are aspirations, not guaranteed outcomes.
+
+Read first
+1. The user's latest review decisions and actual authorized scope.
+2. C:/Users/abhir/.codex/skills/build-interactive-masterclass/SKILL.md (version 3).
+3. REPORT.html and DELTAS.html in this directory. EARLIER-DIFFS.html supplies the previously missing version 1 to version 2 changes.
+4. The canonical content-contract, research-debate, execution-quality, lesson-design, and relevant review references.
+5. narration-production for speaker notes/video; adaptive-tutoring and tutoring-evidence for student feedback; marimo-studio for native notebook/slides.
+6. Existing useful artifacts and actual evidence. Do not treat them as accepted under the new standard.
+
+Ownership
+build-interactive-masterclass owns shared pedagogy. build-intuition-masterclass is a compatible entrypoint. build-research-codelabs adds research/scientific execution/laptop/provenance requirements and references the same teaching standard. Do not duplicate research pipelines or load an obsolete skill snapshot from an earlier outputs folder. The accompanying updated-skills.zip contains all three current skill directories.
+
+Complete content promise
+Cover purpose/gain, what the idea is and is not, why it exists, when to use/avoid it, where it fits, mechanism, foundations at use, derivation or evidence, complete worked cases, applications and modern practice, assumptions and limits, detection and mitigation with residual tradeoffs, serious alternatives, best practices, misconceptions, transfer and retention where tested. Map these to scenes/tasks; don't just add headings. Adapt the evidence form to mathematics, empirical science, history, craft, software, or other subjects.
+
+Research expectation
+For flagship work discover at least 30 unique relevant video candidates where available, using the user's examples as seeds. Prioritize high-view/well-received sources without confusing popularity with accuracy/learning. Screen substantive content, deeply inspect strong complementary approaches, and actually view/listen before judging visual/oral techniques. The initial 8–12 deep shortlist is a starting allocation, not a ceiling. Verify technical/current claims with primary evidence and synthesize one coherent original route.
+
+The included PCA landscape has 31 metadata-level candidates, 29 indexed view counts and 26 like counts; 10 are shortlisted for future deep inspection. It is NOT a completed 30-video review. Two earlier selected transcript inspections are separately labeled. Finish required deep/visual/oral inspection before claiming best-of-field synthesis. Genuine source scarcity and access blockage must be distinguished; neither permits fabricated metrics or viewing claims.
+
+Execution
+Establish full coverage and the purpose-to-method link. Compare serious routes. Pilot opening, hardest bridge with context, practical limit/alternative decision, and spoken sequence. Continue according to the future request's scope: a full-build authorization is not discharged by a pilot, while a plan/skill-only request does not authorize building.
+
+Background unlocks a needed step and returns to the main question. Do not consume the course on prerequisites and compress the promised derivation. Use interactivity for prediction, construction, counterfactuals, diagnosis, and feedback; software computing an answer is not student reasoning.
+
+Two failed local causal repairs require a new hypothesis/representation/route and a fresh pilot. This is a strategy checkpoint, not a global attempt/time cap. Continue substantive quality work within actual authorization and resource limits. The codelab's old generic three-image limit has been superseded by this quality-first preference; retain scientific experiment budgets and actual tool limits.
+
+Spoken delivery
+Author exact event-cued speaker notes: SAY/SHOW/POINT/ACTION/PAUSE/PROMPT/FEEDBACK/TRANSITION, with sources and state. Rehearse aloud or generate and listen where available. Review silent visuals, audio alone, timed combined delivery, cold presenter use, and learner reasoning. Do not claim actual oration testing from a written script. Distinguish a linear video demonstration from an interactive state-aware tutor. Verify notes exist in the exported deck and coupled values agree.
+
+Review and proof
+Use fresh-context and role-appropriate reviewers where possible, preserving authorship and shared-model limits. Ask for visible warrants and discriminating tasks; retain objections. Separate software correctness, explanation review, written simulation, human independent performance, retention, and audience metrics. The CLI validates registered records, not truthful reporting or learning. Declare the full version 3 obligations in its graph; it cannot invent missing coverage nodes.
+
+Current validation
+Read VALIDATION.json and the linked evidence for exact results. The later Astra medium setting was not evaluated here. No human learning study, finished course narration rehearsal, or YouTube publication experiment was performed in the skill-update task.
+
+Suggested request for the next refinement, to adapt after user review
+“Use the version 3 masterclass skill bundle and the retrospective/diffs in outputs/tutor-retrospective-v3. Apply my review decisions. Audit whether these instructions are complete, coherent, enforceable within their stated limits, and transferable to many subjects. Test the newly added coverage, research-depth, quality-first, and narration requirements on unfamiliar cases. Preserve evidence boundaries. Give exact before/after diffs and an updated report for any further skill change. Do not rebuild PCA unless I explicitly include that work in this request.”
+
+If the later request instead authorizes course rebuilding, replace that final scope with the approved build objective. Do not infer that authorization from this handoff file.

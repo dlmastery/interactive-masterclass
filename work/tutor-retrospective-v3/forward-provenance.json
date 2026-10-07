@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "protocol_version": "3",
+  "created_before_outputs_utc": "2026-10-07T04:18:51.478697Z",
+  "scope": "Bounded forward teaching excerpts; no full-course build or new 30-video research pass",
+  "executor": "/root/teaching_repair_review",
+  "relationship": "Author-informed executor: contributed earlier PCA repairs, retrospective analysis and the v3 discovery ledger",
+  "model": {
+    "instruction_identity": "Codex, an agent based on GPT-6",
+    "exact_model_identifier": "not exposed to this executor",
+    "inheritance": "parent model/context inherited; no override requested or used"
+  },
+  "context": {
+    "isolation": "not fresh or blind to skill rationale",
+    "prior_exposure": "Conversation history, PCA repair process, preceding forward-test outputs and v3 skill references",
+    "expected_answers_access": "No hiddenforward-key.md or evaluator answers read",
+    "prior_domain_knowledge": "Existing model knowledge; outputs cannot demonstrate acquisition or novice learning"
+  },
+  "tools": {
+    "available": "Filesystem/shell, web search, browser/computer-use, collaboration and other tools exposed in session",
+    "used_before_prompt": "Filesystem reads and hashes; collaboration message",
+    "audio_or_video_rehearsal": "not performed",
+    "browser_rendering": "not performed"
+  },
+  "inspected_skill_files": [
+    {
+      "relative_path": "SKILL.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\SKILL.md",
+      "sha256": "90435be3bd9da9b4b413dd7c59963a2171ca8d20f87051efae181cdf7635ec09",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/content-contract.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\content-contract.md",
+      "sha256": "d3a3e2ff97f90275d3b4bb645ad95d9e845573852b66ad5b7c8c6ecdf23ca631",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/research-debate.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\research-debate.md",
+      "sha256": "ccb03f7eb4c626a4f9840aeb08016110bfe822ba3f91f5d59e52b8f5ac6a75f9",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/execution-quality.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\execution-quality.md",
+      "sha256": "3f91de0a76f41eae9fbc98f093229cc589558a0e8f9f1242060ab36a4bb26270",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/tutoring-evidence.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\tutoring-evidence.md",
+      "sha256": "5f8252bad8cded9d2a7f4f27531519620f13c9d7f21677a396871b5face4d99a",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/narration-production.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\narration-production.md",
+      "sha256": "223e9881b9dc433d96c6372c37e71a831b89db4dd9f51e47f0bd378d4527c481",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/lesson-design.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\lesson-design.md",
+      "sha256": "f1953ca930d66ba8fa5239ed5e07c0a51dcef6a06963e3cc2d0d00b54bd16a2a",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/review.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\review.md",
+      "sha256": "4869029962f8b1370e18da101523c549bec8d2fd335693c06225b1dc966a7618",
+      "access": "read in full through shell text output"
+    },
+    {
+      "relative_path": "references/adaptive-tutoring.md",
+      "absolute_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass\\references\\adaptive-tutoring.md",
+      "sha256": "284f420324dc1b78c4676cabd39e0f940b71a82719201fe31bb84559fb5759a2",
+      "access": "read in full through shell text output"
+    }
+  ],
+  "prompt_status": "Read frozen forward-prompts.txt only; hidden key and evaluator answers not accessed",
+  "output_status": "Written; frozen for external evaluation",
+  "prompt_sha256": "c147ebab8a5c5b8aca3586e6e31c864ffb6bf103bcd01b133e00f781bb25a5ee",
+  "prompt_read_before_outputs_utc": "2026-10-07T04:19:15.5801456Z",
+  "output_sha256": "c2f98dacaf71de75859bc660843c4e4d93abde8f8b257d85c7014c303fa98bc2",
+  "output_completed_utc": "2026-10-07T04:23:24.4537608Z",
+  "changed_skill_files_since_initial_hash": [
+    "references/research-debate.md",
+    "references/review.md",
+    "references/adaptive-tutoring.md"
+  ],
+  "execution_tools_used": [
+    "Filesystem read/write/hash via PowerShell and apply_patch",
+    "Web search and primary/museum-source page text reads",
+    "JavaScript arithmetic for two gradient updates and whitespace-based word counts",
+    "Collaboration messages"
+  ],
+  "word_checks": {
+    "counting": "Whitespace-separated words; references excluded; bracketed production cues excluded only for spoken count",
+    "case1": {
+      "total": 469,
+      "spoken": 111
+    },
+    "case2": {
+      "total": 476,
+      "spoken": 107
+    },
+    "case3": {
+      "total": 491,
+      "spoken": 118
+    },
+    "scope_scenario_words": [
+      110,
+      103,
+      139
+    ]
+  },
+  "actual_checks": [
+    "Toy updates verified numerically: x=2, slope=4, step 1.25 -> x=-3,error=9; step .25 -> x=1,error=1",
+    "Source-supported claims reviewed through cited page text or clearly labeled indexed snippets",
+    "All three topic and scope-response word bounds checked",
+    "Skill-file hashes rechecked against initial inspected manifest"
+  ],
+  "missing_evidence": [
+    "No audio produced or listened to, no measured rehearsal",
+    "No rendered diagrams or photos visually inspected",
+    "No human learner or comparison study",
+    "No hidden key or evaluator answers accessed",
+    "No formal ASD-STE100 compliance audit"
+  ]
+}

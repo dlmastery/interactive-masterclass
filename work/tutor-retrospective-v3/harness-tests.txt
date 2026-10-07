@@ -1,0 +1,22 @@
+test_blocking_issue_reopens_acceptance_and_preserves_other_branch (__main__.Workflow.test_blocking_issue_reopens_acceptance_and_preserves_other_branch) ... ok
+test_changed_evidence_and_receipt_invalidate_acceptance (__main__.Workflow.test_changed_evidence_and_receipt_invalidate_acceptance) ... ok
+test_cli_errors_return_failure_without_receipt_write (__main__.Workflow.test_cli_errors_return_failure_without_receipt_write) ... ok
+test_critical_dependency_blocks_skip_and_delivery (__main__.Workflow.test_critical_dependency_blocks_skip_and_delivery) ... ok
+test_delivery_does_not_require_human_efficacy (__main__.Workflow.test_delivery_does_not_require_human_efficacy) ... ok
+test_graph_rejects_unknown_dependency_cycle_and_delivery_disguise (__main__.Workflow.test_graph_rejects_unknown_dependency_cycle_and_delivery_disguise) ... ok
+test_history_does_not_mutate_with_later_attempts (__main__.Workflow.test_history_does_not_mutate_with_later_attempts) ... ok
+test_human_claims_require_human_type_counts_and_remain_attestations (__main__.Workflow.test_human_claims_require_human_type_counts_and_remain_attestations) ... ok
+test_legacy_readable_but_not_writable_or_promoted (__main__.Workflow.test_legacy_readable_but_not_writable_or_promoted) ... ok
+test_mode_scope_and_pinned_policy (__main__.Workflow.test_mode_scope_and_pinned_policy) ... ok
+test_receipt_requires_scenario_provenance_and_exact_input_binding (__main__.Workflow.test_receipt_requires_scenario_provenance_and_exact_input_binding) ... ok
+test_resolution_requires_new_issue_specific_current_review (__main__.Workflow.test_resolution_requires_new_issue_specific_current_review) ... ok
+test_resolving_teaching_finding_does_not_bypass_other_required_claim (__main__.Workflow.test_resolving_teaching_finding_does_not_bypass_other_required_claim) ... ok
+test_simulated_claim_and_empty_critical_artifact_are_rejected (__main__.Workflow.test_simulated_claim_and_empty_critical_artifact_are_rejected) ... ok
+test_source_change_invalidates_dependents_not_other_branch (__main__.Workflow.test_source_change_invalidates_dependents_not_other_branch) ... ok
+test_two_failed_repairs_need_changed_pilot_not_string_reset (__main__.Workflow.test_two_failed_repairs_need_changed_pilot_not_string_reset) ... ok
+test_windows_bom_and_malformed_json_exit_cleanly (__main__.Workflow.test_windows_bom_and_malformed_json_exit_cleanly) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 2.578s
+
+OK

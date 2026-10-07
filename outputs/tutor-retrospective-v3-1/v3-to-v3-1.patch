@@ -1,0 +1,270 @@
+--- before/build-interactive-masterclass/SKILL.md
++++ after/build-interactive-masterclass/SKILL.md
+@@ -7,7 +7,7 @@
+ 
+ Aim for the strongest explanation available for the stated audience and promise: lasting intuition, rigorous understanding, sound decisions, independent application, and engaging delivery. Quality has priority over authoring speed, slide count, or implementation simplicity. The user's ambition is a leading public explainer; ratings, reach, and millions of views are goals to investigate, never guaranteed outcomes.
+ 
+-This is canonical teaching protocol version 3. `build-intuition-masterclass` is a compatible entrypoint. `build-research-codelabs` retains its execution/science requirements and reuses this teaching standard. Do not run duplicate research pipelines.
++This is canonical teaching protocol version 3.1. `build-intuition-masterclass` is a compatible entrypoint. `build-research-codelabs` retains its execution/science requirements and reuses this teaching standard. Do not run duplicate research pipelines.
+ 
+ ## Scope, audience, and quality
+ 
+@@ -18,7 +18,9 @@
+ ## Required references by phase
+ 
+ - At intake and planning: [complete content contract](references/content-contract.md), [broad research and synthesis](references/research-debate.md), [execution and quality loops](references/execution-quality.md).
++- For this user's flagship courses and any request to explain across levels: [explanation depth and learner teach-back](references/explanation-depth.md). Build faithful connections from accessible intuition to research judgment; do not equate age with preparation or six scripts with learner understanding.
+ - For the learning route and critical bridges: [lesson design](references/lesson-design.md) and [human/AI tutoring evidence](references/tutoring-evidence.md).
++- When comparing routes or crafting a pilot: [creator practices and explanatory craft](references/explainer-craft.md), including Welch Labs. Treat creator examples as research seeds, adapt techniques to the inference, and keep source accuracy separate from admiration.
+ - For a narrated or publication-ready explainer: [narration and production](references/narration-production.md). Speaker notes, illustrations, and spoken transitions are first-class deliverables.
+ - For live feedback or authored branches: [adaptive tutoring](references/adaptive-tutoring.md).
+ - For evaluation: [review standards](references/review.md). For recorded workflow state: [harness](references/harness.md).
+@@ -31,6 +33,7 @@
+ 3. **Survey broadly.** For flagship work discover at least 30 unique relevant video candidates where available, including popular/well-received sources and distinctive rigorous approaches. The user's examples are seeds. Record actual metadata and access depth; missing views/ratings remain unknown. Screen substantive material and deeply inspect complementary strong approaches, including actual visual/oral segments for visual/oral claims. Expand research when coverage or pilots expose gaps. Do not mistake 30 URLs for 30 understood lessons.
+ 4. **Verify and synthesize.** Check technical/current claims against primary sources. Compare serious competing teaching routes. Preserve their strongest objections. Build an original, coherent narrative with stable notation and representations; do not assemble a collage of copied best moments.
+ 5. **Design the inference graph.** Connect learner need to mechanism, justification, application, failure, mitigation, and choice among alternatives. Insert background where it unlocks the next step. Reserve the central derivation and practical judgment; do not spend all attention on preparation.
++   For this user's flagship work, also map a shared conceptual core through the six requested lenses: about age 10, about age 15, undergraduate, graduate, PhD, and postdoc. Plan both expansion into rigor and accurate explanation back in ordinary language. Teach the learner to make these translations; do not merely generate six descriptions. Build full routes only within the authorized scope and demonstrated preparation.
+ 6. **Pilot the explanatory burden.** Build an opening, the hardest bridge with immediate context, and a decision/transfer scene. Probe the actual delivery medium early. For video, also test a narrated sequence with synchronized visuals. Compare the pilot with strong reference explanations and the stated learner promise.
+ 7. **Expand and refine.** Continue until the authorized scope and required quality checks are satisfied. More rounds are appropriate when they improve the explanation. After repeated failure, change the hypothesis, example, representation, sequence, or reviewer; do not repeat unchanged polish. Do not use a retry count as permission to deliver known slop.
+ 8. **Review the complete experience.** Check correctness, breadth, conceptual continuity, transfer, limitations/alternatives, meaningful interaction, visual attention, oration/notes, language, accessibility, and real runtime separately. Trace the whole route after local repairs. Preserve objections and verify fixes on the current revision.
+--- before/build-interactive-masterclass/references/adaptive-tutoring.md
++++ after/build-interactive-masterclass/references/adaptive-tutoring.md
+@@ -7,6 +7,8 @@
+ Maintain goal, problem version, current question, representation state, learner attempt, reasoning evidence, assistance, pending action, detour stack, and return point. Separate observations from inferred mastery. Avoid unnecessary personal data. Explain storage lifetime; microphone or tab capture needs a user start action and consent.
+ 
+ Across problems maintain demonstrated capabilities, uncertain prerequisites, recurring wrong rules, assistance needed, contexts tried, use/no-use judgments, mitigation/alternative choices, and later-revisit evidence. Record observable evidence and uncertainty rather than an invented precise mastery score. Select a new task that resolves the important uncertainty while preserving the learner's purpose.
++
++For audience-adapted teach-back, also record the explanation recipient, their assumed knowledge, and the requested explanatory purpose separately from the learning person's own demonstrated preparation. Use [explanation-depth.md](explanation-depth.md). Diagnose subject misunderstanding, poor translation for the recipient, and delivery difficulty separately; a correct specialist formula may not answer an accessible-explanation task. Do not infer either person's readiness solely from age or degree.
+ 
+ The practice-selection outer loop chooses among prerequisite support, another guided case, a varied independent problem, a boundary/alternative decision, more distant transfer, or consolidation/revisit. Use several observations where feasible; one lucky answer does not establish readiness. Do not keep serving easy repeats to inflate apparent success. Progression should reduce assistance and vary context when evidence supports it, or reopen the relevant prerequisite when it does not. Preserve meaningful learner choice and permit an honest skipped/unverified state.
+ 
+--- before/build-interactive-masterclass/references/content-contract.md
++++ after/build-interactive-masterclass/references/content-contract.md
+@@ -27,6 +27,8 @@
+ | Transfer and retention | Can the learner select, adapt, explain, and reject the method on a new case? Include unaided tasks, later reconstruction where in scope, and next-step routes. |
+ 
+ Completeness is evaluated across the course, not mechanically repeated on every slide. A narrowly scoped lesson can mark dimensions outside its promise with a reason. A full masterclass must not use narrow-lesson exemptions to evade the user's requested breadth.
++
++For the user's flagship courses, cross this coverage map with the [explanation-depth map](explanation-depth.md): accessible intuition through research judgment. The goal includes the learner's ability to explain the same core to different audiences. Each route retains meaningful purpose, mechanism, use, and boundaries; formal depth and specialist evidence vary. Age and qualifications are entry hypotheses, not measurements of knowledge. A simple explanation must remain true within its stated scope, and advanced depth must stay connected to that explanation.
+ 
+ ## Weave the breadth into the reasoning
+ 
+--- before/build-interactive-masterclass/references/explainer-craft.md
++++ after/build-interactive-masterclass/references/explainer-craft.md
+@@ -0,0 +1,68 @@
++# Explanatory craft: choose techniques for the learner's inference
++
++Read while comparing teaching routes and designing a critical pilot. This reference turns selected creator practices into operations that can be reviewed. It complements the complete content contract, tutoring research, explanation-depth map, and narration reference. It does not replace a topic's broad research or establish a ranking of creators.
++
++The linked sources are creator guidance, original companion materials, or identified research. The protocol below is our adaptation, not a claim that every creator follows it. Choose techniques for this topic and audience; do not impose all of them on every scene. Study the reasoning and construction without copying a creator's script, distinctive artwork, or delivery identity.
++
++## Moves worth considering
++
++| Teaching move | Operation and useful check | Failure to avoid |
++|---|---|---|
++| A question with a visible payoff | Open with a puzzle, decision, or attainable subproblem. Revisit it when the learner has the needed model. Ask what they can now explain that they could not explain at the start. [S1, S3] | An intriguing hook that the lesson never resolves; withholding needed context for suspense. |
++| Examples that earn abstraction | Let a concrete case reveal the relationship; introduce its precise name and framework when useful. Map each important term back to the case. [S1, S2] | Delaying essential definitions mechanically, or leaving the learner with a picture but no usable formal account. |
++| A sequence driven by unresolved questions | Explain why the current account is insufficient and what the next idea resolves. Keep the route coherent through returns to the original problem. [S3, W1, W2] | A list of topics connected only by “next”; fabricated history or a false claim that there was only one possible solution. |
++| Prediction before a reveal | Where readiness permits, ask for an outcome and a reason. Compare it with the result and revise the explanation. Supply a model or hint first when the learner lacks an entry point. [S4] | Endless guessing, compulsory interactivity, or a dramatic reveal whose mechanism remains hidden. |
++| A plausible wrong model given a fair test | Show why someone could believe it, then use evidence that distinguishes it from a better model. State the replacement explicitly. [S5] | Humiliation, fake student mistakes, or implying that every topic requires manufactured confusion. |
++| Visual change carrying an inference | State what the viewer should notice; align drawing, motion, pointer, and narration with it. Preserve useful before/after states. [S1] | Moving equations decoratively or implying a visual transformation is a mathematical proof. |
++| Construction when construction matters | Reveal a diagram, argument, or procedure in steps when the intermediate states explain a choice. Otherwise provide a stable clear representation. [S6] | Treating handwriting, animation, or polished graphics as inherently better teaching. |
++| Respectful, prepared conversation | Rehearse for one learner with the stated prerequisites. Preserve precise claims while making the voice natural. Keep reviewed notes even when delivery permits variation. [S6] | Expert shorthand, condescension, unprepared improvisation, or mechanical script reading. |
++| A check that can expose a mistake | After deriving or implementing something, use a distinct check and explain what disagreement would mean. Keep numerical illustration, implementation checks, empirical tests, and proof separate. [W2] | Trusting a plausible output, testing with the same faulty logic twice, or claiming a check establishes more than it does. |
++| Help that preserves the pending question | Expand the prerequisite in place, apply it immediately, and restore the original task and state. [S7] | A glossary detour that loses the learner's reason for needing the term. |
++| Guided work that opens into agency | Move from an entry task to learner-chosen cases, questions, or constructions. Give a useful starting action and ways to inspect results. [S4] | A large unexplained sandbox, or controls whose only purpose is to make the learner click. |
++| Practice with different reasoning jobs | Include explanation, procedure, diagnosis, and a meaningful challenge where appropriate. Let the learner attempt before consulting useful feedback. [S8, W3] | Repeating numerical variants as the only practice, or mistaking recognition of a polished explanation for independent ability. |
++| Simplifications reviewed after rendering | Record consequential omissions and possible false inferences. Review the plain argument and then the actual illustration/timed scene against its sources. [S9] | Assuming a sourced script makes every metaphor, scale, or animation accurate. |
++| A closing that transfers ownership | Resolve the opening problem, ask the learner to reconstruct the central idea, then invite a new question they can investigate with it. [S3; explanation-depth.md] | Ending with applause, a slogan, or further videos as the only next step. |
++
++These strengthen existing requirements rather than introduce a form per sentence. A curious detour or human story may serve motivation; explain its relevance and test whether it interrupts the reasoning. Do not impose a creator's exact runtime, number of drafts, catchphrase, or production style. The user's quality-first preference remains controlling.
++
++## Welch Labs: problem continuity, representation, and verification
++
++Welch is an explicit reference in this user's creator landscape. Inspect the series relevant to the next topic; do not treat a familiar channel name as completed research.
++
++- **Need before formal machinery.** The Imaginary Numbers series connects the need for a wider mathematical account with its historical development and applications. Adapt the relationship between problem and new tool; verify historical specifics independently. [W1]
++- **One case that evolves.** Neural Networks Demystified carries a small prediction task through successive machinery and later failure analysis. Keep concept IDs, data meaning, notation, and visual referents consistent as the learner gains a stronger account. Where code matters, map the visible object to its mathematical symbol, code identifier, and shape. [W2]
++- **A visible obstacle motivates the next method.** Show the weakness of a current approach before adding complexity. Reconstructed discovery is a teaching route, not a claim about the historical order of discovery. [W2]
++- **Representations with continuity.** The workbook uses sequential figure states to connect a familiar graph to an expanded view. When adapting this, label axes, projection, and omitted quantities at the reveal; retain the starting state for comparison. [W3]
++- **A conjecture linked to a second representation.** The complex-plane assignment asks learners to plot operands and products before the next lesson relates algebraic multiplication to geometry. Adapt this as a supported comparison, a learner conjecture, the relevant justification, and a fresh test. Examples alone do not establish a general theorem. [W4]
++- **Derive, inspect, and challenge.** The neural-network sequence places numerical gradient checking before training, then addresses generalization. Adapt verification and failure analysis to the domain rather than copying old code or numerical rules. [W2]
++- **The viewer becomes an explainer.** Workbook activities include discussion, procedural work, critical reasoning, and challenge. Our adaptation adds fresh audience-specific teach-back and transfer using explanation-depth.md. [W3]
++
++Separate a useful teaching pattern from the correctness of every source statement. Legacy code, data-split practices, heuristics, historical claims, and simplified diagrams need their own checks. Preserve central qualifications in the scene where the inference happens; a much later correction may arrive too late. Never promote an admired creator to an infallible authority.
++
++## Fit these into the existing loops
++
++**Strategy loop:** for each serious route, identify its opening question, pivotal change in understanding, running case, practical decision, and closing payoff. Select creator techniques that support those demands. Record a short reason for any significant incompatibility; a coherent route is preferable to collecting every admired feature.
++
++**Scene repair loop:** name the learner's likely model, intended inference, evidence/representation, and expected reasoning. When review finds a gap, change the mechanism that should teach it. Cosmetic revisions do not count as repairing a missing inference. Use the existing bridge contract and scene IDs.
++
++**Learner loop:** capture a prediction, construction, explanation, or decision; respond to its reasoning; reduce assistance and try a changed case. The learner may propose a valid route the author did not anticipate. Ask for clarification when the answer is ambiguous rather than forcing a canned misconception.
++
++**Review:** check the opening promise was fulfilled, adjacent steps have a reason, visual and spoken claims agree, major simplifications are honest, and the ending gives the learner explanatory work. Use neutral tasks and actual artifacts. Viewing comfort, completion, and learning are distinct. Record which source was read, watched, listened to, or executed; text inspection does not establish pacing or performance.
++
++## Source key and evidence limits
++
++Inspected for the October 2026 process revision. Recheck changing platform or technical facts when reused. Creator advice is a design input; our complete protocol has not been validated by these creators.
++
++- **S1 — 3Blue1Brown:** [creator's advice on mathematical videos](https://www.3blue1brown.com/about/). Written guidance; selected advice does not establish a universal sequence or learning gain.
++- **S2 — StatQuest:** [Josh Starmer's account of explaining statistics](https://statquest.org/about). Creator self-report, not a reason to omit requested derivations.
++- **S3 — Nicky Case:** [designing explorable explanations](https://blog.ncase.me/how-i-make-an-explorable-explanation/). Complementary interactive-media practice, not a YouTube ranking.
++- **S4 — Nicky Case:** [four interactive design patterns](https://blog.ncase.me/explorable-explanations-4-more-design-patterns/). Creator design guidance; chosen actions still need learner evaluation.
++- **S5 — Muller et al.:** [Saying the wrong thing](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2729.2007.00248.x). Primary research on multimedia misconception discussion in first-year physics; it does not prove all-topic superiority or that confusion alone helps.
++- **S6 — Sal Khan:** [Blackboard style videos, official transcript](https://www.khanacademy.org/transcript/xbb00de6e). Indexed transcript inspected; no listening claim. Adapt delivery to the requested medium.
++- **S7 — Nicky Case:** [Nutshell](https://ncase.me/nutshell/). Written rationale for contextual expansion; this revision did not test its UI.
++- **S8 — 3Blue1Brown:** [learning recommendations, Practice section](https://www.3blue1brown.com/blog/recommendations/). Creator advice about doing mathematics; use tutoring-evidence.md for the separate research layer.
++- **S9 — Kurzgesagt:** [Head of Research's account of research and fact-checking](https://medium.com/@Kurzgesagt/how-research-and-factchecking-work-at-kurzgesagt-f5b239188255). Organizational self-report from 2023, not an efficacy trial.
++- **W1 — Welch Labs:** [Imaginary Numbers series introduction and rationale](https://www.welchlabs.com/blog/2015/8/28/imaginary-numbers-are-real-part-1-introduction). Early plan, not a verified account of the final episode count.
++- **W2 — Welch Labs:** [Neural Networks Demystified sequence](https://www.welchlabs.com/blog/2015/1/16/neural-networks-demystified-part-1-data-and-architecture) and [creator's companion repository](https://github.com/stephencwelch/Neural-Networks-Demystified). For this revision, movie text/markdown and selected code in Parts 1, 3, 5, and 7 were read; nothing was executed or watched. Source hashes and inspected cells are in the revision evidence. Recheck the version and technical claims before adapting them.
++- **W3 — Welch Labs:** [official workbook preview](https://www.welchlabs.com/s/workbookPreview.pdf). Selected text and static pages inspected. No video timing or narration was assessed.
++- **W4 — Welch Labs:** [complex-plane assignment](https://www.welchlabs.com/blog/2015/10/2/imaginary-numbers-are-real-part-6-the-complex-plane) and [complex-multiplication follow-up](https://www.welchlabs.com/blog/2015/10/9/imaginary-numbers-are-real-part-7-complex-multiplication). Official post text inspected, not video delivery.
+--- before/build-interactive-masterclass/references/explanation-depth.md
++++ after/build-interactive-masterclass/references/explanation-depth.md
+@@ -0,0 +1,56 @@
++# Explain the same idea at different depths
++
++For this user's flagship courses, understanding should support explanation to a 10-year-old, a 15-year-old, an undergraduate, a graduate student, a PhD researcher, and a postdoc. The objective is the learner's flexible grasp of the subject, not merely six scripts written by an agent. Use this reference at planning, critical-bridge design, and review. Brief answers do not trigger six full lessons.
++
++## One core, several entry points
++
++Write the core relation in ordinary language: the question, relevant objects, mechanism or warrant, result, and essential boundary. Choose a concrete case that makes the relation visible. Identify what the learner must be able to predict, explain, or decide. Use that core to connect representations; simpler and more formal accounts should not contradict each other.
++
++Age and qualifications are shorthand for possible preparation, not fixed limits or a ranking of intelligence. A postdoc outside the field may need an elementary entry; a younger learner may be ready for formal reasoning. Diagnose actual familiarity. Avoid childish tone, invented age-based reading rules, and the assumption that an advanced learner prefers jargon. Experts still need purpose and intuition.
++
++## The six requested lenses
++
++Adapt these working expectations to the topic and learner. They guide depth, not a compulsory six-chapter sequence.
++
++| Lens | Explanatory burden | Evidence of understanding to seek |
++|---|---|---|
++| Around age 10: concrete intuition | A familiar or directly observable situation, a real question, a visible relation, a useful result, and one honest boundary. Use physical, geometric, narrative, or sensory reasoning as appropriate. | Learner explains or draws what happens, predicts a changed case, and says when the simple rule may fail. |
++| Around age 15: connected model | Explain the mechanism with quantities, graphs, simple relationships, or structured evidence when appropriate. Ground each new abstraction in the concrete account. | Learner connects representations, reasons through a small example, and explains the difference between two plausible answers. |
++| Undergraduate: operational and justified understanding | Define the objects, derive or justify the central method, work a complete case, and interpret assumptions, results, applications, and alternatives. | Learner reconstructs the main argument, performs or interprets the method, and explains why it serves the original goal. |
++| Graduate: formal depth and generalization | Expose conditions of validity, proof structure or methodological warrant, important edge cases, generalizations, and nontrivial tradeoffs. | Learner identifies which assumption a claim needs, builds or interprets a counterexample, and justifies a choice between approaches. |
++| PhD: research judgment | Evaluate competing formulations and evidence, distinguish established results from live questions, and interpret the strength and limits of research claims. | Learner critiques a specific claim using its evidence, identifies what is still unknown, and proposes a discriminating test or argument. |
++| Postdoc: synthesis and research design | Connect the idea to neighboring approaches, compare their explanatory power, and reason about what evidence could justify an extension or change in practice. Retain access to the simple core. | Learner defends and revises a synthesis under objections, designs a plausible investigation, and explains its stakes in plain language. Novel publishable discovery is not a prerequisite for a good explanation. |
++
++These are proposed design expectations, not validated developmental stages. In history, rigor may mean source criticism and interpretation; in craft, perceptual discrimination and performance; in mathematics, definitions and proof. Do not force equations or a research frontier onto a subject where they do not serve the promise.
++
++## Make the bridges visible
++
++For a central concept, keep one compact depth map with: shared concept ID; the learning person's demonstrated preparation; the intended explanation recipient's assumed knowledge; explanation and representation at each relevant lens; what remains true; what is omitted, qualified, or added; the question that needs the next depth; and a teach-back task. These are two different audience contracts: an undergraduate may be learning to explain to a child. Diagnose a knowledge gap in the learner separately from poor adaptation to the recipient. Cover all six lenses in the flagship plan, marking unauthored or untested ones honestly. This does not require building six entire courses when only one route is authorized.
++
++An upward bridge starts with something the current account cannot yet answer. Add only the needed definition, precision, assumption, technique, or evidence; show how it answers that question. Introduce prerequisite math or context here, then return to the subject. An advanced derivation must explain the original visible effect, not become an unrelated exercise.
++
++A downward bridge translates the formal account back into objects, actions, and consequences. Explain why each important quantity or evidential distinction exists. Removing technical words without restoring their meaning is not simplification. One running case can provide continuity; use additional cases when needed to expose limits or transfer, rather than stretching an analogy beyond its useful range.
++
++Track simplifications explicitly: claim, valid scope, omitted detail, likely false inference, and later refinement. Some models are approximations that must be replaced outside their domain. Say so at the accessible level in suitable language; do not plant a false universal rule that a later lesson quietly retracts. A picture can supply intuition without pretending to prove the theorem.
++
++## Teach the learner to make the explanation
++
++Model an explanation and expose the choices behind it. Then ask the learner to explain the idea to a specified audience using a fresh example, draw or operate a representation, and answer a natural follow-up. Reduce prompts over successive attempts. Offer written, spoken, visual, or supported formats; unfamiliarity with public speaking is distinct from a conceptual gap.
++
++Check meaning, not resemblance to the model answer:
++
++- Does the explanation retain the core relation, purpose, and essential boundary?
++- Does it use only prerequisites established for that audience, defining needed terms as they arise?
++- Can the learner answer a why/how question and predict a changed case without reciting the script?
++- Can they move upward into the relevant justification, then back into ordinary language without changing the claim?
++- Can they recognize where their analogy stops working and choose a better representation?
++
++Feedback identifies the specific lost relation, unsupported jump, false implication, or missing evidence. Repair that bridge, then use a different case. A correct explanation after heavy assistance is a supported attempt; verify independently before claiming unaided ability. Research-level explanation requires relevant evidence and preparation: a short course must not imply it has granted field expertise.
++
++## Review and routing
++
++Compare adjacent accounts for contradiction and hidden prerequisites. A domain reviewer checks fidelity; a reviewer restricted to the stated entry knowledge checks accessibility and continuity. Record their actual knowledge and shared context. AI role-play is a useful inspection, not proof that a child or expert learned from the course.
++
++Test simple-to-formal and formal-to-simple translation, an analogy failure, a changed example, and audience-specific follow-ups on the central concepts. Assess depth-specific tasks separately rather than averaging a strong expert answer with an inaccurate accessible story. Record actual learner attempts only when observed; authored prompts and reviewer answers are not learner outcomes.
++
++Give learners clear entry routes and optional depth controls, with an explanation of what an advanced branch adds. Preserve their place after a refresher. The course should make deeper understanding reachable while respecting the selected audience and scope; length and degree labels are not evidence of depth.
+--- before/build-interactive-masterclass/references/lesson-design.md
++++ after/build-interactive-masterclass/references/lesson-design.md
+@@ -8,6 +8,8 @@
+ 
+ Show the idea in action early. Expose an insufficiency in the current rule. The next concept should resolve it. Use a stable example until a deliberate contrast or new context teaches something it cannot. Return to the opening question after formal development. A motivating story alone does not justify an arbitrary later objective.
+ 
++Use [explainer-craft.md](explainer-craft.md) when selecting concrete techniques for this route. Track the main question, what each scene resolves, what question remains, and where the opening promise pays off. A history-of-discovery narrative needs sources; a reconstructed learning sequence must not masquerade as literal history. Welch Labs is one explicit research seed for evolving cases, motivated methods, and verification; no creator's technical claims bypass correctness review.
++
+ ## Three graph views, one compact record
+ 
+ Maintain a compact route first. Add fields or generated views only where dependencies, revisions, or runtime branches justify them. Do not require three separate graph documents.
+@@ -17,6 +19,8 @@
+ 3. **Artifact dependency view:** contracts, content, code, reviews, and evidence depend on exact revisions. Changed inputs reopen affected claims. This view is distinct from concept dependencies.
+ 
+ The learner sees a short route of useful questions and their location. An internal dependency graph is not the learning map.
++
++For multiple depths, attach audience/readiness and representation variants to shared concept IDs. Add explicit `refines`, `formalizes`, `qualifies`, and `explains-back-to` relations where useful. State the unresolved question that motivates each upward step, the added assumption or precision, and what remains valid below it. A new degree label or vocabulary list is not a bridge. Use [explanation-depth.md](explanation-depth.md) for the six lenses and learner teach-back checks. Offer a route appropriate to demonstrated readiness; do not force an expert through all novice scenes or make a beginner traverse unearned research claims.
+ 
+ A full route connects purpose → method → validity → application → failure → diagnosis → mitigation with residual cost → alternative decision → transfer. Not every subject has the same kind of proof or mitigation. Add current-evidence links to modern application nodes. Link spoken script, figure state, and assessment to the same scene ID so a changed example cannot leave stale narration unnoticed.
+ 
+--- before/build-interactive-masterclass/references/narration-production.md
++++ after/build-interactive-masterclass/references/narration-production.md
+@@ -10,6 +10,8 @@
+ 
+ Do not imitate a named creator's voice or copy their script. Study techniques and create an original argument, example set, visual grammar, and speaker identity.
+ 
++Precise notes support natural delivery. Choose a rehearsed script, guided live explanation, or hybrid for the medium while retaining the requested exact speaker notes and cue obligations. A presenter can vary ordinary phrasing without changing definitions, conditions, numerical claims, or the reasoning. Review what was actually said when judging a performed version. See [explainer-craft.md](explainer-craft.md) for complementary creator practices; do not impose one channel's pacing or script philosophy on every genre.
++
+ ## Event-cued speaker notes
+ 
+ For each meaningful scene/cue include:
+@@ -21,7 +23,7 @@
+ | Visual before/after | Objects, labels, values, annotations, and retained reference state |
+ | Action and pointer | Named target, reveal, transformation, control movement, or annotation |
+ | Pause/pace/emphasis | Where to let the learner inspect or think, and what deserves emphasis |
+-| Learner prompt and response | Prediction or task, plausible responses, feedback, help/re-entry cues |
++| Learner prompt and response, when a task is present | Prediction or task, plausible responses, feedback, help/re-entry cues; a direct explanation or inspection cue does not need a compulsory question |
+ | Transition | Why the next scene follows and what remains unresolved |
+ | Evidence and boundary | Source/credit, assumptions, and limits relevant to the spoken claim |
+ | Timing | Estimated initially; measured after actual rehearsal |
+--- before/build-interactive-masterclass/references/review.md
++++ after/build-interactive-masterclass/references/review.md
+@@ -10,6 +10,7 @@
+ | Complete subject coverage | Content-contract map linked to actual scenes, applications, limits, diagnostics, mitigations, alternatives, practices, and transfer; justified exclusions |
+ | Research breadth and depth | At least 30 unique relevant video candidates where available, source-access states, substantive screening/deep notes, primary verification, and coherent synthesis |
+ | Practical judgment | Cases requiring when/where, use/no-use, failure detection, mitigation with residual cost, and a fair alternative choice |
++| Understanding across depths | Shared conceptual core, truthful scope at each level, explicit bridges into rigor, explanations back in ordinary language, and actual learner teach-back evidence where observed; see explanation-depth.md |
+ | Visual/interaction usability | Rendered meaningful states at intended sizes; actual control use, labels, coupled outputs, attention burden |
+ | Narration and notes | Exact event-cued script, visual/audio synchronization, actual rehearsal/listening where performed, cold-presenter usability, checked exported notes |
+ | Runtime | Clean start, real navigation, persistence/reset, notebook return, failure recovery |
+@@ -31,6 +32,10 @@
+ Hidden assessments may withhold answers and fresh cases, not silently add a narrower deliverable requirement or one preferred analogy. Tie each blocking criterion to the public learner objective. If a frozen key demands a specific bridge that the prompt did not require, report the mismatch and distinguish failure of that diagnostic from failure of the requested lesson. A repair after feedback is supervised revision, not a new blind pass; preserve the first output and verdict.
+ 
+ A user's rejection reopens the relevant acceptance. It need not negate valid mathematical or runtime evidence. Tie the next change to a falsifiable teaching hypothesis.
++
++For a promised route across ages/academic levels, review simplification in both directions: can the accessible explanation survive the formal account, and can the formal account explain its own purpose without unexplained jargon? Test a fresh example, an analogy boundary, and an audience-specific follow-up. A learner's memorized script, an AI's prior knowledge, and age/degree labels cannot establish that the course taught this ability. Record missing higher-level knowledge as a remaining prerequisite, not as mastery. Do not require frontier novelty merely to pass an expert explanation.
++
++For adopted creator techniques, inspect the resulting teaching move rather than resemblance to the channel: opening question/payoff, reason for the next step, evidence that changes a model, visual/spoken agreement, and independent reconstruction after the reveal. Use explainer-craft.md selectively. Distinguish observed source practice from our proposed adaptation; correct technical mistakes or outdated conventions even in admired sources. Runtime, duration, music, and visual polish alone cannot establish the teaching claim.
+ 
+ Use [narration-production.md](narration-production.md) for silent-picture, audio-only, combined timed, and cold-presenter reviews. Record written script review separately from actual listening/performance. Use [content-contract.md](content-contract.md) for coverage and [execution-quality.md](execution-quality.md) for continuing strategy revisions without an arbitrary total-effort cutoff.
+ 
+--- before/build-intuition-masterclass/SKILL.md
++++ after/build-intuition-masterclass/SKILL.md
+@@ -11,6 +11,8 @@
+ 
+ Apply version 3's complete coverage: why/when/where, mechanism and justification, applications and current uses, limitations with diagnostics and mitigations, alternatives, best practices, and transfer. For flagship work, the user's named explainers seed at least 30 relevant video candidates where available; access depth stays explicit. Quality takes priority over arbitrary duration or slide count. Read the canonical narration/production reference for speaker notes and public video work.
+ 
++Version 3.1 adds [explanation across depths](../build-interactive-masterclass/references/explanation-depth.md): for this user's flagship courses, connect the same core through age-10, age-15, undergraduate, graduate, PhD, and postdoc lenses. Develop the learner's ability to explain, expand, qualify, and answer follow-ups across these lenses. Preserve truth and readiness; producing six summaries is insufficient.
++
+ Honor scope: an assessment or process update does not authorize rebuilding the lesson. Small answers and edits do not need the full pipeline.
+ 
+ For student questions, branching feedback, or per-problem state, also read [adaptive tutoring](../build-interactive-masterclass/references/adaptive-tutoring.md). Old links in [teaching-contract.md](references/teaching-contract.md) route to these maintained references.
+--- before/build-research-codelabs/SKILL.md
++++ after/build-research-codelabs/SKILL.md
+@@ -5,11 +5,13 @@
+ 
+ # Build research codelabs
+ 
+-## Shared teaching standard, version 3
++## Shared teaching standard, version 3.1
+ 
+ Use [the canonical masterclass protocol](../build-interactive-masterclass/SKILL.md) for substantial teaching design and review. This codelab skill adds scientific execution, laptop paths, research freshness, and provenance; do not run two duplicate research or planning pipelines. Read its content-contract and research-debate references for complete why/when/where coverage, applications and modern uses, limitations with diagnostics and mitigations, alternatives, best practices, and at least 30 relevant video candidates for flagship work where available. User examples seed discovery; they do not bound it.
+ 
+ Quality takes priority over authoring speed, lesson/slide count, and implementation simplicity. Long courses and repeated substantive refinement are appropriate. Actual compute, tool, user, and experimental-evaluation limits still apply. A repeated failure triggers a new approach rather than acceptance of weak teaching. For speaker notes, slides, or publication-ready video, also use the canonical narration-production reference and its rehearsal checks. Highly viewed publication is an ambition, not a guaranteed result.
++
++Apply [explanation across depths](../build-interactive-masterclass/references/explanation-depth.md) for this user's flagship courses. Ground the same mechanism from an accessible child-level account through quantitative understanding, formal justification, research critique, and expert synthesis. Include learner teach-back and audience follow-ups; successful code execution is not evidence that the learner can explain it. Map all six requested lenses, but build routes within the authorized scope and actual prerequisites.
+ 
+ ## Final outcome
+ 

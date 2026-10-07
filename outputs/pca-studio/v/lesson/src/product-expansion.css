@@ -1,0 +1,229 @@
+.product-expansion {
+  color: #243d39;
+  min-width: 0;
+}
+.product-expansion .equation {
+  overflow-x: auto;
+  font-size: 18px;
+  padding: 2px 0;
+}
+.product-expansion .katex-display {
+  margin: .45em 0;
+  text-align: center;
+}
+.product-expansion[data-phase="0"] > .equation {
+  background: #eaf3e7;
+  border-left: 3px solid #237b70;
+}
+.product-expansion[data-phase="1"] .product-grid {
+  outline: 2px solid #a2baaa;
+  outline-offset: 5px;
+}
+.product-expansion p {
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 8px 0;
+}
+.product-observations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+.product-observations button {
+  flex: 1;
+  min-width: 86px;
+  font-size: 15px;
+}
+.product-observations span {
+  display: block;
+  font-size: 14px;
+  margin-top: 3px;
+}
+.product-context {
+  color: #536a5f;
+}
+.product-factors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+.product-factors > div {
+  padding: 8px;
+  background: #f0f3ec;
+  border-bottom: 3px solid transparent;
+  text-align: center;
+}
+.product-factors > div.lit {
+  border-bottom-color: #237b70;
+}
+.product-factors .equation {
+  font-size: 15px;
+}
+.product-factors strong {
+  font-size: 20px;
+  color: #226f66;
+  font-variant-numeric: tabular-nums;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+.product-grid button {
+  min-width: 0;
+  padding: 10px 7px;
+  min-height: 95px;
+  border: 1px solid #b6cbbd;
+  text-align: center;
+  color: #20564a;
+  background: #edf5ed;
+}
+.product-grid button.cross-product {
+  color: #8c4c1d;
+  background: #fff2df;
+  border-color: #d9ae7b;
+}
+.product-grid button[aria-pressed=true] {
+  outline: 2px solid #237b70;
+  outline-offset: 2px;
+}
+.product-grid button.cross-product[aria-pressed=true] {
+  outline-color: #b56929;
+}
+.product-grid small {
+  color: inherit;
+  font-size: 14px;
+}
+.product-grid strong {
+  display: block;
+  font-size: 23px;
+  font-variant-numeric: tabular-nums;
+}
+.product-grid .equation {
+  font-size: 17px;
+}
+.product-grid.combine button.cross-product {
+  border: 2px dashed #b56929;
+}
+.product-inspect {
+  padding: 9px 12px;
+  background: #f1f5ed;
+  border-left: 3px solid #237b70;
+  margin-top: 13px;
+}
+.product-inspect.cross-product {
+  border-color: #b56929;
+  background: #fff6e8;
+}
+.product-inspect p {
+  font-size: 15px;
+}
+.product-combined {
+  text-align: center;
+  color: #8c4c1d;
+  padding: 12px 4px;
+  border-bottom: 1px solid #e4cfb0;
+}
+.product-combined > span {
+  font-size: 15px;
+}
+.product-combined .equation {
+  font-size: 16px;
+}
+.product-combined strong {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+.product-local-total,
+.product-variance {
+  border-top: 1px solid #d1ded0;
+  margin-top: 13px;
+  padding: 12px 5px;
+}
+.product-local-total > span,
+.product-variance > span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.product-aggregate {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 2px solid #a4bdac;
+}
+.product-aggregate h3 {
+  font: 24px/1.2 Georgia, serif;
+  margin: 0 0 9px;
+  color: #173f36;
+}
+.product-data-head,
+.product-data-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: .55fr 1fr 1.25fr 1fr 1fr;
+  gap: 7px;
+  align-items: center;
+  text-align: right;
+  padding: 9px 8px;
+}
+.product-data-head {
+  font-size: 13px;
+  line-height: 1.3;
+  color: #536a5f;
+}
+.product-data-head > :first-child,
+.product-data-row > :first-child {
+  text-align: left;
+}
+.product-data-row {
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  border: 0;
+  border-bottom: 1px solid #d9e0d5;
+  border-radius: 0;
+  background: #fbfbf7;
+  color: #243d39;
+}
+.product-data-row > :nth-child(3) {
+  color: #8c4c1d;
+}
+.product-data-row[aria-pressed=true] {
+  background: #e5f0e3;
+  color: #173f36;
+  box-shadow: inset 3px 0 #237b70;
+}
+.product-data-row[aria-pressed=true] > :nth-child(3) {
+  color: #8c4c1d;
+}
+.product-sums {
+  font-weight: 600;
+  border-top: 2px solid #8fa796;
+  border-bottom: 0;
+}
+.product-variance {
+  background: #eaf3e7;
+  padding: 12px;
+}
+.product-expansion .product-note {
+  color: #61736d;
+  font-size: 14px;
+  margin-top: 13px;
+}
+@media (max-width: 600px) {
+  .product-expansion .equation {
+    font-size: 17px;
+  }
+  .product-grid .equation,
+  .product-factors .equation {
+    font-size: 15px;
+  }
+  .product-data-row {
+    font-size: 14px;
+    gap: 5px;
+    padding-inline: 4px;
+  }
+  .product-combined .equation {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-06",
+  "scope": "Notebook-owned slide claims, learner actions, and derivation reasons. Refresher and frontend prose are not included in this mechanical count.",
+  "source_sha256": "9aa844eb648949438f697e3bdefaa2549116bf6740c9145f96bd32bcbcaad4a4",
+  "sentences": 394,
+  "pass_length": 394,
+  "limits": "20 words for actions;25 for explanations. Simple whitespace count.",
+  "not_certification": "Sentence length is only one check. The requested 80% ASD-STE100 vocabulary, approved meaning, and part-of-speech compatibility remains unverified.",
+  "failures": []
+}

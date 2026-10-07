@@ -1,0 +1,76 @@
+{
+  "revision": "3",
+  "structure": [
+    {
+      "skill": "build-interactive-masterclass",
+      "exit_code": 0,
+      "result": "Skill is valid!",
+      "error": ""
+    },
+    {
+      "skill": "build-intuition-masterclass",
+      "exit_code": 0,
+      "result": "Skill is valid!",
+      "error": ""
+    },
+    {
+      "skill": "build-research-codelabs",
+      "exit_code": 0,
+      "result": "Skill is valid!",
+      "error": ""
+    }
+  ],
+  "broken_local_links": [],
+  "mismatched_bundle_hashes": [],
+  "changed_files_this_revision": 17,
+  "changed_files_previous_revision": 11,
+  "guardrail_tests": {
+    "passed": 17,
+    "failed": 0,
+    "evidence": "evidence/harness-tests.txt",
+    "scope": "registered workflow behavior; wording changed, semantics retained"
+  },
+  "forward_initial": {
+    "math": "pass: written artifact",
+    "history": "pass: written artifact",
+    "audio": "revise against narrow hidden diagnostic; procedure passed",
+    "scope_cases": "pass: hypothetical response behavior",
+    "evidence": "evidence/forward-evaluation.md"
+  },
+  "forward_supervised_repair": {
+    "audio": "pass for original narrow script finding after explicit feedback",
+    "not_blind": true,
+    "spoken_words": 135,
+    "original_test_limitation": "hidden criterion narrower than public prompt",
+    "evidence": "evidence/forward-audio-recheck.md"
+  },
+  "original_forward_output_unchanged": true,
+  "skill_drift_during_initial_forward_run": [
+    "research-debate.md",
+    "review.md",
+    "adaptive-tutoring.md"
+  ],
+  "post_feedback_refinements": [
+    "explicit explanatory contrast in narrated demonstrations",
+    "public-objective alignment of hidden evaluation criteria"
+  ],
+  "course_scope": {
+    "exclusions": [
+      "__pycache__",
+      "__marimo__",
+      ".artifacts"
+    ],
+    "changed_or_missing": [],
+    "extra_files": [],
+    "files_compared": 71,
+    "course_unchanged": true
+  },
+  "not_established": [
+    "human learning",
+    "performed narration",
+    "delayed retention",
+    "1000-topic robustness",
+    "YouTube performance",
+    "Astra medium behavior"
+  ]
+}

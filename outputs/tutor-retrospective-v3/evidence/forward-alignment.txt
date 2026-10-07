@@ -1,0 +1,37 @@
+POST-EXECUTION ALIGNMENT REVIEW — FINAL V3 CLARIFICATIONS
+Reviewed: 7 October 2026, 04:25 UTC.
+Reviewer: /root/teaching_repair_review, the author-informed executor of the frozen output. This is a review of that output against final clarifications, not a fresh, isolated or independent run. No hidden key or evaluator answers were read. No lesson, skill, output or original provenance file was edited.
+
+Evidence and revision identity
+Reread the three current canonical references in full and compared their requirements with forward-outputs.txt and the exact forward-prompts.txt. The frozen output SHA256 remains:
+c2f98dacaf71de75859bc660843c4e4d93abde8f8b257d85c7014c303fa98bc2
+
+references/research-debate.md
+Initially inspected: ccb03f7eb4c626a4f9840aeb08016110bfe822ba3f91f5d59e52b8f5ac6a75f9
+Now inspected: 4c240781c3832920a0bd0d85aa9dc9ee778e910f9e891199c87111294a7b45f6
+
+references/review.md
+Initially inspected: 4869029962f8b1370e18da101523c549bec8d2fd335693c06225b1dc966a7618
+Now inspected: 961c530468696ca641be7b620f1d0ff539f7be58b8bc6e86a689222a8e03de8a
+
+references/adaptive-tutoring.md
+Initially inspected: 284f420324dc1b78c4676cabd39e0f940b71a82719201fe31bb84559fb5759a2
+Now inspected: 97fb800fc8d4ed0cf12f59e9465dc2bc441f2d244eff4a2e2fae7aede59a532f
+
+Diff limitation
+The exact initially inspected intermediate files were not found among the available before-skills and updated-skills copies: the former hashes identify an older snapshot, while the latter equal the current files. Initial hashes establish drift but cannot reconstruct bytes. The coordinator identified the three additions below; their presence was verified in current text. This review does not claim an exhaustive byte-for-byte diff from the intermediate revision.
+
+1. Candidate scarcity versus blocked inspection
+The final research reference explicitly separates finding fewer relevant videos from finding videos whose playback or transcripts are inaccessible. Thirty metadata candidates can satisfy discovery while leaving content review incomplete.
+Outcome: no contradiction found. S1 answers the prompt's genuine nine-candidate landscape, requires another useful gap search and separately labeled alternatives, and does not claim nine playable videos exhaust a larger discovered set. S2 explicitly reports 30 discovered, five transcript-inspected, two visually inspected and one orally inspected; it rejects the unsupported review/rating claim. The specific counterfactual of 30 discovered but only nine accessible was not asked or executed. This review cannot count it as a passed forward case.
+
+2. Captions and transcripts within the 80% audit
+The final review reference explicitly includes captions and transcripts, denominators by delivered surface, deduplication, and unknown sentences that do not count as passes.
+Outcome: no contradiction found. The frozen output says no formal ASD-STE100 percentage audit was performed and makes no compatibility percentage claim. Its actual spoken drafts remain unaudited learner-facing prose. There are no separately delivered captions or transcript exports. This case does not verify implementation of the expanded audit procedure.
+
+3. Learner practice-selection outer loop
+The final adaptive reference distinguishes selecting the next problem/concept/support from responding within a problem; it adds evidence-based choices among support, guided practice, varied independent work, boundary decisions, transfer and revisit.
+Outcome: no contradiction found within this excerpt scope. Cases 1 and 2 propose a targeted response to an invalid rule or inference, and all three include transfer decisions. They neither claim a functioning adaptive runtime nor infer mastery from one correct response. They do not implement an across-problem learner record or demonstrate repeated practice selection. These remain untested; the separate authoring strategy in S3 is not evidence for this learner outer loop.
+
+Conclusion
+No required correction to the frozen outputs was found for these three clarifications. This narrow finding preserves the execution's original version identity and limitations; it is not a new execution against final hashes, a full quality verdict, or evidence of learner benefit.

@@ -1,0 +1,52 @@
+{
+  "skill": "build-interactive-masterclass",
+  "installed_path": "C:\\Users\\abhir\\.codex\\skills\\build-interactive-masterclass",
+  "automatic_discovery": "default allowed; explicit invocation also available",
+  "structural_validator": "pass",
+  "harness_tests": {
+    "passed": 7,
+    "scope": [
+      "skipped gate rejection",
+      "missing evidence rejection",
+      "changed evidence rejection",
+      "missing evidence detection",
+      "revision invalidates dependent gates",
+      "re-review recovery",
+      "existing run preservation"
+    ]
+  },
+  "creator_scenario_review": [
+    {
+      "case": "PCA masterclass for a 20-year-old",
+      "decision": "Full harness; geometry first; local mathematics bridges; core proof protected."
+    },
+    {
+      "case": "Interactive tutorial on historical causation",
+      "decision": "Full harness; sources and causal alternatives; no forced geometry, equations, or PCA widget."
+    },
+    {
+      "case": "Fix one label in an existing lesson",
+      "decision": "Small edit and affected validation; no full research/debate cycle."
+    },
+    {
+      "case": "Videos inaccessible, transcripts available",
+      "decision": "Use substantive accessible sources; label transcript-only visual limitations; no claim of watching."
+    },
+    {
+      "case": "Only sentence lengths checked",
+      "decision": "Do not claim 80% full STE compatibility."
+    }
+  ],
+  "independent_forward_test": "not executed",
+  "pedagogical_efficacy": "not established by these checks",
+  "files": {
+    "SKILL.md": "398e940a4ede7ecf94bc0da78baab2ef6c21eca0e010b1595f08ddec0f5ec9d3",
+    "agents\\openai.yaml": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10",
+    "references\\harness.md": "cdf646b0712676f61604fbef5471b8db87eafa661861e07c1c9135e7a24661ce",
+    "references\\lesson-design.md": "84b72a8c8b3e88fe49141db871f69286bc0bdf80ea244524a5e6db81181aed6c",
+    "references\\marimo-studio.md": "38b9a4f7ca3bc191e743b54c6b8fe15df97bac8d87dd8ec644514ff0323e8f5c",
+    "references\\research-debate.md": "d231704b95599d6a460ee8792c39d54435dc7e407f0520e8acba81b26c523c72",
+    "references\\review.md": "e04dea002100feabe8e25655bce23f6b83e3c286b8f38e5ab968a079812f52a3",
+    "scripts\\harness.py": "bdaa3fc1b05809c6b4b0e3702887155b6088a94e6bd023219ca4173ae49aab82"
+  }
+}

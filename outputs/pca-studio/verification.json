@@ -1,0 +1,535 @@
+{
+  "date": "2026-10-06",
+  "course": {
+    "slides": 64,
+    "equation_steps": 79,
+    "notebook_cells": 10
+  },
+  "production_build": {
+    "issues": [],
+    "profile": "production",
+    "revision": "sha256:eb36f4c84f2d6fb112ffccb894550bed6342fb36c1ffc873a45e5b5deb1a1799",
+    "schema": 1,
+    "view": "lesson"
+  },
+  "studio_validation": {
+    "level": "runtime",
+    "ok": true,
+    "issues": [],
+    "native_cell_sites": 1,
+    "value_projection_sites": 6,
+    "note": "Validated the repaired scenes and native model; later changes adjust opening layout and trusted navigation CSS only."
+  },
+  "mathematics": {
+    "result": "pass",
+    "projection_frames": 1629,
+    "additional_derivation_directions": 2880,
+    "combined_projection_bytes": 946805,
+    "checks": [
+      "covariance products",
+      "unit directions",
+      "scores",
+      "radial/tangent gradient decomposition",
+      "finite differences",
+      "signed eigenbasis and global bound",
+      "reconstruction",
+      "SVD",
+      "standardization"
+    ]
+  },
+  "browser": {
+    "viewport": {
+      "width": 870,
+      "height": 668
+    },
+    "slides": [
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 1,
+        "title": "Can two coordinates become one?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 2,
+        "title": "A score is a position on a ruler"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 3,
+        "title": "Which line recovers the points better?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 4,
+        "title": "Put each point at its closest place on the line"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 5,
+        "title": "What did one score lose?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 6,
+        "title": "Turning both axes loses nothing"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 7,
+        "title": "Choose an axis by a clear rule"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 8,
+        "title": "From a picture to a computation"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 9,
+        "title": "Measure change from a shared center"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 10,
+        "title": "Find the center of this cloud"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 11,
+        "title": "Move the center to zero"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 12,
+        "title": "The distances do not change"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 13,
+        "title": "Describe the line with two numbers"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 14,
+        "title": "Calculate one score"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 15,
+        "title": "Use one rule for every observation"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 16,
+        "title": "Keep the ruler length fixed"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 17,
+        "title": "How spread out are the scores?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 18,
+        "title": "Signs cancel; squares do not"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 19,
+        "title": "Give spread a number"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 20,
+        "title": "Search with a variance curve"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 21,
+        "title": "Open one squared score"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 22,
+        "title": "Add the same terms across rows"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 23,
+        "title": "Two familiar sums and one new sum"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 24,
+        "title": "Build covariance from signed products"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 25,
+        "title": "Variance alone cannot tell the tilt"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 26,
+        "title": "Store the three quantities in S"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 27,
+        "title": "Compute S with one matrix product"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 28,
+        "title": "Read wᵀ S w from inside out"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 29,
+        "title": "Check both routes with real numbers"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 30,
+        "title": "State the optimization problem"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 31,
+        "title": "What does S do to an arrow?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 32,
+        "title": "Find where the turning slope is zero"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 33,
+        "title": "Find the variance slope"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 34,
+        "title": "Find the constraint direction"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 35,
+        "title": "Match the two normal directions"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 36,
+        "title": "This equation defines an eigenvector"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 37,
+        "title": "Find the possible scale factors"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 38,
+        "title": "Solve our two eigenvalues"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 39,
+        "title": "Find and normalize the directions"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 40,
+        "title": "A candidate can be a minimum"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 41,
+        "title": "Why are these directions perpendicular?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 42,
+        "title": "Build any unit direction from them"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 43,
+        "title": "Expand variance in the new basis"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 44,
+        "title": "Prove the largest value wins"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 45,
+        "title": "What if the eigenvalues tie?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 46,
+        "title": "Find the next component"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 47,
+        "title": "Read the PCA coordinates"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 48,
+        "title": "Check the new covariance"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 49,
+        "title": "What does 90 percent measure?"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 50,
+        "title": "Rebuild an observation from its score"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 51,
+        "title": "Draw the missing part"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 52,
+        "title": "Prove the second objective"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 53,
+        "title": "Recover both coordinates"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 54,
+        "title": "Choose how much to keep"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 55,
+        "title": "Extend from two features to p"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 56,
+        "title": "Connect the result to SVD"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 57,
+        "title": "Use the axes on a new observation"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 58,
+        "title": "Decide what units mean"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 59,
+        "title": "Large variance is not always useful"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 60,
+        "title": "A line cannot follow every shape"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 61,
+        "title": "Change the real notebook data"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 62,
+        "title": "Solve a fresh geometric problem"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 63,
+        "title": "Produce the calculation yourself"
+      },
+      {
+        "horizontalOverflow": false,
+        "mathErrors": 0,
+        "pointer": "auto",
+        "slide": 64,
+        "title": "Teach PCA back in your own words"
+      }
+    ],
+    "wideViewport": {
+      "width": 1280,
+      "height": 800,
+      "scenes": [
+        1,
+        27,
+        32,
+        44
+      ]
+    },
+    "interactions": [
+      "PCA direction changes reconstruction and total error",
+      "Covariance accumulator: 8 divided by 3 = 2.667",
+      "Stationary 45 and 135 degrees: zero first-order change, opposite finite-turn changes",
+      "Signed eigenbasis: reversing w preserves variance",
+      "Global maximum reaches 6",
+      "Proof and experiment state preserved on slide navigation",
+      "Product expansion follows derivation step",
+      "Native notebook D x: 4 to 4.5 changes mean to (6.13,6.00), PC1 to48.4deg; restored to4",
+      "Outer notebook link opens Studio in Chrome"
+    ]
+  },
+  "language": {
+    "date": "2026-10-06",
+    "scope": "Notebook-owned slide claims, learner actions, and derivation reasons. Refresher and frontend prose are not included in this mechanical count.",
+    "source_sha256": "9aa844eb648949438f697e3bdefaa2549116bf6740c9145f96bd32bcbcaad4a4",
+    "sentences": 394,
+    "pass_length": 394,
+    "limits": "20 words for actions;25 for explanations. Simple whitespace count.",
+    "not_certification": "Sentence length is only one check. The requested 80% ASD-STE100 vocabulary, approved meaning, and part-of-speech compatibility remains unverified.",
+    "failures": []
+  },
+  "limits": [
+    "Human learner effectiveness has not been established.",
+    "Full ASD-STE100 compliance not certified.",
+    "Slide state survives navigation in one page session;reload resets it.",
+    "Studio notebook authoring requires Chrome or Edge;the current in-app browser sandbox blocks it. Chrome authoring and notebook return were verified.",
+    "Long slides scroll vertically to preserve readable text.",
+    "No static/WASM/public-hosting/offline-font verification."
+  ]
+}

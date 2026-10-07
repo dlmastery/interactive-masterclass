@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+__marimo__/
+.artifacts/
+.venv/
+node_modules/
+.env
+.env.*
+!.env.example
+*.pid
+research-cache/

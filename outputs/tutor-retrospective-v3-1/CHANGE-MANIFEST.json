@@ -1,0 +1,187 @@
+{
+  "revision": "3.1",
+  "deltas": [
+    {
+      "file": "build-interactive-masterclass/SKILL.md",
+      "before_sha256": "90435be3bd9da9b4b413dd7c59963a2171ca8d20f87051efae181cdf7635ec09",
+      "after_sha256": "ff21936cef821b5390239062455116fb6fcf00d7e66581e7aa73a75bcfa2f4e8",
+      "anchor": "change-1",
+      "added_lines": 4,
+      "removed_lines": 1
+    },
+    {
+      "file": "build-interactive-masterclass/references/adaptive-tutoring.md",
+      "before_sha256": "97fb800fc8d4ed0cf12f59e9465dc2bc441f2d244eff4a2e2fae7aede59a532f",
+      "after_sha256": "f3833f2b1e815432a3d2cf42fc41746f65eebe1960f5e08d5ffecaa3fc702482",
+      "anchor": "change-2",
+      "added_lines": 2,
+      "removed_lines": 0
+    },
+    {
+      "file": "build-interactive-masterclass/references/content-contract.md",
+      "before_sha256": "d3a3e2ff97f90275d3b4bb645ad95d9e845573852b66ad5b7c8c6ecdf23ca631",
+      "after_sha256": "685624789f9b6283d1b8b6f8edc8717aafbe6e2db94160dcd3d9dff1d6341ed1",
+      "anchor": "change-3",
+      "added_lines": 2,
+      "removed_lines": 0
+    },
+    {
+      "file": "build-interactive-masterclass/references/explainer-craft.md",
+      "before_sha256": null,
+      "after_sha256": "5c20a8b6892a0d7f5183ff3b997cd38bca8016121359076569bd7d38469065e8",
+      "anchor": "change-4",
+      "added_lines": 68,
+      "removed_lines": 0
+    },
+    {
+      "file": "build-interactive-masterclass/references/explanation-depth.md",
+      "before_sha256": null,
+      "after_sha256": "5143aec019a4c1b15cc0089ab9facf03cf38e3a51b7ed3f577a5505ae5e7224b",
+      "anchor": "change-5",
+      "added_lines": 56,
+      "removed_lines": 0
+    },
+    {
+      "file": "build-interactive-masterclass/references/lesson-design.md",
+      "before_sha256": "f1953ca930d66ba8fa5239ed5e07c0a51dcef6a06963e3cc2d0d00b54bd16a2a",
+      "after_sha256": "1a5bc98e719dcb3c825179d8648ebb1842327e90b044d5a9aa342183b0301c75",
+      "anchor": "change-6",
+      "added_lines": 4,
+      "removed_lines": 0
+    },
+    {
+      "file": "build-interactive-masterclass/references/narration-production.md",
+      "before_sha256": "ddbee8d6c5c222e4ab353f74a9745876ad751faac4dd5fbb8d5bc1cd34869ab0",
+      "after_sha256": "432ab1a1c7df4532048a2f4542ae051193b283ef22d3f1488eda67f96aea1200",
+      "anchor": "change-7",
+      "added_lines": 3,
+      "removed_lines": 1
+    },
+    {
+      "file": "build-interactive-masterclass/references/review.md",
+      "before_sha256": "fd3c9e6943249f2c5d9dd8832e2762f8e1f85f8bba91ed7e296f7197c0fce4f6",
+      "after_sha256": "d89f88fbd61893bfd9c96b87d03dcdcc8f65500da764d4812d79a20d183d4766",
+      "anchor": "change-8",
+      "added_lines": 5,
+      "removed_lines": 0
+    },
+    {
+      "file": "build-intuition-masterclass/SKILL.md",
+      "before_sha256": "aef4a898cd5e404629c914f19d81d2ce8eb4e218068da0052332cfb6015dc5bb",
+      "after_sha256": "fb7a5e10f8c12cf914fef7171b9f1821c1a43490b9db01f99a24cca87cb7df77",
+      "anchor": "change-9",
+      "added_lines": 2,
+      "removed_lines": 0
+    },
+    {
+      "file": "build-research-codelabs/SKILL.md",
+      "before_sha256": "cd94db1e5411543d6b9c9f1e5f1dcb8ee8028938a21a2e01ed7413e7ac1074ea",
+      "after_sha256": "e88256a8431fc4474640936e6aa829ec1b2820cbbe229c2a5ae6fadb5ebd067c",
+      "anchor": "change-10",
+      "added_lines": 3,
+      "removed_lines": 1
+    }
+  ],
+  "installed_bundle": [
+    {
+      "file": "build-interactive-masterclass/SKILL.md",
+      "sha256": "ff21936cef821b5390239062455116fb6fcf00d7e66581e7aa73a75bcfa2f4e8"
+    },
+    {
+      "file": "build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10"
+    },
+    {
+      "file": "build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "f3833f2b1e815432a3d2cf42fc41746f65eebe1960f5e08d5ffecaa3fc702482"
+    },
+    {
+      "file": "build-interactive-masterclass/references/content-contract.md",
+      "sha256": "685624789f9b6283d1b8b6f8edc8717aafbe6e2db94160dcd3d9dff1d6341ed1"
+    },
+    {
+      "file": "build-interactive-masterclass/references/execution-quality.md",
+      "sha256": "3f91de0a76f41eae9fbc98f093229cc589558a0e8f9f1242060ab36a4bb26270"
+    },
+    {
+      "file": "build-interactive-masterclass/references/explainer-craft.md",
+      "sha256": "5c20a8b6892a0d7f5183ff3b997cd38bca8016121359076569bd7d38469065e8"
+    },
+    {
+      "file": "build-interactive-masterclass/references/explanation-depth.md",
+      "sha256": "5143aec019a4c1b15cc0089ab9facf03cf38e3a51b7ed3f577a5505ae5e7224b"
+    },
+    {
+      "file": "build-interactive-masterclass/references/harness.md",
+      "sha256": "92a3f44b7b90d8e861dfc31a1ccc9aa853042c8074c60d92c1c247a5386163a0"
+    },
+    {
+      "file": "build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "1a5bc98e719dcb3c825179d8648ebb1842327e90b044d5a9aa342183b0301c75"
+    },
+    {
+      "file": "build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974"
+    },
+    {
+      "file": "build-interactive-masterclass/references/narration-production.md",
+      "sha256": "432ab1a1c7df4532048a2f4542ae051193b283ef22d3f1488eda67f96aea1200"
+    },
+    {
+      "file": "build-interactive-masterclass/references/research-debate.md",
+      "sha256": "4c240781c3832920a0bd0d85aa9dc9ee778e910f9e891199c87111294a7b45f6"
+    },
+    {
+      "file": "build-interactive-masterclass/references/review.md",
+      "sha256": "d89f88fbd61893bfd9c96b87d03dcdcc8f65500da764d4812d79a20d183d4766"
+    },
+    {
+      "file": "build-interactive-masterclass/references/tutoring-evidence.md",
+      "sha256": "5f8252bad8cded9d2a7f4f27531519620f13c9d7f21677a396871b5face4d99a"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/harness.py",
+      "sha256": "952b9aaddf83650b7892be6fe39e3d3fc6b00b960f7833c74a06973ca57ba27d"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/test_harness.py",
+      "sha256": "ae155536383280d0b8c627c4b6589fb4c3108b2bf8f91f5fbceef42ab4c3c655"
+    },
+    {
+      "file": "build-intuition-masterclass/SKILL.md",
+      "sha256": "fb7a5e10f8c12cf914fef7171b9f1821c1a43490b9db01f99a24cca87cb7df77"
+    },
+    {
+      "file": "build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223"
+    },
+    {
+      "file": "build-research-codelabs/SKILL.md",
+      "sha256": "e88256a8431fc4474640936e6aa829ec1b2820cbbe229c2a5ae6fadb5ebd067c"
+    },
+    {
+      "file": "build-research-codelabs/agents/openai.yaml",
+      "sha256": "a45c794b3802b7ad556bdb6d348f9a005fa1913c199d6177c614d3a60109c4f2"
+    },
+    {
+      "file": "build-research-codelabs/references/course-standard.md",
+      "sha256": "ef651534ebaafd227116b794757fac295cc077fabcb7a14f6bad98241bf0b90f"
+    },
+    {
+      "file": "build-research-codelabs/references/provenance.md",
+      "sha256": "efe036cff500f5d1199e8f6423dbff5e4783444601b15baed9d45d3eaa62bd16"
+    },
+    {
+      "file": "build-research-codelabs/references/research-and-evidence.md",
+      "sha256": "a8d5a31e2da237a15435e8ee054fcc8ebf366626c5412c6bd3c8f5c83b613ef3"
+    },
+    {
+      "file": "build-research-codelabs/references/rsi-preset.md",
+      "sha256": "35775b1a2d8592db7ac0b849df09207980000f02ca3a974bb1ed7d79447e2cdb"
+    },
+    {
+      "file": "build-research-codelabs/references/topic-adaptation.md",
+      "sha256": "f55ef095e3a571413354471a31ee0f589651397e510e02cb45fd6546ce91fe4b"
+    }
+  ]
+}

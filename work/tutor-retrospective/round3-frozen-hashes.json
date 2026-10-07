@@ -1,0 +1,26 @@
+{
+  "capturedAtUtc": "2026-10-07T03:21:54.6174473Z",
+  "purpose": "Hashes captured before round-3 candidate evaluation",
+  "files": [
+    {
+      "file": "holdout-key.md",
+      "sha256": "301825F875B89A6EB95969ADD80AA9EF67C9EBF0FC65062B474106546A431FE1",
+      "bytes": 8135
+    },
+    {
+      "file": "forward-quantitative.txt",
+      "sha256": "209F524E2F81074742534ABE2CF626F690F876DA76795F5D82AB58C4B26F76BF",
+      "bytes": 2840
+    },
+    {
+      "file": "forward-nonmathematical.txt",
+      "sha256": "41FD5A2BB769702EE38AEDA0AE65B700AEFFFDB3B9DDC68E618114AB284EB4A2",
+      "bytes": 3424
+    },
+    {
+      "file": "forward-scope-cases.txt",
+      "sha256": "C8E4763012EDA54D06460FBBF53B1EA2632DA18320BFAD953577BB703D7444C1",
+      "bytes": 2217
+    }
+  ]
+}

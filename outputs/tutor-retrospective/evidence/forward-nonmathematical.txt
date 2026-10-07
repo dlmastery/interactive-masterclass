@@ -1,0 +1,38 @@
+This will help you decide what you can responsibly tell the club, and which check would actually reduce the uncertainty about tomorrow's concert.
+
+Start with the exact claim: “Tomorrow's campus concert has moved indoors.” We need evidence about that event, its time, and its location. Agreement alone is not enough.
+
+Trace the three screenshots backward:
+
+                    ┌→ friend 1 → you
+one unsigned post ──┼→ friend 2 → you
+                    └→ friend 3 → you
+
+You received three messages, but they carry one source's claim. If that original post is mistaken, all three copies can agree and still be wrong. The screenshots establish that the claim is circulating. They do not provide three separate confirmations that the concert moved.
+
+This does not prove the unsigned post is false. Its origin and basis are unknown. “Not yet established” is different from “disproved.”
+
+Now consider the student who reports seeing equipment carried into the hall. That is a different kind of report: an apparent observation, rather than a copy of the announcement. But separate delivery does not automatically establish independence. The student might have heard the rumor before interpreting what they saw.
+
+Even if the observation is accurate, what follows from it?
+
+• Supported: some equipment was being taken into the hall.
+• Possible explanation: preparations for the moved concert.
+• Other possibilities: storage, a rehearsal, or another event.
+
+The observation fits the concert claim, but does not uniquely identify it. Picture two possible worlds: the concert moved, or the hall is being used for something else. Equipment could enter the hall in either world. That is why this clue cannot settle the announcement on its own.
+
+Two questions now organize the evidence:
+
+1. Where did each report come from? Copies share the original source's possible error.
+2. If the report is accurate, which part of the claim does it establish? A real observation can support several explanations.
+
+A useful next check is a current, direct update from the concert organizer: check the organizer's original event page, or ask whether tomorrow's named concert has moved and what venue members should use. Check the date and event name. This targets the uncertain decision itself. A fourth copy of the same unsigned post would add little.
+
+Until you obtain that confirmation, do not announce the move as settled. If members need an immediate update, you can say: “There is an unconfirmed report of a venue change. I am checking tomorrow's concert location.” That accurately separates the report from the fact you still need to establish.
+
+Try a new case. Two students separately report reading a “Room closed for repairs” sign at the room booked for your workshop. A forwarded message says the workshop is canceled. What can you conclude, and what would you check next?
+
+Pause and explain your answer before reading on.
+
+Feedback: the separate observations strengthen the report that the room is closed. They do not establish that the workshop is canceled: it could move rooms or go online. Check the workshop organizer's current plan. If you concluded “two witnesses prove cancellation,” you changed the claim between evidence and conclusion. If you dismissed everything as rumor, you overlooked what the direct observations do support. Keep those observations; narrow the conclusion.

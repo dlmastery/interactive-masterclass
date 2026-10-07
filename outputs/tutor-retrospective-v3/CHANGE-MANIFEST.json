@@ -1,0 +1,325 @@
+{
+  "current_deltas": [
+    {
+      "file": "build-interactive-masterclass/SKILL.md",
+      "before_sha256": "0d386408d235bea5228e5fff7333e7c6fed84495e015dfcf3787f8b8809a7c67",
+      "after_sha256": "90435be3bd9da9b4b413dd7c59963a2171ca8d20f87051efae181cdf7635ec09",
+      "added_lines": 35,
+      "removed_lines": 38,
+      "diff_anchor": "file-1"
+    },
+    {
+      "file": "build-interactive-masterclass/references/adaptive-tutoring.md",
+      "before_sha256": "0d7d84977a4ec65347561455992a55efef01b31c0590cbd86308b3fa6a85c584",
+      "after_sha256": "97fb800fc8d4ed0cf12f59e9465dc2bc441f2d244eff4a2e2fae7aede59a532f",
+      "added_lines": 10,
+      "removed_lines": 0,
+      "diff_anchor": "file-2"
+    },
+    {
+      "file": "build-interactive-masterclass/references/content-contract.md",
+      "before_sha256": null,
+      "after_sha256": "d3a3e2ff97f90275d3b4bb645ad95d9e845573852b66ad5b7c8c6ecdf23ca631",
+      "added_lines": 73,
+      "removed_lines": 0,
+      "diff_anchor": "file-3"
+    },
+    {
+      "file": "build-interactive-masterclass/references/execution-quality.md",
+      "before_sha256": null,
+      "after_sha256": "3f91de0a76f41eae9fbc98f093229cc589558a0e8f9f1242060ab36a4bb26270",
+      "added_lines": 80,
+      "removed_lines": 0,
+      "diff_anchor": "file-4"
+    },
+    {
+      "file": "build-interactive-masterclass/references/harness.md",
+      "before_sha256": "a54d23126f8f4d5362a9d8a16effcaa3cb5bea21f8ff12eb04c87f8baf17d443",
+      "after_sha256": "92a3f44b7b90d8e861dfc31a1ccc9aa853042c8074c60d92c1c247a5386163a0",
+      "added_lines": 7,
+      "removed_lines": 3,
+      "diff_anchor": "file-5"
+    },
+    {
+      "file": "build-interactive-masterclass/references/lesson-design.md",
+      "before_sha256": "6360d486728505b54e697caae71f7989142f7ef01b22e3cb7de92f552e8cdf52",
+      "after_sha256": "f1953ca930d66ba8fa5239ed5e07c0a51dcef6a06963e3cc2d0d00b54bd16a2a",
+      "added_lines": 7,
+      "removed_lines": 1,
+      "diff_anchor": "file-6"
+    },
+    {
+      "file": "build-interactive-masterclass/references/narration-production.md",
+      "before_sha256": null,
+      "after_sha256": "ddbee8d6c5c222e4ab353f74a9745876ad751faac4dd5fbb8d5bc1cd34869ab0",
+      "added_lines": 95,
+      "removed_lines": 0,
+      "diff_anchor": "file-7"
+    },
+    {
+      "file": "build-interactive-masterclass/references/research-debate.md",
+      "before_sha256": "618b9f21ab95afbfdaea0e3d6d0fbfc960d21345079851e45fdce8f9945f1192",
+      "after_sha256": "4c240781c3832920a0bd0d85aa9dc9ee778e910f9e891199c87111294a7b45f6",
+      "added_lines": 61,
+      "removed_lines": 16,
+      "diff_anchor": "file-8"
+    },
+    {
+      "file": "build-interactive-masterclass/references/review.md",
+      "before_sha256": "64a63573a14ab89862038efb6df0387dc240204f1bf4fb849c5fcd0084fded5e",
+      "after_sha256": "fd3c9e6943249f2c5d9dd8832e2762f8e1f85f8bba91ed7e296f7197c0fce4f6",
+      "added_lines": 16,
+      "removed_lines": 2,
+      "diff_anchor": "file-9"
+    },
+    {
+      "file": "build-interactive-masterclass/references/tutoring-evidence.md",
+      "before_sha256": null,
+      "after_sha256": "5f8252bad8cded9d2a7f4f27531519620f13c9d7f21677a396871b5face4d99a",
+      "added_lines": 57,
+      "removed_lines": 0,
+      "diff_anchor": "file-10"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/harness.py",
+      "before_sha256": "7f1f4e497724f67a5452add38c578225b5df930d956efc46505e67e0c3e6b129",
+      "after_sha256": "952b9aaddf83650b7892be6fe39e3d3fc6b00b960f7833c74a06973ca57ba27d",
+      "added_lines": 2,
+      "removed_lines": 2,
+      "diff_anchor": "file-11"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/test_harness.py",
+      "before_sha256": "21bc8e712e90fdfbd169b8be51384571ac3a673ea1ace98178f41cdf68eccb08",
+      "after_sha256": "ae155536383280d0b8c627c4b6589fb4c3108b2bf8f91f5fbceef42ab4c3c655",
+      "added_lines": 4,
+      "removed_lines": 4,
+      "diff_anchor": "file-12"
+    },
+    {
+      "file": "build-intuition-masterclass/SKILL.md",
+      "before_sha256": "339a56acf75e199832f29fcbeb06a140f3d5624331fac3dd37b6a7e81fe18e4b",
+      "after_sha256": "aef4a898cd5e404629c914f19d81d2ce8eb4e218068da0052332cfb6015dc5bb",
+      "added_lines": 2,
+      "removed_lines": 0,
+      "diff_anchor": "file-13"
+    },
+    {
+      "file": "build-research-codelabs/SKILL.md",
+      "before_sha256": "608a5c464025baed822f4142fbde131b9b79e528342e91abbd3da2a63cf60a7a",
+      "after_sha256": "cd94db1e5411543d6b9c9f1e5f1dcb8ee8028938a21a2e01ed7413e7ac1074ea",
+      "added_lines": 9,
+      "removed_lines": 1,
+      "diff_anchor": "file-14"
+    },
+    {
+      "file": "build-research-codelabs/references/course-standard.md",
+      "before_sha256": "543cf1aae086c2004b99cf9b9d9db72106a007ef5e3bd800899e98f0b2db1cf5",
+      "after_sha256": "ef651534ebaafd227116b794757fac295cc077fabcb7a14f6bad98241bf0b90f",
+      "added_lines": 5,
+      "removed_lines": 1,
+      "diff_anchor": "file-15"
+    },
+    {
+      "file": "build-research-codelabs/references/research-and-evidence.md",
+      "before_sha256": "f64e966b3ded62b73d004a70124532157fad84b20490c7af13b452767fb3e34d",
+      "after_sha256": "a8d5a31e2da237a15435e8ee054fcc8ebf366626c5412c6bd3c8f5c83b613ef3",
+      "added_lines": 7,
+      "removed_lines": 1,
+      "diff_anchor": "file-16"
+    },
+    {
+      "file": "build-research-codelabs/references/topic-adaptation.md",
+      "before_sha256": "7244ee8b3e728f65fd84ef71696d3c0d5ba73054e462b3b4924762f7869048f5",
+      "after_sha256": "f55ef095e3a571413354471a31ee0f589651397e510e02cb45fd6546ce91fe4b",
+      "added_lines": 3,
+      "removed_lines": 1,
+      "diff_anchor": "file-17"
+    }
+  ],
+  "previous_deltas": [
+    {
+      "file": "build-interactive-masterclass/SKILL.md",
+      "before_sha256": "398e940a4ede7ecf94bc0da78baab2ef6c21eca0e010b1595f08ddec0f5ec9d3",
+      "after_sha256": "0d386408d235bea5228e5fff7333e7c6fed84495e015dfcf3787f8b8809a7c67",
+      "added_lines": 46,
+      "removed_lines": 34,
+      "diff_anchor": "file-1"
+    },
+    {
+      "file": "build-interactive-masterclass/references/adaptive-tutoring.md",
+      "before_sha256": null,
+      "after_sha256": "0d7d84977a4ec65347561455992a55efef01b31c0590cbd86308b3fa6a85c584",
+      "added_lines": 25,
+      "removed_lines": 0,
+      "diff_anchor": "file-2"
+    },
+    {
+      "file": "build-interactive-masterclass/references/harness.md",
+      "before_sha256": "cdf646b0712676f61604fbef5471b8db87eafa661861e07c1c9135e7a24661ce",
+      "after_sha256": "a54d23126f8f4d5362a9d8a16effcaa3cb5bea21f8ff12eb04c87f8baf17d443",
+      "added_lines": 78,
+      "removed_lines": 30,
+      "diff_anchor": "file-3"
+    },
+    {
+      "file": "build-interactive-masterclass/references/lesson-design.md",
+      "before_sha256": "84b72a8c8b3e88fe49141db871f69286bc0bdf80ea244524a5e6db81181aed6c",
+      "after_sha256": "6360d486728505b54e697caae71f7989142f7ef01b22e3cb7de92f552e8cdf52",
+      "added_lines": 35,
+      "removed_lines": 24,
+      "diff_anchor": "file-4"
+    },
+    {
+      "file": "build-interactive-masterclass/references/marimo-studio.md",
+      "before_sha256": "38b9a4f7ca3bc191e743b54c6b8fe15df97bac8d87dd8ec644514ff0323e8f5c",
+      "after_sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974",
+      "added_lines": 18,
+      "removed_lines": 17,
+      "diff_anchor": "file-5"
+    },
+    {
+      "file": "build-interactive-masterclass/references/research-debate.md",
+      "before_sha256": "d231704b95599d6a460ee8792c39d54435dc7e407f0520e8acba81b26c523c72",
+      "after_sha256": "618b9f21ab95afbfdaea0e3d6d0fbfc960d21345079851e45fdce8f9945f1192",
+      "added_lines": 22,
+      "removed_lines": 17,
+      "diff_anchor": "file-6"
+    },
+    {
+      "file": "build-interactive-masterclass/references/review.md",
+      "before_sha256": "e04dea002100feabe8e25655bce23f6b83e3c286b8f38e5ab968a079812f52a3",
+      "after_sha256": "64a63573a14ab89862038efb6df0387dc240204f1bf4fb849c5fcd0084fded5e",
+      "added_lines": 28,
+      "removed_lines": 25,
+      "diff_anchor": "file-7"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/harness.py",
+      "before_sha256": "bdaa3fc1b05809c6b4b0e3702887155b6088a94e6bd023219ca4173ae49aab82",
+      "after_sha256": "7f1f4e497724f67a5452add38c578225b5df930d956efc46505e67e0c3e6b129",
+      "added_lines": 340,
+      "removed_lines": 123,
+      "diff_anchor": "file-8"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/test_harness.py",
+      "before_sha256": null,
+      "after_sha256": "21bc8e712e90fdfbd169b8be51384571ac3a673ea1ace98178f41cdf68eccb08",
+      "added_lines": 318,
+      "removed_lines": 0,
+      "diff_anchor": "file-9"
+    },
+    {
+      "file": "build-intuition-masterclass/SKILL.md",
+      "before_sha256": "b7dd9fab8012bc5e5eac3d811c90579a72f3a498b18fd3ff2c0723b4ac0ed5d3",
+      "after_sha256": "339a56acf75e199832f29fcbeb06a140f3d5624331fac3dd37b6a7e81fe18e4b",
+      "added_lines": 6,
+      "removed_lines": 127,
+      "diff_anchor": "file-10"
+    },
+    {
+      "file": "build-intuition-masterclass/references/teaching-contract.md",
+      "before_sha256": "3e9da153c91de7bce49dbf8efd6a4b2bacba3e4764c031e5be39ca9210d58ca6",
+      "after_sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223",
+      "added_lines": 6,
+      "removed_lines": 80,
+      "diff_anchor": "file-11"
+    }
+  ],
+  "installed_bundle": [
+    {
+      "file": "build-interactive-masterclass/SKILL.md",
+      "sha256": "90435be3bd9da9b4b413dd7c59963a2171ca8d20f87051efae181cdf7635ec09"
+    },
+    {
+      "file": "build-interactive-masterclass/agents/openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10"
+    },
+    {
+      "file": "build-interactive-masterclass/references/adaptive-tutoring.md",
+      "sha256": "97fb800fc8d4ed0cf12f59e9465dc2bc441f2d244eff4a2e2fae7aede59a532f"
+    },
+    {
+      "file": "build-interactive-masterclass/references/content-contract.md",
+      "sha256": "d3a3e2ff97f90275d3b4bb645ad95d9e845573852b66ad5b7c8c6ecdf23ca631"
+    },
+    {
+      "file": "build-interactive-masterclass/references/execution-quality.md",
+      "sha256": "3f91de0a76f41eae9fbc98f093229cc589558a0e8f9f1242060ab36a4bb26270"
+    },
+    {
+      "file": "build-interactive-masterclass/references/harness.md",
+      "sha256": "92a3f44b7b90d8e861dfc31a1ccc9aa853042c8074c60d92c1c247a5386163a0"
+    },
+    {
+      "file": "build-interactive-masterclass/references/lesson-design.md",
+      "sha256": "f1953ca930d66ba8fa5239ed5e07c0a51dcef6a06963e3cc2d0d00b54bd16a2a"
+    },
+    {
+      "file": "build-interactive-masterclass/references/marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974"
+    },
+    {
+      "file": "build-interactive-masterclass/references/narration-production.md",
+      "sha256": "ddbee8d6c5c222e4ab353f74a9745876ad751faac4dd5fbb8d5bc1cd34869ab0"
+    },
+    {
+      "file": "build-interactive-masterclass/references/research-debate.md",
+      "sha256": "4c240781c3832920a0bd0d85aa9dc9ee778e910f9e891199c87111294a7b45f6"
+    },
+    {
+      "file": "build-interactive-masterclass/references/review.md",
+      "sha256": "fd3c9e6943249f2c5d9dd8832e2762f8e1f85f8bba91ed7e296f7197c0fce4f6"
+    },
+    {
+      "file": "build-interactive-masterclass/references/tutoring-evidence.md",
+      "sha256": "5f8252bad8cded9d2a7f4f27531519620f13c9d7f21677a396871b5face4d99a"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/harness.py",
+      "sha256": "952b9aaddf83650b7892be6fe39e3d3fc6b00b960f7833c74a06973ca57ba27d"
+    },
+    {
+      "file": "build-interactive-masterclass/scripts/test_harness.py",
+      "sha256": "ae155536383280d0b8c627c4b6589fb4c3108b2bf8f91f5fbceef42ab4c3c655"
+    },
+    {
+      "file": "build-intuition-masterclass/SKILL.md",
+      "sha256": "aef4a898cd5e404629c914f19d81d2ce8eb4e218068da0052332cfb6015dc5bb"
+    },
+    {
+      "file": "build-intuition-masterclass/references/teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223"
+    },
+    {
+      "file": "build-research-codelabs/SKILL.md",
+      "sha256": "cd94db1e5411543d6b9c9f1e5f1dcb8ee8028938a21a2e01ed7413e7ac1074ea"
+    },
+    {
+      "file": "build-research-codelabs/agents/openai.yaml",
+      "sha256": "a45c794b3802b7ad556bdb6d348f9a005fa1913c199d6177c614d3a60109c4f2"
+    },
+    {
+      "file": "build-research-codelabs/references/course-standard.md",
+      "sha256": "ef651534ebaafd227116b794757fac295cc077fabcb7a14f6bad98241bf0b90f"
+    },
+    {
+      "file": "build-research-codelabs/references/provenance.md",
+      "sha256": "efe036cff500f5d1199e8f6423dbff5e4783444601b15baed9d45d3eaa62bd16"
+    },
+    {
+      "file": "build-research-codelabs/references/research-and-evidence.md",
+      "sha256": "a8d5a31e2da237a15435e8ee054fcc8ebf366626c5412c6bd3c8f5c83b613ef3"
+    },
+    {
+      "file": "build-research-codelabs/references/rsi-preset.md",
+      "sha256": "35775b1a2d8592db7ac0b849df09207980000f02ca3a974bb1ed7d79447e2cdb"
+    },
+    {
+      "file": "build-research-codelabs/references/topic-adaptation.md",
+      "sha256": "f55ef095e3a571413354471a31ee0f589651397e510e02cb45fd6546ce91fe4b"
+    }
+  ],
+  "broken_skill_links": []
+}

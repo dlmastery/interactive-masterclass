@@ -1,0 +1,3 @@
+PASS: 64 slides, 79 equation steps, 1629 projection frames.
+Covariance, unit directions, scores, gradient, global bound, reconstruction, SVD, and standardization agree.
+Projected data total: 940,547 bytes.

@@ -1,0 +1,15 @@
+{
+  "reviewed_utc": "2026-10-07T04:29:56.8704383Z",
+  "relationship": "Author-informed executor; supervised repair following evaluator feedback, not blind or held-out",
+  "file": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\work\\tutor-retrospective-v3\\forward-audio-repair.txt",
+  "sha256": "ce43070ae6d382c4b9ee32851319c5e8b3bde8cde8f94daeceb24f660ad7467b",
+  "spoken_word_count": 135,
+  "word_count_method": "Whitespace-separated words inside the spoken section, bracketed production cues removed",
+  "inspected_reference": "C:/Users/abhir/.codex/skills/build-interactive-masterclass/references/narration-production.md",
+  "reference_sha256": "ddbee8d6c5c222e4ab353f74a9745876ad751faac4dd5fbb8d5bc1cd34869ab0",
+  "original_outputs_sha256": "c2f98dacaf71de75859bc660843c4e4d93abde8f8b257d85c7014c303fa98bc2",
+  "original_outputs_unchanged": true,
+  "hidden_key_accessed": false,
+  "no_audio_or_render_or_rehearsal": true,
+  "evidence": "Written contrast repair only; awaiting evaluator recheck"
+}

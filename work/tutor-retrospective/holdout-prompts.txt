@@ -1,0 +1,14 @@
+PROMPT 1 — QUANTITATIVE MINI-LESSON
+
+I am a university student choosing between two campus cafés. I can calculate ordinary averages and percentages, but I have not studied statistics. These are the records from last week:
+
+Café A: quiet period — 10 visits, average wait 2 minutes; busy period — 90 visits, average wait 10 minutes.
+Café B: quiet period — 90 visits, average wait 3 minutes; busy period — 10 visits, average wait 12 minutes.
+
+A looks faster in both periods, but my friend says B had the lower overall average wait. I want to understand how that can happen and choose sensibly if half of my future visits will be in each period. Teach me in a short explanation I could work through in about eight minutes. Start with what understanding this lets me decide, help me see the difficult connection rather than just quoting a formula, and include one small fresh check with feedback. You may use a compact table or simple diagram. Keep the total under 650 words. This is a small lesson, not a full course, website, or coding project.
+
+PROMPT 2 — NONMATHEMATICAL MINI-LESSON
+
+I help organize a student club. In this fictional example, I am deciding whether to tell members that tomorrow’s campus concert has moved indoors. Three friends have sent screenshots that agree it has moved, but all three screenshots forward the same unsigned post. Separately, another student says they saw equipment being carried into the hall. I do not know where the unsigned post came from.
+
+I want to understand what these pieces of evidence actually establish and what would be a useful next check before I pass the claim on. I have no training in evaluating sources. Teach me with this case in a short explanation I could work through in about eight minutes. Start with what the lesson will let me do, make the difficult connection clear, and give me one small new case to check my understanding with feedback. A simple sketch is fine if it helps. Keep the total under 650 words. I want a focused explanation, not a full course, a website, or a general list of internet-safety tips.

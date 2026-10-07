@@ -1,0 +1,17 @@
+Author-informed execution record. These are bounded scope tests; no course, server, or skill files were changed.
+
+1. Prompt: “What is a median? Answer in two sentences.”
+Response: The median is the middle value when you arrange the numbers from smallest to largest. If there are two middle values, add them and divide by two.
+Action: Direct answer; no course pipeline, research, or extra artifact.
+
+2. Prompt: “Audit my tutorial process and update its skill; do not rebuild the tutorial.”
+Response: The main process failure was treating completed slides and numerical checks as evidence that the explanation worked. The updated canonical skill now separates teaching, software, and learning claims, tests difficult bridges before expansion, and keeps retrospective work separate from rebuilding. I inspected that revision and am testing it with two small lessons and scope cases. No additional skill edit is justified by these unfinished tests yet; the evaluator's findings may require one. I have not rebuilt the tutorial.
+Actions actually taken in this test: Read the updated skill and its lesson-design, review, and adaptive-tutoring references; wrote isolated forward-test outputs. The coordinator made the existing skill revision; I do not claim that edit as mine. No course or skill edits in this execution.
+
+3. Prompt: “You can access only a transcript of a requested YouTube explainer; assess its animation quality.”
+Response: I cannot assess animation quality from a transcript. I can review the explanation's order, wording, and stated visual operations, while marking animation timing, legibility, motion, and visual continuity as unverified. A claim about those properties needs the relevant frames or playback.
+Action: No invented viewing claim or unsupported quality score.
+
+4. Pupil: “2 + 3 × 4 is 14 because you always calculate from left to right.”
+Response: 14 is correct, but that rule would give (2 + 3) × 4 = 20 here. Multiplication comes before addition: first 3 × 4 = 12, then 2 + 12 = 14. Try 4 + 2 × 5, and tell me which operation you do first and why.
+Action: Correct result recorded separately from faulty reasoning; a discriminating retry is offered. No mastery claim.

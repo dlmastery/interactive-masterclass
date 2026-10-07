@@ -1,0 +1,1071 @@
+{
+  "version": 2,
+  "title": "PCA · from picture to proof",
+  "chapters": [
+    {
+      "start": 0,
+      "end": 8,
+      "question": "What does PCA do?"
+    },
+    {
+      "start": 8,
+      "end": 20,
+      "question": "How do we measure a view?"
+    },
+    {
+      "start": 20,
+      "end": 30,
+      "question": "Why does covariance appear?"
+    },
+    {
+      "start": 30,
+      "end": 45,
+      "question": "Why do eigenvectors solve it?"
+    },
+    {
+      "start": 45,
+      "end": 56,
+      "question": "What can we keep and recover?"
+    },
+    {
+      "start": 56,
+      "end": 64,
+      "question": "When does the result help?"
+    }
+  ],
+  "slides": [
+    {
+      "id": 1,
+      "title": "Can two coordinates become one?",
+      "action": "Select a marker. Turn the line and compare its original position with its recovered position.",
+      "claim": "PCA chooses new axes through the center of the data. With fewer coordinates, we can recover approximate positions and measure the errors.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 2,
+      "title": "A score is a position on a ruler",
+      "action": "Select A, then B. Follow each marker to its position on the score ruler.",
+      "claim": "One score locates a point along the chosen axis. The shared axis and center let us turn that score into a recovered position.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 3,
+      "title": "Which line recovers the points better?",
+      "action": "Compare 45° and 135°. Which direction gives smaller gaps between the original and recovered points?",
+      "claim": "The choice of line changes the recovery error. We will choose the line with the smallest total squared error.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 4,
+      "title": "Put each point at its closest place on the line",
+      "action": "Move the selected point to the line. Notice the right angle at the point where it arrives.",
+      "claim": "A projection is the closest point on the line. The gap from the original point is perpendicular to the line.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 5,
+      "title": "What did one score lose?",
+      "action": "Move the point across the axis. Check that its stored score stays fixed.",
+      "claim": "Several original positions can have the same score. The missing coordinate tells them apart.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 6,
+      "title": "Turning both axes loses nothing",
+      "action": "Keep both coordinates, then remove one. Compare the recovered position in each case.",
+      "claim": "Two rotated coordinates still locate the point exactly. Removing one coordinate can create a recovery error.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 7,
+      "title": "Choose an axis by a clear rule",
+      "action": "Turn the line. Compare the squared spread kept with the squared recovery error.",
+      "claim": "With the same units, the axis that keeps the most squared spread also gives the least total squared recovery error.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 8,
+      "title": "From a picture to a computation",
+      "action": "Subtract the center. Search for a direction. Store the scores. Recover a point from its score.",
+      "claim": "We first move the mean to zero. Then we choose an axis, compute each score, and use the axis to recover positions.",
+      "scene": "geometry",
+      "steps": [],
+      "chapter": 0
+    },
+    {
+      "id": 9,
+      "title": "Measure change from a shared center",
+      "action": "Move the whole cloud toward the origin. Watch its center and the gaps between points.",
+      "claim": "PCA measures how the observations differ from their shared center, the mean.",
+      "scene": "center",
+      "steps": [],
+      "chapter": 1
+    },
+    {
+      "id": 10,
+      "title": "Find the center of this cloud",
+      "action": "Add the four x values and divide by four. Repeat for y.",
+      "claim": "The mean gives one shared center for the four observations.",
+      "scene": "center",
+      "steps": [
+        {
+          "tex": "\\mu=\\left(\\frac{8+7+5+4}{4},\\frac{7+8+4+5}{4}\\right)=(6,6)",
+          "why": "Add the four values in each feature column. Divide each sum by four to get that feature’s mean."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 11,
+      "title": "Move the center to zero",
+      "action": "Move the mean to zero. Follow the selected point as its coordinates change.",
+      "claim": "Subtract each feature mean from that feature. The resulting coordinates measure differences from the shared center.",
+      "scene": "center",
+      "steps": [
+        {
+          "tex": "x_A=(8,7)-(6,6)=(2,1)",
+          "why": "Subtract the corresponding feature mean. The centered coordinates tell us how far the selected observation is from the shared center."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 12,
+      "title": "The distances do not change",
+      "action": "Follow A and B as the cloud moves. Does the gap between them change?",
+      "claim": "Subtracting the same center from every point preserves all pairwise distances.",
+      "scene": "center",
+      "steps": [
+        {
+          "tex": "(r_A-\\mu)-(r_B-\\mu)=r_A-r_B",
+          "why": "Both observations lose the same mean. Those two copies cancel when we subtract one observation from the other."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 13,
+      "title": "Describe the line with two numbers",
+      "action": "Turn the unit arrow. Compare its horizontal and vertical coordinates.",
+      "claim": "The vector w specifies the axis direction. Its length is one, so every direction uses the same score scale.",
+      "scene": "score",
+      "steps": [
+        {
+          "tex": "w=\\begin{bmatrix}\\cos\\theta\\\\\\sin\\theta\\end{bmatrix},\\quad w_1^2+w_2^2=1",
+          "why": "The angle sets the direction. Unit length gives every axis the same score scale."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 14,
+      "title": "Calculate one score",
+      "action": "Select a point. Multiply its centered coordinates by the two direction weights, then add.",
+      "claim": "The dot product gives a signed coordinate along a unit axis.",
+      "scene": "score",
+      "steps": [
+        {
+          "tex": "z_A=w^\\top x_A=2w_1+w_2",
+          "why": "Multiply matching coordinates, then add. A negative result locates the projection on the opposite side of the center."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 15,
+      "title": "Use one rule for every observation",
+      "action": "Select each row of Xc. Apply the same two weights to calculate its score.",
+      "claim": "The 4×2 data table multiplies a 2×1 direction vector to produce four scores. Each row is one observation.",
+      "scene": "score",
+      "steps": [
+        {
+          "tex": "\\underbrace{z}_{4\\times1}=\\underbrace{X_c}_{4\\times2}\\underbrace{w}_{2\\times1}",
+          "why": "Each row contains one observation’s two centered coordinates. Multiplying that row by w gives its score."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 16,
+      "title": "Keep the ruler length fixed",
+      "action": "Double the direction length. Compare each score and the resulting variance.",
+      "claim": "A longer direction vector enlarges every score without improving the axis. Unit length prevents this arbitrary increase.",
+      "scene": "score",
+      "steps": [
+        {
+          "tex": "z_i(cw)=c z_i(w),\\quad V(cw)=c^2V(w)",
+          "why": "Multiplying w by c multiplies each score by c. Squaring the scores therefore multiplies their variance by c²."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 17,
+      "title": "How spread out are the scores?",
+      "action": "Try two angles. Compare the positive and negative scores around zero.",
+      "claim": "Centering the observations also centers their scores: the mean score is zero.",
+      "scene": "variance",
+      "steps": [
+        {
+          "tex": "\\bar z=w_1\\bar a+w_2\\bar b=0",
+          "why": "Each centered feature has mean zero. Any fixed weighted sum of these features also has mean zero."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 18,
+      "title": "Signs cancel; squares do not",
+      "action": "Compare each signed score with its square. Why do the signed scores add to zero?",
+      "claim": "Positive and negative scores can cancel. Their squares measure spread on both sides of the center.",
+      "scene": "variance",
+      "steps": [
+        {
+          "tex": "\\sum_i z_i=0\\quad\\text{but}\\quad\\sum_i z_i^2\\geq0",
+          "why": "The positive and negative scores sum to zero. Their nonnegative squares measure distance from zero without cancellation."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 19,
+      "title": "Give spread a number",
+      "action": "Add the four squared scores and divide by three.",
+      "claim": "Sample variance divides the squared score sum by n−1. Here n=4, so the divisor is three.",
+      "scene": "variance",
+      "steps": [
+        {
+          "tex": "V(w)=\\frac{z_1^2+z_2^2+z_3^2+z_4^2}{3}",
+          "why": "Four centered scores give four squared distances. Their sum divided by n−1=3 is the sample variance, measured in square centimeters."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 20,
+      "title": "Search with a variance curve",
+      "action": "Turn the line. Follow the matching point on the variance curve and find its highest position.",
+      "claim": "The curve shows which direction gives the most score variance. We need a method that also works with many features.",
+      "scene": "variance",
+      "steps": [
+        {
+          "tex": "V(w)=\\frac{1}{n-1}\\sum_i (w^\\top x_i)^2",
+          "why": "Each position on the curve is the score variance at one angle. Its highest value is the target of our search."
+        }
+      ],
+      "chapter": 1
+    },
+    {
+      "id": 21,
+      "title": "Open one squared score",
+      "action": "Follow each product in (w1 a + w2 b)². Find the two equal cross-products.",
+      "claim": "Multiplying the two brackets gives four products. The two equal cross-products combine into one term with a factor of two.",
+      "scene": "expansion",
+      "steps": [
+        {
+          "tex": "z_i^2=(w_1a_i+w_2b_i)(w_1a_i+w_2b_i)",
+          "why": "A square multiplies an expression by itself. Here each copy contains two terms."
+        },
+        {
+          "tex": "=w_1^2a_i^2+w_1w_2a_ib_i+w_2w_1b_ia_i+w_2^2b_i^2",
+          "why": "Each of the two terms multiplies both terms in the other bracket. This produces four products."
+        },
+        {
+          "tex": "=w_1^2a_i^2+2w_1w_2a_ib_i+w_2^2b_i^2",
+          "why": "The middle products contain the same four factors. Adding them gives twice either product."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 22,
+      "title": "Add the same terms across rows",
+      "action": "Expand each observation’s squared score. Group its terms with matching terms from the other observations.",
+      "claim": "Every observation uses the same direction weights. We can place these fixed weights outside the sums.",
+      "scene": "expansion",
+      "steps": [
+        {
+          "tex": "V=\\frac{\\sum_i(w_1^2a_i^2+2w_1w_2a_ib_i+w_2^2b_i^2)}{n-1}",
+          "why": "Variance adds the squared score of every observation, then divides by n−1."
+        },
+        {
+          "tex": "=w_1^2\\frac{\\sum_i a_i^2}{n-1}+2w_1w_2\\frac{\\sum_i a_ib_i}{n-1}+w_2^2\\frac{\\sum_i b_i^2}{n-1}",
+          "why": "The direction weights stay fixed across observations. Factor them out, leaving three sums that depend only on the data."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 23,
+      "title": "Two familiar sums and one new sum",
+      "action": "Compare the three sums. Which use squares, and which uses products of different features?",
+      "claim": "The square sums give feature variances. The mixed product sum gives covariance, which measures how the centered features vary together.",
+      "scene": "expansion",
+      "steps": [
+        {
+          "tex": "V=w_1^2s_a^2+2w_1w_2s_{ab}+w_2^2s_b^2",
+          "why": "Each sum is divided by n−1. The square sums give variances; the mixed product sum gives covariance."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 24,
+      "title": "Build covariance from signed products",
+      "action": "Compare Together, Opposite, and Cancellation. Follow the signs in the product table.",
+      "claim": "Same signs give positive products. Opposite signs give negative products. Covariance adds these contributions.",
+      "scene": "covariance",
+      "steps": [
+        {
+          "tex": "s_{ab}=\\frac{2\\cdot1+1\\cdot2+(-1)(-2)+(-2)(-1)}3=\\frac83",
+          "why": "Multiply the selected centered feature values for each observation. Add the four products, then divide by n−1=3."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 25,
+      "title": "Variance alone cannot tell the tilt",
+      "action": "Switch between the positive and negative tilts. Compare the variances and the covariance.",
+      "claim": "These clouds have the same feature variances. Their opposite covariance signs describe opposite tilts.",
+      "scene": "covariance",
+      "steps": [
+        {
+          "tex": "s_a^2=s_b^2=\\frac{10}3,\\qquad s_{ab}=\\pm\\frac83",
+          "why": "Reversing the second feature leaves its squared values unchanged. Every cross-product changes sign, so the covariance changes sign."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 26,
+      "title": "Store the three quantities in S",
+      "action": "Select an entry of S. Calculate its four products, their sum, and the division by three.",
+      "claim": "The diagonal stores the two variances. The two off-diagonal entries store the same covariance.",
+      "scene": "covariance",
+      "steps": [
+        {
+          "tex": "S=\\begin{bmatrix}s_a^2&s_{ab}\\\\s_{ab}&s_b^2\\end{bmatrix}=\\frac13\\begin{bmatrix}10&8\\\\8&10\\end{bmatrix}",
+          "why": "These entries store both feature variances and their covariance. Together, they determine score variance at every angle."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 27,
+      "title": "Compute S with one matrix product",
+      "action": "Select an entry of S. Match a row of Xcᵀ with a column of Xc, then add their paired products.",
+      "claim": "Transposing turns feature columns into rows. Each row–column product calculates one sum needed by the covariance matrix.",
+      "scene": "covariance",
+      "steps": [
+        {
+          "tex": "\\underbrace{X_c^\\top}_{2\\times4}\\underbrace{X_c}_{4\\times2}=\\begin{bmatrix}\\sum a_i^2&\\sum a_ib_i\\\\\\sum b_ia_i&\\sum b_i^2\\end{bmatrix}",
+          "why": "Transposing makes each feature column a row. Its dot product with a feature column adds four paired products."
+        },
+        {
+          "tex": "S=\\frac{X_c^\\top X_c}{n-1}",
+          "why": "Divide each sum by n−1. The diagonal gives variances; the other two entries give covariance."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 28,
+      "title": "Read wᵀ S w from inside out",
+      "action": "Compute Sw first. Then multiply its coordinates by the matching entries of w and add.",
+      "claim": "The compact expression wᵀSw is exactly the expanded score variance.",
+      "scene": "objective",
+      "steps": [
+        {
+          "tex": "Sw=\\begin{bmatrix}s_a^2w_1+s_{ab}w_2\\\\s_{ab}w_1+s_b^2w_2\\end{bmatrix}",
+          "why": "Each row of S takes a dot product with w. The two results form the vector Sw."
+        },
+        {
+          "tex": "w^\\top Sw=w_1^2s_a^2+2w_1w_2s_{ab}+w_2^2s_b^2",
+          "why": "Multiply the two entries of Sw by the matching weights and add. The two equal cross-products combine."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 29,
+      "title": "Check both routes with real numbers",
+      "action": "Change the angle. Compare variance calculated from the scores with variance calculated from S.",
+      "claim": "Both routes give the same number at every angle because they are two forms of the same expression.",
+      "scene": "objective",
+      "steps": [
+        {
+          "tex": "\\frac{(X_cw)^\\top(X_cw)}{n-1}=w^\\top\\frac{X_c^\\top X_c}{n-1}w=w^\\top Sw",
+          "why": "Transposing Xc w gives wᵀXcᵀ. Grouping XcᵀXc/(n−1) then replaces it with S."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 30,
+      "title": "State the optimization problem",
+      "action": "Try several unit directions. Compare their variance and identify the largest value.",
+      "claim": "We want the largest value of wᵀSw. The constraint wᵀw=1 keeps every direction vector at unit length.",
+      "scene": "objective",
+      "steps": [
+        {
+          "tex": "\\max_w\\; w^\\top Sw\\qquad\\text{subject to }w^\\top w=1",
+          "why": "The objective is score variance. The constraint compares only unit vectors, so changing vector length cannot inflate the result."
+        }
+      ],
+      "chapter": 2
+    },
+    {
+      "id": 31,
+      "title": "What does S do to an arrow?",
+      "action": "Turn w. Compare its direction and length with the arrow Sw.",
+      "claim": "Multiplying by S maps the input vector w to the output vector Sw.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "Sw=\\frac13\\begin{bmatrix}10w_1+8w_2\\\\8w_1+10w_2\\end{bmatrix}",
+          "why": "Each row of S combines the two input coordinates. The two resulting coordinates locate the tip of Sw."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 32,
+      "title": "Find where the turning slope is zero",
+      "action": "Compare a direction with a small turn to either side. Check the variance curve at both candidate axes.",
+      "claim": "At a stationary direction, the variance curve has zero slope. Both a maximum and a minimum can have this slope.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "t=\\begin{bmatrix}-w_2\\\\w_1\\end{bmatrix},\\qquad \\frac{dV}{d\\theta}=2t^\\top Sw",
+          "why": "The unit tangent t points along a small increase in angle. Its dot product with the gradient gives the turning slope."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 33,
+      "title": "Find the variance slope",
+      "action": "Differentiate with respect to w1 while holding w2 fixed. Then exchange their roles.",
+      "claim": "Changing each coordinate gives one slope. Together, these slopes form the gradient 2Sw.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "f(w_1,w_2)=S_{11}w_1^2+2S_{12}w_1w_2+S_{22}w_2^2",
+          "why": "A partial derivative measures the local change in one coordinate while holding the other fixed."
+        },
+        {
+          "tex": "\\frac{\\partial f}{\\partial w_1}=2S_{11}w_1+2S_{12}w_2",
+          "why": "Differentiating w1² gives 2w1. The mixed term gives 2S12w2; the term containing only w2 stays constant."
+        },
+        {
+          "tex": "\\frac{\\partial f}{\\partial w_2}=2S_{12}w_1+2S_{22}w_2",
+          "why": "Exchange the roles of w1 and w2. The mixed term now contributes 2S12w1."
+        },
+        {
+          "tex": "\\nabla f=2Sw",
+          "why": "The gradient contains both partial derivatives. Their shared matrix form is 2Sw."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 34,
+      "title": "Find the constraint direction",
+      "action": "Find the gradient of w1²+w2². Compare its outward direction with the circle’s tangent.",
+      "claim": "The vector 2w points outward from the unit circle. A tangent to the circle is perpendicular to w.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "g(w)=w_1^2+w_2^2-1=0",
+          "why": "The equation restricts w to length one, so its tip lies on the unit circle."
+        },
+        {
+          "tex": "\\nabla g=\\begin{bmatrix}2w_1\\\\2w_2\\end{bmatrix}=2w",
+          "why": "The gradient 2w points outward. The tangent gives the allowed change to first order and is perpendicular to this gradient."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 35,
+      "title": "Match the two normal directions",
+      "action": "Compare both stationary directions. Check why each has zero change along the tangent.",
+      "claim": "Zero slope along the tangent gives 2Sw=2λw, hence Sw=λw. This identifies candidates; we still need to find the maximum.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "\\nabla f=\\lambda\\nabla g",
+          "why": "At a stationary point, the objective gradient has zero tangent component. It must lie along the constraint’s outward direction."
+        },
+        {
+          "tex": "2Sw=2\\lambda w",
+          "why": "The objective gradient is 2Sw. The constraint gradient is 2w, so proportional gradients give this equation."
+        },
+        {
+          "tex": "Sw=\\lambda w",
+          "why": "Cancel the common factor two. S maps w to a scalar multiple of w."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 36,
+      "title": "This equation defines an eigenvector",
+      "action": "Compare w and Sw at 45° and 135°. How much does S scale each arrow?",
+      "claim": "An eigenvector is a nonzero vector that S maps to a multiple of itself. Its eigenvalue is that multiplier.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "Sq=\\lambda q",
+          "why": "The vector q must be nonzero. S multiplies it by λ without sending it off its axis; λ may also be zero."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 37,
+      "title": "Find the possible scale factors",
+      "action": "Subtract λ from each diagonal entry. Calculate the determinant of the resulting 2×2 matrix.",
+      "claim": "The matrix S−λI must send a nonzero vector to zero. Its determinant must therefore be zero.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "(S-\\lambda I)q=0,\\quad q\\neq0",
+          "why": "Subtract λq from both sides. The matrix S−λI must collapse a nonzero direction to zero, so it is singular."
+        },
+        {
+          "tex": "\\det(S-\\lambda I)=\\left(\\frac{10}3-\\lambda\\right)^2-\\left(\\frac83\\right)^2=0",
+          "why": "A 2×2 determinant is the main diagonal product minus the other diagonal product. A singular matrix has determinant zero."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 38,
+      "title": "Solve our two eigenvalues",
+      "action": "Factor the difference of squares. Check each root in the original determinant equation.",
+      "claim": "The two possible eigenvalues are 6 and 2/3.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "\\left(\\frac{10}3-\\lambda-\\frac83\\right)\\left(\\frac{10}3-\\lambda+\\frac83\\right)=0",
+          "why": "Use A²−B²=(A−B)(A+B), with A=10/3−λ and B=8/3."
+        },
+        {
+          "tex": "\\left(\\frac23-\\lambda\\right)(6-\\lambda)=0",
+          "why": "The simplified factors must have a zero product. Set each factor to zero in turn."
+        },
+        {
+          "tex": "\\lambda_1=6,\\qquad\\lambda_2=\\frac23",
+          "why": "These two roots are the eigenvalues. Number them from largest to smallest."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 39,
+      "title": "Find and normalize the directions",
+      "action": "Solve for the relation between the two coordinates. Divide each resulting vector by its length.",
+      "claim": "The two unit directions are (1,1)/√2 and (1,−1)/√2.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "q=(u,v),\\quad\\lambda=6:\\quad -8u+8v=0\\;\\Rightarrow\\;v=u",
+          "why": "Set λ=6 in the first row, then multiply by three. The resulting equation requires the two coordinates to be equal."
+        },
+        {
+          "tex": "q_1=\\frac{(1,1)}{\\sqrt2},\\qquad q_2=\\frac{(1,-1)}{\\sqrt2}",
+          "why": "For λ=2/3, the first row requires v=−u. Each displayed direction has length √2 before division, so dividing makes its length one."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 40,
+      "title": "A candidate can be a minimum",
+      "action": "Select each eigenvector. Compare its variance with the nearby directions on the curve.",
+      "claim": "The eigenvector equation finds both candidates. Their eigenvalues tell us that their variances differ.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "V(q)=q^\\top Sq=q^\\top(\\lambda q)=\\lambda",
+          "why": "For a unit eigenvector, Sq=λq and qᵀq=1. Substitution makes its score variance equal to λ."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 41,
+      "title": "Why are these directions perpendicular?",
+      "action": "Calculate q1ᵀSq2 in two ways. What must its dot product be when the eigenvalues differ?",
+      "claim": "Symmetry gives (λ1−λ2)q1ᵀq2=0. Different eigenvalues force the dot product to be zero, so these axes are perpendicular.",
+      "scene": "eigen",
+      "steps": [
+        {
+          "tex": "q_1^\\top Sq_2=\\lambda_2 q_1^\\top q_2",
+          "why": "Since q2 is an eigenvector, replace Sq2 with λ2q2."
+        },
+        {
+          "tex": "q_1^\\top Sq_2=(Sq_1)^\\top q_2=\\lambda_1 q_1^\\top q_2",
+          "why": "Symmetry means Sᵀ=S, so q1ᵀS=(Sq1)ᵀ. Now replace Sq1 with λ1q1."
+        },
+        {
+          "tex": "(\\lambda_1-\\lambda_2)q_1^\\top q_2=0",
+          "why": "The same expression has two values that must agree. Distinct eigenvalues force q1ᵀq2=0, which means perpendicular directions."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 42,
+      "title": "Build any unit direction from them",
+      "action": "Turn w. Follow its coordinates a and b along the two eigenvector axes.",
+      "claim": "These two perpendicular unit vectors span the plane. Every unit direction has coordinates a and b with a²+b²=1.",
+      "scene": "maximum",
+      "steps": [
+        {
+          "tex": "w=aq_1+bq_2,\\qquad a^2+b^2=1",
+          "why": "The two perpendicular unit axes give coordinates a and b for w. Since w has length one, Pythagoras gives a²+b²=1."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 43,
+      "title": "Expand variance in the new basis",
+      "action": "Expand the four products. Use the perpendicular axes to remove the two cross-terms.",
+      "claim": "The variance becomes λ1a²+λ2b²: each eigenvalue is weighted by a squared coordinate.",
+      "scene": "maximum",
+      "steps": [
+        {
+          "tex": "w^\\top Sw=(aq_1+bq_2)^\\top S(aq_1+bq_2)",
+          "why": "Replace each copy of w with its two components along the eigenvector axes."
+        },
+        {
+          "tex": "=a^2\\lambda_1+ab\\lambda_2q_1^\\top q_2+ab\\lambda_1q_2^\\top q_1+b^2\\lambda_2",
+          "why": "Multiply all four pairs. Use Sq1=λ1q1 and Sq2=λ2q2 in each term."
+        },
+        {
+          "tex": "=a^2\\lambda_1+b^2\\lambda_2",
+          "why": "Perpendicular axes have dot product zero, so both mixed terms vanish. Unit lengths leave a²λ1+b²λ2."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 44,
+      "title": "Prove the largest value wins",
+      "action": "Change the squared weights. Can their weighted eigenvalue average exceed λ1?",
+      "claim": "The squared weights are nonnegative and add to one. Their average cannot exceed λ1, and q1 reaches that bound.",
+      "scene": "maximum",
+      "steps": [
+        {
+          "tex": "V=a^2\\lambda_1+b^2\\lambda_2\\leq a^2\\lambda_1+b^2\\lambda_1",
+          "why": "Replacing λ2 with the larger λ1 cannot reduce the sum because b² is nonnegative."
+        },
+        {
+          "tex": "V\\leq(a^2+b^2)\\lambda_1=\\lambda_1",
+          "why": "The squared weights add to one. Therefore the variance cannot exceed λ1 for any unit direction."
+        },
+        {
+          "tex": "w=q_1\\quad\\Rightarrow\\quad V=\\lambda_1",
+          "why": "Choosing w=q1 reaches λ1. Since no unit direction can exceed it, this is a global maximum."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 45,
+      "title": "What if the eigenvalues tie?",
+      "action": "Turn the axis through the round cloud. Compare variance in different directions.",
+      "claim": "Tied eigenvalues give the same variance in every direction of their shared space. The best axis can therefore be non-unique.",
+      "scene": "maximum",
+      "steps": [
+        {
+          "tex": "\\lambda_1=\\lambda_2=\\lambda\\quad\\Rightarrow\\quad V=\\lambda(a^2+b^2)=\\lambda",
+          "why": "Equal eigenvalues make the result independent of the squared weights. Every unit direction in this shared space has variance λ."
+        }
+      ],
+      "chapter": 3
+    },
+    {
+      "id": 46,
+      "title": "Find the next component",
+      "action": "Keep PC1 fixed. Find a unit direction perpendicular to it.",
+      "claim": "PC2 maximizes variance among unit directions perpendicular to PC1. In two dimensions, only one perpendicular axis remains.",
+      "scene": "coordinates",
+      "steps": [
+        {
+          "tex": "\\max_{\\|w\\|=1,\\;w^\\top q_1=0}w^\\top Sw",
+          "why": "The next axis must have unit length and be perpendicular to q1. It maximizes variance among the directions that meet both conditions."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 47,
+      "title": "Read the PCA coordinates",
+      "action": "Switch between the original axes and the PCA axes. Follow one observation’s two coordinates.",
+      "claim": "Loadings describe the axes. Scores describe where each observation lies along those axes.",
+      "scene": "coordinates",
+      "steps": [
+        {
+          "tex": "Z=X_cQ,\\qquad Q=[q_1\\ q_2]",
+          "why": "Each column of Q is a unit PCA direction. Multiplying each data row by Q gives that observation’s new coordinates."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 48,
+      "title": "Check the new covariance",
+      "action": "Compare the covariance before and after changing to PCA coordinates. Check the off-diagonal entries.",
+      "claim": "The score columns have zero covariance. This does not generally make them independent.",
+      "scene": "coordinates",
+      "steps": [
+        {
+          "tex": "\\operatorname{Cov}(Z)=\\frac{Z^\\top Z}{n-1}=Q^\\top SQ",
+          "why": "Substitute Z=XcQ and transpose the product. The middle factor XcᵀXc/(n−1) is S."
+        },
+        {
+          "tex": "Q^\\top SQ=\\begin{bmatrix}\\lambda_1&0\\\\0&\\lambda_2\\end{bmatrix}",
+          "why": "Applying S scales each eigenvector by its eigenvalue. The perpendicular unit eigenvectors then make the off-diagonal entries zero."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 49,
+      "title": "What does 90 percent measure?",
+      "action": "Divide the PC1 variance by total variance. Explain what the resulting percentage measures.",
+      "claim": "PC1 keeps 6/(6+2/3)=90% of the total squared spread. This percentage does not measure prediction accuracy.",
+      "scene": "coordinates",
+      "steps": [
+        {
+          "tex": "\\mathrm{fraction}_1=\\frac{\\lambda_1}{\\lambda_1+\\lambda_2}=\\frac{6}{6+2/3}=0.90",
+          "why": "The eigenvalues add to total variance. Since both variances use the same divisor, their ratio also measures the fraction of squared spread kept."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 50,
+      "title": "Rebuild an observation from its score",
+      "action": "Select an observation. Multiply its score by q1, then add the mean.",
+      "claim": "The recovered point lies on the line through the mean in direction q1.",
+      "scene": "reconstruction",
+      "steps": [
+        {
+          "tex": "\\widehat r_A=\\mu+z_Aq_1",
+          "why": "The score gives distance along q1 from the center. Multiplying by q1 and adding the mean returns to the original coordinate system."
+        },
+        {
+          "tex": "=(6,6)+\\frac3{\\sqrt2}\\frac{(1,1)}{\\sqrt2}=(7.5,7.5)",
+          "why": "Compare the recovered coordinates with the original coordinates. Their difference is the reconstruction error."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 51,
+      "title": "Draw the missing part",
+      "action": "Select a point. Compare its original vector, projection, and error vector as a right triangle.",
+      "claim": "The original squared length equals the kept squared length plus the squared error. The right angle makes this identity possible.",
+      "scene": "reconstruction",
+      "steps": [
+        {
+          "tex": "x_i=z_iw+e_i,\\quad w^\\top e_i=0",
+          "why": "The residual e fills the gap from the projection to the original centered point. Its dot product with w is zero."
+        },
+        {
+          "tex": "\\|x_i\\|^2=z_i^2+\\|e_i\\|^2",
+          "why": "The projection and residual form a right angle. Pythagoras adds their squared lengths; the projection’s squared length is z² because w is unit length."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 52,
+      "title": "Prove the second objective",
+      "action": "Add the right-triangle identity for all observations. Find the term that stays fixed as the axis turns.",
+      "claim": "Total squared distance from the center stays fixed. Maximizing score variance therefore minimizes total squared recovery error.",
+      "scene": "reconstruction",
+      "steps": [
+        {
+          "tex": "\\sum_i\\|e_i\\|^2=\\sum_i\\|x_i\\|^2-\\sum_i z_i^2",
+          "why": "Add the right-triangle identity for all observations. Move the total kept squared length to the other side."
+        },
+        {
+          "tex": "\\frac{\\sum_i\\|e_i\\|^2}{n-1}=\\operatorname{tr}(S)-w^\\top Sw",
+          "why": "The total squared distance divided by n−1 is tr(S), the sum of feature variances. It stays fixed while w changes."
+        },
+        {
+          "tex": "\\arg\\min_w\\sum_i\\|e_i\\|^2=\\arg\\max_w w^\\top Sw",
+          "why": "With unit directions and fixed data, reducing the error means increasing score variance. The measured gaps are perpendicular to the chosen line."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 53,
+      "title": "Recover both coordinates",
+      "action": "Keep zero, one, and then two components. Compare the recovered positions.",
+      "claim": "Both perpendicular coordinates together recover the original centered vector exactly.",
+      "scene": "reconstruction",
+      "steps": [
+        {
+          "tex": "x_i=z_{i1}q_1+z_{i2}q_2",
+          "why": "The two perpendicular components add to the original centered vector. Add the mean to recover the original observation."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 54,
+      "title": "Choose how much to keep",
+      "action": "Set a retained-variance target. Compare the component count and the remaining recovery error.",
+      "claim": "Choose an acceptable error for the task. A high retained-variance percentage alone does not establish usefulness.",
+      "scene": "reconstruction",
+      "steps": [
+        {
+          "tex": "\\mathrm{retained}=\\frac{\\sum_{j=1}^k\\lambda_j}{\\sum_{j=1}^p\\lambda_j},\\qquad\\mathrm{loss}=\\sum_{j=k+1}^p\\lambda_j",
+          "why": "The displayed loss divides total squared error by n−1. It equals the sum of discarded eigenvalues in the same units."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 55,
+      "title": "Extend from two features to p",
+      "action": "Choose k in the larger eigenvalue spectrum. Compare the sum kept with the sum discarded.",
+      "claim": "Choose k perpendicular unit axes. The top k eigenvectors retain the most total variance; discarded eigenvalues give the remaining loss.",
+      "scene": "spectrum",
+      "steps": [
+        {
+          "tex": "V_k=\\operatorname{tr}(W^\\top SW)=\\sum_{j=1}^p\\lambda_j\\alpha_j",
+          "why": "W contains k perpendicular unit directions. Each αj is the squared length of eigenvector qj projected onto their shared space."
+        },
+        {
+          "tex": "0\\leq\\alpha_j\\leq1,\\qquad\\sum_j\\alpha_j=k",
+          "why": "Projection cannot lengthen a unit vector, so each αj lies from zero to one. Their sum is k, the number of retained axes."
+        },
+        {
+          "tex": "V_k\\leq\\lambda_1+\\cdots+\\lambda_k",
+          "why": "With total weight k and each weight at most one, the largest sum uses the k largest eigenvalues. Their eigenvectors attain this bound."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 56,
+      "title": "Connect the result to SVD",
+      "action": "Substitute Xc=UΣVᵀ into the covariance formula. Follow the factors that cancel.",
+      "claim": "The columns of V give PCA directions. Each eigenvalue is a squared singular value divided by n−1.",
+      "scene": "spectrum",
+      "steps": [
+        {
+          "tex": "X_c=U\\Sigma V^\\top",
+          "why": "SVD factors the centered data matrix into U, Σ, and Vᵀ. In compact SVD, U and V have perpendicular unit columns."
+        },
+        {
+          "tex": "S=\\frac{V\\Sigma^\\top U^\\top U\\Sigma V^\\top}{n-1}=V\\frac{\\Sigma^2}{n-1}V^\\top",
+          "why": "Substitution gives UᵀU=I, which removes the middle pair. The resulting diagonal values are squared singular values divided by n−1."
+        },
+        {
+          "tex": "q_j=v_j,\\qquad\\lambda_j=\\frac{\\sigma_j^2}{n-1}",
+          "why": "The columns of V therefore satisfy the covariance eigenvector equation. SVD computes them without explicitly forming S."
+        }
+      ],
+      "chapter": 4
+    },
+    {
+      "id": 57,
+      "title": "Use the axes on a new observation",
+      "action": "Enter a new observation. Apply the existing mean and axes without changing them.",
+      "claim": "Fit preprocessing and PCA on the training data. Reuse the same values to transform later observations.",
+      "scene": "newpoint",
+      "steps": [
+        {
+          "tex": "z_{\\mathrm{new}}=Q_k^\\top(r_{\\mathrm{new}}-\\mu_{\\mathrm{train}})",
+          "why": "Subtract the training mean, then take the dot product with the learned direction. This transforms the new observation without fitting new axes."
+        }
+      ],
+      "chapter": 5
+    },
+    {
+      "id": 58,
+      "title": "Decide what units mean",
+      "action": "Rescale the second feature. Turn standardization on and compare the resulting axis.",
+      "claim": "Standardization gives each nonconstant feature unit variance. It changes the relative weight of the features in the PCA objective.",
+      "scene": "units",
+      "steps": [
+        {
+          "tex": "\\widetilde r_{ij}=\\frac{r_{ij}-\\mu_j}{s_j}",
+          "why": "Divide each centered feature by its sample standard deviation. Every nonconstant feature then has sample variance one."
+        }
+      ],
+      "chapter": 5
+    },
+    {
+      "id": 59,
+      "title": "Large variance is not always useful",
+      "action": "Compare the original cloud, a distant observation, and the labeled example. Is the largest spread useful each time?",
+      "claim": "A distant observation can dominate squared spread. A direction with little variance can still separate useful categories.",
+      "scene": "outliers",
+      "steps": [],
+      "chapter": 5
+    },
+    {
+      "id": 60,
+      "title": "A line cannot follow every shape",
+      "action": "Turn a line through the ring. Check the gaps between the ring and the recovered points.",
+      "claim": "One straight axis cannot preserve a circle’s shape. A curve may need two PCA coordinates even when one parameter describes it.",
+      "scene": "ring",
+      "steps": [],
+      "chapter": 5
+    },
+    {
+      "id": 61,
+      "title": "Change the real notebook data",
+      "action": "Move observation D. Compare the new center, covariance, and PC1 with their earlier values.",
+      "claim": "Changing a measurement changes the data that PCA describes. The notebook recalculates the center, covariance, axes, scores, and recovery errors.",
+      "scene": "notebook",
+      "steps": [],
+      "chapter": 5
+    },
+    {
+      "id": 62,
+      "title": "Solve a fresh geometric problem",
+      "action": "Choose an axis for the new cloud. Write your reason before checking the computed optimum.",
+      "claim": "The same PCA rule applies to a new cloud. Its best axis can differ from the one in our worked example.",
+      "scene": "challenge",
+      "steps": [],
+      "chapter": 5
+    },
+    {
+      "id": 63,
+      "title": "Produce the calculation yourself",
+      "action": "Calculate the requested covariance, score, and recovered position. Explain why each operation is needed.",
+      "claim": "Use the same three operations on new values: covariance, projection, and reconstruction.",
+      "scene": "exam",
+      "steps": [],
+      "chapter": 5
+    },
+    {
+      "id": 64,
+      "title": "Teach PCA back in your own words",
+      "action": "Explain why covariance leads to eigenvectors and small recovery errors. Use a new example and name one limit.",
+      "claim": "PCA’s axes keep the most squared spread. Their usefulness still depends on the task and the chosen units.",
+      "scene": "teachback",
+      "steps": [],
+      "chapter": 5
+    }
+  ],
+  "refreshers": {
+    "center": [
+      "Mean and centering",
+      "The mean is the sum divided by the number of observations. Calculate one mean per feature. Subtract each feature mean from its values. Centered values describe differences from the mean."
+    ],
+    "score": [
+      "Vectors and dot products",
+      "A vector stores coordinates. A unit vector has length one. Its dot product with a centered observation gives the signed projection score. Multiply matching coordinates, then add."
+    ],
+    "variance": [
+      "Variance",
+      "Variance measures squared spread around a mean. Here the score mean is zero. Add the squared scores and divide by n−1. Using n instead changes the scale but not the best direction."
+    ],
+    "expansion": [
+      "Expand a square",
+      "Multiply each term in the first bracket by each term in the second bracket. In (A+B)², the middle terms are AB and BA. They give 2AB."
+    ],
+    "covariance": [
+      "Transpose and matrix multiplication",
+      "Transpose swaps rows and columns. A matrix product matches one row with one column. Multiply matching entries and add. In XcᵀXc, each entry compares two feature columns."
+    ],
+    "objective": [
+      "Read the dimensions",
+      "Xc has n rows and p columns. w has p entries. Xc w has n scores. S has p rows and p columns. wᵀSw is one number."
+    ],
+    "eigen": [
+      "Gradients, constraints, and eigenvectors",
+      "A derivative measures local change. A gradient collects one derivative per coordinate. On the unit circle, the tangent gives an allowed change to first order. A stationary direction has zero turning slope. It can be a maximum or a minimum. Sw=λw says that S maps w to a multiple of itself."
+    ],
+    "maximum": [
+      "The basis theorem and the bound",
+      "A real symmetric matrix has an orthonormal basis of eigenvectors. We use this theorem for higher dimensions. The two-dimensional example can be checked directly. Squared coordinates in this basis are nonnegative and add to one. Their weighted eigenvalue average cannot exceed the largest eigenvalue."
+    ],
+    "coordinates": [
+      "Loadings and scores",
+      "Loadings are the feature weights in an axis. Scores are the coordinates of observations on that axis. Sign reversal changes both signs and preserves the same projection. Zero covariance does not generally imply independence."
+    ],
+    "reconstruction": [
+      "Length, projection, and trace",
+      "The squared length of (a,b) is a²+b². A unit-axis projection is zw. Its residual is perpendicular to the axis. Their squared lengths add. Trace means the sum of the diagonal entries."
+    ],
+    "spectrum": [
+      "Several retained directions",
+      "The columns of W are perpendicular unit vectors. WᵀW=I. Projecting onto these k directions gives k scores. Keeping all directions preserves the data. Keeping fewer can lose detail."
+    ],
+    "geometry": [
+      "How to read this picture",
+      "Each letter marks one observation. The green axis is a shared ruler through the center. Its score is one signed coordinate. The closest point on the axis is the projection. The gap to the original point is the recovery error."
+    ]
+  },
+  "notation": [
+    [
+      "rᵢ",
+      "An original observation, before centering."
+    ],
+    [
+      "μ",
+      "The mean of each original feature."
+    ],
+    [
+      "xᵢ",
+      "One centered observation: rᵢ−μ."
+    ],
+    [
+      "Xc",
+      "A table of centered observations, one per row."
+    ],
+    [
+      "w",
+      "A candidate direction of unit length."
+    ],
+    [
+      "zᵢ",
+      "The score of observation i on w."
+    ],
+    [
+      "S",
+      "The sample covariance matrix."
+    ],
+    [
+      "qⱼ",
+      "A learned unit eigenvector, or PCA direction."
+    ],
+    [
+      "λⱼ",
+      "Variance along qⱼ."
+    ],
+    [
+      "k",
+      "The number of retained components."
+    ]
+  ]
+}

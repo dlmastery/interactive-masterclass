@@ -1,0 +1,43 @@
+This will let you choose the café with the lower expected wait for YOUR pattern of visits. The puzzle is that last week's overall averages describe two different patterns.
+
+Imagine two jars, each containing 100 visit tickets. A ticket records one person's wait.
+
+• A's jar has 10 quiet-period tickets and 90 busy-period tickets.
+• B's jar has 90 quiet-period tickets and 10 busy-period tickets.
+
+Most of A's tickets come from its slower period. Most of B's come from its faster period. An overall average gives every VISIT equal weight; it does not give every PERIOD equal weight.
+
+Let's recover the total waiting time before dividing it among visits:
+
+| Café | Quiet visits: total wait | Busy visits: total wait | All 100 visits |
+|---|---:|---:|---:|
+| A | 10 × 2 = 20 min | 90 × 10 = 900 min | 920 ÷ 100 = 9.2 min |
+| B | 90 × 3 = 270 min | 10 × 12 = 120 min | 390 ÷ 100 = 3.9 min |
+
+Why can we multiply an average by the visit count? Because an average is total wait divided by visits. Multiplying reverses that division. Individual waits can differ; these totals do not assume everyone waited exactly the average.
+
+Your friend is correct about last week. A is also faster within each period. Neither fact contradicts the other: the overall comparison mixes the periods in different proportions.
+
+Here is the difficult connection. For A, each quiet-period average counts for 10% of its visits; its busy-period average counts for 90%:
+
+A overall = 0.10 × 2 + 0.90 × 10 = 9.2.
+
+For B, those shares reverse. This is a weighted average: a group's influence follows its share of the visits. Simply averaging 2 and 10 would silently pretend A had equal numbers of visits in both periods.
+
+For your decision, give BOTH cafés your future pattern. Picture ten planned visits: five quiet and five busy.
+
+• A: (5 × 2 + 5 × 10) ÷ 10 = 6 minutes.
+• B: (5 × 3 + 5 × 12) ÷ 10 = 7.5 minutes.
+
+On these estimates, choose A for waiting time: about 1.5 minutes less per visit. We assume the periods are comparable and last week's period averages remain useful estimates. This does not guarantee tomorrow's wait or establish why the cafés differ.
+
+Try one new case before reading the feedback. Two campus print desks have these average waits:
+
+| Desk | Quiet | Busy |
+|---|---:|---:|
+| C | 1 min | 9 min |
+| D | 3 min | 7 min |
+
+You expect one quiet visit and three busy visits. Which desk has the lower expected average? Explain which number must receive more weight.
+
+Feedback: C gives (1 + 3 × 9) ÷ 4 = 7 minutes. D gives (3 + 3 × 7) ÷ 4 = 6 minutes. Choose D: busy visits make up three quarters of your plan. If you obtained 5 minutes for both, you gave the periods equal weight. If you chose C because its quiet wait is lowest, you ignored the three busy visits. Recalculate by writing one ticket for each planned visit.

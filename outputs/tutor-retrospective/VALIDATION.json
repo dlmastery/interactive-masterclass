@@ -1,0 +1,77 @@
+{
+  "skill_files": [
+    {
+      "path": "build-interactive-masterclass\\SKILL.md",
+      "sha256": "0d386408d235bea5228e5fff7333e7c6fed84495e015dfcf3787f8b8809a7c67"
+    },
+    {
+      "path": "build-interactive-masterclass\\agents\\openai.yaml",
+      "sha256": "4c48d4d267fe276c7004f80c8b5995117e45a094614010f107b68b986c05dc10"
+    },
+    {
+      "path": "build-interactive-masterclass\\references\\adaptive-tutoring.md",
+      "sha256": "0d7d84977a4ec65347561455992a55efef01b31c0590cbd86308b3fa6a85c584"
+    },
+    {
+      "path": "build-interactive-masterclass\\references\\harness.md",
+      "sha256": "a54d23126f8f4d5362a9d8a16effcaa3cb5bea21f8ff12eb04c87f8baf17d443"
+    },
+    {
+      "path": "build-interactive-masterclass\\references\\lesson-design.md",
+      "sha256": "6360d486728505b54e697caae71f7989142f7ef01b22e3cb7de92f552e8cdf52"
+    },
+    {
+      "path": "build-interactive-masterclass\\references\\marimo-studio.md",
+      "sha256": "6d210705943a2b4d6d858e566ea2d5ae978745099aec4bab148b97ae6ac9a974"
+    },
+    {
+      "path": "build-interactive-masterclass\\references\\research-debate.md",
+      "sha256": "618b9f21ab95afbfdaea0e3d6d0fbfc960d21345079851e45fdce8f9945f1192"
+    },
+    {
+      "path": "build-interactive-masterclass\\references\\review.md",
+      "sha256": "64a63573a14ab89862038efb6df0387dc240204f1bf4fb849c5fcd0084fded5e"
+    },
+    {
+      "path": "build-interactive-masterclass\\scripts\\harness.py",
+      "sha256": "7f1f4e497724f67a5452add38c578225b5df930d956efc46505e67e0c3e6b129"
+    },
+    {
+      "path": "build-interactive-masterclass\\scripts\\test_harness.py",
+      "sha256": "21bc8e712e90fdfbd169b8be51384571ac3a673ea1ace98178f41cdf68eccb08"
+    },
+    {
+      "path": "build-intuition-masterclass\\SKILL.md",
+      "sha256": "339a56acf75e199832f29fcbeb06a140f3d5624331fac3dd37b6a7e81fe18e4b"
+    },
+    {
+      "path": "build-intuition-masterclass\\references\\teaching-contract.md",
+      "sha256": "8c77aaaa8a3712bb78347721f486918b7e4fe1d07f1ebd174418e2fd44796223"
+    }
+  ],
+  "broken_local_links": [],
+  "report_word_count_approx": 4785,
+  "skill_frontmatter_validation": "both pass",
+  "guardrail_behavior_tests": {
+    "passed": 17,
+    "failed": 0,
+    "scope": "synthetic workflow records; no learner efficacy claim"
+  },
+  "forward_tests": {
+    "two_written_lessons": "rubric passed; no learner observations",
+    "four_scope_cases": "written behavior inspected; execution limitations disclosed"
+  },
+  "course_scope_check": {
+    "extra_files": [],
+    "files_compared": 71,
+    "changed_or_missing": [],
+    "course_unchanged": true,
+    "exclusions": [
+      "__pycache__",
+      "__marimo__",
+      ".artifacts"
+    ]
+  },
+  "reviewed_human_learning": false,
+  "later_astra_configuration_tested": false
+}

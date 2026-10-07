@@ -1,0 +1,242 @@
+SCHEMA 2 TUTORIAL GUARDRAIL — EXECUTOR GUIDE
+
+Implementation: C:/Users/abhir/.codex/skills/build-interactive-masterclass/scripts/harness.py
+Uses only Python's standard library. JSON may use UTF-8 with or without a BOM.
+Examples below describe a hypothetical run. They are NOT records of PCA work,
+student learning, expert approval, or actions executed during this retrospective.
+
+BOUNDARY
+
+This CLI checks records and withholds action permits/acceptance records when a
+declared dependency, scope, finding, revision, or repair limit fails. It does not
+call agents, render lessons, prevent direct tool edits, authenticate user approval,
+verify reviewer independence, verify a reported observation, or establish learning.
+The coordinator must obey the checks. Existing user review-before-build requests
+remain procedural dependencies unless the application implements them separately.
+For the current retrospective use mode=audit and do not rebuild the course.
+Use one coordinator to serialize writes to each run. Atomic file replacement
+protects an individual save; this small CLI does not provide concurrent-writer locks.
+
+There is no token/billing budget or global action counter. The enforced local cap
+is two reported unsuccessful repairs per issue/strategy epoch. Reports preserve
+total attempts and count failed attempts in the current epoch. These are records
+of reported actions, not independent proof that those actions occurred.
+
+COMMANDS
+
+python <harness.py> init <run-directory> --contract <contract.json>
+python <harness.py> status <run-directory>
+python <harness.py> check <run-directory> --node core --action pilot
+python <harness.py> record <run-directory> --file <receipt.json>
+python <harness.py> finding <run-directory> --file <finding.json>
+python <harness.py> repair <run-directory> --file <repair.json>
+python <harness.py> strategy <run-directory> --file <strategy.json>
+
+Exit 0 means the requested record/check operation succeeded. Exit 2 supplies a
+reason for failure. It never means the lesson is educationally effective.
+
+CONTRACT EXAMPLE (valid JSON; create real reviewed files before acceptance)
+
+{
+  "schema": 2,
+  "mode": "build",
+  "topic": "A topic chosen for a future tutorial",
+  "audience": "The stated learner, with documented preparation assumptions",
+  "scope_roots": ["./artifacts"],
+  "nodes": [
+    {
+      "id": "plan",
+      "kind": "artifact",
+      "action": "plan",
+      "depends_on": [],
+      "inputs": ["./artifacts/plan.txt"],
+      "outputs": ["./artifacts/plan.txt"],
+      "required_claims": ["artifact"]
+    },
+    {
+      "id": "core",
+      "kind": "inference",
+      "critical": true,
+      "action": "pilot",
+      "depends_on": ["plan"],
+      "inputs": ["./artifacts/core.html"],
+      "outputs": ["./artifacts/core.html"],
+      "required_claims": ["correctness", "teaching-review", "interaction"],
+      "teaching": {
+        "question": "Which relationship must the learner now explain?",
+        "intended_inference": "Write the actual inference for this topic.",
+        "misconception": "Write a plausible wrong rule.",
+        "learner_task": "Specify a fresh task that separates these rules."
+      }
+    },
+    {
+      "id": "revised-pilot",
+      "kind": "pilot",
+      "action": "pilot",
+      "depends_on": ["plan"],
+      "inputs": ["./artifacts/revised-pilot.html"],
+      "outputs": ["./artifacts/revised-pilot.html"],
+      "required_claims": ["teaching-review", "interaction"]
+    },
+    {
+      "id": "delivery",
+      "kind": "delivery",
+      "action": "deliver",
+      "depends_on": ["core"],
+      "covers": ["core"],
+      "inputs": ["./artifacts/core.html"],
+      "outputs": ["./artifacts/release.txt"],
+      "required_claims": ["artifact"]
+    }
+  ]
+}
+
+Paths in inputs, outputs, and scope_roots resolve relative to contract.json.
+Outputs must stay inside a declared scope root. Input reads may refer to existing
+course/source files outside those roots. The mode and resolved output roots are
+pinned at init; editing the contract cannot widen them for that run.
+
+Modes:
+  audit: inspect, research, review, report
+  plan:  audit actions plus plan
+  build: plan actions plus implement, pilot, deliver
+
+The action requested by check must match that node's declared action. Dependency
+nodes must have all required current receipts before a dependent action is allowed.
+A node's own open finding permits bounded repair work but prevents acceptance.
+
+Kinds: inference, artifact, check, pilot, delivery, report.
+Critical inference nodes require an input artifact and teaching-review receipt.
+Pilot nodes also require an input artifact and teaching-review receipt.
+Delivery must depend transitively on, and explicitly cover, every critical
+inference. Keep optional/rejected route nodes noncritical or in a separate plan.
+Dependency edges must form a DAG. Pedagogical branch/detour data may live in the
+teaching object; this CLI does not execute or validate learner runtime transitions.
+
+The teaching object above is retained in the node revision. Its pedagogical
+adequacy is judged by reviewers, not by checking the presence of its field names.
+
+RECEIPT EXAMPLE (valid JSON; placeholder hashes MUST be replaced)
+
+{
+  "node": "core",
+  "claim_type": "teaching-review",
+  "outcome": "pass",
+  "revision": "EXACT_REVISION_FROM_STATUS_OR_CHECK",
+  "input_hashes": {
+    "C:\\absolute\\tutorial\\artifacts\\core.html": "EXACT_HASH_FROM_STATUS"
+  },
+  "scenario": "Describe the actual learner-visible scenario attempted.",
+  "observed_result": "Describe what happened and the inference it supports.",
+  "reviewer": {
+    "id": "reviewer identifier",
+    "relationship": "author-informed",
+    "context": "Disclose previous authorship and which material was visible."
+  },
+  "evidence_type": "author-review",
+  "evidence": [
+    {"path": "./observed-review.txt", "sha256": "ACTUAL_FILE_SHA256"}
+  ],
+  "limitations": ["No human learning study was performed."]
+}
+
+Execute the review first. status/check supplies revision and input_hashes; copy
+them exactly into its receipt. Hash the evidence report after saving it. For
+PowerShell: (Get-FileHash -LiteralPath <report> -Algorithm SHA256).Hash.ToLower()
+Evidence paths resolve relative to the receipt JSON. Its own saved bytes are also
+hashed by record. Changing a reviewed input, prerequisite revision, evidence file,
+or receipt file makes the corresponding acceptance stale or dependency-blocked.
+Unrelated branches retain their valid receipts. Only DECLARED files are covered;
+the tool cannot detect an omitted dependency or an unregistered implementation file.
+
+Allowed claim types:
+artifact, correctness, interaction, visual, teaching-review, simulated-learner,
+human-learning, retention, learner-tested.
+Allowed reviewer relationships: author, author-informed, fresh-context, human.
+Allowed evidence types: tool-observation, author-review, simulated-review,
+human-study, source-inspection.
+
+One receipt records one claim. Record each required claim before dependent work.
+A simulated-learner claim requires simulated-review evidence. Human-learning,
+retention, and learner-tested require human-study evidence plus positive integer
+counts, for example:
+  "human_evidence": {"participants": 3, "tasks": 4}
+Retention also needs an observed positive delay_days field. These are required
+attestations, not automatically verified data. Artifact delivery does NOT require
+human evidence. Do not add learner-tested to required_claims unless that claim is
+in scope and actual corresponding evidence can be obtained.
+
+FINDING EXAMPLE
+
+{
+  "id": "bridge-wrong-rule",
+  "nodes": ["core"],
+  "severity": "blocking",
+  "observation": "Record the concrete wrong inference or failure observed."
+}
+
+The ID is durable. Opening a finding blocks acceptance of its affected nodes and
+their dependents, including previously accepted records. Do not rename an issue
+to evade its history. The tool cannot detect semantic duplication under a new ID,
+but the original open finding remains blocking. Nonblocking findings are supported.
+
+FAILED REPAIR EXAMPLE
+
+{
+  "issue": "bridge-wrong-rule",
+  "outcome": "failed",
+  "change": "Describe the specific causal repair and the recheck.",
+  "evidence": [{"path": "./repair-observation.txt", "sha256": "ACTUAL_SHA256"}]
+}
+
+After two failed attempts a third local attempt/check is denied. Record a strategy
+revision, change the declared pilot artifact, execute that pilot's checks, and
+record fresh required receipts. Merely changing text labels or re-recording an
+unchanged pilot does not reset the cap. Each successful pilot epoch can unlock at
+most two further failed attempts; it cannot be reused for indefinite resets.
+
+STRATEGY EXAMPLE
+
+{
+  "issue": "bridge-wrong-rule",
+  "pilot_node": "revised-pilot",
+  "hypothesis": "State why a different representation should address the failure.",
+  "evidence": [{"path": "./revised-route.txt", "sha256": "ACTUAL_SHA256"}]
+}
+
+Record strategy BEFORE changing/building its new pilot. The pilot must not depend
+on acceptance of the failed branch. Its input manifest must change afterward;
+all required pilot receipts must be current and recorded after the strategy event.
+This enforces revision/review sequencing, not whether the new idea is persuasive.
+
+RESOLUTION
+
+Use outcome="resolved" in a repair file and add resolution_receipt pointing to
+a current receipt for the affected node. That receipt must include:
+  "resolves": ["bridge-wrong-rule"]
+For findings affecting multiple nodes, use resolution_receipts (a list of paths)
+and cover each node. Claims must match required obligations. A generic old pass
+cannot resolve a newly named finding. Resolution does not supply missing other
+required claims or silently accept a node. Record the reviewed claims normally.
+Changing/deleting the resolution evidence reopens the finding effectively.
+
+LEGACY / CLAIM LIMITS
+
+Schema-1 run.json remains readable through status, with its old recorded gates
+clearly labeled legacy. Mutating commands reject it. No old pass is promoted.
+The preserved original script is work/tutor-retrospective/harness-v1-preserved.py.
+
+status reports accepted, blocked, stale, or unverified RECORD states, and the
+limitations of its manifest. It never reports mastery, beauty, learning efficacy,
+independence, or user acceptance as independently verified facts.
+
+REGRESSION TESTS
+
+python work/tutor-retrospective/test_harness_v2.py
+
+The tests create and clean disposable synthetic fixtures. They do not create
+real PCA receipts. Tests cover critical dependencies, invalid graphs, scope/mode,
+hash staleness, unaffected branches, blocking findings, causal repair caps and
+fresh pilots, issue-specific resolution, other outstanding claims, immutable event
+snapshots, human/simulation distinctions, legacy behavior, Windows BOMs, and clean
+CLI failures. Passing them establishes only the stated workflow behavior.

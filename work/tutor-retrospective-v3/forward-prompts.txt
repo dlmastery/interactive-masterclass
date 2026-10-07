@@ -1,0 +1,29 @@
+COMMON INSTRUCTIONS FOR THE THREE TOPIC CASES
+
+These are compact forward tests of the reusable teaching protocol, not requests to build full courses. Use the current canonical skill and its relevant references. For each topic, write no more than 500 words excluding references, including (a) a concrete plan excerpt and (b) an actual 100–150-word spoken passage with event cues such as [reveal], [point], [pause], or [play example]. Count the spoken words separately from bracketed production cues. The passage must teach a difficult connection, not merely introduce the topic or promise an eventual explanation.
+
+Show why the learner should care, when and where the idea is useful, one worked bridge, a realistic application, a consequential limitation with a diagnostic and mitigation, the mitigation’s cost or residual weakness, and a serious alternative or competing interpretation. Connect these in a route rather than adding a checklist of labels. Include one learner decision or transfer check. Adapt these obligations to the subject; not every field is a formula, optimization problem, or technique with a cure.
+
+Use a few authoritative sources to check substantive/current claims and cite them. Be clear about planned visuals, audio, research, and checks versus work actually performed. Do not run a 30-video search for these small excerpt tests, build an app, create media, or claim learning has been observed. Full flagship work still has its normal breadth requirements. Respect the word bound as this test’s output constraint, not a recommended size for real courses.
+
+CASE 1 — MATHEMATICAL METHOD
+
+Plan a segment titled “Gradient descent: why downhill steps can still go wrong.” The learner can read a graph and understands a derivative as a local slope but has not studied optimization or linear algebra. They want to understand how model-fitting algorithms choose changes, when gradient descent is a sensible choice, and when another optimizer deserves consideration. Include a meaningful modern use and compare serious alternatives on an actual task or condition. Make the narrated passage teach the central difficulty through a worked visual event.
+
+CASE 2 — HISTORY AND INTERPRETATION
+
+Plan a segment titled “Did Rome fall in 476?” for a curious adult who knows little Roman history. The learner wants to understand what this familiar date explains, what it hides, and how historians evaluate different interpretations of political collapse and social change. Include a concrete present-day use of careful historical interpretation, such as evaluating a public-history label or an analogy. Make the narrated passage work with evidence or a revealing comparison. Do not invent a primary-source quotation, universal law of collapse, or single settled explanation for everything.
+
+CASE 3 — PRACTICAL SKILL
+
+Plan a segment titled “Clear narration in an ordinary bedroom.” The learner has a phone or basic USB microphone, headphones, and no audio-production training. They want to diagnose a hollow or echoing voice recording and improve it with resources they already have before buying equipment. Include a feasible demonstration, a repeatable listening check, and realistic alternatives with tradeoffs. Make the narrated passage guide the learner through an actual decision-producing audio or visual sequence, specifying the example that would need to be recorded without pretending it already exists.
+
+SCOPE AND PROVENANCE SCENARIOS
+
+Answer each in at most 150 words. These are hypothetical decision tests: do not invent completed searches, viewing, builds, or measurements.
+
+S1. A flagship tutorial requires a landscape of at least 30 unique relevant videos where available. After a documented, varied search and deduplication, you find only nine directly relevant video candidates. Other results repeat the same lessons or concern different meanings of the topic’s name. What do you do next, what remains required, and how do you report the result?
+
+S2. You have collected metadata for 30 unique relevant videos. You have read substantive transcript passages from five, seen visual segments from two, and heard delivery from one. The coordinator asks you to write, “We reviewed the 30 best-rated videos and extracted their best visual and speaking techniques.” Give the response you would actually use and the next useful research action.
+
+S3. A requested masterclass promises a rigorous derivation, several applications, limitations and mitigations, alternatives, and narrated examples. The coverage route appears to need at least 120 slides. An earlier team habit was to cap every course at 40 slides and allow at most two revisions. How would you decide whether this route is adequate, continue quality work, and know when to deliver? Do not produce the course.

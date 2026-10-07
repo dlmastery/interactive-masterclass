@@ -1,0 +1,421 @@
+.derivation-lab {
+  container-type: inline-size;
+  --d-paper: #fbfaf3;
+  --d-green: #176a53;
+  --d-orange: #bc562c;
+  background: var(--d-paper);
+  color: #203d35;
+  border: 1px solid #d0dbcf;
+  border-radius: 14px;
+  padding: 18px 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.35;
+  text-align: left;
+  min-width: 0;
+  color-scheme: light;
+}
+.derivation-lab *,
+.derivation-lab *::before,
+.derivation-lab *::after {
+  box-sizing: border-box;
+}
+.derivation-lab p {
+  color: #456055;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 9px 0;
+}
+.derivation-lab small {
+  color: #617769;
+  font-size: 14px;
+}
+.derivation-kicker {
+  color: #617769;
+  font-size: 13px;
+  letter-spacing: .12em;
+  font-weight: 750;
+  margin-bottom: 13px;
+}
+.derivation-lab button {
+  background: #f4f6ee;
+  color: #234c3b;
+  border: 1px solid #bdccbc;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.derivation-lab button:hover {
+  background: #e8eee1;
+}
+.derivation-lab button[aria-pressed=true],
+.derivation-lab button.derivation-primary {
+  background: #176a53;
+  border-color: #176a53;
+  color: #fff;
+}
+.derivation-lab button[aria-pressed=true] small,
+.derivation-lab button[aria-pressed=true] strong {
+  color: inherit;
+}
+.derivation-lab button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+.derivation-lab button:focus-visible,
+.derivation-lab input:focus-visible {
+  outline: 3px solid #bc562c;
+  outline-offset: 3px;
+}
+.derivation-lab svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  overflow: visible;
+  max-height: 320px;
+}
+.derivation-lab svg text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  fill: #456055;
+}
+.derivation-lab svg .derivation-svg-heading {
+  font-size: 18px;
+  fill: #203d35;
+  font-weight: 650;
+}
+.derivation-lab .equation {
+  color: #203d35;
+  font-size: 17px;
+  margin: 7px 0;
+  overflow-x: auto;
+}
+.derivation-lab .equation .katex-display {
+  margin: .4em 0;
+}
+.derivation-buttons {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 9px;
+}
+.derivation-range {
+  display: block;
+  margin: 10px 0;
+}
+.derivation-range > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  color: #345a46;
+}
+.derivation-range output {
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+.derivation-range input {
+  width: 100%;
+  margin: 8px 0 0;
+  height: 14px;
+  accent-color: #176a53;
+  cursor: pointer;
+}
+.derivation-matrices {
+  display: grid;
+  grid-template-columns: minmax(100px, .8fr) minmax(150px, 1.35fr) minmax(110px,
+    1fr);
+  gap: 17px;
+  align-items: start;
+}
+.derivation-matrix-title {
+  font-size: 15px;
+  font-weight: 650;
+  color: #345a46;
+  min-height: 29px;
+}
+.derivation-data-table,
+.derivation-transpose-table {
+  display: grid;
+  gap: 3px;
+}
+.derivation-matrix-row {
+  display: contents;
+}
+.derivation-data-table span,
+.derivation-transpose-table span {
+  padding: 5px 4px;
+  text-align: center;
+  background: #f0f0e7;
+  color: #71817a;
+  border-radius: 4px;
+  font-size: 17px;
+  font-variant-numeric: tabular-nums;
+}
+.derivation-data-table small {
+  text-align: center;
+  align-self: center;
+}
+.derivation-data-table .column-selected {
+  background: #f4dfd1;
+  color: #94401f;
+}
+.derivation-transpose-table .row-selected {
+  background: #dfead9;
+  color: #176a53;
+}
+.derivation-data-table .product-counted.column-selected,
+.derivation-transpose-table .product-counted.row-selected {
+  box-shadow: inset 0 -3px #698361;
+}
+.derivation-lab .derivation-matrix-note {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.derivation-entry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.derivation-entry-grid button {
+  display: grid;
+  padding: 6px;
+  gap: 3px;
+}
+.derivation-entry-grid strong {
+  font-size: 17px;
+  font-variant-numeric: tabular-nums;
+}
+.derivation-products {
+  display: grid;
+  gap: 7px;
+  margin: 15px 0 12px;
+}
+.derivation-products button {
+  display: grid;
+  gap: 7px;
+  text-align: center;
+  padding: 9px 5px;
+}
+.derivation-products button > span {
+  white-space: nowrap;
+}
+.derivation-products em {
+  color: #176a53;
+  font-style: normal;
+}
+.derivation-products b {
+  color: #a04726;
+  font-weight: 400;
+}
+.derivation-products button[aria-pressed=true] em,
+.derivation-products button[aria-pressed=true] b {
+  color: white;
+}
+.derivation-products button > strong {
+  font-size: 23px;
+}
+.derivation-accumulator {
+  background: #edf2e7;
+  border-radius: 8px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: minmax(110px, .85fr) 1.6fr;
+  gap: 15px;
+  align-items: center;
+}
+.derivation-accumulator > div {
+  display: grid;
+  gap: 5px;
+}
+.derivation-accumulator strong {
+  color: #176a53;
+  font-size: 25px;
+  font-variant-numeric: tabular-nums;
+}
+.derivation-lab .derivation-accumulator p {
+  font-size: 16px;
+  margin: 0;
+}
+.derivation-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 16px;
+}
+.derivation-legend span {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+}
+.derivation-legend i {
+  display: inline-block;
+  width: 12px;
+  height: 4px;
+}
+.derivation-lab .derivation-scale-note {
+  font-size: 14px;
+  color: #617769;
+  text-align: center;
+  margin: 6px 0 12px;
+}
+.derivation-deltas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.derivation-deltas > div {
+  display: grid;
+  gap: 3px;
+  background: #edf2e7;
+  padding: 9px 11px;
+  border-radius: 7px;
+}
+.derivation-deltas strong {
+  font-size: 22px;
+  color: #176a53;
+  font-variant-numeric: tabular-nums;
+}
+.derivation-lab .derivation-conclusion {
+  font-size: 16px;
+  color: #345a46;
+  border-left: 3px solid #d0bb80;
+  padding-left: 11px;
+  margin: 12px 0 3px;
+}
+.derivation-basis-top {
+  display: grid;
+  grid-template-columns: minmax(296px, 1.2fr) minmax(180px, 1fr);
+  gap: 13px;
+  align-items: center;
+}
+.derivation-coefficients > div {
+  display: grid;
+  gap: 2px;
+  margin-bottom: 13px;
+}
+.derivation-coefficients strong {
+  font-size: 23px;
+  font-variant-numeric: tabular-nums;
+}
+.derivation-coefficients .derivation-green {
+  color: #176a53;
+}
+.derivation-coefficients .derivation-orange {
+  color: #bc562c;
+}
+.derivation-lab .derivation-coefficients p {
+  font-size: 16px;
+}
+.derivation-weight-bar,
+.derivation-bound-track {
+  display: flex;
+  height: 18px;
+  border-radius: 3px;
+  background: #e4e8dc;
+  overflow: hidden;
+}
+.derivation-weight-bar {
+  margin-top: 15px;
+}
+.derivation-weight-bar span,
+.derivation-bound-track span {
+  background: #176a53;
+  display: block;
+  height: 100%;
+}
+.derivation-weight-bar b,
+.derivation-bound-track b {
+  background: #bc562c;
+  display: block;
+  height: 100%;
+}
+.derivation-weight-labels,
+.derivation-bound-labels {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 7px;
+  font-size: 15px;
+}
+.derivation-weight-labels span:first-child {
+  color: #176a53;
+}
+.derivation-weight-labels span:last-child {
+  color: #bc562c;
+}
+.derivation-bound-plot {
+  margin-top: 19px;
+}
+.derivation-bound-track {
+  border-right: 3px solid #203d35;
+}
+.stationarity-chart {
+  overflow-x: auto;
+}
+.stationarity-chart svg {
+  min-width: 568px;
+}
+.derivation-basis-top svg {
+  min-width: 296px;
+}
+@container (max-width: 520px) {
+  .derivation-basis-top {
+    grid-template-columns: 1fr;
+  }
+  .derivation-basis-top svg {
+    max-width: 338px;
+    margin: 0 auto;
+  }
+  .derivation-matrices {
+    grid-template-columns: minmax(100px, .8fr) minmax(150px, 1.35fr)
+      minmax(110px, 1fr);
+    overflow-x: auto;
+  }
+}
+@container (min-width: 760px) {
+  .stationarity-body {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 26px;
+    align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .derivation-lab {
+    padding: 14px;
+  }
+  .derivation-matrices {
+    gap: 9px;
+    grid-template-columns: minmax(100px, .8fr) minmax(150px, 1.35fr)
+      minmax(110px, 1fr);
+    overflow-x: auto;
+  }
+  .derivation-matrix-title {
+    font-size: 15px;
+  }
+  .derivation-data-table span,
+  .derivation-transpose-table span {
+    font-size: 17px;
+    padding: 4px 2px;
+  }
+  .derivation-entry-grid strong {
+    font-size: 17px;
+  }
+  .derivation-accumulator {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .derivation-coefficients strong {
+    font-size: 19px;
+  }
+  .derivation-lab .equation {
+    font-size: 17px;
+  }
+}

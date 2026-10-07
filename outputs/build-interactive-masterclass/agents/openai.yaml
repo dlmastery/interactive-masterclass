@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive Masterclass"
+  short_description: "Research, debate, and build intuitive tutorials"
+  default_prompt: "Use $build-interactive-masterclass to research teaching approaches, debate a topic-specific plan, and build an intuitive interactive tutorial with progressive derivations."

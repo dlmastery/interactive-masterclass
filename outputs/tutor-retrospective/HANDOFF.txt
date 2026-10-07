@@ -1,0 +1,41 @@
+FUTURE TUTORIAL REBUILD — HANDOFF FOR USER REVIEW
+Prepared 6 October 2026. This file does not start or authorize a rebuild.
+
+Current status
+The current task performed a retrospective, revised the installed teaching skills, and tested selected behavior in isolation. The PCA lesson was excluded from edits. The user will review REPORT.html and then decide the next request, scope, and model. No Astra run or new chat has been started.
+
+Read in this order
+1. The user's review decisions and latest task request. They override proposed defaults here.
+2. C:/Users/abhir/.codex/skills/build-interactive-masterclass/SKILL.md
+3. REPORT.html, especially root causes, evidence limits, loops, and validation.
+4. Relevant skill references. Read marimo-studio.md for notebook/slide work; adaptive-tutoring.md only if branching/live student feedback is in scope.
+5. Existing course content, source, first-version baseline, and current runtime evidence. Existing correct computations are reusable; teaching acceptance is not established.
+
+Skill ownership
+build-interactive-masterclass is canonical. build-intuition-masterclass routes to it. Do not run two duplicate pipelines. The old snapshot in outputs/build-interactive-masterclass predates this revision; use the installed version or updated-skills bundle accompanying this report, not that old snapshot.
+
+Required strategy
+Start with the learner's purpose and gain, the target idea in action, and why the chosen criterion/method serves that purpose. Introduce background when it unlocks an actual next step. Preserve requested mathematical depth. Do not treat age20 as evidence of linear algebra readiness.
+
+Inspect a bounded set of contrasting explanations and authoritative subject sources. Record exactly what was read or watched. Use the existing valid source notes instead of automatically repeating research. Propose two serious routes and identify the strongest objection to each. Reuse valid checks; do not treat prior AI consensus as human learning evidence.
+
+The first construction milestone should be a coherent small pilot: opening, hardest bridge with its immediate prerequisites and next use, and an unfamiliar application. In PCA, do not postpone the central purpose-to-objective justification until after a long prerequisite sequence. Choose the route from the reviewed evidence; this handoff does not prescribe a new PCA slide order.
+
+After inspecting the pilot, keep/revise/abandon its approach. Continue within the future request's authorized scope. Do not introduce additional user approval stops unless requested. If the future request asks for a pilot only, stop there. If it authorizes the full build, internal gates are checks, not repeated permission requests.
+
+Iteration rules
+Each critical repair identifies one failed learner inference, its likely cause, the change, and the discriminating recheck. Two unsuccessful causal repairs to the same inference should reopen representation or strategy; a renamed issue is not a reset. Rendering defects have separate findings. Declare action ceilings and protect effort for the central proof and verification. Do not invent a token budget.
+
+Use the actual native marimo-studio notebook/slide mechanism when that remains the requested platform. Before mass authoring, verify one meaningful notebook-backed interaction and a working notebook return path at the actual viewport. Preserve the clearest useful baseline until a sample justifies a change. Do not create the separate AI canvas project inside this course request.
+
+Review protocol
+Give a fresh-context reviewer the learner-visible pilot, audience, and neutral task without the author's preferred diagnosis. Require cited learner-visible warrants. Preserve disagreement and prior-author labels. Use held-out transfer tasks where feasible. Check correctness, explanation, whole-route coherence, visual attention, controls, and runtime separately.
+
+Evidence labels
+Software verified, explanation reviewed, simulated task review, human learning observed, comparative learning, and delayed transfer are different claims. This retrospective establishes none of the last three. No claim of universal superiority to YouTube is justified. The script validates registered workflow state, not truth or learning.
+
+Suggested future prompt to adapt AFTER reviewing this report
+“Use $build-interactive-masterclass and the approved retrospective at outputs/tutor-retrospective/REPORT.html to redo the tutorial within the scope I specify here. Apply my review decisions first. Recover the useful baseline, propose and challenge a purpose-first route, test its opening, hardest conceptual bridge, and transfer before expansion, then continue only as my requested scope permits. Keep the main derivation central, background at its point of use, and interactions tied to learner reasoning. Use native marimo-studio and verify return to the notebook. Do not restart the separate AI canvas project. Report actual evidence and remaining limits, and stop repeating a strategy that fails its pilot.”
+
+Model note
+The user intends to select an Astra lower-effort model later. This handoff does not change model settings or assume that model was evaluated in the current tests.

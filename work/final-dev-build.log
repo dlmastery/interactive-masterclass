@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "C:\Users\abhir\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\weakref.py", line 666, in _exitfunc
+    f()
+  File "C:\Users\abhir\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhir\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 939, in _cleanup
+    cls._rmtree(name, ignore_errors=ignore_errors)
+  File "C:\Users\abhir\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\abhir\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhir\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 629, in _rmtree_unsafe
+    onexc(os.rmdir, fullname, err)
+  File "C:\Users\abhir\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 627, in _rmtree_unsafe
+    os.rmdir(fullname)
+OSError: [WinError 145] The directory is not empty: 'C:\\Users\\abhir\\AppData\\Local\\Temp\\marimo-studio-inspection-n4mxi4yb\\8b4debbe61849d68300b0a5a553defc4e280099f4d266b4842bf00aba8840798\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\AppData\\Local\\uv\\cache\\archive-v0\\Uh5Wq7_loXbaJx6gGVzsv\\Lib\\site-packages\\marimo_studio'

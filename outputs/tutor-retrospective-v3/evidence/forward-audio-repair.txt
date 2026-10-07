@@ -1,0 +1,29 @@
+CASE 3 — SUPERVISED SPOKEN-PASSAGE REPAIR
+
+This separate replacement responds to the evaluator's explicit request for a gain-versus-placement contrast. It is not a blind or held-out success. The original output remains frozen. The added criterion was narrower than the public prompt; this repair does not establish a universal failure of the earlier procedure. No hidden key was read.
+
+Keep the original Case 3 plan, distances, phrase, repeated takes and source references. One added control: after recording take A, make a second playback version of that same capture with only playback gain reduced. Retain the original. This does not require a new recording or change the A/B placement test. The ordinary-gain claim assumes linear gain without clipping or automatic processing; if phone processing cannot be disabled, retain the original plan's confound warning rather than attributing the result solely to placement.
+
+REPLACEMENT SPOKEN PASSAGE
+
+[C3R1 — Planned, not yet produced: show two cards, A-original and A-quieter, connected to the same captured recording. A is the original 60 cm take of “Paper boats drift. Stop.” followed by two seconds of silence. A-quieter changes playback gain only. Once recordings exist, play both at their indicated playback settings; retain both cards and point to their shared source.]
+Once these takes are recorded, compare the two versions of A. Turning playback down makes the voice and its recorded reflections quieter together. Ordinary input gain does the same before recording, provided processing is off and nothing distorts. A quieter echo alone does not show a better balance.
+
+[C3R2 — Retain A-original; replace A-quieter with B, the 15 cm take. Point to the two distance labels, then to “same room, voice, settings.” Once recordings exist, match perceived speech playback loudness by lowering the louder version; switch between A and B and pause after “stop.”]
+Now compare A, recorded sixty centimetres away, with B, recorded fifteen centimetres away. Keep the room, voice and recording settings fixed. Match their speech playback loudness before you judge them.
+
+[C3R3 — Keep A and B visible at matched speech loudness. Point first to each phrase, then its following silence. Do not display a prefilled “B wins” verdict; the following conclusion is conditional on the recorded result.]
+If B has less trailing sound relative to its voice, moving closer has changed the balance of direct voice and room reflections. We did not reach that conclusion merely because B was louder.
+
+[C3R4 — Replay B's “paper” only once audio exists. Point to a planned mouth-to-microphone sketch; show breath passing beside the pickup opening. Pause for the learner's next-change choice.]
+Finally, listen to “paper.” If B thumps, aim your breath just past the microphone and repeat. Choose clear words, not simply a louder take.
+
+END SPOKEN PASSAGE
+
+Spoken word count: 135, whitespace-separated, excluding headings and bracketed production cues.
+
+Novel transfer prompt — outside the spoken count
+You record a new sentence in two ways: C keeps the microphone in its original position but lowers input gain; D moves the microphone closer while retaining the original input gain. Processing is disabled and neither take distorts. Both seem to have less echo at their current playback volumes. What comparison would distinguish “everything became quieter” from “the direct voice became stronger relative to reflections”? State what you would hold comparable and what observation would support each explanation. No learner answer has been supplied or scored.
+
+Evidence limits
+This is a written script repair and planned control sequence. No recordings, listening, rendered diagrams, rehearsal, learner attempt or measured learning result exist for it. The factual basis remains the original Case 3 references and basic linear gain; no new research was performed. Hashes and the inspected narration reference revision are recorded in forward-audio-repair.provenance.json.

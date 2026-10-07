@@ -1,0 +1,25 @@
+VERSION 3.1 — EXPLANATION DEPTH AND CREATOR CRAFT
+
+Read the user's review decisions and actual next request first. This package changes skills and process. It does not authorize rebuilding PCA, starting another project/chat, publishing, or scheduling work.
+
+Use the installed canonical skill:
+C:/Users/abhir/.codex/skills/build-interactive-masterclass/SKILL.md
+The bundled updated-skills.zip includes that skill plus build-intuition-masterclass and build-research-codelabs. Avoid accidentally using older snapshots.
+
+Version 3 obligations remain: complete why/what/when/where/how coverage, progressive justification, applications/current use, limits/diagnostics/mitigations/tradeoffs/alternatives, at least 30 relevant video candidates for flagship topics where available, substantive deeper source inspection, meaningful interactivity, quality over arbitrary time/slide ceilings, exact speaker notes, and honest evidence boundaries. Read the previous full report when needed; it remains in ../tutor-retrospective-v3/REPORT.html.
+
+New requirements
+1. Read references/explanation-depth.md. Map one faithful conceptual core through the six requested lenses: about age 10, age 15, undergraduate, graduate, PhD, and postdoc. Diagnose preparation rather than inferring it from age or credentials.
+2. Develop the LEARNER'S ability to explain to those audiences. Six author-written summaries are insufficient. Use teach-back, audience-specific follow-ups, fresh cases, and explicit bridges between concrete and formal accounts. Distinguish the learning person's knowledge from the recipient audience's assumed knowledge. Build full routes within the actual authorized scope; a short lesson cannot establish field expertise.
+3. Read references/explainer-craft.md when comparing routes and designing pilots. Choose techniques for the inference. Explicit creator seeds include Welch Labs, 3Blue1Brown, Veritasium, StatQuest, Khan Academy, and Kurzgesagt, with Nicky Case as a complementary interactive-explanation source. This list is not exhaustive and is not a best-channel ranking.
+4. Preserve Welch patterns where suitable: stable evolving case, obstacle motivating the next method, learner translation between representations, distinct checks before trusting results, and diagnostic challenge after apparent success. Verify technical claims and legacy code independently; do not copy known source defects.
+5. Keep the opening question, transitions, and closing payoff coherent. Make visual changes carry meaning. Allow prepared natural delivery while retaining precise requested notes and claims. Learner tasks are conditional at the cue level; direct explanation is useful too.
+
+Review package
+REPORT.html explains the additions and research access. DELTAS.html and v3-to-v3-1.patch show exact changes from version 3. CHANGE-MANIFEST.json identifies saved bytes. VALIDATION.json distinguishes structural verification from untested teaching outcomes. Evidence contains source notes, an author-informed review, and the recheck with a two-audience diagnosis scenario.
+
+Evidence limits
+This revision did not watch or listen to creator videos. It inspected creator text, official/indexed transcript material, research summaries, selected Welch notebook movie text/code, and two actual static workbook pages. No notebook was run, no human teach-back was observed, and no course narration was performed. Source hashes identify the inspected notebook bytes but do not claim a pinned Git commit. Creator practices and our proposed adaptations are distinct from tested efficacy.
+
+Suggested next refinement after user review
+Test the updated bundle with learner-facing material on unfamiliar topics. Ask for simple-to-formal and formal-to-simple explanations, the same core adapted for different recipient knowledge, a changed example, an analogy boundary, and a reasoned follow-up. Inspect whether the explanation actually supplies the needed reasoning. Keep the candidate and evaluator roles/context honest. Preserve failed attempts and distinguish supervised repairs from fresh tests. Show exact diffs and an updated report for further skill edits. The user will decide the later model/configuration; none has been started by this package.

@@ -1,0 +1,10 @@
+Welch Labs static visual inspection — 6 October 2026
+
+Source: https://www.welchlabs.com/s/workbookPreview.pdf (official 17-page preview).
+Method: PDF text through web; local download, Poppler rendering, and view_image of printed pages 4 and 7. Web screenshot calls returned reference text without visible pixels, so those calls are not claimed as visual inspection. The subsequent local PNGs were actually inspected. No video viewed, audio heard, or workbook activity completed by a learner.
+
+Page 4: the diagram sequence preserves a drawn starting graph while successive panels expand its representation. The footnote acknowledges a displayed real-part projection. Adaptation: keep a visual anchor during a representation change and put consequential projection/omission labels beside the reveal.
+
+Page 7: discussion and plotting tasks have separate response spaces, including explaining to a younger audience. Adaptation: require learner-produced explanations as well as procedural work.
+
+These are observations of two static pages, not an assessment of Welch's whole visual style or video timing. The adaptation is ours. The source PDF is retained only as research material in tmp/pdfs/welch and is not redistributed in the skill bundle.

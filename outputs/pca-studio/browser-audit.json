@@ -1,0 +1,1439 @@
+{
+  "initialPass": {
+    "slides": [
+      {
+        "slide": 1,
+        "title": "What is PCA?",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 2,
+        "title": "One number is a position on a line",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 3,
+        "title": "Some views lose more than others",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 4,
+        "title": "A projection follows a perpendicular",
+        "match": true,
+        "content": 850,
+        "controls": 10,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 5,
+        "title": "What does one score lose?",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 6,
+        "title": "Turn the axes, then remove one",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 7,
+        "title": "What will best mean?",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 8,
+        "title": "See the whole method once",
+        "match": true,
+        "content": 850,
+        "controls": 13,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 9,
+        "title": "Measure change from a shared center",
+        "match": true,
+        "content": 850,
+        "controls": 5,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 10,
+        "title": "Find the center of this cloud",
+        "match": true,
+        "content": 850,
+        "controls": 5,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 11,
+        "title": "Move the center to zero",
+        "match": true,
+        "content": 850,
+        "controls": 5,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 12,
+        "title": "The distances do not change",
+        "match": true,
+        "content": 850,
+        "controls": 5,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 13,
+        "title": "Describe the line with two numbers",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 14,
+        "title": "Calculate one score",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 15,
+        "title": "Use one rule for every observation",
+        "match": true,
+        "content": 850,
+        "controls": 13,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 16,
+        "title": "Keep the ruler length fixed",
+        "match": true,
+        "content": 850,
+        "controls": 10,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 17,
+        "title": "How spread out are the scores?",
+        "match": true,
+        "content": 850,
+        "controls": 13,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 18,
+        "title": "Signs cancel; squares do not",
+        "match": true,
+        "content": 850,
+        "controls": 13,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 19,
+        "title": "Give spread a number",
+        "match": true,
+        "content": 850,
+        "controls": 13,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 20,
+        "title": "Search with a variance curve",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 21,
+        "title": "Open one squared score",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 22,
+        "title": "Add the same terms across rows",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 23,
+        "title": "Two familiar sums and one new sum",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 24,
+        "title": "Build covariance from signed products",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 25,
+        "title": "Variance alone cannot tell the tilt",
+        "match": true,
+        "content": 850,
+        "controls": 10,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 26,
+        "title": "Store the three quantities in S",
+        "match": true,
+        "content": 850,
+        "controls": 8,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 27,
+        "title": "Compute S with one matrix product",
+        "match": true,
+        "content": 850,
+        "controls": 10,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 28,
+        "title": "Read wᵀ S w from inside out",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 29,
+        "title": "Check both routes with real numbers",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 30,
+        "title": "State the optimization problem",
+        "match": true,
+        "content": 861,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 31,
+        "title": "What does S do to an arrow?",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 32,
+        "title": "At an optimum, turning cannot help",
+        "match": true,
+        "content": 861,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 33,
+        "title": "Find the variance slope",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 34,
+        "title": "Find the constraint direction",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 35,
+        "title": "Match the two normal directions",
+        "match": true,
+        "content": 850,
+        "controls": 14,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 36,
+        "title": "Name the equation after it appears",
+        "match": true,
+        "content": 850,
+        "controls": 12,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 37,
+        "title": "Find the possible scale factors",
+        "match": true,
+        "content": 850,
+        "controls": 14,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 38,
+        "title": "Solve our two eigenvalues",
+        "match": true,
+        "content": 850,
+        "controls": 14,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 39,
+        "title": "Find and normalize the directions",
+        "match": true,
+        "content": 850,
+        "controls": 14,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 40,
+        "title": "A candidate can be a minimum",
+        "match": true,
+        "content": 861,
+        "controls": 14,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 41,
+        "title": "Why are these directions perpendicular?",
+        "match": true,
+        "content": 850,
+        "controls": 14,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 42,
+        "title": "Build any unit direction from them",
+        "match": true,
+        "content": 850,
+        "controls": 5,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 43,
+        "title": "Expand variance in the new basis",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 44,
+        "title": "Prove the largest value wins",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 45,
+        "title": "What if the eigenvalues tie?",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 46,
+        "title": "Find the next component",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 47,
+        "title": "Read the PCA coordinates",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 48,
+        "title": "Check the new covariance",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 49,
+        "title": "Explain the 90 percent",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 50,
+        "title": "Rebuild an observation from its score",
+        "match": true,
+        "content": 850,
+        "controls": 9,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 51,
+        "title": "Draw the missing part",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 52,
+        "title": "Prove the second objective",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 53,
+        "title": "Recover both coordinates",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 54,
+        "title": "Choose how much to keep",
+        "match": true,
+        "content": 850,
+        "controls": 8,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 55,
+        "title": "Extend from two features to p",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 56,
+        "title": "Connect the result to SVD",
+        "match": true,
+        "content": 850,
+        "controls": 7,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 57,
+        "title": "Use the axes on a new observation",
+        "match": true,
+        "content": 850,
+        "controls": 6,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 58,
+        "title": "Decide what units mean",
+        "match": true,
+        "content": 850,
+        "controls": 10,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 59,
+        "title": "Large variance is not always useful",
+        "match": true,
+        "content": 850,
+        "controls": 12,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 60,
+        "title": "A line cannot follow every shape",
+        "match": true,
+        "content": 850,
+        "controls": 13,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 61,
+        "title": "Change the real notebook data",
+        "match": true,
+        "content": 850,
+        "controls": 10,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 62,
+        "title": "Solve a fresh geometric problem",
+        "match": true,
+        "content": 850,
+        "controls": 11,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 63,
+        "title": "Produce the calculation yourself",
+        "match": true,
+        "content": 850,
+        "controls": 6,
+        "formulaErrors": 0,
+        "height": 850
+      },
+      {
+        "slide": 64,
+        "title": "Teach PCA back in your own words",
+        "match": true,
+        "content": 850,
+        "controls": 2,
+        "formulaErrors": 0,
+        "height": 850
+      }
+    ],
+    "proofStates": [
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 1,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 2,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 3,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 4,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 5,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 6,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 7,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 8,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 9,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 10,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 11,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 12,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 13,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 14,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 15,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 16,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 17,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 18,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 19,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 20,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 21,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 21,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 21,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 22,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 22,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 23,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 24,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 25,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 26,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 27,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 27,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 28,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 28,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 29,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 11,
+        "slide": 30,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 31,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 11,
+        "slide": 32,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 33,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 33,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 33,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 33,
+        "step": 4,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 34,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 34,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 35,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 35,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 35,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 36,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 37,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 37,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 38,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 38,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 38,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 39,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 39,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 11,
+        "slide": 40,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 41,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 41,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 41,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 42,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 43,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 43,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 43,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 44,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 44,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 44,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 45,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 46,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 47,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 48,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 52,
+        "slide": 48,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 49,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 50,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 50,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 51,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 51,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 52,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 52,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 52,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 53,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 54,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 55,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 55,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 55,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 56,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 56,
+        "step": 2,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 56,
+        "step": 3,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 57,
+        "step": 1,
+        "wide": [
+          0,
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 58,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 59,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 60,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 61,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 62,
+        "step": 1,
+        "wide": []
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 63,
+        "step": 1,
+        "wide": [
+          0
+        ]
+      },
+      {
+        "errors": 0,
+        "overflow": 0,
+        "slide": 64,
+        "step": 1,
+        "wide": []
+      }
+    ]
+  },
+  "repairsVerified": {
+    "slide6": "Two coordinates retain 100%; one at 45 degrees retains 90%.",
+    "slide16": "Length 1 to 6 changes score 2.12 to 12.73 and variance 6 to 216.",
+    "slide48": "Step 2 fits 1440x850 with no overflow.",
+    "courseRoute": "Paragraph contrast corrected; six question links visible."
+  }
+}

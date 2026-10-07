@@ -1,0 +1,124 @@
+V3 BOUNDED FORWARD EXECUTION
+Author-informed execution; provenance and inspected skill hashes were saved before this output.
+These are written plans and actual draft spoken passages. No deck, app, audio, video, learner study or 30-video search was produced for this test. Authoritative source text was checked as listed. No oral rehearsal, visual rendering or formal ASD-STE100 percentage audit was performed.
+
+CASE 1 — Gradient descent: why downhill steps can still go wrong
+
+Plan excerpt
+Begin with a useful puzzle: why can a model's error rise even when its update follows the downhill direction? The learner should distinguish a local direction from a safe distance, then choose a remedy.
+
+G1 uses the toy error f(x)=x². Keep the original point and tangent visible while comparing two step sizes in the passage below. Afterward, connect “error” to disagreement between model predictions and data, and “x” to one adjustable model setting. With many settings, the gradient collects their local slopes.
+
+Use this when derivatives are available and repeated updates are practical. A concrete modern example is the maintained PyTorch FashionMNIST tutorial: a neural network predicts clothing classes, then minibatch SGD changes its parameters to reduce training loss. This is a documented teaching implementation, not a claimed production result. [G2]
+
+Return to the overshoot: plot loss against updates using the same evaluation data. Rising or alternating loss suggests testing a smaller step; one noisy minibatch rise alone does not diagnose divergence. Backtracking tests smaller candidates at the cost of extra loss evaluations. Descent alone does not establish a global minimum on a landscape with several valleys. [G1]
+
+For a small ordinary straight-line least-squares fit, a direct least-squares solver avoids choosing an iterative learning rate. For the neural classifier, compare SGD with Adam: Adam uses running gradient statistics but adds optimizer state and still requires settings. Compare validation error and compute on the same task; no name guarantees a winner. [G2–G4]
+
+Transfer: for this bowl at x=−2, choose between step sizes 0.25 and 1.25. Calculate the new error and explain the sign of the move. If the learner merely says “left is downhill,” return to the tangent on the negative side.
+
+The calculation was checked. Graph, pointer sequence and narration are planned; no model was trained or narration rehearsed.
+
+Spoken passage
+[reveal G1: graph y=x²; horizontal label parameter x; vertical label error; mark A=(2,4)]
+We want a smaller error, so lower on this curve is better. At two, the slope is four. That slope says a small move left will help. It does not say how far left is safe.
+[point to G1 tangent at A; reveal x-new = x − step-size × slope]
+Our rule subtracts step size times slope. With a step size of one and a quarter, we subtract five. We land at minus three. Did we improve?
+[pause for prediction; reveal B=(−3,9), retain A and its tangent]
+The error rose from four to nine. We crossed the bottom and climbed the other side.
+[reset A; reveal step-size=0.25 and C=(1,1)]
+With a step size of one quarter, we subtract one and land at one. The error is now one. Same starting slope; different step, different result. Direction and distance are separate decisions.
+
+References checked
+[G1] Boyd and Vandenberghe, Convex Optimization, gradient descent/backtracking: https://web.stanford.edu/~boyd/cvxbook/bv_cvxslides.pdf (relevant indexed text inspected).
+[G2] PyTorch, Optimizing Model Parameters: https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html (official text; page reports update 31 July 2026).
+[G3] NumPy, numpy.linalg.lstsq: https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html?highlight=numpy+linalg+qr (official reference text).
+[G4] PyTorch, Adam: https://docs.pytorch.org/docs/main/generated/torch.optim.Adam.html (official indexed algorithm/parameter text).
+Access date: 7 October 2026 UTC. The toy example and transfer task are original.
+
+CASE 2 — Did Rome fall in 476?
+
+Plan excerpt
+Begin with a hypothetical public-history label: “Roman life ended in 476.” The learner will revise it by separating a political event from changes in institutions, identity and daily life.
+
+H1–H3 below compare the deposition of Romulus Augustulus in Italy with a later Ravenna coin. First locate Italy and Constantinople on a schematic map; explain that eastern and western courts belonged to the Roman world. Odoacer's deposition in 476 supplies a useful conventional political landmark. The eastern empire continued, and its people called themselves Roman; “Byzantine” is a later historians' label. [H1–H2]
+
+The coin is material evidence, accessed here through its museum catalog. Its ruler image and issuer are different fields; preserve the catalog's uncertain attribution. It supports continued imperial imagery, not a conclusion about every person's prosperity. [H3]
+
+Then test the opposite overstatement: “Nothing really fell.” The Ashmolean describes Oxfordshire pottery production ending in the early fifth century while some older pots remained in use. Economic disruption and material continuity can coexist, and this regional change predates 476. [H4] A political-collapse account and a regional-transformation account emphasize different evidence and questions; neither licenses one cause for all change.
+
+Diagnose a misleading label by asking: which place, institution, population and time span does its evidence cover? Mitigate by comparing dated texts, objects and settlement evidence, checking each source's purpose and context. This costs space and research; uneven survival and dating uncertainty remain. A qualified date-based label aids orientation; a regional timeline better explains uneven change but is harder to summarize.
+
+Transfer: draft a two-sentence museum label that retains 476, identifies one continuation, and does not infer universal living conditions from a coin. If the learner says “the coin proves no collapse,” distinguish an authority claim from economic evidence.
+
+Only source text/catalog data were read. The cards, map and narration are planned; no artifact photographs were visually assessed or oral delivery rehearsed.
+
+Spoken passage
+[reveal H1: hypothetical label “Roman life ended in 476”; underline “Roman life”]
+The label says Roman life ended in four seventy-six. Let us test the words “Roman life.”
+[reveal H2: “476: Odoacer deposes Romulus Augustulus in Italy”]
+Here is the political event: Odoacer removed Romulus Augustulus from power in Italy.
+[reveal H3: text-only catalog card, Ravenna coin, 477–491; depicted ruler Zeno; issuer uncertain]
+Now look at this later coin from Ravenna. The museum dates it between four seventy-seven and four ninety-one. It names and shows Zeno, the emperor in the east. The issuer is uncertain; the catalog allows Odoacer or Theodoric.
+[point to “depicted ruler” and “issuer” as separate fields]
+An emperor’s face can express a claim to authority. It does not prove that everyone lived as before. This coin challenges “everything ended”; it does not prove “nothing changed.”
+[pause; return to H1]
+A better label must name what ended, where, and what continued.
+
+References checked
+[H1] Metropolitan Museum, The Roman Empire: https://www.metmuseum.org/de/essays/the-roman-empire-27-b-c-393-a-d (indexed museum text for deposition and east/west distinction).
+[H2] Sarah Brooks, Metropolitan Museum, Byzantium: https://www.metmuseum.org/de/essays/byzantium-ca-330-1453 (article text, revised 2009; Roman identity and continuation).
+[H3] British Museum, Ravenna solidus, museum number 1904,0511.3: https://www.britishmuseum.org/collection/object/C_1904-0511-3?selectedImageId=661655001 (indexed catalog text; date 477–491, Zeno depicted, Odovacar/Theodoric issuer alternatives. Direct opening returned 403; image not inspected).
+[H4] Susan Walker, Ashmolean Museum, Oxford Potteries: https://britisharchaeology.ashmus.ox.ac.uk/roman-oxon/oxon-pottery.html (article text, 2011).
+Access date: 7 October 2026 UTC. No primary-source quotation is used; the public-history label is a teaching example.
+
+CASE 3 — Clear narration in an ordinary bedroom
+
+Plan excerpt
+Choose a clear course-narration setup before buying gear. Sound reaches the microphone directly and after reflecting from surfaces; close early reflections can color the voice, while later reflections leave a tail. [A1]
+
+Prepare the exact test phrase in the passage below. Use the same microphone, app, room position, voice and orientation. Find the microphone's pickup opening. Set a recording level low enough for the nearer take, then keep it fixed if possible. Record A at 60 cm and B at 15 cm, repeating each twice. These distances are test settings. If phone gain or processing cannot be locked, record that confound.
+
+Compare through headphones at similar perceived speech loudness; lower the louder playback instead of judging “louder” as “clearer.” Listen to word endings, the silent tail and consonants. If closer placement reduces room sound, retain it, then test a duvet behind the speaker with everything else fixed. Existing soft furnishings can reduce reflections. They do not soundproof the room. [A1–A2]
+
+Closer placement can add breath thumps, bass emphasis on some directional microphones, or overload. Try a slight off-axis position; reduce recording level if loud syllables distort. Recheck intelligibility and tone because the fix can change them. If the close take is no better, inspect app processing and try another room position rather than buying a microphone on that evidence. [A2]
+
+A quieter, more furnished room is a serious alternative when the bedroom remains reflective or noisy; access and repeatable setup are its costs. If the problem is steady fan hiss rather than reverberation, first remove that source when practical. Noise reduction targets steady noise and can damage speech; it is not a blanket repair for a hollow recording. [A3]
+
+Transfer: B has less trailing sound but “paper” thumps. Choose the next single change and predict what should improve. Compare repeated takes before deciding.
+
+No audio was produced, heard or diagnosed.
+
+Spoken passage
+[show A1: planned take cards, same phrase “Paper boats drift. Stop.” plus two seconds of silence; no audio exists yet]
+After you record these tests, listen to what happens after the word “stop.”
+[point to distances on take cards A and B]
+In take A, the microphone is sixty centimetres away. In take B, it is fifteen centimetres away. Keep the room and your speaking voice the same. Match their playback loudness, then switch between them.
+[play A and B only after recording; pause after each final word]
+If B has less trailing sound behind the voice, moving closer has improved the balance between your voice and the room reflections. It has not removed the walls.
+[replay “paper” from B, once available]
+Now listen to the word “paper.” If B has a thump, air from your mouth may be hitting the microphone. Aim your breath just past it and repeat.
+[pause for choice]
+Choose the position with clear words and less room sound, not simply the loudest take.
+
+References checked
+[A1] Shure, Microphone Techniques for Recording: https://www.shure.com/damfiles/default/global/documents/publications/en/performance-production/microphone_techniques_for_recording_english.pdf-bb0469316afdb6118691d2f3f5e3ff01.pdf (indexed technical text on reflections, echo and reverberation).
+[A2] Shure, How to Record and Mix Vocals: https://www.shure.com/en-US/insights/how-to-record-and-mix-vocals (manufacturer technical text on distance, proximity effect, positioning and absorption).
+[A3] Audacity, Noise Reduction: https://manual.audacityteam.org/man/noise_reduction.html (manual text on suitable noise, artifacts and speech damage).
+Access date: 7 October 2026 UTC. Manufacturer advice informs test hypotheses; it does not substitute for hearing the actual recordings.
+
+SCOPE AND PROVENANCE RESPONSES
+
+S1
+Report nine directly relevant, deduplicated candidates, with the actual query log, access limits and exclusions. Do not invent 21 entries or count irrelevant acronym matches. Make a targeted final gap search using alternate terminology, appropriate languages and creator/course catalogs if those avenues remain useful. If scarcity holds, document it as the skill's explicit exception, then add relevant books, original lectures, papers and adjacent teaching techniques in separately labeled inventories. The nine still require substantive screening and complementary deep inspection. Primary subject verification, full coverage, route comparison and pilot review remain required. Do not let scarcity become either a fabricated breadth pass or a reason to abandon useful authorized work.
+
+S2
+“We discovered 30 relevant video candidates. We inspected substantive transcript passages from five, visual segments from two and oral delivery from one. We have not established that these are the best-rated videos. Visual and speaking observations apply only to the inspected segments; the remaining candidates are not technique reviews.”
+
+Next, identify the hardest unsupported teaching obligation, choose complementary candidates likely to address it, and inspect their relevant visual and oral sequences with timestamps and context. Preserve the actual rating/count source and unknowns. Do not promote transcript inference into animation or delivery evidence, or call a chosen technique ‘best’ without a defined comparison.
+
+S3
+Assess whether each chapter advances the promised capabilities and whether the complete route earns its derivation, applications, practical limits and alternatives. A justified 120-slide route is acceptable. Pilot the opening, hardest bridge and an application/limit decision, including narrated cues; check whether prerequisites appear when useful. Remove redundancy, not promised substance to reach 40 slides.
+
+Continue revisions while material failures remain. Two unsuccessful repairs to the same inference trigger a new hypothesis, representation or strategy plus a discriminating pilot; they do not terminate all quality work. Recheck affected visuals, calculations, notes, feedback and the whole route. Deliver when the authorized artifact obligations pass and any user review dependency is met, with precise evidence limits. If tools or a real resource boundary prevent completion, preserve a checkpoint and state the remaining work; neither iteration count nor 120 slides proves success.
+

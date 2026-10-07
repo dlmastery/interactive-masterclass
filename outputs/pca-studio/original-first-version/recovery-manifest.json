@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "status": "source recovery only; not built or executed",
+  "slide_count": 14,
+  "notebook_cell_count": 32,
+  "cell_names": [
+    "imports",
+    "welcome",
+    "centering_control",
+    "correlation_control",
+    "direction_control",
+    "dimension_control",
+    "scale_control",
+    "data_explanation",
+    "data_model",
+    "projection_model",
+    "scale_model",
+    "center_math",
+    "covariance_math",
+    "score_math",
+    "variance_step1",
+    "variance_step2",
+    "variance_step3",
+    "eigen_step1",
+    "eigen_step2",
+    "eigen_step3",
+    "worked_data",
+    "worked_solution",
+    "orthogonal_math",
+    "reconstruction_math",
+    "loss_proof",
+    "units_math",
+    "svd_math",
+    "quiz_control",
+    "quiz_feedback",
+    "cautions",
+    "implementation",
+    "slide_content"
+  ],
+  "original_component_sha256": "cd4aee2df30cc8863dd9b92f4af7e02f9dd2a3469b50252f55ce86f9d0ea071f",
+  "original_cache_candidates": [
+    {
+      "path": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-52d1e5f6e9f7d93f4786b64d6cd110ac\\project\\.artifacts\\build\\work\\src\\Lesson.tsx.js",
+      "time": "2026-10-04T11:20:53.403169"
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-617b6ac61e6f229c26d47717ca3dddf6\\project\\.artifacts\\build\\work\\src\\Lesson.tsx.js",
+      "time": "2026-10-03T23:57:56.222379"
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-703d3f07c00a8606f52084774ca5709e\\project\\.artifacts\\build\\work\\src\\Lesson.tsx.js",
+      "time": "2026-10-04T11:21:46.907559"
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-876b290714b77d79f1aaf15eb60c85c8\\project\\.artifacts\\build\\work\\src\\Lesson.tsx.js",
+      "time": "2026-10-03T23:58:05.698061"
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-9428a79a35d7fea44a6fcadfb2e4c29f\\project\\.artifacts\\build\\work\\src\\Lesson.tsx.js",
+      "time": "2026-10-04T11:18:29.032022"
+    }
+  ],
+  "injected_attributes_removed": 10,
+  "files": [
+    {
+      "path": "v/lesson/src/Lesson.tsx",
+      "sha256": "475b2a783ea753533d7da0cb789fdbe1284989e7486f7a22b15d66fd5f7f66ef",
+      "bytes": 15069,
+      "origin": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-617b6ac61e6f229c26d47717ca3dddf6\\project\\.artifacts\\build\\work\\src\\Lesson.tsx.js",
+      "operation": "Extract sourcesContent; remove only 10 injected data-marimo-studio-site attributes."
+    },
+    {
+      "path": "v/lesson/src/LessonText.tsx",
+      "sha256": "f59943575c547bec56434164fd880543297d7cf5cae9c45834d8805c9bf31073",
+      "bytes": 1692,
+      "origin": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-617b6ac61e6f229c26d47717ca3dddf6\\project\\.artifacts\\build\\work\\src\\LessonText.tsx.js",
+      "operation": "Extract exact sourcesContent from the same original build candidate."
+    },
+    {
+      "path": "v/lesson/src/main.tsx",
+      "sha256": "e1e1c764a6a585415e9e643aac6f937fe2e0efc48fb50cf4da1f4cde0f6456fa",
+      "bytes": 271,
+      "origin": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-617b6ac61e6f229c26d47717ca3dddf6\\project\\.artifacts\\build\\work\\src\\main.tsx.js",
+      "operation": "Extract exact sourcesContent from the same original build candidate."
+    },
+    {
+      "path": "v/lesson/src/lib/use-marimo-value.ts",
+      "sha256": "9f343eb980e88fed6e3d09a55359a5794581d480cf583601787897911ef7ab48",
+      "bytes": 3585,
+      "origin": "\\\\?\\C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.cache\\deno\\2.9.7\\gen\\file\\C\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\.artifacts\\.staging\\candidate-617b6ac61e6f229c26d47717ca3dddf6\\project\\.artifacts\\build\\work\\src\\lib\\use-marimo-value.ts.js",
+      "operation": "Extract exact sourcesContent from the same original build candidate."
+    },
+    {
+      "path": "v/lesson/src/lesson.css",
+      "sha256": "b7d8253bae90f1d4a569490549e904b7aa9eaba59469aef4677a9bab3f894b43",
+      "bytes": 9212,
+      "origin": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\lesson.css",
+      "operation": "Copy surviving source unchanged."
+    },
+    {
+      "path": "v/lesson/src/marimo-studio.d.ts",
+      "sha256": "178dea65e415eaa105354eb0a4af9ff72f8de193cb6397e2bc43fb2cf0c39185",
+      "bytes": 563,
+      "origin": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\marimo-studio.d.ts",
+      "operation": "Copy surviving source unchanged."
+    },
+    {
+      "path": "v/lesson/src/index.html",
+      "sha256": "0a2fb423e6ed09faac69a8710632dedcf3548d1eb9e7ff2f6755a155ca3df9b0",
+      "bytes": 517,
+      "origin": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\src\\index.html",
+      "operation": "Copy surviving source unchanged."
+    },
+    {
+      "path": "v/lesson/view.toml",
+      "sha256": "9a39f94cb4936863e0b3d861ed329e4f3b23cd9a8f3c472d1721b0dc0de4a3d2",
+      "bytes": 44,
+      "origin": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\view.toml",
+      "operation": "Copy existing pinned Studio scaffolding unchanged; not claimed to be a historical snapshot."
+    },
+    {
+      "path": "v/lesson/deno.json",
+      "sha256": "2aff2ddbfb869e5a7c28f824dd0d67baf7a5061b4ae40d546f0e10986fd0dc29",
+      "bytes": 919,
+      "origin": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\deno.json",
+      "operation": "Copy existing pinned Studio scaffolding unchanged; not claimed to be a historical snapshot."
+    },
+    {
+      "path": "v/lesson/deno.lock",
+      "sha256": "8b326935518a26fc0285d5058cb3b69964c48130fc68cd34f1e6dfff2574c82d",
+      "bytes": 3298,
+      "origin": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\v\\lesson\\deno.lock",
+      "operation": "Copy existing pinned Studio scaffolding unchanged; not claimed to be a historical snapshot."
+    },
+    {
+      "path": "pca_lesson.py",
+      "sha256": "5963c9033ea4928f2c1b972ee6d702969b6eb5d87cc5a70f8486076cb855f9dd",
+      "bytes": 16800,
+      "origin": "C:\\Users\\abhir\\Documents\\Codex\\2026-10-03\\exp\\outputs\\pca-studio\\archive-v1\\pca_lesson-before-cleanup.py",
+      "operation": "Keep original first 32 cells through slide_content; remove later cells; append app.run entry point."
+    },
+    {
+      "path": "README.md",
+      "sha256": "b7d9df0c54c33826ba4afa2c68169113c025e9b08f5ec0d0bf70c7bbea008ea2",
+      "bytes": 2634,
+      "origin": "Recovery investigation",
+      "operation": "New provenance and status notes; no runnable claim."
+    }
+  ],
+  "verification": {
+    "python_ast": "passed",
+    "slide_count": "14",
+    "browser_render": "not run",
+    "native_build": "not run"
+  }
+}

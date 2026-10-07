@@ -1,0 +1,1554 @@
+--- before/build-interactive-masterclass/SKILL.md
++++ after/build-interactive-masterclass/SKILL.md
+@@ -1,51 +1,63 @@
+ ---
+ name: build-interactive-masterclass
+-description: Research, debate, plan, build, and review an intuitive interactive tutorial or masterclass on a requested topic. Use for this user's substantial tutorial requests, including progressive mathematical explanations and notebook-backed slide courses. Start with the topic's purpose and mechanism; introduce prerequisites as needed. Do not turn a quick factual answer or small lesson edit into a full course project.
++description: Research, compare, plan, build, and evaluate substantial interactive tutorials with progressive explanation and derivation. Also audit and improve their teaching process. Start from learner purpose; test difficult conceptual bridges before expanding. Not for brief factual answers or routine cosmetic edits.
+ ---
+ 
+ # Build an interactive masterclass
+ 
+-Produce a course that builds a usable mental model, then earns its formal explanation. A learner should be able to predict, explain, calculate when relevant, recognize limits, and transfer the idea. Correct code, slide count, attractive styling, and many controls do not prove good teaching.
++The goal is a usable mental model: the target learner can explain why the idea matters, predict with it, justify its key steps, apply it without copying, and recognize its limits. Retention requires later evidence. Length, correct equations, attractive screens, and working controls establish different things.
+ 
+-This skill captures the user's corrections from the PCA course. For full tutorial requests, first configure and execute a topic-specific teaching harness: research, competing proposals, critique, synthesis, a representative working lesson, construction, and separate reviews. Do not merely write a plan saying these happened.
++This is the canonical teaching process, version 2. `build-intuition-masterclass` is a compatible entrypoint, not a second process to run.
+ 
+-## Scope and defaults
++## Choose scope before acting
+ 
+-- Recover the topic, audience, output, sources, existing work, and constraints. Infer routine choices; ask only about material unknowns while continuing independent work.
+-- Default audience: an interested 20-year-old. Assume normal intelligence, not prior graduate mathematics. Preserve depth while explaining new operations.
+-- Prefer native marimo-studio for this user's interactive notebook/slide courses. Preserve a different requested format. Verify the framework before promising features.
+-- Start with the target concept in action: its problem, mechanism, what changes, what remains, and why it matters. Use geometry for geometric topics and a grounded case or causal model for others.
+-- Introduce background at its first point of use. Do not front-load a separate algebra, statistics, terminology, or history course.
+-- Honor requested length. A minimum slide count is a floor, not a design method. Do not impose PCA's 64-slide count on every subject.
+-- Use clear ASD-STE100-inspired prose. Assess the user's target of at least 80% compatibility honestly using the language rules in the review reference.
+-- A quality gate is an internal check, not a new permission request. Continue reversible work already authorized. Wait for plan approval only when the user asks for that workflow.
++Recover purpose, audience, available learning time, required depth, format, feedback, and useful existing work. Age is not prerequisite evidence. Ask only for unknowns that materially change the route; otherwise label assumptions.
+ 
+-## Execute the teaching harness
++- **Brief answer / small edit:** do it directly and check the affected claim. Do not start a course pipeline.
++- **Plan:** research and inspect the route on paper; stop before implementation.
++- **Retrospective / skill update:** inspect evidence, challenge causes, revise the process, and test it in isolation. Do not change the lesson or start its rebuild.
++- **Build / substantial redesign:** use the loops below. An internal gate is not a new permission request. An explicit user review-before-build instruction is a pending dependency.
+ 
+-Read [the harness protocol](references/harness.md) for topic configuration, roles, state, and evidence. The coordinator uses available research, agent, implementation, and browser tools. `scripts/harness.py` records gates and detects stale evidence; it does not call agents or judge pedagogy by itself.
++Honor the chosen medium. Prefer native marimo-studio for this user's notebook/slide requests; read [the adapter](references/marimo-studio.md) for that medium. Do not silently replace it. Preserve a working visual baseline until a representative comparison supports changing it.
+ 
+-1. **Define observable outcomes.** Specify a fresh prediction, causal explanation, worked derivation or argument, counterexample, and transfer task. Record assumptions, scope, and the user's corrections.
+-2. **Research contrasting explanations.** Follow [research and debate](references/research-debate.md). Inspect substantive YouTube explanations and authoritative written sources. Compare teaching strategies, not just presenters. Record whether you inspected metadata, transcripts, representative video frames, or full videos. Popularity is a discovery signal, not an accuracy score.
+-3. **Debate before settling the sequence.** Request separate proposer/reviewer subagents when available and permitted. Use the three roles in the harness reference. Obtain proposals before cross-critique. If separate agents cannot run, use explicitly labeled sequential perspectives; never call them independent review. Record objections and reasons for the chosen route.
+-4. **Create the teaching plan.** Follow [lesson design](references/lesson-design.md). Specify narrative, misconceptions, notation, example lifecycle, prerequisite insertion points, conceptual transitions, proof route, interactions, assessments, and visual brief. Budget the central argument before refreshers. Share the concrete plan, then continue authorized work.
+-5. **Build a representative teaching sample.** Implement the opening intuition, the hardest intuition-to-formalism transition, and a failure or transfer scene in the actual framework. Repair their teaching and interaction before multiplying the pattern. A polished title slide is not a representative sample.
+-6. **Complete the course.** Keep one connected example until a deliberate counterexample or new task needs another. Every control must explain a relationship. Keep the central proof and limits in the main route. For Studio, read [the framework notes](references/marimo-studio.md).
+-7. **Review separately, then repair.** Use [review standards](references/review.md): correctness, progression, visual explanation, interaction fidelity, language, runtime, and transfer. Execute checks and log findings, repairs, and rechecks. Do not average away a broken proof or unreadable scene with successful build tests.
+-8. **Deliver with calibrated claims.** Provide the tutorial, source, notebook where relevant, plan, and evidence. Distinguish expert review, simulated learner review, and actual learner evidence. State the strongest unresolved teaching gap. Do not certify beauty or mastery from automated tests.
++## Outer loop: choose a strategy that survives a pilot
+ 
+-## Prevent the failures that caused this skill
++Read [research and comparison](references/research-debate.md) and [the harness contract](references/harness.md) for substantial work.
+ 
+-- Every prerequisite bridge must name the target step it unlocks and immediately return to that step.
+-- Use additional slides to resolve actual transitions, not to inflate a count.
+-- Previous/Next and answer reveals are not substitutes for experimental interaction.
+-- A formula plus a short “why” can still hide the hard step. Show the operation, assumptions, and concrete meaning.
+-- A theme or screenshot is not evidence of visual teaching quality. Judge whether the picture reveals the mechanism.
+-- Never exhaust effort polishing setup while compressing or omitting the promised central derivation.
+-- Keep broad orientation and deep explanation: show where the topic fits, and trace how one complete example actually works.
+-- Preserve useful learner state across explanations, refreshers, and student interruptions where supported.
++1. **Define purpose and evidence.** State the learner's real problem or intellectual puzzle, what the lesson enables, and the central question. Define prediction, explanation/argument, application, boundary, and transfer tasks appropriate to that promise. Identify the hardest inference before allocating effort.
++2. **Inspect contrasting explainers.** Compare substantive explanations and an authoritative subject source. Record material actually accessed. Titles, snippets, and transcripts do not establish animation quality. Extract teaching moves and their limits; do not copy a script.
++3. **Propose two serious routes.** Obtain separate proposals before sharing the preferred route where agents are available. Give each a strongest objection and a discriminating pilot. Decide with reasons, not vote count. Label author-informed or same-context reviews honestly.
++4. **Make a compact inference route.** Follow [lesson design](references/lesson-design.md). Connect the initial model to the promised capability. Attach needed background to the step it unlocks. Reserve the central argument and transfer before adding refreshers or polish.
++5. **Pilot before expansion.** Test an opening that earns the goal, the hardest representation-to-reasoning bridge, and a fresh application or failure case. Include immediate prerequisites and next use. Check the medium's feasibility early. A polished introduction does not validate a proof route.
++6. **Keep, revise, or abandon the route.** Use learner-visible evidence and [review standards](references/review.md). Record what could falsify the choice. User rejection reopens the affected decision. Permit provisional expansion at the stated review level; do not pretend unavailable human evidence exists.
+ 
+-## Maintain the skill
++The aim to exceed an expert tutorial is a benchmark hypothesis, not a release adjective. Match audience, goal, depth, time, and assessment. A longer course with more controls has not thereby won.
+ 
+-Record which learner inference failed, why the scene failed to support it, and what changed. Add only specific lessons supported by feedback. Do not add unrelated governance or publication requirements.
++## Inner loop: earn one conceptual inference
+ 
+-For substantial changes, test a mathematical topic, a nonmathematical topic, and a small request that should not start a full harness. Label the creator's self-review as such. Record whether independent forward-testing actually ran.
++For each difficult bridge: identify the question and likely wrong model → choose a discriminating example or worked explanation → produce the learner-visible scene → obtain an uncoached attempt on a new case → inspect reasoning and attention burden → make one causal repair → recheck that obligation.
++
++Use direct instruction when knowledge is missing. Do not turn every scene into a guessing game. A useful interaction tests a belief, compares alternatives, exposes a mechanism, supports construction, or diagnoses failure. Software doing the calculation is not evidence that the learner inferred the relation.
++
++Show why each new representation or operation serves the original purpose. Connect symbols to objects, track assumptions and invariants, and distinguish examples from proof. Preserve requested rigor. More algebraic lines do not automatically explain why those lines solve the problem.
++
++Default to at most two unsuccessful causal repairs to the same inference before reopening the strategy or representation. This is a work limit, not a learning law. Rendering repairs have separate findings. Do not erase failure by renaming an issue. Declare bounded research, pilot, repair, and verification allocations; do not invent a user token allowance. At a cap, preserve the draft and provide the diagnosis and exact next test.
++
++## Separate authoring from tutoring
++
++Authoring loops design the experience. The learner runtime loop is different: diagnose readiness → explain/model as needed → attempt → response-specific feedback → unaided retry → new case → later retrieval if in scope. Read [adaptive tutoring](references/adaptive-tutoring.md) only for branches, live tutoring, or stateful feedback.
++
++A static course may contain authored branches. A planning file is not a deployed adaptive tutor. A correct number with a wrong explanation, assisted success, and independent transfer are different evidence.
++
++## Review and deliver
++
++Use separate correctness, teaching, visual/interaction, and runtime checks. Reviewers cite a scene, observed behavior, learner consequence, and repair test. Include a cold whole-route walkthrough; many locally valid steps can still lose the main question. Preserve consequential disagreement.
++
++At least one unfamiliar-context review should receive learner-facing material without the author's diagnosis where available. Otherwise disclose the limitation. Require the reviewer to cite the visible warrant for each inference; a knowledgeable AI can solve a task from prior knowledge despite a bad lesson.
++
++Keep claims separate: software verified; explanation reviewed; simulated learner reviewed; human learner observed; comparative learning tested; delayed transfer tested. Never promote the first three into the last three. The CLI checks registered records and dependencies; it cannot verify truth or prevent direct tool edits.
++
++Deliver source, launch/navigation instructions where relevant, current evidence, and the strongest remaining limitation. For this user's 80% ASD-STE100 target, apply [review standards](references/review.md); sentence length alone is insufficient.
++
++Update this process from demonstrated failure or useful forward tests. Test substantial changes on unfamiliar quantitative and nonmathematical bridges plus scope/stop cases. Publish outputs and provenance. Prefer a simpler process if added machinery does not improve the result.
++
+--- before/build-interactive-masterclass/references/adaptive-tutoring.md
++++ after/build-interactive-masterclass/references/adaptive-tutoring.md
+@@ -0,0 +1,25 @@
++# Per-problem tutoring runtime
++
++Read only for authored branches, student questions, live tutoring, or stateful feedback. This skill and its CLI do not implement a runtime tutor.
++
++Maintain goal, problem version, current question, representation state, learner attempt, reasoning evidence, assistance, pending action, detour stack, and return point. Separate observations from inferred mastery. Avoid unnecessary personal data. Explain storage lifetime; microphone or tab capture needs a user start action and consent.
++
++| Observed state | Tutor response | Evidence to continue |
++|---|---|---|
++| Entry knowledge missing | Short direct model/worked example, then a smaller task | Uses the required operation |
++| Right answer and supported reasoning | Fade a scaffold; change the case | Unaided application |
++| Right answer, faulty rule | Discriminating case | Corrected reasoning applied |
++| Wrong answer, identifiable rule | Address that specific relation | Retry with less help |
++| Ambiguous/contradictory reasoning | One diagnostic question; allow “not sure” | Unknown is not labeled wrong |
++| Stuck | Hint, smaller case, worked step | No repeated interrogation |
++| Skipped check | Permit honest navigation | Status stays unverified |
++| Side question | Save state; answer or bounded detour | Return or explicit goal change |
++
++On interruption, stop stale speech/animation where supported. Save the scene, open question, work, and pending action before a detour. Restore them afterward. Changed inputs invalidate old feedback. Separate assisted and independent attempts.
++
++Use worked example → completion task → unaided problem → transfer when suitable. Retrieval should reconstruct and use a model, not only labels. Later retrieval checks retention; schedule it only when requested. Immediate correctness is not delayed retention.
++
++Static courses must state which branches they support. Free-form model feedback needs the exact problem and visible state, uncertainty handling, and tests for right-answer/wrong-reason, ambiguity, contradiction, and off-topic input. A few multiple-choice branches are not general adaptation.
++
++Verify interruption, restart, back/forward, detour return, feedback invalidation, and failure fallback in the actual interface. If implementation is out of scope, label this a runtime design and leave execution checks unperformed.
++
+--- before/build-interactive-masterclass/references/harness.md
++++ after/build-interactive-masterclass/references/harness.md
+@@ -1,50 +1,98 @@
+-# Topic-specific teaching harness
++# Coordinator workflow and executable guardrail
+ 
+-This is a coordinator-driven workflow with durable evidence, not an unattended model service. Configure the run, execute research and debate with available tools, build the artifact, and record actual reviews. Configuration alone is a scaffold.
++This is a coordinator-driven teaching process, not an autonomous model service. The CLI validates registered records and dependencies. It cannot verify truth, learning, independence, source inspection, or prevent direct tool edits.
+ 
+-## Run contract
++## Use the smallest appropriate record
+ 
+-Create a run directory in the task's working area or reuse a suitable project record. Record the topic, audience, prior knowledge, format, user corrections, observable learner capabilities, scope boundaries, sources, tool limits, roles, review criteria, requirements-to-scene coverage, and next action.
++A small answer or correction does not need a run directory. For a substantial build or process audit, keep one compact contract in the project's work area: scope/mode, learner purpose, audience/readiness assumptions, promised capabilities, central inferences, source decisions, pilot obligations, constraints, work limits, and next action. Existing project formats can hold teaching detail; the JSON below only captures machine-checkable obligations.
+ 
+-Allocate effort across research, the representative sample, core explanation/proof, expansion, and review. Do not invent a user token budget. Save concise artifacts when real: contract, source inventory, proposals, debate, plan, pilot review, final review, and delivery record. Existing formats are acceptable; avoid ceremonial paperwork for minor edits.
++Read research-debate.md before selecting a route; lesson-design.md for critical bridges; review.md for acceptance evidence. Give independent initial proposers the same brief without a favored answer, then cross-critique. Two serious routes and a bounded pilot normally suffice; do not create empty documents or extra agents to fill a template.
+ 
+-## Durable state
++Protect the core argument and verification budget. Declare bounded research, pilot, and repair allocations. Those are action limits, not a user token allowance. Stop unchanged reviews. A cap returns a diagnosis and the next discriminating test; it does not imply completion.
+ 
+-Ordered gates: `intake`, `research`, `debate`, `plan`, `pilot`, `build`, `review`, `delivery`. Later passes require earlier passes and unchanged evidence. Revision preserves history and invalidates dependent passes.
++## Version 2 CLI
++
++Requires standard-library Python. Paths in a contract are relative to its directory; paths in receipt/repair evidence are relative to that JSON file. Use absolute paths where ambiguity would matter.
+ 
+ ```text
+-python <skill>/scripts/harness.py init work/tutorial-run --topic "PCA" --audience "Interested 20-year-old"
+-python <skill>/scripts/harness.py record work/tutorial-run --stage intake --status pass --evidence work/tutorial-run/contract.json --note "Outcomes and constraints recorded."
++python <skill>/scripts/harness.py init work/tutorial-run --contract work/contract.json
++python <skill>/scripts/harness.py check work/tutorial-run --node bridge --action review
++python <skill>/scripts/harness.py record work/tutorial-run --file work/bridge-receipt.json
+ python <skill>/scripts/harness.py status work/tutorial-run
++python <skill>/scripts/harness.py finding work/tutorial-run --file work/finding.json
++python <skill>/scripts/harness.py repair work/tutorial-run --file work/repair.json
++python <skill>/scripts/harness.py strategy work/tutorial-run --file work/strategy.json
+ ```
+ 
+-The script hashes evidence files and refuses skipped gates or stale prerequisites. A later edit requires re-review and a new record. Record a gate only after the action occurs. The script cannot verify that an agent report is truthful, a source was read, or a lesson teaches well; the coordinator must inspect those claims. Records are not tamper-proof attestations.
++`check` returns the current node revision and input hashes. It checks declared scope and accepted dependencies before the requested action. It allows work to repair an open finding, while `record` refuses affected acceptance until blocking findings are resolved. Neither command executes the action. `status` distinguishes accepted records, blocked nodes, stale receipts, and unverified claims. Acceptance means the required current attestations exist, not that teaching succeeds.
+ 
+-## Debate roles
++## Contract schema
+ 
+-For full courses, request three separate subagents when tools and higher-priority instructions permit:
++This is a small build example, not a prefilled real pass. Replace placeholders with actual work and include all relevant sources/components/environment files as declared inputs.
+ 
+-1. **Intuition and audience designer:** phenomenon, example, analogy limits, predictions, and minimum prerequisite bridges.
+-2. **Subject and derivation reviewer:** formal route, assumptions, proof obligations, counterexamples, and technical evidence.
+-3. **Visual and interaction designer:** representations, manipulations, feedback, transitions, and a visual teaching sample.
++```json
++{
++  "schema": 2,
++  "mode": "build",
++  "topic": "Chosen topic",
++  "audience": "Specific learner with stated preparation",
++  "scope_roots": ["artifacts"],
++  "nodes": [
++    {"id":"bridge","kind":"inference","action":"review","critical":true,
++     "depends_on":[],"inputs":["artifacts/bridge.html"],"outputs":[],
++     "required_claims":["teaching-review","correctness"]},
++    {"id":"alternative-pilot","kind":"pilot","action":"pilot",
++     "depends_on":[],"inputs":["artifacts/alternative.html"],"outputs":["artifacts/alternative.html"],
++     "required_claims":["teaching-review","interaction"]},
++    {"id":"release","kind":"delivery","action":"deliver",
++     "depends_on":["bridge"],"covers":["bridge"],
++     "inputs":["artifacts/lesson.html"],"outputs":["artifacts/release.json"],
++     "required_claims":["artifact","interaction"]}
++  ]
++}
++```
+ 
+-Give each the same learner brief and inspected-source inventory without the coordinator's preferred answer. Request a coherent proposal, tradeoffs, and a design for the hardest transition. Then share competing proposals for cross-critique. Ask what disagreement matters most and which sample would resolve it. Synthesize explicit decisions, not a collage of all suggestions.
++Modes: `audit` permits inspect/research/review/report; `plan` also permits plan; `build` also permits implement/pilot/deliver. Mode and permitted output roots are pinned at initialization. Input inspection can be outside output roots. The tool scopes declared outputs only; actual filesystem writes are not sandboxed by it. For an audit that edits skills, record that authorized work in the audit report; this CLI's action vocabulary is not a filesystem permission system.
+ 
+-Do not create user-owned chats for subtasks. Do not invent reviews, tool calls, or consensus. With one agent, save labeled sequential perspectives and the independence limitation. Similar models agreeing is not learner evidence.
++Each node declares `id`, `kind`, `action`, `depends_on`, `inputs`, `outputs`, and `required_claims`. Critical inference nodes require a teaching-review claim and a real input artifact. Delivery must cover and depend on every declared critical inference. The script cannot discover an omitted critical inference. Extra fields can contain the compact teaching contract; their presence does not mean the script semantically validates them.
+ 
+-## Gates
++Dependencies must form a DAG. Learner detours and retries belong in teaching/runtime records, not this DAG. A changed node or declared upstream input invalidates dependent receipts; unrelated branches remain current. Shared component changes should invalidate conservatively through declared edges. Missing or unregistered files limit the guarantee.
+ 
+-| Gate | Evidence before passing |
+-|---|---|
+-| Intake | Outcomes and prior corrections are traceable |
+-| Research | Contrasting substantive explanations and technical sources inspected |
+-| Debate | Competing proposals, specific objections, reasoned synthesis |
+-| Plan | Every major transition has an example, explanation, interaction, and check |
+-| Pilot | Opening and hardest transition work in the requested framework |
+-| Build | Complete scope; central proof and transfer included |
+-| Review | Separate dimensions reviewed; no unresolved critical failure |
+-| Delivery | Working links, launch steps, source, navigation, and honest limits |
++## Receipt schema
+ 
+-A repair loop is observed failure -> specific change -> affected check rerun -> evidence and decision. Repeated inspection without change is not improvement. Stop expanding a failed pattern. After two unsuccessful repairs of the same issue, reconsider the representation or sequence. Do not ask the user to solve routine implementation choices.
++Save the actual report first, compute its SHA-256, obtain the current node revision/input hashes from `check` or `status`, and create the receipt only after the review occurs.
+ 
+-For plan-only work, stop after the plan and label later gates unexecuted. For audit-only work, report observations without inventing earlier history. For a small correction, rerun affected checks without forcing full-course research.
++```json
++{
++  "node":"bridge","claim_type":"teaching-review","outcome":"pass",
++  "revision":"COPY_CURRENT_NODE_REVISION",
++  "input_hashes":{"ABSOLUTE_INPUT_PATH":"COPY_CURRENT_INPUT_SHA256"},
++  "scenario":"The reviewer attempts the new-case task using only the visible explanation.",
++  "observed_result":"Describe the actual reasoning, cited warrant, difficulty, and disposition.",
++  "reviewer":{"id":"actual reviewer","relationship":"fresh-context",
++              "context":"State what was shared, withheld, and previously known."},
++  "evidence_type":"simulated-review",
++  "limitations":["AI artifact review; human learning unverified."],
++  "evidence":[{"path":"actual-review.txt","sha256":"ACTUAL_REPORT_SHA256"}]
++}
++```
++
++Claims: artifact, correctness, interaction, visual, teaching-review, simulated-learner, human-learning, retention, learner-tested. Relationships: author, author-informed, fresh-context, human. Evidence types: tool-observation, author-review, simulated-review, human-study, source-inspection. A simulated-learner claim needs simulated-review evidence. Human-learning/learner-tested/retention claims need human-study evidence with positive `human_evidence.participants` and `tasks`; retention also needs positive `delay_days`. These fields remain assertions, not authenticated study evidence. A reviewed artifact release need not claim human efficacy.
++
++## Findings, repair, and strategy change
++
++A finding file contains stable `id`, affected `nodes`, `severity` (blocking/nonblocking), and concrete `observation`. Record the learner consequence and test in the observation or linked report. A rejection opens the relevant finding; do not erase valid unrelated evidence.
++
++A repair file contains `issue`, `outcome` (failed/resolved), causal `change`, and hashed `evidence`. To resolve, also give `resolution_receipts`: paths to current receipts covering all affected nodes. Each receipt names the finding in `resolves`. A resolved finding can reopen when its resolution evidence becomes stale. Clearing a finding does not automatically supply every missing acceptance claim.
++
++After two failed repairs in the current strategy, another repair requires a strategy record: `issue`, a new `hypothesis`, a declared `pilot_node`, and changed hashed `evidence` for the strategy decision. The alternative pilot must be evaluable independently of the failed branch. After recording the strategy, change the pilot's actual input artifact and obtain fresh required pilot receipts. Reusing an old accepted pilot or merely changing a label cannot reset the cap. The finding remains open until its specific recheck resolves it.
++
++Keep stable issue IDs; renaming a problem does not resolve the old finding. The tool preserves event history in an atomically replaced state file, but it is not tamper-proof or an authenticated audit service. Overall effort limits, completeness of the inference graph, and user-review requirements remain coordinator obligations.
++
++An explicit user review-before-build instruction is a real pending dependency. Preserve that instruction and the eventual user response in the project record. Do not represent an AI review as user approval. The CLI does not authenticate user authorization.
++
++## Legacy and handoff
++
++Schema-1 journals are status-only. Start a new schema-2 run instead of promoting old passes. Never overwrite an existing run to erase history. At handoff include the next permitted action, exact blockers, unresolved claims, relevant file revisions, and scope boundary. Do not call a plan, schema pass, or journal a deployed tutor.
++
++Run `python <skill>/scripts/test_harness.py` after changing the guardrail. Its disposable synthetic fixtures check workflow behavior, not lesson quality or real learner evidence.
+--- before/build-interactive-masterclass/references/lesson-design.md
++++ after/build-interactive-masterclass/references/lesson-design.md
+@@ -1,43 +1,54 @@
+-# Design the learning, not just the deck
++# Design the inference, then its presentation
+ 
+-Start with a meaningful phenomenon or task. Let the learner manipulate it, predict, and see the need for an explanation. Return to that original question after formal developments.
++## Purpose before the syllabus
+ 
+-Breadth provides a map of the mechanism, uses, alternatives, assumptions, and limits. Depth traces a representative example through the entire argument. Avoid both a catalogue of facts and a proof detached from purpose.
++Begin with a consequential question at the learner's level: a choice, prediction, explanation, construction, failure, or intellectual puzzle. State what the lesson enables. A named application or numerical example is insufficient if the learner cannot see why the task matters. Do not invent a commercial story when curiosity supplies the purpose.
+ 
+-A useful pattern is concrete case -> visible operation -> named quantity -> symbolic rule -> justification -> new prediction -> limit or transfer. Adapt it; do not mechanically repeat a template on every slide.
++Show the idea in action early. Expose an insufficiency in the current rule. The next concept should resolve it. Use a stable example until a deliberate contrast or new context teaches something it cannot. Return to the opening question after formal development. A motivating story alone does not justify an arbitrary later objective.
+ 
+-Budget the central mechanism, proof, applications, and transfer before prerequisites. Refreshers should normally take a minority of learning time and immediately enable a target operation. Do not put the promised core derivation in an appendix because setup consumed the budget.
++## Three graph views, one compact record
+ 
+-## Scene contract
++Maintain a compact route first. Add fields or generated views only where dependencies, revisions, or runtime branches justify them. Do not require three separate graph documents.
+ 
+-Specify the learner's question, intended inference, starting mental model, exact new idea, concrete example, units, stable labels, prediction before feedback, manipulation, changing quantities, invariants, causal explanation, misconception addressed, short check, and next question.
++1. **Outcome and inference view:** changes in what the learner can reason about. Edge meanings include requires, motivates, represents, justifies, contrasts, transfers. Prerequisite edges are acyclic within the chosen entry contract; revisits can loop. Break apparent prerequisite cycles with an entry example or provisional model, marking what is deferred.
++2. **Per-problem state view:** attempt, uncertainty, feedback, help, detour, retry, transfer. The same answer may have different causes. Use adaptive-tutoring.md when these transitions must run in an application.
++3. **Artifact dependency view:** contracts, content, code, reviews, and evidence depend on exact revisions. Changed inputs reopen affected claims. This view is distinct from concept dependencies.
+ 
+-A difficult transition may span several slides. A slide can also pause for reading or proof. Do not force widgets onto every sentence. The important mechanisms need meaningful manipulation, with enough variety that one slider is not repeated beside unrelated equations.
++The learner sees a short route of useful questions and their location. An internal dependency graph is not the learning map.
++
++## Critical bridge contract
++
++Use a paragraph or row for each bottleneck, not a form per sentence. Include only fields needed to make the inference reviewable:
++
++| Field | Decision |
++|---|---|
++| Need and entering model | Why the idea is needed; what the learner currently believes or can do |
++| Target capability | New prediction, explanation, operation, justification, or distinction |
++| Witness and representation | Example, contrast, trace, or diagram that exposes the relation |
++| Bridge and validity | Familiar objects mapped to the new model; usefulness; assumptions, units, or evidence warrant |
++| Learner work | What the learner supplies and what software/tutor supplies |
++| Wrong rule and feedback | Plausible misconception, discriminating case, specific help |
++| Exit and next use | Unassisted check, next question, deferred claims |
++
++Example: in queueing, average demand below service capacity does not explain persistent waiting. Contrast evenly spaced arrivals with a burst at the same mean. Trace arrival, service, and leftover work. Ask which new schedule creates a queue and why. A time control helps only if it exposes the relation. State the toy model's assumptions before generalizing.
+ 
+ ## Background at the point of need
+ 
+-Map prerequisites privately; show learners a simple route of questions. Each refresher explains “We need this now to do X,” gives one example, and immediately uses it in X. Preserve the current scene when opening optional background. Define symbols, dimensions, indices, and conventions before use.
++Attach every refresher to a step: “We need this to do X,” one sufficient example, immediate use in X, and a return point. A small initial foundation may be necessary; do not prohibit it mechanically. Distinguish demonstrated, assumed, and unknown prerequisites.
+ 
+-Teach operations through their purpose. A transpose pairs columns; a constraint makes comparisons fair; a derivative measures the effect of a small change. Do not introduce a name before the learner has a reason to care.
++Reserve the main mechanism, proof/argument, limits, and transfer before expanding preparation. A minimum slide count is a format constraint, not a sequence generator. Add screens to resolve inference or attention demands.
+ 
+-## Earn each mathematical step
++## Formal reasoning without hidden bridges
+ 
+-Show the current expression, target question, operation, reason it is valid, assumptions, dimensions, and meaning for the original problem. Include a numerical or geometric witness where useful. Keep the previous expression visible when comparison matters.
++For an important mathematical step show the current question, operation, reason it is valid, assumptions, and meaning in the original problem. Map symbols, dimensions, indices, and units to the example. Distinguish definition, observation, identity, approximation, theorem invoked, necessary condition, and sufficient/global guarantee.
+ 
+-Distinguish definitions, identities, observations, approximations, theorems used without proof, stationary conditions, and global guarantees. A local condition is not a global proof. Numerical agreement illustrates an identity; it does not prove it for all inputs.
++Numerical agreement illustrates an identity but does not prove it generally. State when a theorem is used without proof. In nonmathematical lessons, apply the same discipline to causal claims, interpretation, competing explanations, evidence quality, and inference limits. Do not force every subject into equations or a causal model.
+ 
+-Progressive reveals should follow algebraic changes and their visual meaning. Interactive values must agree across equations, labels, diagrams, and metrics. Label a fixed worked example separately if it does not follow the control.
++## Attention and interaction
+ 
+-## Visual explanation
++Choose a representation suited to the relation: geometry, flow, counts, timing, evidence, comparison, or system trace. Keep labels, units, scales, and semantic colors stable. Show the change and invariant together. Synchronize pointers, reveals, text, and voice with the exact operation.
+ 
+-Choose representations that suit the topic: accurate geometry, repeated trials and distributions, evidence comparison, causal alternatives, or system-state traces. Do not turn all subjects into angle sliders or bar charts.
++Critical interactions need an explanatory job: prediction, counterfactual, construction, or diagnosis. Direct explanation and quiet reading remain useful. Avoid a compulsory seven-click ritual.
+ 
+-Use large informative figures, readable labels, stable semantic colors, equal scales where required, honest units, and text near the object it explains. Compare original and changed states when that comparison teaches the idea. Provide reset and keyboard paths. Preserve useful state across refreshers and navigation, or disclose resets.
++Keep the prompt, operation, and needed evidence within attention at intended viewport sizes. If scrolling is necessary, preserve the referenced diagram or clear return anchor. Provide keyboard paths, non-color cues, reset, reduced motion, and state recovery. Prototype dense and intermediate states, not just opening screenshots.
+ 
+-An interaction should support prediction -> manipulation -> observation -> explanation -> a new case. Include surprising contrasts and failures. A control that changes a number without revealing a relationship fails the scene contract.
+-
+-## Lesson from PCA
+-
+-Begin with the cloud, retained axis, score line, and lost detail. Ask which direction preserves important differences. Then derive a measure: center -> score -> squared spread -> cross-products -> covariance -> objective -> optimal direction -> global proof -> reconstruction -> limits.
+-
+-The current PCA draft still needs a dedicated tangent/normal visual for the gradient-to-eigenvector transition and explicit row/column pairing for the transpose product. Several scenes repeat an axis control without a distinct explanatory action. These are examples of failed scene contracts, not requirements that every subject copy the PCA sequence.
+--- before/build-interactive-masterclass/references/marimo-studio.md
++++ after/build-interactive-masterclass/references/marimo-studio.md
+@@ -1,26 +1,27 @@
+-# Native marimo-studio implementation
++# Native marimo-studio adapter
+ 
+-Read installed Studio documentation and project instructions before editing. APIs and limits change. The PCA project used Studio 0.2.3, marimo 0.25.0, and the native Reveal.js React starter; those are observed versions, not permanent requirements.
++Inspect installed framework documentation, project instructions, and existing examples before promising features. Confirm versions, native slide support, notebook projection API, sandbox behavior, payload limits, and host navigation. Do not turn a bounded feasibility probe into a framework rewrite.
+ 
+-Keep computations, data, and native controls in the notebook. Project named results into the slide view. Fast browser interactions can select precomputed Python frames; describe this accurately, rather than claiming every drag triggers Python. Include real notebook recomputation where it helps learning. Keep the mathematical explanation available in the notebook too.
++Keep computation, data, and native controls in the notebook where appropriate. Project named results into the native slide view. Browser controls may select precomputed Python frames; describe this honestly instead of claiming each drag executes Python. Demonstrate real notebook recomputation when it serves the lesson. Keep the mathematical explanation accessible in the notebook.
+ 
+-Use the native slide view, not a static imitation called Studio. Verify notebook/slideshow navigation in the actual host browser. Framework correctness and teaching quality need separate reviews.
++## Known failure patterns to check, not permanent API rules
+ 
+-## Lessons from the Windows PCA build
++These arose in one Windows Studio build and need verification against the current installation:
+ 
+-- Keep Reveal configuration identity stable across reactive renders.
+-- The observed sandbox blocked session storage used by Reveal scroll mode. The course used `scrollActivationWidth: 0` with explicit responsive layouts.
+-- Projection scanning found declarations in unused TSX files. Archive old views outside the scanned root.
+-- Measure the actual aggregate projection budget. The observed transport limit was 1 MB; avoid repeated frame tables and verify the current limit.
+-- Sandboxed links may not navigate the parent or open a tab. Use supported parent UI or a trusted outer-page link; do not weaken the sandbox. The PCA standalone wrapper links to the editor; Studio's Visible surface dropdown switches Notebook/Preview.
+-- Replacing cells can leave stale editor state. Inspect real notebook content and live status. Restart only the identified task server if needed.
+-- Check the user's visible tab, preserve learner input, and reset temporary viewport overrides.
+-- On the observed Windows installation, some successful builds emitted temporary cleanup warnings. Check structured build results and runtime evidence separately.
++- Unstable Reveal configuration identity can reset navigation/reactive state.
++- Nested `section` elements may become Reveal slide stacks and intercept intended controls; use neutral wrappers inside scenes.
++- A large authored canvas scaled into a small viewport can make labels unreadable. Test actual host sizes and intermediate states.
++- Sandbox restrictions can affect storage, service workers, and links. Use supported host navigation or a trusted outer-page link; do not weaken the sandbox.
++- Projection scans may find declarations in unused source files. Keep archived views outside scanned roots.
++- Duplicate precomputed frames can exceed transport limits. Measure the current aggregate payload and actual installed limit.
++- Replaced notebook cells may leave stale editor state. Inspect live content; restart only the identified project server if needed.
+ 
+-## Browser verification
++## Feasibility and acceptance
+ 
+-Test each distinct scene family: prediction, meaningful manipulation, boundary case, resulting explanation, reset, and navigation. Review screenshots for readability and faithful geometry; saving a screenshot alone is not a visual pass.
++Before mass authoring, prove one meaningful Python-backed interaction, native next/back navigation, one derivation reveal, and return to the editable notebook. Record how the user reaches each view in their actual browser. A standalone imitation is not native Studio support.
+ 
+-Inspect every derivation step and dynamic substitution. Selected observations, vector length, units, formulas, and plots must agree. Verify native data controls update Python results. Check difficult scenes on realistic screen sizes, not only a large authoring canvas.
++Test each scene family: prediction, manipulation, boundary, feedback, reset, and navigation. Exercise controls in the real rendered interface; a build cannot establish pointer behavior. Inspect formula/diagram/value agreement and dimensional accuracy. If a worked example is fixed while a diagram changes, label it clearly or connect their state.
+ 
+-Provide clean-start instructions for both local processes when notebook and presentation run separately. Verify the return link with both running. State offline/export limitations. Keep implementation details out of learner-facing scenes unless they help learners use the notebook.
++At realistic viewport sizes, verify labels, controls, proof steps, keyboard access, and scrolling/attention continuity. Check state on revisit. Preserve user input and reset temporary test overrides.
++
++Provide verified clean-start instructions for required processes, refresh behavior, return-to-notebook path, and offline/export limits. Keep implementation details outside learner prose unless needed to use the course. Teaching acceptance remains separate from framework acceptance.
+--- before/build-interactive-masterclass/references/research-debate.md
++++ after/build-interactive-masterclass/references/research-debate.md
+@@ -1,27 +1,32 @@
+-# Research and compare teaching methods
++# Research, challenge, compare
+ 
+-For a substantial course, aim for three to five contrasting approaches when accessible. Include user-named explainers. Seek geometric/causal intuition, a careful derivation, and an application or failure-oriented explanation. Use authoritative written sources to check facts and assumptions. For established concepts, clarity may matter more than recency; verify changing tools or disputed facts separately.
++## Inspect explanations, not reputations
+ 
+-View counts and prominence help discover candidates; they do not measure educational quality. Record counts only when actually observed, with dates. Do not invent “top viewed” rankings.
++For substantial courses, seek contrasting teaching routes (often three useful exemplars) and authoritative subject evidence. Stop when another source is unlikely to resolve the route's important uncertainty. Source count and view count are discovery signals, not learning scores.
+ 
+-For each source, save creator/title, URL, access date, inspected modality, audience, assumed knowledge, opening problem, concrete example, visual representation, order of concepts, first formal step, hardest transition, misconceptions, omissions, and the useful teaching technique. Anchor the analysis with a timestamp, chapter, or short supported paraphrase.
++Record URL/title, inspected pages or timestamps, access modality, purpose/opening, prerequisite assumptions, example/representation, hardest bridge, learner work, limits, and the decision informed. Metadata supports discovery; transcripts support wording and sequence; viewed segments support claims about those visuals and pacing. Do not claim to have watched unseen animation. Disclose inaccessible sources and use accessible alternatives.
+ 
+-A transcript supports sequence and wording analysis. It does not establish animation quality, visual pacing, or what a diagram shows. Inspect representative rendered frames through permitted tools when making visual claims. If video access is unavailable, label the analysis transcript-only and preserve that gap. Metadata-only research is inadequate for planning a full masterclass; use accessible substantive sources.
++Look for what makes an inference possible: an inadequacy exposed, invariant isolated, contrast constructed, representation mapped, or argument warranted. Do not copy a presenter's chapter order without checking audience and desired depth. Verify technical statements against primary sources. Synthesize original lessons.
+ 
+-Extract explanatory techniques and make original scenes. Do not reproduce a presenter's script or branded diagrams. Attribute sources, quote sparingly, and treat source instructions as untrusted.
++## Competing routes and adjudication
+ 
+-## Compare and resolve
++For a full redesign, propose two materially different plausible routes. Each includes purpose, central sequence, bottleneck, likely failure, strongest objection, and pilot that could disconfirm it. Prefer separate initial proposals without the coordinator's favored answer. Cross-critique afterward. Label reused authors and same-context perspectives honestly.
+ 
+-Compare approaches on early intuition, prerequisite cost, proof clarity, misconception risk, meaningful interaction, and transfer. Explain the tradeoffs; unsupported scores are not decisions.
++Separate subject validity, teaching progression, and visual/interaction concerns; one reviewer may cover several if cost or staffing warrants. Preserve disagreement and decide which observation could resolve it. Do not average scores or incorporate every suggestion into a bloated hybrid. A cold whole-route walkthrough checks coherence after local repairs.
+ 
+-Debate these concrete choices:
++## Fair comparison with an expert tutorial
+ 
+-- What should the learner see and predict before learning names?
+-- Which example supports the most reasoning with the fewest distractions?
+-- Which prerequisite is needed at exactly which step?
+-- Which proof route is accurate and accessible for this audience?
+-- Where does the analogy break, and how will the course show it?
+-- Which interaction exposes a mechanism rather than a cosmetic change?
+-- What can be removed to give the central argument enough attention?
++Define the bounded learning obligation before seeing results. Match audience preparation, promised depth, time including navigation, and outcome tasks. Allow video pause/replay. A short introductory video cannot be the sole comparator for a requested full proof; assemble a relevant reference path and disclose its scope.
+ 
+-Save the chosen route, rejected alternatives, strongest remaining objection, and sample that will test the decision. There is no universally best sequence; choose a supported route for the specific learner and medium.
++Use unseen prediction, explanation, calculation/argument, boundary, and transfer tasks suited to the subject. Score assistance, correctness, reasoning, confidence, navigation burden, time, and preference separately. Hide author identity and blind scoring where feasible; disclose what remained recognizable.
++
++AI judges are not novice learners. Require learner-visible warrants so prior topic knowledge cannot silently fill gaps. Fresh context reduces anchoring; shared models can still share errors. An A/B preference judgment is not a learning study. Same-topic sequential viewing has carryover; counterbalancing does not remove it. Actual comparative learning needs an appropriate human study design, such as separate randomized groups or matched tasks, with stated uncertainty. Small qualitative pilots identify defects; they do not establish universal superiority.
++
++## Learning research: bounds on inference
++
++Direct instruction, worked examples, guided experiments, and retrieval have different jobs. Novices may need a model before making useful predictions. Delayed recall evidence does not automatically establish conceptual transfer or efficiency.
++
++When citing a study, record population, material, comparison, timing, measured outcome, and limits. Separate reported finding from proposed design implication. For example, Roediger & Karpicke (2006), Experiment 2, tested prose recall in undergraduates; its five-minute and one-week groups were separate, and study/recall periods differed in duration. Do not translate its percentages into universal retention, an AI advantage, or proof of a particular role workflow.
++
++Do not impose a universal story, animation quota, quiz frequency, visual style, or interaction count. Let the learner obligation select the teaching method.
++
+--- before/build-interactive-masterclass/references/review.md
++++ after/build-interactive-masterclass/references/review.md
+@@ -1,39 +1,42 @@
+-# Review teaching separately from runtime
++# Review claims separately
+ 
+-Record each finding with scene ID, observation, learner consequence, severity, repair, and recheck. Use pass, revise, or unverified with reasons. Avoid invented precision such as “92% beautiful.”
++A finding needs the scene/inference ID, observation, learner consequence, severity, suggested discriminating recheck, artifact revision, and reviewer relationship. Use current/revise/unverified states with reasons. Numerical beauty or intuition scores are not evidence.
+ 
+-| Dimension | Evidence required |
++| Claim | Evidence needed |
+ |---|---|
+-| Correctness | Assumptions, units, definitions, valid derivation, authoritative sources, meaningful numerical checks |
+-| Progression | Audience-level walkthrough identifying hidden prerequisites, jumps, and delayed payoff |
+-| Intuition | Predictions and explanations the representation supports; analogy limits |
+-| Visual explanation | Rendered scenes at realistic sizes; correct relationships, readable labels, useful comparisons |
+-| Interaction | Control changes and boundary states update every dependent output correctly |
+-| Language | Clear instructions, stable terms, defined symbols, active prose, recorded style review |
+-| Transfer | New problems demand reasoning or diagnosis rather than copying an answer |
+-| Delivery | Clean-start execution, native framework, working navigation and return path, refresh behavior |
++| Subject correctness | Valid claims, assumptions, units, argument/proof, primary references, relevant edge checks |
++| Explanatory adequacy | Learner-visible warrant for each critical bridge; missing prerequisites and wrong-rule cases |
++| Whole-route coherence | Cold walkthrough: why this lesson, why these steps, how the final method answers the opening question |
++| Visual/interaction usability | Rendered meaningful states at intended sizes; actual control use, labels, coupled outputs, attention burden |
++| Runtime | Clean start, real navigation, persistence/reset, notebook return, failure recovery |
++| Simulated learner review | Recorded uncoached task attempts with warrants; disclose existing topic knowledge and model/context |
++| Human learning | Actual audience, baseline, tasks, help, observations, scoring, limits |
++| Comparative learning | Matched goal/time/depth and suitable comparison design; separate preference from performance |
++| Retention / delayed transfer | Actual delayed tasks; recall and new-context transfer recorded separately |
+ 
+-Critical failures prevent a ready claim: false mathematics, misleading geometry, missing core argument, assumed prerequisites that violate the audience, broken key controls, unreadable content, or a promised central interaction that does not exist. Fix them; do not average them against build passes.
++False central claims, missing requested argument, broken critical controls, hidden required prerequisites, or unreadable critical scenes block a ready artifact claim. Human efficacy can remain unverified in a clearly labeled reviewed candidate. Do not let available software tests stand in for missing teaching evidence.
+ 
+-## The 80% ASD-STE100 target
++## Review protocol
+ 
+-Use the applicable standard when available. Review sentence length, one main idea, clear actors, active prose, consistent terms, and approved word meanings/parts of speech with justified technical-name exceptions. Instructions usually have a 20-word limit and descriptions 25; exact counting and vocabulary rules must come from the standard, not a guessed dictionary.
++Give an unfamiliar reviewer only the audience, task, learner-visible artifact, and neutral criteria for the first pass. Do not supply the author's diagnosis or desired verdict. Obtain separate initial observations, then cross-critique. Record prior authorship, shared history/model, assistance, and source access. “Elite educator” is a role request, not a credential.
+ 
+-The denominator is learner-facing prose sentences across slides, controls, feedback, and refreshers. Equations and code are excluded, but their labels still need review. Record each sentence as compatible, incompatible, or unverified, with exceptions and reasons. Unknown sentences do not count as passes. Report compatible/total, plus coverage limits for partial reviews.
++Hold back new assessment cases and expected reasoning from the author where feasible. A knowledgeable AI may answer correctly without learning anything: require a pointer to the visible explanation that warrants the inference, and preserve failures. After repair, repeat the affected test; also trace global coherence if the route changed. Do not repeat unchanged reviews for reassurance.
+ 
+-If the dictionary or full usage audit is unavailable, improve the prose and state the measured checks separately. Short sentences do not establish 80% compatibility. A custom style profile is not certification. Preserve the unresolved target instead of silently dropping it.
++A user's rejection reopens the relevant acceptance. It need not negate valid mathematical or runtime evidence. Tie the next change to a falsifiable teaching hypothesis.
+ 
+-## Evidence about learners
++## Plain language and the 80% target
+ 
+-When permitted, have an independent reviewer attempt the opening and hardest transition using only learner-visible content. Record wrong inferences and missing facts. An AI learner walkthrough is simulated; it does not establish human efficacy.
++Use short active sentences, stable terms, one main idea, defined symbols, and concrete instructions. Preserve mathematical precision. ASD-STE100-inspired wording is not formal compliance.
+ 
+-Test transfer before showing answers. Numerical checks assess calculations, not written reasoning. Disclose whether a human or model reviewed a written explanation. Slide completion is not mastery.
++For this user's 80% compatibility target, the denominator is all learner-facing prose sentences in slides, controls, feedback, and refreshers. Exclude equations/code, but review their labels. Mark each sentence compatible, incompatible, or unverified, with technical-name exceptions and reasons. Unknown sentences are not passes. Report compatible/total and review coverage.
+ 
+-Completion labels:
++Use the actual applicable standard and vocabulary/usage rules if available. Sentence-length checks alone cannot establish compliance. If the full audit is unavailable, improve the wording, report measured checks, and leave the percentage unverified.
+ 
+-- **Planned:** research and storyboard exist; teaching unbuilt.
+-- **Working draft:** artifact runs; teaching or visual findings remain.
+-- **Expert-reviewed release candidate:** stated review dimensions pass; learner efficacy still unverified unless tested.
+-- **Learner-tested:** report audience, tasks, and observations without generalizing beyond them.
++## Behavior tests for a changed skill
+ 
+-The existing PCA course is a working draft under this rubric. Successful numerical and UI checks are not retrospective evidence of independent teaching review.
++Use isolated artifacts. Include an unfamiliar quantitative bridge and a nonmathematical explanation; request real learner-facing samples, not only plans. Add a brief factual answer, retrospective-only request, inaccessible video, correct-answer/wrong-reason, capped repeated failure, stale artifact, and detour return where relevant.
++
++Record prompts, outputs, held-out criteria, observations, repairs, exact inspected skill revision, candidate model/context when available, and review provenance. Label each result as written response inspected, execution independently verified, or learner performance observed. A written scope promise does not prove the action was executed. Structural validation proves packaging; CLI tests prove specified guardrail behavior; forward tests show behavior on sampled requests. None proves durable human intuition or superiority to expert teaching.
++
++Use evidence labels such as planned, working draft, reviewed candidate, simulated-review completed, learner-observed, or comparative-study completed. Avoid “expert-reviewed” unless the reviewer's expertise and actual review are defensible.
++
+--- before/build-interactive-masterclass/scripts/harness.py
++++ after/build-interactive-masterclass/scripts/harness.py
+@@ -1,142 +1,359 @@
+-"""Track tutorial gates and evidence freshness; does not grade teaching or call AI."""
++"""Check tutorial workflow records. Does not verify truth, learning, or tool use."""
+ import argparse
+ import hashlib
+ import json
+ from datetime import datetime, timezone
+ from pathlib import Path
+ 
+-STAGES = ('intake', 'research', 'debate', 'plan', 'pilot', 'build', 'review', 'delivery')
+-
+-
+-def stamp():
+-    return datetime.now(timezone.utc).isoformat()
+-
+-
+-def digest(path):
+-    return hashlib.sha256(path.read_bytes()).hexdigest()
+-
+-
+-def write_state(path, state):
+-    temporary = path.with_suffix('.tmp')
+-    temporary.write_text(json.dumps(state, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+-    temporary.replace(path)
+-
+-
+-def load_state(directory):
+-    path = Path(directory).resolve() / 'run.json'
+-    state = json.loads(path.read_text(encoding='utf-8'))
+-    if state.get('schema') != 1 or list(state.get('gates', {})) != list(STAGES):
+-        raise ValueError('Unknown or malformed harness state.')
+-    return path, state
+-
+-
+-def freshness(gate):
+-    if gate['status'] != 'pass':
+-        return False, gate['status']
+-    if not gate.get('evidence'):
+-        return False, 'missing evidence'
+-    for item in gate['evidence']:
+-        path = Path(item['path'])
+-        if not path.is_file():
+-            return False, 'missing: ' + str(path)
+-        if digest(path) != item['sha256']:
+-            return False, 'changed: ' + str(path)
+-    return True, 'current'
+-
+-
+-def initialize(directory, topic, audience):
++MODES = {
++    'audit': {'inspect', 'research', 'review', 'report'},
++    'plan': {'inspect', 'research', 'plan', 'review', 'report'},
++    'build': {'inspect', 'research', 'plan', 'review', 'report', 'implement', 'pilot', 'deliver'},
++}
++CLAIMS = {'artifact', 'correctness', 'interaction', 'visual', 'teaching-review',
++          'simulated-learner', 'human-learning', 'retention', 'learner-tested'}
++RELATIONS = {'author', 'author-informed', 'fresh-context', 'human'}
++EVIDENCE = {'tool-observation', 'author-review', 'simulated-review',
++            'human-study', 'source-inspection'}
++LIMIT = 'Records are attestations. This tool does not verify truth, learning, independence, or prevent direct tool edits.'
++
++
++def read(path):
++    return json.loads(Path(path).read_text(encoding='utf-8-sig'))
++
++
++def sha(path):
++    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
++
++
++def hashed(value):
++    return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
++
++
++def require(condition, message):
++    if not condition:
++        raise ValueError(message)
++
++
++def nonempty(value):
++    return isinstance(value, str) and bool(value.strip())
++
++
++def resolve(base, path):
++    p = Path(path)
++    return (p if p.is_absolute() else base / p).resolve()
++
++
++def save(path, state):
++    tmp = path.with_suffix('.tmp')
++    tmp.write_text(json.dumps(state, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
++    tmp.replace(path)
++
++
++def event(state, kind, value):
++    entry = {'seq': len(state['history']) + 1, 'kind': kind, 'value': json.loads(json.dumps(value)),
++             'time_utc': datetime.now(timezone.utc).isoformat()}
++    state['history'].append(entry)
++    return entry['seq']
++
++
++def contract(path):
++    path = Path(path).resolve()
++    c, base = read(path), path.parent
++    require(c.get('schema') == 2 and c.get('mode') in MODES, 'Expected schema 2 and a known mode.')
++    require(nonempty(c.get('topic')) and nonempty(c.get('audience')), 'Topic and audience required.')
++    roots = [resolve(base, p) for p in c.get('scope_roots', [])]
++    require(bool(roots), 'At least one permitted output root is required.')
++    nodes = {n['id']: n for n in c.get('nodes', [])}
++    require(nodes and len(nodes) == len(c['nodes']), 'Node IDs must be unique.')
++    for key, n in nodes.items():
++        require(nonempty(key) and n.get('kind') in {'inference', 'artifact', 'check', 'pilot', 'delivery', 'report'}, 'Invalid node.')
++        require(n.get('action') in MODES['build'], 'Unknown action: ' + key)
++        require(isinstance(n.get('depends_on'), list) and set(n['depends_on']) <= nodes.keys(), 'Unknown dependencies: ' + key)
++        require(isinstance(n.get('inputs'), list) and isinstance(n.get('outputs'), list), 'Input/output lists required: ' + key)
++        require(n.get('required_claims') and set(n['required_claims']) <= CLAIMS, 'Claim types required: ' + key)
++        if n.get('critical') and n['kind'] == 'inference':
++            require('teaching-review' in n['required_claims'], 'Critical inference needs teaching review: ' + key)
++            require(n['inputs'], 'Critical inference needs an input artifact: ' + key)
++        if n['kind'] == 'pilot':
++            require('teaching-review' in n['required_claims'], 'Pilot needs teaching review: ' + key)
++            require(n['inputs'], 'Pilot needs an input artifact: ' + key)
++        for output in n['outputs']:
++            dest = resolve(base, output)
++            require(any(dest.is_relative_to(r) for r in roots), 'Output outside permitted roots: ' + str(dest))
++        require(n['outputs'] or n['action'] in {'inspect', 'review', 'research'}, 'Mutating/reporting action needs scoped outputs: ' + key)
++    def visit(key, active):
++        require(key not in active, 'Dependency cycle at ' + key)
++        result = set()
++        for dep in nodes[key]['depends_on']:
++            result |= {dep} | visit(dep, active | {key})
++        return result
++    ancestors = {k: visit(k, set()) for k in nodes}
++    critical = {k for k, n in nodes.items() if n['kind'] == 'inference' and n.get('critical')}
++    for key, n in nodes.items():
++        if n['kind'] == 'delivery' or n['action'] == 'deliver':
++            require(n['kind'] == 'delivery' and n['action'] == 'deliver', 'Delivery kind/action must agree.')
++            require(critical <= set(n.get('covers', [])) <= ancestors[key], 'Delivery must cover and depend on every critical inference: ' + key)
++    return c, nodes, ancestors, base
++
++
++def initialize(directory, contract_path):
+     root = Path(directory).resolve()
+     root.mkdir(parents=True, exist_ok=True)
+     path = root / 'run.json'
+-    if path.exists():
+-        raise ValueError('Run already exists; inspect or revise it instead of overwriting.')
+-    state = {
+-        'schema': 1, 'topic': topic, 'audience': audience, 'created_utc': stamp(),
+-        'execution_mode': 'coordinator-driven; evidence recorder only',
+-        'gates': {stage: {'status': 'pending', 'evidence': []} for stage in STAGES},
+-        'history': [],
+-    }
+-    write_state(path, state)
+-    return path
+-
+-
+-def record(directory, stage, status, evidence, note):
+-    path, state = load_state(directory)
+-    index = STAGES.index(stage)
+-    if not note.strip():
+-        raise ValueError('A concrete observation or revision reason is required.')
+-    if status == 'pass':
+-        for earlier in STAGES[:index]:
+-            fresh, reason = freshness(state['gates'][earlier])
+-            if not fresh:
+-                raise ValueError(f'Cannot pass {stage}: {earlier} is {reason}.')
+-        if not evidence:
+-            raise ValueError('A pass needs evidence from executed work.')
+-    files = []
+-    for value in evidence:
+-        item = Path(value).resolve()
+-        if item == path or not item.is_file():
+-            raise ValueError('Evidence must be an existing file other than run.json: ' + str(item))
+-        files.append({'path': str(item), 'sha256': digest(item)})
+-    event = {'stage': stage, 'status': status, 'note': note, 'evidence': files, 'time_utc': stamp()}
+-    state['gates'][stage] = event.copy()
+-    invalidated = []
+-    for later in STAGES[index + 1:]:
+-        if state['gates'][later]['status'] != 'pending':
+-            invalidated.append(later)
+-        state['gates'][later] = {'status': 'pending', 'evidence': []}
+-    state['history'].append({**event, 'invalidated': invalidated})
+-    write_state(path, state)
+-    return event
+-
+-
+-def report(directory):
+-    _, state = load_state(directory)
+-    rows = []
+-    prior_ok = True
+-    for stage in STAGES:
+-        gate = state['gates'][stage]
+-        fresh, reason = freshness(gate)
+-        effective = 'pass' if fresh and prior_ok else 'pending'
+-        if gate['status'] == 'revise':
+-            effective = 'revise'
+-        elif gate['status'] == 'pass' and not fresh:
+-            effective = 'stale'
+-        elif gate['status'] == 'pass' and not prior_ok:
+-            effective = 'dependency invalid'
+-        rows.append({'stage': stage, 'recorded': gate['status'], 'effective': effective, 'evidence': reason})
+-        prior_ok = prior_ok and fresh
+-    return {'topic': state['topic'], 'gates': rows, 'all_gates_current': prior_ok,
+-            'qualification': 'Gate records do not independently establish teaching quality.'}
++    require(not path.exists(), 'Run exists; do not overwrite history.')
++    cp = Path(contract_path).resolve()
++    c, _, _, base = contract(cp)
++    state = {'schema': 2, 'contract': str(cp), 'policy': {
++        'mode': c['mode'], 'scope_roots': [str(resolve(base, p)) for p in c['scope_roots']]},
++        'receipts': {}, 'findings': {}, 'history': []}
++    event(state, 'init', {'contract_hash': sha(cp)})
++    save(path, state)
++    return {'created': str(path), 'qualification': LIMIT}
++
++
++def load(directory):
++    path = Path(directory).resolve() / 'run.json'
++    s = read(path)
++    require(s.get('schema') == 2, 'Legacy schema 1 is status-only; start a new run without promoting passes.')
++    c, nodes, ancestors, base = contract(s['contract'])
++    policy = {'mode': c['mode'], 'scope_roots': [str(resolve(base, p)) for p in c['scope_roots']]}
++    require(policy == s['policy'], 'Run mode/scope is pinned; changing the file cannot grant authority.')
++    require(all(set(i['nodes']) <= nodes.keys() and all(st['pilot_node'] in nodes for st in i['strategies']) for i in s['findings'].values()), 'Contract cannot remove nodes referenced by issue history.')
++    return path, s, c, nodes, ancestors, base
++
++
++def snapshot(key, c, nodes, base):
++    n = nodes[key]
++    inputs = {str(resolve(base, p)): sha(resolve(base, p)) if resolve(base, p).is_file() else 'missing' for p in n['inputs']}
++    dependencies = {d: snapshot(d, c, nodes, base)['revision'] for d in n['depends_on']}
++    revision = hashed({'topic': c['topic'], 'audience': c['audience'], 'node': n,
++                       'inputs': inputs, 'dependencies': dependencies})
++    return {'revision': revision, 'input_hashes': inputs}
++
++
++def evidence(items, base):
++    require(isinstance(items, list) and items, 'Evidence hashes required.')
++    result = []
++    for item in items:
++        path = resolve(base, item['path'])
++        require(path.is_file() and sha(path) == item.get('sha256'), 'Missing or changed evidence: ' + str(path))
++        result.append({'path': str(path), 'sha256': item['sha256']})
++    return result
++
++
++def validate_receipt(file, c, nodes, base):
++    file = Path(file).resolve()
++    r = read(file)
++    require(r.get('node') in nodes and r.get('claim_type') in CLAIMS, 'Unknown node/claim.')
++    require(r.get('outcome') == 'pass', 'Acceptance receipt must report pass; use findings for failures.')
++    require(all(nonempty(r.get(k)) for k in ('scenario', 'observed_result')), 'Scenario and observed result required.')
++    reviewer = r.get('reviewer', {})
++    require(reviewer.get('relationship') in RELATIONS and all(nonempty(reviewer.get(k)) for k in ('id', 'context')), 'Reviewer relationship and context required.')
++    require(r.get('evidence_type') in EVIDENCE and isinstance(r.get('limitations'), list), 'Evidence type and limitations required.')
++    current = snapshot(r['node'], c, nodes, base)
++    require('missing' not in current['input_hashes'].values(), 'A reviewed input is missing.')
++    require(r.get('revision') == current['revision'] and r.get('input_hashes') == current['input_hashes'], 'Receipt does not bind current inputs/dependencies.')
++    if r['claim_type'] == 'simulated-learner':
++        require(r['evidence_type'] == 'simulated-review', 'Simulated learner claim needs simulated-review evidence.')
++    if r['claim_type'] in {'human-learning', 'retention', 'learner-tested'}:
++        counts = r.get('human_evidence', {})
++        require(r['evidence_type'] == 'human-study', 'Human claim requires human-study evidence, not a simulation.')
++        require(all(type(counts.get(k)) is int and counts[k] > 0 for k in ('participants', 'tasks')), 'Positive participant/task counts required.')
++        if r['claim_type'] == 'retention':
++            require(isinstance(counts.get('delay_days'), (int, float)) and counts['delay_days'] > 0, 'Retention needs a positive observed delay.')
++    r['evidence'] = evidence(r.get('evidence'), file.parent)
++    return {'data': r, 'path': str(file), 'sha256': sha(file)}
++
++
++def fresh(receipt, current):
++    try:
++        require(receipt['data']['revision'] == current['revision'], 'Inputs or dependencies changed.')
++        require(sha(receipt['path']) == receipt['sha256'], 'Receipt changed.')
++        evidence(receipt['data']['evidence'], Path('.'))
++        return True, 'current'
++    except (OSError, ValueError):
++        return False, 'stale inputs, receipt, or evidence'
++
++
++def affected(issue, key, ancestors):
++    return bool(set(issue['nodes']) & ({key} | ancestors[key]))
++
++
++def unresolved(issue, c, nodes, base):
++    if issue['status'] == 'open':
++        return True
++    return any(not fresh(r, snapshot(r['data']['node'], c, nodes, base))[0]
++               for r in issue.get('resolution', []))
++
++
++def inspect_state(s, c, nodes, ancestors, base):
++    result = {}
++    def visit(key):
++        if key in result:
++            return result[key]
++        n, snap = nodes[key], snapshot(key, c, nodes, base)
++        blockers = ['dependency: ' + d for d in n['depends_on'] if visit(d)['state'] != 'accepted']
++        blockers += ['finding: ' + i for i, issue in s['findings'].items() if unresolved(issue, c, nodes, base) and issue['severity'] == 'blocking' and affected(issue, key, ancestors)]
++        if n['action'] not in MODES[c['mode']]:
++            blockers.append('action outside run mode')
++        recorded = s['receipts'].get(key, {})
++        checks = {claim: fresh(recorded[claim], snap) if claim in recorded else (False, 'unverified') for claim in n['required_claims']}
++        state = 'blocked' if blockers else 'accepted' if all(v[0] for v in checks.values()) else 'stale' if any(v[1].startswith('stale') for v in checks.values()) else 'unverified'
++        result[key] = {**snap, 'state': state, 'blockers': blockers, 'claims': {k: v[1] for k, v in checks.items()}}
++        return result[key]
++    for key in nodes:
++        visit(key)
++    return result
++
++
++def permit_loaded(s, c, nodes, ancestors, base, key, action):
++    require(key in nodes and nodes[key]['action'] == action, 'Action does not match the declared node.')
++    require(action in MODES[c['mode']], 'Action outside run mode.')
++    statuses = inspect_state(s, c, nodes, ancestors, base)
++    require(all(statuses[d]['state'] == 'accepted' for d in nodes[key]['depends_on']), 'Unaccepted or stale prerequisite.')
++    for issue in s['findings'].values():
++        if unresolved(issue, c, nodes, base) and affected(issue, key, ancestors) and failed_count(issue) >= 2:
++            require(strategy_ready(issue, s, statuses), 'Repair cap reached; changed strategy and fresh pilot required.')
++    return {'permitted': action, 'node': key, 'outputs': nodes[key]['outputs'], **snapshot(key, c, nodes, base), 'qualification': LIMIT}
++
++
++def permit(directory, key, action):
++    _, s, c, n, a, b = load(directory)
++    return permit_loaded(s, c, n, a, b, key, action)
++
++
++def record(directory, file):
++    path, s, c, nodes, ancestors, base = load(directory)
++    r = validate_receipt(file, c, nodes, base)
++    key, claim = r['data']['node'], r['data']['claim_type']
++    permit_loaded(s, c, nodes, ancestors, base, key, nodes[key]['action'])
++    require(not any(unresolved(i, c, nodes, base) and i['severity'] == 'blocking' and affected(i, key, ancestors) for i in s['findings'].values()), 'Open blocking finding prevents acceptance.')
++    r['seq'] = event(s, 'receipt', {'node': key, 'claim': claim, 'receipt': r})
++    s['receipts'].setdefault(key, {})[claim] = r
++    save(path, s)
++    return {'recorded': claim, 'node': key, 'qualification': LIMIT}
++
++
++def finding(directory, file):
++    path, s, _, nodes, _, _ = load(directory)
++    i = read(file)
++    require(nonempty(i.get('id')) and i['id'] not in s['findings'], 'Stable, unused finding ID required; history cannot be reset.')
++    require(i.get('nodes') and set(i['nodes']) <= nodes.keys(), 'Finding needs affected nodes.')
++    require(i.get('severity') in {'blocking', 'nonblocking'} and nonempty(i.get('observation')), 'Finding needs severity and an observation.')
++    i.update(status='open', attempts=[], strategies=[])
++    s['findings'][i['id']] = i
++    i['opened_seq'] = event(s, 'finding', i.copy())
++    save(path, s)
++    return {'opened': i['id']}
++
++
++def failed_count(issue):
++    boundary = issue.get('active_strategy', 0)
++    return sum(a['outcome'] == 'failed' and a['epoch'] == boundary for a in issue['attempts'])
++
++
++def strategy_ready(issue, s, statuses):
++    if not issue['strategies']:
++        return False
++    st = issue['strategies'][-1]
++    if st['seq'] <= issue.get('active_strategy', 0):
++        return False
++    pilot = statuses[st['pilot_node']]
++    receipts = s['receipts'].get(st['pilot_node'], {})
++    try:
++        evidence(st['evidence'], Path('.'))
++        return pilot['state'] == 'accepted' and pilot['input_hashes'] != st['pilot_inputs_before'] and all(receipts[k]['seq'] > st['seq'] for k in pilot['claims'])
++    except (ValueError, OSError):
++        return False
++
++
++def strategy(directory, file):
++    path, s, c, nodes, ancestors, base = load(directory)
++    value = read(file)
++    issue = s['findings'][value['issue']]
++    require(unresolved(issue, c, nodes, base) and failed_count(issue) >= 2, 'Strategy transition requires two failed attempts on an open issue.')
++    pilot = value.get('pilot_node')
++    require(pilot in nodes and nodes[pilot]['kind'] == 'pilot', 'A declared pilot node is required.')
++    require(not affected(issue, pilot, ancestors), 'New pilot must be evaluable without accepting the failed branch.')
++    require(nonempty(value.get('hypothesis')), 'New hypothesis required.')
++    value['evidence'] = evidence(value.get('evidence'), Path(file).resolve().parent)
++    require(not issue['strategies'] or value['evidence'] != issue['strategies'][-1]['evidence'], 'Strategy evidence must change; a string reset is insufficient.')
++    value['pilot_before'] = snapshot(pilot, c, nodes, base)['revision']
++    value['pilot_inputs_before'] = snapshot(pilot, c, nodes, base)['input_hashes']
++    value['seq'] = event(s, 'strategy', value.copy())
++    issue['strategies'].append(value)
++    save(path, s)
++    return {'strategy_recorded': value['seq'], 'next': 'Change pilot artifact; collect fresh required pilot reviews. The issue remains open.'}
++
++
++def repair(directory, file):
++    path, s, c, nodes, ancestors, base = load(directory)
++    value = read(file)
++    issue = s['findings'][value['issue']]
++    require(unresolved(issue, c, nodes, base), 'Issue is already closed.')
++    issue['status'] = 'open'
++    require(value.get('outcome') in {'failed', 'resolved'} and nonempty(value.get('change')), 'Repair needs outcome and causal change.')
++    statuses = inspect_state(s, c, nodes, ancestors, base)
++    if failed_count(issue) >= 2:
++        require(strategy_ready(issue, s, statuses), 'Repair cap reached; changed strategy and fresh pilot required.')
++        issue['active_strategy'] = issue['strategies'][-1]['seq']
++    value['evidence'] = evidence(value.get('evidence'), Path(file).resolve().parent)
++    if value['outcome'] == 'resolved':
++        files = value.get('resolution_receipts', [value.get('resolution_receipt')])
++        receipts = [validate_receipt(resolve(Path(file).resolve().parent, f), c, nodes, base) for f in files]
++        require(set(issue['nodes']) <= {r['data']['node'] for r in receipts}, 'Resolution must review every affected node.')
++        for receipt in receipts:
++            require(value['issue'] in receipt['data'].get('resolves', []), 'Resolution must explicitly address this finding.')
++            require(receipt['data']['claim_type'] in nodes[receipt['data']['node']]['required_claims'], 'Resolution claim must match the affected obligation.')
++        issue['status'] = 'resolved'
++        value['resolution'] = receipts
++        issue['resolution'] = receipts
++    value['epoch'] = issue.get('active_strategy', 0)
++    value['seq'] = event(s, 'repair', value.copy())
++    issue['attempts'].append(value)
++    save(path, s)
++    return {'issue': value['issue'], 'status': issue['status'], 'failed_attempts_in_epoch': failed_count(issue), 'total_attempts': len(issue['attempts'])}
++
++
++def status(directory):
++    s = read(Path(directory) / 'run.json')
++    if s.get('schema') == 1:
++        return {'schema': 1, 'legacy_read_only': True, 'recorded_gates': s.get('gates', {}), 'qualification': 'Legacy records are not promoted to schema-2 acceptance. ' + LIMIT}
++    _, s, c, nodes, ancestors, base = load(directory)
++    return {'schema': 2, 'mode': c['mode'], 'nodes': inspect_state(s, c, nodes, ancestors, base),
++            'findings': {k: {'recorded': i['status'], 'status': 'open' if unresolved(i, c, nodes, base) else 'resolved', 'failed_attempts_in_epoch': failed_count(i), 'total_attempts': len(i['attempts'])} for k, i in s['findings'].items()},
++            'manifest_coverage': 'Only declared inputs and evidence files are hashed; unregistered changes are outside this guarantee.', 'qualification': LIMIT}
+ 
+ 
+ def main():
+-    parser = argparse.ArgumentParser(description=__doc__)
+-    commands = parser.add_subparsers(dest='command', required=True)
+-    init = commands.add_parser('init')
+-    init.add_argument('run_dir')
+-    init.add_argument('--topic', required=True)
+-    init.add_argument('--audience', required=True)
+-    rec = commands.add_parser('record')
+-    rec.add_argument('run_dir')
+-    rec.add_argument('--stage', required=True, choices=STAGES)
+-    rec.add_argument('--status', required=True, choices=('pass', 'revise'))
+-    rec.add_argument('--evidence', nargs='*', default=[])
+-    rec.add_argument('--note', required=True)
+-    stat = commands.add_parser('status')
+-    stat.add_argument('run_dir')
+-    args = parser.parse_args()
++    p = argparse.ArgumentParser(description=__doc__)
++    sub = p.add_subparsers(dest='command', required=True)
++    for name in ('init', 'status', 'check', 'record', 'finding', 'repair', 'strategy'):
++        cmd = sub.add_parser(name)
++        cmd.add_argument('run_dir')
++        if name == 'init':
++            cmd.add_argument('--contract', required=True)
++        elif name == 'check':
++            cmd.add_argument('--node', required=True)
++            cmd.add_argument('--action', required=True)
++        elif name != 'status':
++            cmd.add_argument('--file', required=True)
++    args = p.parse_args()
+     try:
+         if args.command == 'init':
+-            result = {'created': str(initialize(args.run_dir, args.topic, args.audience))}
+-        elif args.command == 'record':
+-            result = record(args.run_dir, args.stage, args.status, args.evidence, args.note)
++            result = initialize(args.run_dir, args.contract)
++        elif args.command == 'status':
++            result = status(args.run_dir)
++        elif args.command == 'check':
++            result = permit(args.run_dir, args.node, args.action)
+         else:
+-            result = report(args.run_dir)
+-        print(json.dumps(result, ensure_ascii=False, indent=2))
+-    except (ValueError, OSError, KeyError, TypeError) as error:
+-        parser.exit(2, str(error) + '\n')
++            result = globals()[args.command](args.run_dir, args.file)
++        print(json.dumps(result, indent=2, ensure_ascii=False))
++    except (ValueError, OSError, KeyError, TypeError, AttributeError) as err:
++        p.exit(2, str(err) + '\n')
+ 
+ 
+ if __name__ == '__main__':
+     main()
++
+--- before/build-interactive-masterclass/scripts/test_harness.py
++++ after/build-interactive-masterclass/scripts/test_harness.py
+@@ -0,0 +1,318 @@
++"""Synthetic guardrail behavior tests; these are not course or learner receipts."""
++import importlib.util
++import json
++from pathlib import Path
++import subprocess
++import sys
++import tempfile
++import unittest
++
++SOURCE = Path(__file__).with_name('harness.py')
++spec = importlib.util.spec_from_file_location('harness_v2', SOURCE)
++h = importlib.util.module_from_spec(spec)
++spec.loader.exec_module(h)
++
++
++class Workflow(unittest.TestCase):
++    def setUp(self):
++        self.temp = tempfile.TemporaryDirectory(prefix='test-harness-v2-')
++        self.root = Path(self.temp.name)
++        self.run = self.root / 'run'
++        self.counter = 0
++        for name in ('bridge', 'lesson', 'source', 'pilot'):
++            (self.root / (name + '.txt')).write_text('Synthetic ' + name, encoding='utf-8')
++        def node(id, kind, action, input, deps=(), claims=('artifact',)):
++            return {'id': id, 'kind': kind, 'action': action, 'depends_on': list(deps),
++                    'inputs': [input], 'outputs': [id + '-output.txt'],
++                    'required_claims': list(claims)}
++        self.contract = {
++            'schema': 2, 'mode': 'build', 'topic': 'TEST FIXTURE, not PCA',
++            'audience': 'Synthetic contract', 'scope_roots': [str(self.root)],
++            'nodes': [
++                {**node('bridge', 'inference', 'review', 'bridge.txt', claims=('teaching-review',)), 'critical': True},
++                node('reference', 'artifact', 'research', 'source.txt'),
++                node('lesson', 'artifact', 'implement', 'lesson.txt', ('bridge',)),
++                node('pilot', 'pilot', 'pilot', 'pilot.txt', claims=('teaching-review', 'interaction')),
++                {**node('release', 'delivery', 'deliver', 'lesson.txt', ('lesson',)), 'covers': ['bridge']},
++            ],
++        }
++        self.cp = self.write('contract.json', self.contract)
++        h.initialize(self.run, self.cp)
++
++    def tearDown(self):
++        self.temp.cleanup()
++
++    def write(self, name, value):
++        path = self.root / name
++        path.write_text(json.dumps(value, indent=2), encoding='utf-8')
++        return path
++
++    def evidence(self):
++        self.counter += 1
++        p = self.root / f'observed-{self.counter}.txt'
++        p.write_text('Synthetic regression observation; not actual student work.', encoding='utf-8')
++        return [{'path': str(p), 'sha256': h.sha(p)}]
++
++    def receipt(self, node, claim=None, **extra):
++        snap = h.status(self.run)['nodes'][node]
++        n = next(n for n in self.contract['nodes'] if n['id'] == node)
++        data = {
++            'node': node, 'claim_type': claim or n['required_claims'][0], 'outcome': 'pass',
++            'revision': snap['revision'], 'input_hashes': snap['input_hashes'],
++            'scenario': 'Synthetic workflow regression only.',
++            'observed_result': 'Fixture supplied the expected transition.',
++            'reviewer': {'id': 'test-fixture', 'relationship': 'author', 'context': 'Synthetic test author; not independent.'},
++            'evidence_type': 'author-review', 'evidence': self.evidence(),
++            'limitations': ['No actual learning or course quality assessed.'],
++            **extra,
++        }
++        return self.write(f'receipt-{self.counter}.json', data)
++
++    def accept(self, node):
++        n = next(n for n in self.contract['nodes'] if n['id'] == node)
++        for claim in n['required_claims']:
++            h.record(self.run, self.receipt(node, claim))
++
++    def issue(self):
++        path = self.write('finding.json', {
++            'id': 'wrong-model', 'nodes': ['bridge'], 'severity': 'blocking',
++            'observation': 'Synthetic wrong explanation blocks the bridge.',
++        })
++        h.finding(self.run, path)
++        return path
++
++    def failed(self):
++        p = self.write('repair.json', {
++            'issue': 'wrong-model', 'outcome': 'failed',
++            'change': 'Synthetic causal repair remained insufficient.',
++            'evidence': self.evidence(),
++        })
++        return h.repair(self.run, p)
++
++    def new_strategy(self):
++        p = self.write('strategy.json', {
++            'issue': 'wrong-model', 'pilot_node': 'pilot',
++            'hypothesis': 'A distinct representation may expose the missing relation.',
++            'evidence': self.evidence(),
++        })
++        return h.strategy(self.run, p)
++
++    def test_critical_dependency_blocks_skip_and_delivery(self):
++        with self.assertRaisesRegex(ValueError, 'prerequisite'):
++            h.record(self.run, self.receipt('lesson'))
++        with self.assertRaises(ValueError):
++            h.permit(self.run, 'release', 'deliver')
++        self.contract['nodes'][-1]['covers'] = []
++        self.write('contract.json', self.contract)
++        with self.assertRaisesRegex(ValueError, 'critical inference'):
++            h.status(self.run)
++
++    def test_graph_rejects_unknown_dependency_cycle_and_delivery_disguise(self):
++        self.contract['nodes'][0]['depends_on'] = ['missing']
++        self.write('contract.json', self.contract)
++        with self.assertRaisesRegex(ValueError, 'Unknown dependencies'):
++            h.contract(self.cp)
++        self.contract['nodes'][0]['depends_on'] = ['lesson']
++        self.write('contract.json', self.contract)
++        with self.assertRaisesRegex(ValueError, 'cycle'):
++            h.contract(self.cp)
++        self.contract['nodes'][0]['depends_on'] = []
++        self.contract['nodes'][-1]['kind'] = 'artifact'
++        self.write('contract.json', self.contract)
++        with self.assertRaisesRegex(ValueError, 'kind/action'):
++            h.contract(self.cp)
++
++    def test_mode_scope_and_pinned_policy(self):
++        with self.assertRaisesRegex(ValueError, 'match'):
++            h.permit(self.run, 'reference', 'implement')
++        self.contract['mode'] = 'audit'
++        self.write('contract.json', self.contract)
++        with self.assertRaisesRegex(ValueError, 'pinned'):
++            h.status(self.run)
++        audit = self.root / 'audit'
++        h.initialize(audit, self.cp)
++        with self.assertRaisesRegex(ValueError, 'mode'):
++            h.permit(audit, 'lesson', 'implement')
++        self.contract['nodes'][0]['outputs'] = [str(self.root.parent / 'outside.txt')]
++        self.write('contract.json', self.contract)
++        with self.assertRaisesRegex(ValueError, 'outside'):
++            h.contract(self.cp)
++
++    def test_source_change_invalidates_dependents_not_other_branch(self):
++        for node in ('bridge', 'reference', 'lesson', 'release'):
++            self.accept(node)
++        (self.root / 'bridge.txt').write_text('Changed bridge content.', encoding='utf-8')
++        status = h.status(self.run)['nodes']
++        self.assertEqual(status['bridge']['state'], 'stale')
++        self.assertEqual(status['lesson']['state'], 'blocked')
++        self.assertEqual(status['release']['state'], 'blocked')
++        self.assertEqual(status['reference']['state'], 'accepted')
++
++    def test_receipt_requires_scenario_provenance_and_exact_input_binding(self):
++        for field in ('scenario', 'observed_result', 'reviewer', 'input_hashes'):
++            p = self.receipt('bridge')
++            data = h.read(p)
++            data.pop(field)
++            self.write(p.name, data)
++            with self.assertRaises((ValueError, KeyError)):
++                h.record(self.run, p)
++        p = self.receipt('bridge')
++        (self.root / 'bridge.txt').write_text('Changed after review.', encoding='utf-8')
++        with self.assertRaisesRegex(ValueError, 'current inputs'):
++            h.record(self.run, p)
++
++    def test_changed_evidence_and_receipt_invalidate_acceptance(self):
++        p = self.receipt('bridge')
++        h.record(self.run, p)
++        ev = Path(h.read(p)['evidence'][0]['path'])
++        ev.write_text('Changed report.', encoding='utf-8')
++        self.assertEqual(h.status(self.run)['nodes']['bridge']['state'], 'stale')
++        p = self.receipt('bridge')
++        h.record(self.run, p)
++        data = h.read(p)
++        data['observed_result'] = 'Rewritten after acceptance.'
++        self.write(p.name, data)
++        self.assertEqual(h.status(self.run)['nodes']['bridge']['state'], 'stale')
++
++    def test_blocking_issue_reopens_acceptance_and_preserves_other_branch(self):
++        for node in ('bridge', 'lesson', 'reference'):
++            self.accept(node)
++        self.issue()
++        state = h.status(self.run)['nodes']
++        self.assertEqual(state['bridge']['state'], 'blocked')
++        self.assertEqual(state['lesson']['state'], 'blocked')
++        self.assertEqual(state['reference']['state'], 'accepted')
++        with self.assertRaisesRegex(ValueError, 'blocking finding'):
++            h.record(self.run, self.receipt('bridge'))
++
++    def test_two_failed_repairs_need_changed_pilot_not_string_reset(self):
++        self.issue()
++        self.failed()
++        self.failed()
++        with self.assertRaisesRegex(ValueError, 'cap'):
++            self.failed()
++        self.new_strategy()
++        self.accept('pilot')  # A later receipt alone is not a changed pilot.
++        with self.assertRaisesRegex(ValueError, 'cap'):
++            h.permit(self.run, 'bridge', 'review')
++        self.contract['nodes'][3]['hypothesis_label'] = 'Renaming a strategy is not a new prototype.'
++        self.write('contract.json', self.contract)
++        self.accept('pilot')
++        with self.assertRaisesRegex(ValueError, 'cap'):
++            h.permit(self.run, 'bridge', 'review')
++        (self.root / 'pilot.txt').write_text('Changed prototype for the new hypothesis.', encoding='utf-8')
++        self.accept('pilot')
++        self.assertEqual(h.permit(self.run, 'bridge', 'review')['permitted'], 'review')
++        self.failed()
++        self.failed()
++        with self.assertRaisesRegex(ValueError, 'cap'):
++            self.failed()  # The same successful pilot cannot reset repeatedly.
++        finding = h.read(self.run / 'run.json')['findings']['wrong-model']
++        self.assertEqual(len(finding['attempts']), 4)
++        self.assertEqual(h.failed_count(finding), 2)
++
++    def test_resolution_requires_new_issue_specific_current_review(self):
++        self.accept('bridge')
++        self.issue()
++        generic = self.receipt('bridge')
++        r = {'issue': 'wrong-model', 'outcome': 'resolved', 'change': 'Corrected the relation.',
++             'evidence': self.evidence(), 'resolution_receipt': str(generic)}
++        p = self.write('resolve.json', r)
++        with self.assertRaisesRegex(ValueError, 'explicitly address'):
++            h.repair(self.run, p)
++        specific = self.receipt('bridge', resolves=['wrong-model'])
++        r['resolution_receipt'] = str(specific)
++        h.repair(self.run, self.write('resolve.json', r))
++        self.assertEqual(h.status(self.run)['findings']['wrong-model']['status'], 'resolved')
++        Path(h.read(specific)['evidence'][0]['path']).unlink()
++        self.assertEqual(h.status(self.run)['findings']['wrong-model']['status'], 'open')
++        self.assertEqual(h.status(self.run)['nodes']['bridge']['state'], 'blocked')
++
++    def test_history_does_not_mutate_with_later_attempts(self):
++        self.issue()
++        before = h.read(self.run / 'run.json')['history'][1]
++        self.failed()
++        after = h.read(self.run / 'run.json')['history'][1]
++        self.assertEqual(before, after)
++        self.assertEqual(after['value']['attempts'], [])
++
++    def test_resolving_teaching_finding_does_not_bypass_other_required_claim(self):
++        self.contract['nodes'][0]['required_claims'].append('correctness')
++        self.write('contract.json', self.contract)
++        self.issue()
++        specific = self.receipt('bridge', 'teaching-review', resolves=['wrong-model'])
++        r = {'issue': 'wrong-model', 'outcome': 'resolved', 'change': 'Synthetic teaching repair.',
++             'evidence': self.evidence(), 'resolution_receipt': str(specific)}
++        h.repair(self.run, self.write('resolve.json', r))
++        h.record(self.run, specific)
++        state = h.status(self.run)['nodes']
++        self.assertEqual(state['bridge']['claims']['correctness'], 'unverified')
++        self.assertEqual(state['bridge']['state'], 'unverified')
++        with self.assertRaisesRegex(ValueError, 'prerequisite'):
++            h.record(self.run, self.receipt('lesson'))
++
++    def test_human_claims_require_human_type_counts_and_remain_attestations(self):
++        self.accept('bridge')
++        p = self.receipt('bridge', 'learner-tested')
++        with self.assertRaisesRegex(ValueError, 'human-study'):
++            h.record(self.run, p)
++        p = self.receipt('bridge', 'learner-tested', evidence_type='human-study',
++                         human_evidence={'participants': 0, 'tasks': 1})
++        with self.assertRaisesRegex(ValueError, 'counts'):
++            h.record(self.run, p)
++        p = self.receipt('bridge', 'learner-tested', evidence_type='human-study',
++                         human_evidence={'participants': 2, 'tasks': 3})
++        result = h.record(self.run, p)
++        self.assertIn('does not verify truth', result['qualification'])
++        p = self.receipt('bridge', 'retention', evidence_type='human-study',
++                         human_evidence={'participants': 2, 'tasks': 3})
++        with self.assertRaisesRegex(ValueError, 'delay'):
++            h.record(self.run, p)
++
++    def test_delivery_does_not_require_human_efficacy(self):
++        for node in ('bridge', 'lesson', 'release'):
++            self.accept(node)
++        state = h.status(self.run)
++        self.assertEqual(state['nodes']['release']['state'], 'accepted')
++        self.assertNotIn('learner-tested', state['nodes']['release']['claims'])
++
++    def test_simulated_claim_and_empty_critical_artifact_are_rejected(self):
++        with self.assertRaisesRegex(ValueError, 'simulated-review'):
++            h.record(self.run, self.receipt('bridge', 'simulated-learner'))
++        self.contract['nodes'][0]['inputs'] = []
++        self.write('contract.json', self.contract)
++        with self.assertRaisesRegex(ValueError, 'input artifact'):
++            h.status(self.run)
++
++    def test_legacy_readable_but_not_writable_or_promoted(self):
++        legacy = self.root / 'legacy'
++        legacy.mkdir()
++        (legacy / 'run.json').write_text(json.dumps({'schema': 1, 'gates': {'delivery': {'status': 'pass'}}}), encoding='utf-8')
++        state = h.status(legacy)
++        self.assertTrue(state['legacy_read_only'])
++        self.assertNotIn('nodes', state)
++        with self.assertRaisesRegex(ValueError, 'status-only'):
++            h.record(legacy, self.receipt('bridge'))
++
++    def test_cli_errors_return_failure_without_receipt_write(self):
++        p = self.receipt('lesson')
++        result = subprocess.run([sys.executable, str(SOURCE), 'record', str(self.run), '--file', str(p)],
++                                capture_output=True, text=True)
++        self.assertEqual(result.returncode, 2)
++        self.assertIn('prerequisite', result.stderr)
++        self.assertEqual(h.read(self.run / 'run.json')['receipts'], {})
++
++    def test_windows_bom_and_malformed_json_exit_cleanly(self):
++        self.cp.write_text(json.dumps(self.contract), encoding='utf-8-sig')
++        self.assertEqual(h.status(self.run)['mode'], 'build')
++        malformed = self.write('malformed.json', [])
++        result = subprocess.run([sys.executable, str(SOURCE), 'record', str(self.run), '--file', str(malformed)],
++                                capture_output=True, text=True)
++        self.assertEqual(result.returncode, 2)
++        self.assertNotIn('Traceback', result.stderr)
++
++
++if __name__ == '__main__':
++    unittest.main(verbosity=2)
++
++
+--- before/build-intuition-masterclass/SKILL.md
++++ after/build-intuition-masterclass/SKILL.md
+@@ -1,138 +1,17 @@
+ ---
+ name: build-intuition-masterclass
+-description: Research, plan, build, and assess progressive interactive tutorials that form deep intuition about a topic. Use for tutorial, explainer, or masterclass creation and substantial teaching redesign across subjects. Compare diverse explainers, debate teaching routes, and check the teaching plan before visual implementation. Not for a short factual answer or an unrelated cosmetic edit.
++description: Plan, build, or assess substantial tutorials that develop a usable mental model, progressive justification, and transfer. Compatible entrypoint for the canonical build-interactive-masterclass process. Not for a brief factual answer or cosmetic edit.
+ ---
+ 
+ # Build an intuition-first masterclass
+ 
+-The outcome is a learner who can predict, explain, apply, and question an idea. A long course, attractive diagrams, working sliders, or correct equations do not establish that outcome.
++Use the single maintained protocol in [build-interactive-masterclass](../build-interactive-masterclass/SKILL.md). Read it before substantial tutorial work. Do not execute two research/review pipelines when both skills are selected.
+ 
+-Start a fresh teaching plan for each topic and audience. Reuse the process, not a fixed sequence of slides. Do not silently replace an existing platform or rebuild work when the user only asked for an assessment.
++Start with why the learner needs the idea and what it enables. Introduce background when it unlocks a needed inference. Preserve the requested depth and test transfer before revealing its answer.
+ 
+-## 1. Establish the teaching contract
++Honor scope: an assessment or process update does not authorize rebuilding the lesson. Small answers and edits do not need the full pipeline.
+ 
+-Inspect the user's feedback and any existing tutorial, source, and test evidence. Separate what exists from what is promised. Preserve useful work, but reopen any teaching decision the user has rejected.
++For student questions, branching feedback, or per-problem state, also read [adaptive tutoring](../build-interactive-masterclass/references/adaptive-tutoring.md). Old links in [teaching-contract.md](references/teaching-contract.md) route to these maintained references.
+ 
+-Record these facts in a compact teaching record in the project:
++If the sibling skill is missing, recover it from the same installed bundle or report the missing dependency. Do not silently substitute an obsolete process.
+ 
+-- Topic, intended learner, available time, and delivery format.
+-- What the learner wants to do and why the topic matters to them.
+-- Observable outcomes: what they will predict, explain, construct, calculate, or transfer without help.
+-- Known prior knowledge, unknown prior knowledge, and explicit assumptions. Grade or age is context, not evidence of mastery.
+-- Essential concepts and their dependencies. Identify the hardest conceptual bridges.
+-- Scope boundaries, required depth, and how learner feedback will be obtained.
+-
+-Ask only questions that change the teaching route. Use a short diagnostic or a clearly labeled planning assumption when appropriate. Do not claim to remove all assumptions. Do not infer knowledge from silence or an ambiguous answer.
+-
+-For a parent or funder demonstration, establish the need, the experience, and the value before starting a lesson. Distinguish the observer's tour from the student's actual journey. Do not make an ordinary learner read education jargon.
+-
+-## 2. Research different ways to explain the topic
+-
+-Research before committing to a teaching route. Seek genuinely different approaches, not several sources that repeat the same explanation. For a substantial masterclass, aim to compare at least three approaches where sources permit, including varied YouTube explainers and an authoritative technical or subject reference. Source count is not a quality score.
+-
+-Inspect the explanation itself. Record whether the evidence is a transcript, viewed video segment, article, paper, or interactive activity. For videos, keep useful timestamps when available. A title or search snippet cannot support claims about pacing, animation, or teaching quality. A transcript supports claims about words and sequence, not unseen visuals. If access is blocked, disclose it and use accessible alternatives; do not fabricate a video review.
+-
+-Compare:
+-
+-- The opening question and motivation.
+-- What knowledge is assumed and when new terms appear.
+-- The analogy, concrete example, and route to a general model.
+-- How a visual becomes a calculation or an explanation.
+-- What the learner must do, rather than watch.
+-- Likely misconceptions, omitted steps, and limits of the analogy.
+-
+-Keep a short source ledger with links, inspected sections, useful moves, risks, and the design decisions they informed. Check subject claims against authoritative sources. Popularity is not evidence of correctness or suitability. Synthesize original teaching; do not copy an explainer's script or reproduce protected material.
+-
+-## 3. Debate the teaching route before designing screens
+-
+-Develop at least two materially different routes. Examples include a concrete problem first, a visual experiment first, or a worked case followed by generalization. Do not make one route deliberately weak.
+-
+-Review each route from three perspectives:
+-
+-1. Subject reviewer: Are the statements true? Are prerequisites, units, conditions, and counterexamples handled?
+-2. Teaching reviewer: What mental model changes? Which bridge is too large? When should the tutor explain directly instead of asking another question?
+-3. Novice interaction reviewer: What does the learner see, try, and infer? Could they operate every control yet learn nothing?
+-
+-Use separate reviewer agents when available and authorized. Give them the audience, raw sources, candidate routes, and criteria before the author's preferred decision. Otherwise perform explicit role-based critiques and label them as self-review, not independent judgment.
+-
+-Keep the strongest objection to each route, the selected route, rejected alternatives, and unresolved risks. Agreement among models does not prove teaching effectiveness. Select by learner needs and evidence, not vote count.
+-
+-## 4. Compile and check the teaching plan
+-
+-Read [the teaching contract and review scenarios](references/teaching-contract.md) when preparing or reviewing a plan. Use its fields at conceptual bridges, not as paperwork for every sentence.
+-
+-For each meaningful learning step specify:
+-
+-- The question that creates a need for this idea.
+-- What the learner already needs to know, and the evidence for that belief.
+-- One intended change in understanding.
+-- The example, prompt, expected reasoning, and likely wrong or ambiguous responses.
+-- A useful learner action and the feedback it causes.
+-- A fallback explanation, smaller example, or prerequisite detour.
+-- Evidence needed before claiming the learner understands.
+-- How this step connects to the next idea and to the original purpose.
+-
+-Build a broad map first, then deepen the ideas progressively. Introduce prerequisites at the point of need when that is clearer than a long preliminary course. Let rigor emerge from an example the learner understands. Do not remove the requested proof or advanced layer merely to make the course feel easy.
+-
+-Use this learning cycle where it fits: encounter a need, predict, manipulate or attempt, observe, explain, then transfer. Do not force every small step through the entire cycle. Alternate concise direct explanation with genuine questions. Avoid guessing games, constant permission requests, and repeated demands to say "continue."
+-
+-Teaching-plan gate: check accuracy, prerequisite coverage, mental-model changes, misconception responses, transfer, scope, and assumptions. Fail the gate for an unexplained conceptual leap, false claim, missing critical information, or activity with no learning purpose. Repair the plan before polishing screens. A reviewer must cite the failing step and a concrete failure scenario; vague praise or a numerical score is insufficient.
+-
+-For a build request, show a concise plan and proceed through the checks within the authorized scope. Do not make every internal gate a new user approval request. For a plan-only request, stop before implementation.
+-
+-## 5. Design the visual explanation from the checked plan
+-
+-Each scene must answer a teaching question. Write its visual states, learner actions, feedback, and exit condition before implementation.
+-
+-- Begin with the problem's meaning, not a wall of terminology or a finished formula.
+-- Use stable objects, labels, units, and scales. Connect symbols to the exact visual objects they name.
+-- Show what changes and what stays fixed. Link a changed input to its effect and its reason.
+-- Transform the current diagram when possible. If a new representation helps, explain the mapping and preserve a comparison. Do not replace a strip with a pie chart without a teaching reason.
+-- Draw, highlight, and point at the relevant object as it is explained. Reveal only the necessary part. A moving cursor without a linked explanation is decoration.
+-- Remove temporary marks selectively. Preserve student work and important previous states. Do not erase the whole board to avoid managing it.
+-- Use code-native diagrams for geometry, data, processes, and exact labels. Do not add generated imagery when a precise diagram does the job.
+-- Use a light, clean background by default for this user's tutorials. Keep labels legible, controls close to their effects, and visual emphasis restrained. Preserve a different theme only when the user chooses it for that work.
+-- Provide keyboard operation, non-color cues, reduced motion, and readable narrow layouts. Voice, when in scope, must agree with the visible step and have a text alternative.
+-
+-A slider alone is not a lesson. Add a meaningful prediction, contrast, explanation, or task. Do not reveal the answer before a prediction task unless the learner chooses a worked example. Do not equate animation count, slide count, or interaction density with quality.
+-
+-Presentation-plan gate: mentally trace the visual states against the teaching plan. Check bounds, labels, overlap, dimensions, and whether each transition preserves the argument. Prototype the hardest conceptual bridge before building the full course. If the bridge still needs outside narration to make sense, revise it.
+-
+-## 6. Make the journey responsive and recoverable
+-
+-For an adaptive tutor, keep explicit state: original goal, current step, learner evidence, open question, detour stack, return point, and saved board states.
+-
+-When the learner asks a question:
+-
+-1. Stop stale speech, animations, and queued actions when applicable.
+-2. Identify whether they need clarification, a prerequisite, another representation, or a different goal.
+-3. Preserve the board and pending task. Create a bounded subplan if a detour is useful.
+-4. Explain and check the detour without asserting understanding from an acknowledgment alone.
+-5. Offer a clear return to the original step, or revise the route if the learner changed the goal.
+-
+-Questions are not interruptions to ignore. Nor should every question restart the entire course. Unknown reasoning is not wrong reasoning. A correct number can result from a wrong method. Distinguish hints, assisted success, and independent transfer.
+-
+-Keep revisitable multimodal notes: meaningful board snapshots, learner attempts, explanations, and conclusions. Back/forward navigation must not silently discard answers or experiment state. Explain storage lifetime and privacy; do not record microphone or tab content without the user's start action and consent.
+-
+-A static tutorial can provide authored branches and explicit review limits. Do not claim it diagnoses arbitrary reasoning. If free-form feedback uses a model, ground it in the exact task and board state, allow uncertainty, and test wrong, ambiguous, and contradictory explanations.
+-
+-This authoring skill is not a runtime tutoring engine. If the user asks for per-problem runtime planning, implement versioned planning, review, presentation, and execution stages in the application. Document which stages are actually wired into the UI. Do not call a Markdown file a deployed harness.
+-
+-## 7. Verify separately, then report honestly
+-
+-Maintain separate evidence for:
+-
+-1. Subject correctness: equations, computations, invariants, edge cases, claims, and analogy limits.
+-2. Interaction correctness: exercise real controls, input paths, state restoration, detours, and accessibility in the delivered interface. A build is not a browser test.
+-3. Teaching usability: have an unfamiliar reviewer attempt the learner tasks with only learner-visible help. Record their predictions, confusion, reasoning, recovery, and transfer attempts. Do not coach the test to the expected answer. A simulated novice is not evidence from real students.
+-4. Visual quality: inspect representative rendered states at intended sizes, including failures, intermediate states, dense labels, and saved history. A screenshot is not proof of a working interaction.
+-
+-Use the regression scenarios in the reference. Correct numbers with faulty reasoning, navigation loss, failed detours, and persistent user confusion block teaching acceptance even if all builds pass.
+-
+-Repair failed gates within the task's scope. After two failed repair passes for the same teaching issue, report the evidence and revise the approach rather than repeating cosmetic edits. If more authority, learner evidence, or domain review is needed, state what is missing.
+-
+-Report precise states: plan reviewed; prototype; interactions verified; simulated novice reviewed; learner acceptance pending. Never promote these into "mastery proven" without appropriate evidence. A user rejection reopens the relevant gate.
+-
+-Write in clear, short, active sentences. Define technical terms when first needed and use them consistently. Follow ASD-STE100-inspired principles when requested, but do not claim formal compliance from a sentence-length script.
+-
+-Keep the teaching record, implementation, and verification evidence aligned. At handoff identify the strongest remaining gap and the next concrete test. Do not use "beautiful," "intuitive," or "masterclass" as substitutes for evidence.
+--- before/build-intuition-masterclass/references/teaching-contract.md
++++ after/build-intuition-masterclass/references/teaching-contract.md
+@@ -1,83 +1,9 @@
+-# Teaching record and regression scenarios
++# Canonical teaching contract
+ 
+-Use this reference to make a per-topic plan inspectable and testable. Keep the record in the current project's existing documentation where practical. One structured document can hold these sections; do not create a folder of empty process artifacts.
++This compatibility reference replaces the duplicated contract.
+ 
+-## Minimal record
++- [Lesson design](../../build-interactive-masterclass/references/lesson-design.md): purpose, conceptual bridges, graph views.
++- [Adaptive tutoring](../../build-interactive-masterclass/references/adaptive-tutoring.md): attempts, feedback, detours, state.
++- [Review standards](../../build-interactive-masterclass/references/review.md): evidence and cross-topic checks.
++- [Harness](../../build-interactive-masterclass/references/harness.md): scope, revision, and stop rules.
+ 
+-### Audience and outcomes
+-
+-State the learner's context, known prerequisites, unknowns, intended outcomes, and constraints. Define observable transfer, not "understand the topic." Label all assumptions. Distinguish requested depth from demonstrated readiness.
+-
+-### Explainer comparison
+-
+-For each inspected source record its URL, inspected material or time range, evidence type, opening, explanatory route, learner work, strengths, limits, and influence on the plan. Mark inaccessible evidence. State how the compared approaches differ.
+-
+-### Route decision
+-
+-For each candidate record the concept order, strongest justification, strongest objection, and audience fit. Record reviewer independence honestly. State what evidence caused selection or revision; do not invent a completed debate after building.
+-
+-### Step contract
+-
+-Use these fields for each conceptual bridge:
+-
+-| Field | Required meaning |
+-|---|---|
+-| Step ID and question | The uncertainty this step resolves |
+-| Entry evidence | Prerequisites demonstrated, assumed, or still unknown |
+-| Change in understanding | What the learner should newly be able to explain |
+-| Example and boundary | Concrete case and where its analogy stops working |
+-| Learner action | Prediction, manipulation, construction, explanation, or practice |
+-| Response branches | Correct reasoning, common error, ambiguity, and request for help |
+-| Feedback | Specific response and next action for each branch |
+-| Check | Observable success and what does not count as success |
+-| Detour and return | Smaller subgoal, return state, and conditions for resuming |
+-| Visual contract | Objects, labels, units, invariants, transitions, pointers, and retained history |
+-| Exit | Next step or alternative route, with rationale |
+-
+-The teaching contract precedes the visual contract. A diagram cannot rescue an undefined learning step.
+-
+-### Review and evidence
+-
+-Record each gate as pass, fail, or not tested, with evidence and remaining limits. Evidence from a previous revision must be labeled and rechecked for changed behavior. Keep user acceptance separate from automated checks.
+-
+-## Cross-topic review scenarios
+-
+-These are process tests, not mandatory examples in every tutorial. Substitute examples that match the subject and audience.
+-
+-### PCA for a curious adult without recent linear algebra
+-
+-- Ask why one coordinate could be useful before assuming compression is motivating.
+-- Trace one observation from data to projection, score, and reconstruction. Can the learner name what was lost?
+-- Compare two directions before introducing the optimization notation. Can the learner explain the criterion instead of repeating "largest spread"?
+-- Reach covariance through quantities the learner has already computed. Does the matrix summarize something they recognize?
+-- Test the distinction between rotation and discarding a coordinate, and between retained variance and usefulness for a downstream task.
+-- Supply a correct score with an incorrect reason. Numeric correctness must not be labeled conceptual mastery.
+-- Return from an eigenvector refresher to the same experiment. Verify saved answers and settings.
+-- Preserve requested mathematical depth. Mark any theorem invoked without proof; do not claim a stationary point alone proves a global maximum.
+-
+-### Fractions for a younger learner
+-
+-- Establish what one whole is and what the denominator counts. Do not infer this knowledge from grade.
+-- Subdivide the existing strip to compare equivalent fractions. Preserve the whole and selected area.
+-- Respond to "does six mean six shaded pieces?" with an appropriate diagnostic or explanation, not a prepared lecture.
+-- Ask for an equivalent fraction on a new example without giving the subdivision first. Distinguish independent reasoning from a copied pattern.
+-
+-### Photosynthesis for a beginner
+-
+-- Choose an entry question that creates a need to track matter and energy.
+-- Separate what enters, what changes, and what leaves. Arrows must mean a stated process, not vague motion.
+-- Use an authoritative reference for the mechanism. Mark where an analogy breaks.
+-- Diagnose the claim that a plant's mass comes mainly from soil with evidence and a suitable task.
+-- Provide a counterfactual prediction and explain the limits of a simplified simulation. Do not present a toy model as an experimentally validated system.
+-
+-### General failure and interaction checks
+-
+-- Learner changes an input after receiving feedback: feedback must be cleared or recomputed.
+-- Learner leaves and returns: preserve or explicitly restore attempt, experiment, and explanation state.
+-- Learner asks an unrelated question: clarify whether to detour or change the goal; do not silently replace it.
+-- Learner cannot answer an open question: offer a smaller task or direct explanation, not repeated interrogation.
+-- Learner skips a check: allow honest navigation without awarding understanding.
+-- Renderer or voice fails: preserve the teaching state and provide a truthful fallback.
+-- A beautiful scene has no learner task or clear explanatory role: simplify or replace it.
+-- Only transcripts were read: do not claim the original animations were evaluated.
+-- Only build tests passed: leave interaction and teaching gates unverified.

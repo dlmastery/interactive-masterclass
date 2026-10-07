@@ -1,0 +1,44 @@
+{
+  "revision": "3.1",
+  "changed_skill_files": 10,
+  "packaged_files": 25,
+  "structure": [
+    {
+      "skill": "build-interactive-masterclass",
+      "exit_code": 0,
+      "stdout": "Skill is valid!",
+      "stderr": ""
+    },
+    {
+      "skill": "build-intuition-masterclass",
+      "exit_code": 0,
+      "stdout": "Skill is valid!",
+      "stderr": ""
+    },
+    {
+      "skill": "build-research-codelabs",
+      "exit_code": 0,
+      "stdout": "Skill is valid!",
+      "stderr": ""
+    }
+  ],
+  "broken_skill_links": [],
+  "bundle_hash_mismatches": [],
+  "executable_scripts_unchanged": true,
+  "changed_scripts": [],
+  "course_baseline_files_compared": 71,
+  "course_baseline_changed_or_missing": [],
+  "review": "author-informed written integration review; three findings fixed and passed supervised recheck",
+  "behavior_sample": "supervised hypothetical density teach-back: recipient adaptation versus subject misconception",
+  "source_access": "creator text, research summaries, indexed official transcript, Welch notebook text/selected code, and two rendered workbook pages",
+  "not_performed": [
+    "source-video playback/listening",
+    "Welch notebook execution",
+    "six-lens independent forward test",
+    "human learning observation",
+    "course rebuild",
+    "narration rehearsal",
+    "Astra model run"
+  ],
+  "broken_report_links": []
+}
