@@ -1,0 +1,19 @@
+{
+  "scope": "Structured slide text and spoken notes only; UI labels and code omitted. Mechanical sentence segmentation is approximate. These measurements do not establish ASD-STE100 compatibility or an80% pass rate.",
+  "surfaces": {
+    "slide_prose": {
+      "deduplicated_text_blocks": 679,
+      "sentence_like_segments": 1045,
+      "segments_at_most_20_words": 1023,
+      "average_words": 9.2,
+      "ASD_STE100_compatibility": "unverified for every segment; no approved dictionary audit performed"
+    },
+    "speaker_notes": {
+      "deduplicated_text_blocks": 84,
+      "sentence_like_segments": 664,
+      "segments_at_most_20_words": 652,
+      "average_words": 11.22,
+      "ASD_STE100_compatibility": "unverified for every segment; no approved dictionary audit performed"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-07",
+  "runtime": {
+    "marimo-studio": "0.2.3",
+    "marimo": "0.25.0",
+    "numpy": "2.5.3",
+    "deno": "2.9.7",
+    "python_requirement": ">=3.12,<3.15"
+  },
+  "numerical_tests": {"passed": 8, "native_states": 3077, "maximum_combined_projection_bytes": 7177},
+  "asgi_composition_tests": {"passed": 4},
+  "marimo_check": "passed",
+  "powershell_parser": "passed",
+  "studio_static_inventory": {"sandbox_controls": {"has_output_expression": true}},
+  "isolated_notebook_execution": {
+    "status": "passed",
+    "displayed_outputs": 10,
+    "angle_default": 45,
+    "outlier_default": 0,
+    "variance": 6.000000000000001,
+    "loss": 0.6666666666666666
+  },
+  "not_verified_by_this_agent": [
+    "production view build",
+    "clean-start server launch",
+    "browser native-control update",
+    "browser notebook return",
+    "notes layout",
+    "export behavior",
+    "human learning"
+  ],
+  "services_started_or_stopped": false,
+  "sha256": {
+    "pca_lesson.py": "6f57a75c0e35e39cad7a0ed5967c4e714e33b03567ba1dcec414a6f677de2961",
+    "pca_math.py": "0ac8e27d25a479c6a7a690499095ec66f3411e0d6f54edc33ee146fe1ec8867e",
+    "serve_lesson.py": "b7c343bbed4f6f49d51a82f89cbcdd28dca524385c6f69300ac5c35b49751732",
+    "Start-Lesson.ps1": "a62392832d53842909aa890a5be203942894ccb66353f93cf132e1e18d9f5102",
+    "test_pca_math.py": "406bc475bf7eecf5d533ea1c73904c33a2d8a9718b9dbcf3c06fe30d1d1b8f59",
+    "test_navigation.py": "4d30a00d0cc0eb53e5ab51375045ff31ab8e2e399ca407d10fa57781b08b4cf2"
+  }
+}

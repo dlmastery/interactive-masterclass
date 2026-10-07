@@ -1,0 +1,594 @@
+{
+  "scope": "Final production build: DOM traversal of 84 initial scene states with populated scene-visual containers; not full visual inspection or human learning",
+  "build_sha256": "4d22322902aff6dbd5e97b4881e37e7cdc7d2af2f7439e18cc948f4f41235d3a",
+  "entries": [
+    {
+      "scene": 1,
+      "heading": "Two measurements. One useful coordinate.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 2,
+      "heading": "A picture. A proof. A decision.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 3,
+      "heading": "One distance per point.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 4,
+      "heading": "Save the shared rule once.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 5,
+      "heading": "Move the origin to the cloud.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 6,
+      "heading": "Weights turn a point into a score.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 7,
+      "heading": "Why use the perpendicular foot?",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 8,
+      "heading": "Kept and lost make a right triangle.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 9,
+      "heading": "Keeping more means losing less.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 10,
+      "heading": "Centered points give centered scores.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 11,
+      "heading": "Variance gives spread a scale.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 12,
+      "heading": "A longer arrow is a fake win.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 13,
+      "heading": "Find a good line before the formula.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 14,
+      "heading": "Decode a point you have not seen.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 15,
+      "heading": "Most spread is not always most useful.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 16,
+      "heading": "Square the score. Keep every term.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 17,
+      "heading": "Signed products remember the tilt.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 18,
+      "heading": "Three numbers summarize our objective.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 19,
+      "heading": "wᵀSw is the sum we already know.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 20,
+      "heading": "One point contributes one small matrix.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 21,
+      "heading": "A misplaced line adds error.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 22,
+      "heading": "Rows are observations. Columns are features.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 23,
+      "heading": "Two properties make the proof possible.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 24,
+      "heading": "State the problem we have earned.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 25,
+      "heading": "A sideways push means we can improve.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 26,
+      "heading": "Expand one small change.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 27,
+      "heading": "Enforce the constraint in one equation.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 28,
+      "heading": "The eigenvalue is the variance.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 29,
+      "heading": "The worst line passes that test too.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 30,
+      "heading": "Use a basis the matrix preserves.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 31,
+      "heading": "Why do mixed terms disappear?",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 32,
+      "heading": "No mixture beats the best ingredient.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 33,
+      "heading": "Sometimes several answers are right.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 34,
+      "heading": "Return to the opening ruler.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 35,
+      "heading": "The next coordinate must add something.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 36,
+      "heading": "Encode k numbers and recover d features.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 37,
+      "heading": "What changes in the score covariance?",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 38,
+      "heading": "The decoder is an orthogonal projector.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 39,
+      "heading": "Describe every possible k-dimensional choice.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 40,
+      "heading": "No subspace can beat the top-k total.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 41,
+      "heading": "The discarded eigenvalues measure the loss.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 42,
+      "heading": "Compute the same directions without forming S.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 43,
+      "heading": "The scores are already inside the factorization.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 44,
+      "heading": "Centering limits how many directions can vary.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 45,
+      "heading": "Read the code as the argument.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 46,
+      "heading": "Reconstruct the whole multi-coordinate chain.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 47,
+      "heading": "Choose what an error costs.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 48,
+      "heading": "A unit change can turn the ruler.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 49,
+      "heading": "Standardization changes the question.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 50,
+      "heading": "Translate the loss back into original units.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 51,
+      "heading": "Whitening changes score scale.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 52,
+      "heading": "Choose k from an error budget.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 53,
+      "heading": "Test the purpose, not just the spectrum.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 54,
+      "heading": "Split before learning the representation.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 55,
+      "heading": "Give tomorrow the same ruler.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 56,
+      "heading": "Compute the same answer through SVD.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 57,
+      "heading": "A sparse table needs a storage plan.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 58,
+      "heading": "Check identities with a purpose.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 59,
+      "heading": "The small direction may hold the answer.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 60,
+      "heading": "Let the target influence the choice.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 61,
+      "heading": "One distant point can steer the line.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 62,
+      "heading": "A robust model adds assumptions.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 63,
+      "heading": "A curved path is not a straight subspace.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 64,
+      "heading": "A better picture may solve another problem.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 65,
+      "heading": "An axis can wobble while a plane stays useful.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 66,
+      "heading": "Counting a feature twice gives it more weight.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 67,
+      "heading": "A component is not automatically a hidden cause.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 68,
+      "heading": "Cells: a small component can mark a rare group.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 69,
+      "heading": "Vision features: PCA can make a representation visible.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 70,
+      "heading": "Tomorrow may have a different pattern.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 71,
+      "heading": "Change one point. Explain both outcomes.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 72,
+      "heading": "Make the choice reviewable.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 73,
+      "heading": "Explain the useful idea without its name.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 74,
+      "heading": "Turn that explanation into a calculation.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 75,
+      "heading": "Explain why this matrix belongs here.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 76,
+      "heading": "Rebuild the argument without the slides.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 77,
+      "heading": "A different answer can be equally correct.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 78,
+      "heading": "Zero covariance can hide a rule.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 79,
+      "heading": "Audit the claim behind a clean plot.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 80,
+      "heading": "Design a fair comparison.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 81,
+      "heading": "Translate the warning without losing the idea.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 82,
+      "heading": "A cutoff must answer the analysis question.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 83,
+      "heading": "Make a plan you could actually test.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    },
+    {
+      "scene": 84,
+      "heading": "Come back and rebuild it.",
+      "mathErrors": 0,
+      "top": 0,
+      "visual": true
+    }
+  ]
+}

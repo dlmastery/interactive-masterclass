@@ -4,12 +4,29 @@ Reusable AI teaching skills, an evidence-based authoring process, and an interac
 
 The aim is to help a learner build a mental model, justify it, use it, recognize its limits, and explain it to someone else. The process covers accessible intuition through research-level judgment. It treats rigorous derivation, useful interaction, illustrations, and spoken explanation as one teaching task.
 
-**Current status — 7 October 2026:** the version 3.1 skill bundle and complete generated development archive are published. The earlier PCA course is preserved as a historical baseline. A new PCA rebuild is starting under the updated process; the baseline has **not** passed the new teaching standard. Neither AI reviews nor software tests establish human learning or superiority to other tutorials.
+**Current status — 7 October 2026:** the version 3.1 skill bundle, generated development archive, and rebuilt **84-scene PCA masterclass** are available. The new course includes geometric experiments, covariance and global optimality derivations, top-k/SVD, practical decisions, six explanation lenses, and speaker notes. It has passed the recorded mathematical and runtime checks and received an independent AI review with repairs. Human learning and superiority to other tutorials have not been established.
+
+![PCA: a shorter description](courses/pca/process/runtime/opening.jpg)
+
+## Open the new PCA course
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run in PowerShell 7 on Windows:
+
+```powershell
+git clone https://github.com/dlmastery/interactive-masterclass.git
+cd interactive-masterclass/courses/pca
+.\Open-Course.ps1
+```
+
+The launcher builds and opens **http://localhost:2729/lesson/** and starts the authenticated editable notebook alongside it. Use **Back to editable notebook** on the presentation. First startup needs network access. After a machine restart, rerun the launcher. See the [course README](courses/pca/README.md) for port conflicts, stopping a run, notebook recovery, source files, and checks.
 
 ## Start here
 
 | What you need | Where to go |
 |---|---|
+| New interactive PCA course | [Open, learn, and edit](courses/pca/README.md) |
+| Rebuild evidence and remaining limits | [Research, review, and verification report](courses/pca/process/REPORT.md) |
+| Exact narration for 84 scenes | [Speaker notes](courses/pca/SPEAKER_NOTES.md) |
 | Canonical teaching workflow | [build-interactive-masterclass](skills/build-interactive-masterclass/SKILL.md) |
 | Compatible intuition-first entrypoint | [build-intuition-masterclass](skills/build-intuition-masterclass/SKILL.md) |
 | Research and coding labs | [build-research-codelabs](skills/build-research-codelabs/SKILL.md) |
@@ -83,12 +100,13 @@ From `outputs/pca-studio`, use two PowerShell terminals:
 
 Open `http://localhost:2718/studio/lesson/` for the notebook and Studio, or `http://localhost:2719/lesson/` for the slides. Keep both terminals running. The outer slide page contains a **Back to notebook** link. A sandboxed in-app browser may block the notebook's service worker; use an external supported browser for authoring.
 
-These are historical launch instructions, not a claim that a clean clone was retested on every operating system. The replacement course will have its own verified entry path and evidence.
+These instructions reproduce the historical baseline. Use the new course instructions above for the rebuilt lesson. Neither launcher has been verified on every operating system.
 
 ## Repository layout and provenance
 
 ```text
 skills/                         Current version 3.1 teaching skills
+courses/pca/                    Rebuilt 84-scene course, notes, research, review, runtime evidence
 outputs/pca-studio/              Historical native Studio course and first-version recovery
 outputs/tutor-retrospective*/    Versioned reports, snapshots, diffs, bundles, evidence
 outputs/                        Other generated teaching assessments and previews

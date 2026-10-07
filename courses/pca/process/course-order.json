@@ -1,0 +1,506 @@
+[
+  {
+    "index": 0,
+    "id": "purpose",
+    "title": "Two measurements. One useful coordinate.",
+    "kind": "geometry"
+  },
+  {
+    "index": 1,
+    "id": "promise",
+    "title": "A picture. A proof. A decision.",
+    "kind": "geometry"
+  },
+  {
+    "index": 2,
+    "id": "score",
+    "title": "One distance per point.",
+    "kind": "geometry"
+  },
+  {
+    "index": 3,
+    "id": "decoder",
+    "title": "Save the shared rule once.",
+    "kind": "proof"
+  },
+  {
+    "index": 4,
+    "id": "center",
+    "title": "Move the origin to the cloud.",
+    "kind": "center"
+  },
+  {
+    "index": 5,
+    "id": "dot",
+    "title": "Weights turn a point into a score.",
+    "kind": "proof"
+  },
+  {
+    "index": 6,
+    "id": "nearest",
+    "title": "Why use the perpendicular foot?",
+    "kind": "proof"
+  },
+  {
+    "index": 7,
+    "id": "triangle",
+    "title": "Kept and lost make a right triangle.",
+    "kind": "triangle"
+  },
+  {
+    "index": 8,
+    "id": "total",
+    "title": "Keeping more means losing less.",
+    "kind": "proof"
+  },
+  {
+    "index": 9,
+    "id": "score-mean",
+    "title": "Centered points give centered scores.",
+    "kind": "proof"
+  },
+  {
+    "index": 10,
+    "id": "variance",
+    "title": "Variance gives spread a scale.",
+    "kind": "proof"
+  },
+  {
+    "index": 11,
+    "id": "unit",
+    "title": "A longer arrow is a fake win.",
+    "kind": "proof"
+  },
+  {
+    "index": 12,
+    "id": "seek",
+    "title": "Find a good line before the formula.",
+    "kind": "geometry"
+  },
+  {
+    "index": 13,
+    "id": "new-point",
+    "title": "Decode a point you have not seen.",
+    "kind": "proof"
+  },
+  {
+    "index": 14,
+    "id": "boundary",
+    "title": "Most spread is not always most useful.",
+    "kind": "decision"
+  },
+  {
+    "index": 15,
+    "id": "square",
+    "title": "Square the score. Keep every term.",
+    "kind": "proof"
+  },
+  {
+    "index": 16,
+    "id": "products",
+    "title": "Signed products remember the tilt.",
+    "kind": "covariance"
+  },
+  {
+    "index": 17,
+    "id": "cov-matrix",
+    "title": "Three numbers summarize our objective.",
+    "kind": "proof"
+  },
+  {
+    "index": 18,
+    "id": "quadratic",
+    "title": "wᵀSw is the sum we already know.",
+    "kind": "proof"
+  },
+  {
+    "index": 19,
+    "id": "outer",
+    "title": "One point contributes one small matrix.",
+    "kind": "proof"
+  },
+  {
+    "index": 20,
+    "id": "mean-proof",
+    "title": "A misplaced line adds error.",
+    "kind": "proof"
+  },
+  {
+    "index": 21,
+    "id": "data-matrix",
+    "title": "Rows are observations. Columns are features.",
+    "kind": "matrix"
+  },
+  {
+    "index": 22,
+    "id": "psd",
+    "title": "Two properties make the proof possible.",
+    "kind": "proof"
+  },
+  {
+    "index": 23,
+    "id": "objective",
+    "title": "State the problem we have earned.",
+    "kind": "proof"
+  },
+  {
+    "index": 24,
+    "id": "tangent",
+    "title": "A sideways push means we can improve.",
+    "kind": "eigen"
+  },
+  {
+    "index": 25,
+    "id": "gradient",
+    "title": "Expand one small change.",
+    "kind": "proof"
+  },
+  {
+    "index": 26,
+    "id": "lagrange",
+    "title": "Enforce the constraint in one equation.",
+    "kind": "proof"
+  },
+  {
+    "index": 27,
+    "id": "eigenvalue",
+    "title": "The eigenvalue is the variance.",
+    "kind": "proof"
+  },
+  {
+    "index": 28,
+    "id": "stationary-trap",
+    "title": "The worst line passes that test too.",
+    "kind": "eigen"
+  },
+  {
+    "index": 29,
+    "id": "spectral",
+    "title": "Use a basis the matrix preserves.",
+    "kind": "proof"
+  },
+  {
+    "index": 30,
+    "id": "cross-vanish",
+    "title": "Why do mixed terms disappear?",
+    "kind": "proof"
+  },
+  {
+    "index": 31,
+    "id": "global",
+    "title": "No mixture beats the best ingredient.",
+    "kind": "mixture"
+  },
+  {
+    "index": 32,
+    "id": "ties",
+    "title": "Sometimes several answers are right.",
+    "kind": "mixture"
+  },
+  {
+    "index": 33,
+    "id": "opening-payoff",
+    "title": "Return to the opening ruler.",
+    "kind": "proof"
+  },
+  {
+    "index": 34,
+    "id": "more-pc2",
+    "title": "The next coordinate must add something.",
+    "kind": "proof"
+  },
+  {
+    "index": 35,
+    "id": "more-frame-shapes",
+    "title": "Encode k numbers and recover d features.",
+    "kind": "matrix"
+  },
+  {
+    "index": 36,
+    "id": "more-score-covariance",
+    "title": "What changes in the score covariance?",
+    "kind": "proof"
+  },
+  {
+    "index": 37,
+    "id": "more-projector",
+    "title": "The decoder is an orthogonal projector.",
+    "kind": "proof"
+  },
+  {
+    "index": 38,
+    "id": "more-capacity-weights",
+    "title": "Describe every possible k-dimensional choice.",
+    "kind": "proof"
+  },
+  {
+    "index": 39,
+    "id": "more-global-k-bound",
+    "title": "No subspace can beat the top-k total.",
+    "kind": "proof"
+  },
+  {
+    "index": 40,
+    "id": "more-discarded-tail",
+    "title": "The discarded eigenvalues measure the loss.",
+    "kind": "spectrum"
+  },
+  {
+    "index": 41,
+    "id": "more-svd-connection",
+    "title": "Compute the same directions without forming S.",
+    "kind": "proof"
+  },
+  {
+    "index": 42,
+    "id": "more-svd-scores",
+    "title": "The scores are already inside the factorization.",
+    "kind": "matrix"
+  },
+  {
+    "index": 43,
+    "id": "more-centered-rank",
+    "title": "Centering limits how many directions can vary.",
+    "kind": "rank"
+  },
+  {
+    "index": 44,
+    "id": "more-numpy-meaning",
+    "title": "Read the code as the argument.",
+    "kind": "code"
+  },
+  {
+    "index": 45,
+    "id": "more-chain-reconstruction",
+    "title": "Reconstruct the whole multi-coordinate chain.",
+    "kind": "lens"
+  },
+  {
+    "index": 46,
+    "id": "practice-metric",
+    "title": "Choose what an error costs.",
+    "kind": "decision"
+  },
+  {
+    "index": 47,
+    "id": "practice-units",
+    "title": "A unit change can turn the ruler.",
+    "kind": "scale"
+  },
+  {
+    "index": 48,
+    "id": "practice-standardize",
+    "title": "Standardization changes the question.",
+    "kind": "scale"
+  },
+  {
+    "index": 49,
+    "id": "practice-weighted-loss",
+    "title": "Translate the loss back into original units.",
+    "kind": "scale"
+  },
+  {
+    "index": 50,
+    "id": "practice-whiten",
+    "title": "Whitening changes score scale.",
+    "kind": "scale"
+  },
+  {
+    "index": 51,
+    "id": "practice-budget",
+    "title": "Choose k from an error budget.",
+    "kind": "spectrum"
+  },
+  {
+    "index": 52,
+    "id": "practice-validation",
+    "title": "Test the purpose, not just the spectrum.",
+    "kind": "spectrum"
+  },
+  {
+    "index": 53,
+    "id": "practice-pipeline",
+    "title": "Split before learning the representation.",
+    "kind": "code"
+  },
+  {
+    "index": 54,
+    "id": "practice-frozen-transform",
+    "title": "Give tomorrow the same ruler.",
+    "kind": "code"
+  },
+  {
+    "index": 55,
+    "id": "practice-svd",
+    "title": "Compute the same answer through SVD.",
+    "kind": "code"
+  },
+  {
+    "index": 56,
+    "id": "practice-sparse",
+    "title": "A sparse table needs a storage plan.",
+    "kind": "rank"
+  },
+  {
+    "index": 57,
+    "id": "practice-checks",
+    "title": "Check identities with a purpose.",
+    "kind": "code"
+  },
+  {
+    "index": 58,
+    "id": "limits-small-signal",
+    "title": "The small direction may hold the answer.",
+    "kind": "nuisance"
+  },
+  {
+    "index": 59,
+    "id": "limits-supervised",
+    "title": "Let the target influence the choice.",
+    "kind": "decision"
+  },
+  {
+    "index": 60,
+    "id": "limits-outlier",
+    "title": "One distant point can steer the line.",
+    "kind": "outlier"
+  },
+  {
+    "index": 61,
+    "id": "limits-robust",
+    "title": "A robust model adds assumptions.",
+    "kind": "outlier"
+  },
+  {
+    "index": 62,
+    "id": "limits-curve",
+    "title": "A curved path is not a straight subspace.",
+    "kind": "curve"
+  },
+  {
+    "index": 63,
+    "id": "limits-nonlinear",
+    "title": "A better picture may solve another problem.",
+    "kind": "curve"
+  },
+  {
+    "index": 64,
+    "id": "limits-stability",
+    "title": "An axis can wobble while a plane stays useful.",
+    "kind": "mixture"
+  },
+  {
+    "index": 65,
+    "id": "limits-duplicate",
+    "title": "Counting a feature twice gives it more weight.",
+    "kind": "nuisance"
+  },
+  {
+    "index": 66,
+    "id": "limits-latent",
+    "title": "A component is not automatically a hidden cause.",
+    "kind": "decision"
+  },
+  {
+    "index": 67,
+    "id": "application-seurat",
+    "title": "Cells: a small component can mark a rare group.",
+    "kind": "decision"
+  },
+  {
+    "index": 68,
+    "id": "application-dinov2",
+    "title": "Vision features: PCA can make a representation visible.",
+    "kind": "decision"
+  },
+  {
+    "index": 69,
+    "id": "application-temporal",
+    "title": "Tomorrow may have a different pattern.",
+    "kind": "decision"
+  },
+  {
+    "index": 70,
+    "id": "practice-live-diagnosis",
+    "title": "Change one point. Explain both outcomes.",
+    "kind": "live"
+  },
+  {
+    "index": 71,
+    "id": "practice-decision-final",
+    "title": "Make the choice reviewable.",
+    "kind": "decision"
+  },
+  {
+    "index": 72,
+    "id": "transfer-ruler-explanation",
+    "title": "Explain the useful idea without its name.",
+    "kind": "lens"
+  },
+  {
+    "index": 73,
+    "id": "transfer-signed-score",
+    "title": "Turn that explanation into a calculation.",
+    "kind": "lens"
+  },
+  {
+    "index": 74,
+    "id": "transfer-covariance-warrant",
+    "title": "Explain why this matrix belongs here.",
+    "kind": "lens"
+  },
+  {
+    "index": 75,
+    "id": "transfer-rebuild-proof",
+    "title": "Rebuild the argument without the slides.",
+    "kind": "lens"
+  },
+  {
+    "index": 76,
+    "id": "transfer-tied-subspace",
+    "title": "A different answer can be equally correct.",
+    "kind": "decision"
+  },
+  {
+    "index": 77,
+    "id": "transfer-independent-trap",
+    "title": "Zero covariance can hide a rule.",
+    "kind": "decision"
+  },
+  {
+    "index": 78,
+    "id": "transfer-research-claim",
+    "title": "Audit the claim behind a clean plot.",
+    "kind": "lens"
+  },
+  {
+    "index": 79,
+    "id": "transfer-compare-objectives",
+    "title": "Design a fair comparison.",
+    "kind": "lens"
+  },
+  {
+    "index": 80,
+    "id": "transfer-explain-back",
+    "title": "Translate the warning without losing the idea.",
+    "kind": "lens"
+  },
+  {
+    "index": 81,
+    "id": "transfer-rare-population",
+    "title": "A cutoff must answer the analysis question.",
+    "kind": "decision"
+  },
+  {
+    "index": 82,
+    "id": "transfer-application-plan",
+    "title": "Make a plan you could actually test.",
+    "kind": "lens"
+  },
+  {
+    "index": 83,
+    "id": "transfer-return-challenge",
+    "title": "Come back and rebuild it.",
+    "kind": "lens"
+  }
+]

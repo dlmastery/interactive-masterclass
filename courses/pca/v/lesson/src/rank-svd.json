@@ -1,0 +1,368 @@
+[
+  {
+    "id": "more-pc2",
+    "chapter": 4,
+    "title": "The next coordinate must add something.",
+    "question": "Why must the second direction be perpendicular to the first?",
+    "body": "The first score already records variation along q₁. Reusing that direction would store the same coordinate twice. Search among unit directions perpendicular to q₁, and keep the one with the greatest remaining score variance.",
+    "takeaway": "PC2 maximizes variance subject to unit length and orthogonality to PC1.",
+    "kind": "proof",
+    "steps": [
+      [
+        "r_i=x_i-q_1(q_1^Tx_i)",
+        "Remove the part already reconstructed by the first direction."
+      ],
+      [
+        "w^Tq_1=0\\ \\Longrightarrow\\ w^Tr_i=w^Tx_i",
+        "A perpendicular direction gives the same score on the residual and the original centered point."
+      ],
+      [
+        "w=\\sum_{j=2}^{d}a_jq_j,\\quad \\sum_{j=2}^{d}a_j^2=1",
+        "The first eigenbasis coefficient is zero."
+      ],
+      [
+        "w^TSw=\\sum_{j=2}^{d}\\lambda_j a_j^2\\le\\lambda_2",
+        "The same global bound now selects the next eigenvalue."
+      ]
+    ],
+    "prompt": "If we removed the perpendicular constraint, which direction would the maximization choose again? Explain why that would not add a second coordinate.",
+    "notes": "[Point back to the first reconstructed point.] One coordinate has already used the leading direction. A second copy would not recover the sideways detail. That is why we restrict the next search to the perpendicular space. Project a residual onto a direction in that space: the removed first-component part contributes zero. We can therefore reuse the covariance objective with one new constraint. Expand the candidate in the same eigenbasis. Its first coefficient must vanish, so the largest available eigenvalue is now the second. If eigenvalues tie, choose an orthonormal set within the tied eigenspace."
+  },
+  {
+    "id": "more-frame-shapes",
+    "chapter": 4,
+    "title": "Encode k numbers and recover d features.",
+    "question": "Which matrix stores the shared directions?",
+    "body": "X contains n centered observations with d features each. W contains k unit, mutually perpendicular directions as columns. Z stores k scores per observation. Multiplying the scores by Wᵀ returns an approximation in the original feature space.",
+    "takeaway": "The representation is smaller because each row of Z has k entries; the decoder still knows W and the fitted mean.",
+    "kind": "matrix",
+    "steps": [
+      [
+        "X\\in\\mathbb R^{n\\times d},\\quad W\\in\\mathbb R^{d\\times k},\\quad W^TW=I_k",
+        "The columns of W are the shared directions."
+      ],
+      [
+        "Z=XW\\in\\mathbb R^{n\\times k}",
+        "Encode each observation with k scores."
+      ],
+      [
+        "\\widehat X_c=ZW^T=XWW^T\\in\\mathbb R^{n\\times d}",
+        "Decode into the original centered feature space."
+      ],
+      [
+        "\\widehat X_{\\rm raw}=\\widehat X_c+\\mathbf1\\mu^T",
+        "Put back the fitted feature means."
+      ]
+    ],
+    "prompt": "For 100 observations, 8 features, and k = 3, give the shapes of X, W, Z, and the decoded matrix. Which objects must be retained to decode a future score vector?",
+    "notes": "[Trace row A through the displayed four-by-two example.] Two measured offsets become one score on the first direction. Select another row and observe the score change. Then keep both directions and count the two resulting scores. The decoder combines the shared directions with those scores and restores the center. Now generalize to the separate exercise with eight features and three scores. Shapes tell us which dimensions must match. Keeping three coordinates is not simply choosing three original columns: each direction can combine all eight features. The shared directions and mean must also be stored."
+  },
+  {
+    "id": "more-score-covariance",
+    "chapter": 4,
+    "title": "What changes in the score covariance?",
+    "question": "Does a diagonal covariance mean independent coordinates?",
+    "body": "Collect orthonormal eigenvectors into W and compute scores Z = XW from centered data X. The score covariance is diagonal. This removes pairwise linear covariance, but a nonlinear relationship can remain.",
+    "takeaway": "PCA scores are uncorrelated in the fitted data; independence is a stronger claim.",
+    "kind": "proof",
+    "steps": [
+      [
+        "S=\\frac{X^TX}{n-1},\\qquad Z=XW",
+        "Keep observations in rows and use the same sample-variance denominator."
+      ],
+      [
+        "\\frac{Z^TZ}{n-1}=W^TSW",
+        "Substitute the score matrix."
+      ],
+      [
+        "SW=W\\Lambda_k,\\quad W^TW=I_k\\ \\Longrightarrow\\ W^TSW=\\Lambda_k",
+        "Eigenvector relations and orthonormality make the cross-covariances zero."
+      ]
+    ],
+    "prompt": "Let A be equally likely to be −2, −1, 0, 1, or 2, and let B = A² − 2. Their covariance is zero. If A = 0, what must B be? Does knowing A tell us nothing about B?",
+    "rubric": [
+      "Identifies B = −2 when A = 0.",
+      "Recognizes dependence despite zero covariance.",
+      "Explains that symmetry makes the average of A(A²−2) zero.",
+      "Keeps the fitted-data covariance statement separate from a population independence claim."
+    ],
+    "example": "B is determined by A, so the variables are dependent. Symmetry cancels the positive and negative contributions to covariance. A diagonal covariance therefore does not rule out a curved relationship.",
+    "notes": "[Read the matrix dimensions before multiplying.] Each score is a new column, so its covariance is built in exactly the same way as the original covariance. The eigenvector relation supplies the diagonal entries; orthonormality removes the cross terms. Now test an overstatement of that result. The parabola example has zero covariance, but knowing the first coordinate fixes the second. Ask the learner to predict that second coordinate before naming dependence. PCA removes this linear summary of dependence. It does not turn arbitrary data into independent sources, and it does not by itself identify causes."
+  },
+  {
+    "id": "more-projector",
+    "chapter": 4,
+    "title": "The decoder is an orthogonal projector.",
+    "question": "Why does projecting twice change nothing?",
+    "body": "Define P = WWᵀ. It maps a centered point into the retained subspace. Because the directions are orthonormal, P is symmetric and idempotent. These properties also make the recovered part perpendicular to the residual.",
+    "takeaway": "Orthogonal projection splits squared length into a retained part and a discarded part.",
+    "kind": "proof",
+    "steps": [
+      [
+        "P^T=P,\\qquad P^2=W(W^TW)W^T=P",
+        "Symmetry and idempotence follow from WᵀW = I."
+      ],
+      [
+        "(Px)^T(I-P)x=x^T(P-P^2)x=0",
+        "The recovered point and its residual are perpendicular."
+      ],
+      [
+        "\\|x\\|^2=\\|Px\\|^2+\\|(I-P)x\\|^2",
+        "Apply the right-triangle identity in d dimensions."
+      ],
+      [
+        "\\|X-XP\\|_F^2=\\|X\\|_F^2-\\|XW\\|_F^2",
+        "Sum over observations; orthonormal W preserves the length of the retained coordinates."
+      ]
+    ],
+    "prompt": "Explain P² = P without symbols. Then state which step would fail if the columns of W were not orthonormal.",
+    "notes": "[Return to a point that already lies on the retained plane.] Projecting it again leaves it where it is. That geometric fact is idempotence. The algebra verifies it using the orthonormal columns of W. Symmetry then lets us show that the recovered part has zero dot product with the residual. This is the same right triangle from the one-line case, now in any dimension. Summing its squared lengths gives the matrix error identity. The Frobenius norm is simply the square root of the sum of squared entries. No new kind of error has been introduced.",
+    "refresh": [
+      "Identity and projector",
+      "Iₖ is the k×k identity: it leaves k-dimensional vectors unchanged. WᵀW=Iₖ because the columns are perpendicular unit vectors. P=WWᵀ acts in the original d-dimensional space. P²=P means projecting again changes nothing."
+    ]
+  },
+  {
+    "id": "more-capacity-weights",
+    "chapter": 4,
+    "title": "Describe every possible k-dimensional choice.",
+    "question": "How much of each eigenvector can a subspace retain?",
+    "body": "Let q₁,…,q_d be an orthonormal eigenbasis of S. For any candidate W with WᵀW = I_k, define b_j = ‖Wᵀq_j‖². Each b_j measures how much of eigenvector q_j lies inside the chosen subspace.",
+    "takeaway": "Every candidate subspace produces weights between zero and one whose total is k.",
+    "kind": "proof",
+    "steps": [
+      [
+        "b_j=\\|W^Tq_j\\|^2=q_j^TPq_j",
+        "This is retained squared length of a unit eigenvector."
+      ],
+      [
+        "0\\le b_j\\le1",
+        "A squared length is nonnegative; orthogonal projection cannot increase length."
+      ],
+      [
+        "\\sum_j b_j=\\sum_{\\ell=1}^k\\sum_j(w_\\ell^Tq_j)^2=\\sum_{\\ell=1}^k\\|w_\\ell\\|^2=k",
+        "Each retained unit direction has total squared coordinates one in the complete eigenbasis. Add that one k times."
+      ],
+      [
+        "\\sum_{j=1}^{d}b_j=\\operatorname{tr}\\!\\left(W^T\\left(\\sum_jq_jq_j^T\\right)W\\right)=\\operatorname{tr}(I_k)=k",
+        "The full orthonormal eigenbasis resolves the identity."
+      ],
+      [
+        "\\text{captured variance}=\\sum_{\\ell=1}^k w_\\ell^TSw_\\ell=\\operatorname{tr}(W^TSW)",
+        "Each diagonal entry is one score variance. Adding the diagonal adds the retained variances."
+      ],
+      [
+        "\\operatorname{tr}(W^TSW)=\\sum_{j=1}^{d}\\lambda_jb_j",
+        "The captured variance is the eigenvalue-weighted sum."
+      ]
+    ],
+    "prompt": "Why are weights b = (2, 0, 0, …) illegal for k = 2, even though they sum to two? Explain how the bound b_j ≤ 1 prevents counting the same direction twice.",
+    "notes": "[Introduce one weight before the whole list.] Take a unit eigenvector and project it onto the candidate subspace. The squared retained length is its weight. It cannot be negative or exceed the original unit length. Now total these weights over a complete orthonormal basis. The result is the dimension of the retained subspace, k. This is a capacity constraint: each eigenvector can contribute at most one unit, and the total capacity is k. Every genuine subspace satisfies these constraints. We will use them to bound all possible choices, then exhibit a subspace that attains the bound.",
+    "refresh": [
+      "Trace and completeness",
+      "Trace adds diagonal entries. A full orthonormal basis satisfies Σqⱼqⱼᵀ=I: it reconstructs every vector from its coordinates. Thus Σ‖Wᵀqⱼ‖²=tr(WᵀIW)=tr(Iₖ)=k. The identity tr(AB)=tr(BA) follows by swapping the order of the two summed indices. The figure uses eigenvalues (12,5,2,1) and k=2; the algebra covers arbitrary d and k."
+    ]
+  },
+  {
+    "id": "more-global-k-bound",
+    "chapter": 4,
+    "title": "No subspace can beat the top-k total.",
+    "question": "Why does the whole k-dimensional choice win globally?",
+    "body": "Order the eigenvalues λ₁ ≥ ⋯ ≥ λ_d. To maximize Σλ_j b_j, put the available weight on the largest eigenvalues first. The constraints from the previous scene make that statement a proof rather than a greedy guess.",
+    "takeaway": "The span of the top k eigenvectors reaches the largest possible captured variance.",
+    "kind": "proof",
+    "steps": [
+      [
+        "B=\\sum_{j>k}b_j=\\sum_{i\\le k}(1-b_i)",
+        "Weight below the cutoff equals unused capacity above it."
+      ],
+      [
+        "\\sum_{j>k}\\lambda_jb_j\\le\\lambda_kB",
+        "Every eigenvalue below the cutoff is at most λ_k."
+      ],
+      [
+        "\\sum_{i\\le k}\\lambda_i(1-b_i)\\ge\\lambda_kB",
+        "Every unfilled unit above the cutoff costs at least λ_k."
+      ],
+      [
+        "\\sum_j\\lambda_jb_j\\le\\sum_{i=1}^{k}\\lambda_i",
+        "The lower allocation cannot compensate for the lost upper capacity."
+      ],
+      [
+        "W=[q_1,\\ldots,q_k]\\ \\Longrightarrow\\ b=(1,\\ldots,1,0,\\ldots,0)",
+        "A real orthonormal subspace attains the bound, so it is globally optimal."
+      ]
+    ],
+    "prompt": "For eigenvalues (12, 5, 2, 1) and k = 2, compare weights (1, 0.5, 0.5, 0) with (1, 1, 0, 0). Where did the improvement come from? What if the two eigenvalues at the cutoff tie?",
+    "notes": "[Keep the capacity picture visible beside the inequalities.] Any weight placed below the cutoff must leave the same amount of unused capacity above it. Moving that weight upward cannot lower the objective, because the upper eigenvalue is at least as large. The displayed inequalities total all those exchanges at once. This bounds every subspace, not just the directions a particular algorithm tried. Finally, choose the top eigenvectors: they form a legal orthonormal frame and attain the bound. That last construction closes the proof. A tie at the cutoff can permit several optimal subspaces; the best value remains the same."
+  },
+  {
+    "id": "more-discarded-tail",
+    "chapter": 4,
+    "title": "The discarded eigenvalues measure the loss.",
+    "question": "How much error does truncation leave?",
+    "body": "Total sample variance is tr(S), the sum of all eigenvalues. The top-k projection retains the first k. Their omitted tail therefore gives normalized squared reconstruction loss in the chosen feature units.",
+    "takeaway": "The eigenvalue tail is an exact fitted-data loss, not a promise about task relevance or future data.",
+    "kind": "spectrum",
+    "steps": [
+      [
+        "\\operatorname{tr}(S)=\\sum_{j=1}^{d}\\lambda_j",
+        "Total sample variance is the sum of feature variances and also the eigenvalue sum."
+      ],
+      [
+        "\\frac{\\|X-\\widehat X_c\\|_F^2}{n-1}=\\sum_{j>k}\\lambda_j",
+        "Subtract the globally best retained variance from the fixed total."
+      ],
+      [
+        "{\\rm retained\\ fraction}=\\frac{\\sum_{j\\le k}\\lambda_j}{\\sum_j\\lambda_j}",
+        "This fraction is defined when total variance is positive."
+      ]
+    ],
+    "prompt": "For eigenvalues (12, 5, 2, 1), five observations, and k = 2, calculate the retained fraction, normalized loss, and unnormalized squared-error sum. Which of these claims tells you fault-prediction accuracy?",
+    "rubric": [
+      "Retained fraction is 17/20 = 85%.",
+      "Normalized reconstruction loss is 3.",
+      "Unnormalized squared-error sum is (5−1)×3 = 12.",
+      "None of those quantities alone determines predictive accuracy."
+    ],
+    "example": "The first two directions retain 17 of the total 20 variance units. The tail is 3; with n = 5 the squared-error sum is 12. These describe reconstruction in the fitted feature space. Prediction needs its own target and evaluation.",
+    "notes": "[Point to the omitted end of the spectrum.] Each discarded eigenvalue is a variance contribution we no longer reconstruct. The sum gives loss divided by n minus one, because we used sample covariance. Multiply back when you want the unnormalized squared-error sum. Have the learner distinguish those two quantities before calculating a percentage. The percentage summarizes this chosen metric on the fitted data. It does not say that eighty-five percent of useful information, class separation, or future predictive accuracy survives. If all observations are identical, the total variance is zero and a retained-variance percentage is undefined."
+  },
+  {
+    "id": "more-svd-connection",
+    "chapter": 4,
+    "title": "Compute the same directions without forming S.",
+    "question": "Where does singular value decomposition enter?",
+    "body": "Invoke the singular value decomposition theorem: a real n×d matrix has an orthogonal factorization X = UΣVᵀ. For centered X, the right singular vectors give PCA directions, and squared singular values give covariance eigenvalues after division by n−1.",
+    "takeaway": "SVD is an equivalent computation for centered PCA; the covariance argument explains why it works.",
+    "kind": "proof",
+    "steps": [
+      [
+        "X=U\\Sigma V^T",
+        "Invoke the SVD theorem, with nonnegative singular values in descending order."
+      ],
+      [
+        "X^TX=V\\Sigma^TU^TU\\Sigma V^T=V\\Sigma^T\\Sigma V^T",
+        "Orthogonality of U removes the middle factor."
+      ],
+      [
+        "S=V\\frac{\\Sigma^T\\Sigma}{n-1}V^T",
+        "Compare directly with the covariance eigendecomposition."
+      ],
+      [
+        "\\lambda_j=\\frac{\\sigma_j^2}{n-1},\\qquad q_j=v_j",
+        "Right singular vectors are feature-space directions for observations stored in rows."
+      ]
+    ],
+    "prompt": "Why would taking the left singular vectors as feature directions be a shape error here? What changes if the data matrix has features in rows instead?",
+    "notes": "[State that the existence of this factorization is a theorem we are invoking.] We are not proving the SVD algorithm in this course. We are proving why its output solves our PCA problem. Substitute the factorization into X transpose X and cancel the orthogonal middle factor. The remaining expression is a covariance eigendecomposition. That identifies both the directions and their variances. Keep the orientation visible: our observations are rows, so V lives in feature space. A source using transposed data can name the other factor instead. Direct SVD also avoids explicitly forming the covariance matrix.",
+    "source": "https://arxiv.org/pdf/1404.1100"
+  },
+  {
+    "id": "more-svd-scores",
+    "chapter": 4,
+    "title": "The scores are already inside the factorization.",
+    "question": "Why do U and Σ appear together?",
+    "body": "Use the reduced SVD, with r = min(n,d): U is n×r, Σ is r×r, and V is d×r. For k ≤ r, the first k columns of V encode the scores. U alone contains normalized score patterns; Σ supplies their scale.",
+    "takeaway": "PCA directions are V_k, scores are U_kΣ_k, and centered reconstruction is U_kΣ_kV_kᵀ.",
+    "kind": "matrix",
+    "steps": [
+      [
+        "Z=XV_k=U\\Sigma V^TV_k=U_k\\Sigma_k",
+        "Multiplying by retained right singular vectors selects the matching singular terms."
+      ],
+      [
+        "\\widehat X_c=ZV_k^T=U_k\\Sigma_kV_k^T",
+        "Decode the retained scores back to d centered features."
+      ],
+      [
+        "\\frac{Z^TZ}{n-1}=\\frac{\\Sigma_k^2}{n-1}",
+        "The score variances match the retained eigenvalues."
+      ]
+    ],
+    "prompt": "A program returns U[:, :k] as PCA scores but forgets the singular values. What changes? Explain why multiplying both a direction and its corresponding score by −1 preserves the reconstruction.",
+    "notes": "[Trace the retained columns with the same indices in all three factors.] The scores are not U alone. Its columns have unit length; the singular values restore how much variation each score column carries. Multiplying the centered data by the retained feature directions gives exactly U times those singular values. Decoding then uses the same feature directions again. Ask the learner what forgetting the scale would do to the score covariance. Finally, flip one direction and its score together. Their outer product stays unchanged. This explains why two valid numerical runs can differ in signs without disagreeing about reconstructed data."
+  },
+  {
+    "id": "more-centered-rank",
+    "chapter": 4,
+    "title": "Centering limits how many directions can vary.",
+    "question": "Can ten observations support ten nonzero centered components?",
+    "body": "Each centered feature column sums to zero. Thus all columns lie in an at-most-(n−1)-dimensional subspace of observation space. The number of nonzero singular values and covariance eigenvalues cannot exceed min(n−1,d).",
+    "takeaway": "Extra component slots beyond the centered rank cannot add fitted-data variance.",
+    "kind": "rank",
+    "steps": [
+      [
+        "X=\\begin{bmatrix}2&1\\\\1&2\\\\-1&-2\\\\-2&-1\\end{bmatrix},\\quad\\mathbf1^TX=(0,0)",
+        "Each feature column sums to zero. Centered rows are linearly dependent."
+      ],
+      [
+        "\\mathbf1^TX=0",
+        "Centering makes every feature column perpendicular to the all-ones vector."
+      ],
+      [
+        "\\operatorname{rank}(X)\\le\\min(n-1,d)",
+        "There are d columns, all constrained to an observation-space subspace of dimension n−1."
+      ],
+      [
+        "\\operatorname{rank}(S)=\\operatorname{rank}(X)",
+        "XᵀX has the same null space as X, since aᵀXᵀXa = ‖Xa‖²."
+      ]
+    ],
+    "prompt": "With n = 10 and d = 100, how many covariance eigenvalues can be nonzero? If only three features vary independently, is that upper bound necessarily attained?",
+    "rubric": [
+      "At most nine eigenvalues can be nonzero after centering.",
+      "Recognizes that the bound is an upper bound, not a guaranteed rank.",
+      "Explains that additional linear dependencies can reduce the rank further.",
+      "Distinguishes zero fitted variance from a claim that unseen data cannot vary in those directions."
+    ],
+    "example": "The centered rank is at most min(9,100) = 9. Additional dependencies may make it much smaller. A zero eigenvalue describes this fitted sample; it does not establish that a future observation must obey the same dependency.",
+    "notes": "[Point to one centered feature column and sum its entries.] Its entries must cancel. Every feature column therefore lives perpendicular to the same all-ones vector, which removes one possible observation-space dimension. There can also be no more independent columns than the number of features. Those two facts give the rank bound. The singular-value and covariance views agree because their zero directions have the same null-space condition. Ask whether the upper bound must be reached. Repeated observations or dependent features can lower the actual rank. Keep this fitted-data statement separate from assumptions about what future observations may do.",
+    "refresh": [
+      "Rank and null space",
+      "Rank counts independent directions in a matrix. Null space is the set of inputs sent to zero. Since vᵀXᵀXv=‖Xv‖², XᵀX and X have the same null space and therefore the same column-space rank. The n−1 bound is a maximum, not a claim that all those directions vary."
+    ]
+  },
+  {
+    "id": "more-numpy-meaning",
+    "chapter": 4,
+    "title": "Read the code as the argument.",
+    "question": "Which line stores the mean, directions, scores, and reconstruction?",
+    "body": "For an n×d training array A with n > 1, the compact NumPy path is: center columns; compute reduced SVD; take k rows of Vt and transpose them; encode; decode; restore the mean. Here k ≤ min(n,d), and zero singular values add no variance. If code uses p for feature count, p is the same count called d in our derivation.",
+    "takeaway": "Every array operation should have a named object, a shape, and a reason.",
+    "kind": "code",
+    "mode": "svd",
+    "prompt": "Before revealing the code, write these six operations yourself. Then annotate every array shape for n = 100, d = 8, k = 3. For a new observation, which fitted quantities are reused? Propose a check that could reveal a mistaken transpose or missing mean.",
+    "example": "mu = A.mean(axis=0)\nX = A - mu\nU, sigma, Vt = np.linalg.svd(X, full_matrices=False)\nW = Vt[:k].T\nZ = X @ W\nA_hat = Z @ W.T + mu\nlam = sigma**2 / (len(A) - 1)\n# Check: W.T @ W is identity.\n# Check: Z agrees with U[:, :k] * sigma[:k].\n# Check: np.sum((A - A_hat)**2)/(len(A)-1) agrees with np.sum(lam[k:]).",
+    "rubric": [
+      "Identifies mu as the d-entry fitted mean and W as the d×k feature-direction matrix.",
+      "Recognizes that NumPy returns V transposed, so selected rows become columns after transpose.",
+      "Gives Z shape n×k and A_hat shape n×d.",
+      "Uses the training mean and directions for new observations rather than refitting them.",
+      "Proposes an independent identity check and knows it tests implementation, not the general theorem."
+    ],
+    "notes": "[Let the learner write the operations before opening the example.] The code is short because the library supplies a numerical factorization, not because the reasoning disappeared. Ask what each returned array means before slicing it. NumPy calls its third output Vt: the transpose is part of the return convention. The retained rows therefore become our direction columns after another transpose. Check the score identity using U and the singular values, and check the residual tail independently. Small floating-point differences need a suitable tolerance. For new data, reuse the learned mean and directions. Refitting would define a different representation.",
+    "source": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.svd.html"
+  },
+  {
+    "id": "more-chain-reconstruction",
+    "chapter": 4,
+    "title": "Reconstruct the whole multi-coordinate chain.",
+    "question": "Can you justify the result without calling an eigensolver?",
+    "body": "A centered dataset has eigenvalues 12, 5, 2, 1. Keep two coordinates. Explain the encoder, decoder, projector, legal spectral weights, global bound, exact residual tail, and the SVD computation. Connect every step to what the shorter description recovers.",
+    "takeaway": "The same chain links a geometric approximation, a global theorem, and executable matrix operations.",
+    "kind": "lens",
+    "mode": "grad",
+    "prompt": "Start with a blank response. Why can a candidate not allocate weight two to the first eigenvector? Why can no subspace capture more than 17? What proves that 17 is attainable? How does SVD return the same choice? Finish with one limit of this guarantee.",
+    "rubric": [
+      "Gives Z = XW and X_hat = XWWᵀ with WᵀW = I.",
+      "Explains that P = WWᵀ is an orthogonal projector and connects its error identity to captured variance.",
+      "Defines b_j as projected squared eigenvector length, with 0 ≤ b_j ≤ 1 and sum b_j = k.",
+      "Uses the cutoff capacity or exchange argument to bound captured variance by 17 and exhibits the top-two span attaining it.",
+      "Gives normalized residual loss 3 and the SVD relation lambda = sigma²/(n−1).",
+      "States a valid boundary, such as task relevance, metric choice, or unseen-data performance."
+    ],
+    "example": "Each candidate subspace retains at most unit squared length of any unit eigenvector, so it cannot count the leading direction twice. Its weights total two. Weight placed below the second eigenvalue must leave equal capacity above, and exchanging it upward cannot hurt. Thus captured variance is at most 12 + 5 = 17; the first two eigenvectors attain that value. The tail is 3. SVD supplies these feature directions through V and their variances through squared singular values divided by n−1. This optimizes fitted squared reconstruction error in the chosen metric, not every downstream task.",
+    "notes": "[Hide earlier equations for the first attempt.] This is the chapter's reconstruction check. The learner should explain why the constraints exist, not only repeat the final top-two rule. If they claim to store the leading direction twice, return to the projector weights. If they know the bound but cannot attain it, ask for an actual legal W. If they recite SVD letters, ask which dimension contains observations and which contains features. Give targeted help, then ask for a changed spectrum. Record supported and unsupported steps honestly. A correct answer after hints is useful progress, but it is not the same evidence as an unaided reconstruction."
+  }
+]

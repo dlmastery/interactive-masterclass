@@ -1,0 +1,675 @@
+[
+  {
+    "id": "practice-metric",
+    "chapter": 5,
+    "kind": "decision",
+    "mode": "metric",
+    "title": "Choose what an error costs.",
+    "question": "Best reconstruction of which quantities?",
+    "body": "Our proof fixes a distance measure. Before fitting PCA, decide whether errors in each feature deserve equal weight. That choice defines what the shorter description should preserve.",
+    "takeaway": "A mathematical optimum answers the objective you give it.",
+    "prompt": "Two position coordinates use centimetres, and equal position errors matter equally. Which starting metric fits this task?",
+    "choices": [
+      "Squared distance in the original coordinates",
+      "Always give every feature unit variance",
+      "Choose the metric after viewing test results"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Yes. The stated task gives equal meaning to a centimetre of error in either coordinate.",
+      "Standardization changes the relative cost of errors. The task has not asked for that change.",
+      "Choosing against the test results uses evidence reserved for final evaluation."
+    ],
+    "notes": "[Return to the two position coordinates.] The proof gave us a strong result, but it fixed what counted as an error. A centimetre east and a centimetre north had equal cost. That was sensible for reconstructing positions. [Point to the three choices.] Now make the decision before fitting anything. For this stated task, keep the original distance measure. A different task could justify different weights. PCA will still optimize the chosen measure; it cannot decide whether that measure reflects our purpose. [Pause for a reason, then reveal feedback.] The next experiment changes only a unit label and its numbers. Watch how that can change the answer.",
+    "source": "https://stat.cmu.edu/~cshalizi/dm/19/lectures/05/lecture-05.html"
+  },
+  {
+    "id": "practice-units",
+    "chapter": 5,
+    "kind": "scale",
+    "mode": "units",
+    "title": "A unit change can turn the ruler.",
+    "question": "Did the data change, or did our distance rule change?",
+    "body": "Multiply one coordinate by 100. Its squared contribution becomes 10,000 times larger. Covariance PCA now solves a different numerical distance problem, even if the physical observations are unchanged.",
+    "takeaway": "Unequal rescaling can change principal directions.",
+    "prompt": "Convert east from metres to centimetres but leave north in metres. What should you expect from unadjusted covariance PCA?",
+    "choices": [
+      "It must return the same numerical direction",
+      "The new metric can favor east much more",
+      "Centering cancels the unit change"
+    ],
+    "correct": 1,
+    "feedback": [
+      "A separate change in one coordinate rescales its errors relative to the other coordinate.",
+      "Correct. The squared east errors receive a much larger numerical weight.",
+      "Centering removes an offset. It does not undo multiplication by 100."
+    ],
+    "notes": "[Start with both coordinates in the same unit.] These are the same observations we already understand. Predict the effect before moving the scale control. [Multiply the first coordinate by one hundred.] We have stretched one numerical axis. A gap of one on that axis now appears as one hundred, and its square appears as ten thousand. The optimizer responds to that new weighting. It has not learned a new physical fact. [Restore the scale.] Converting both coordinates consistently would preserve directions in the corresponding physical geometry. Mixing units requires an explicit correction or a chosen weighting. Centering alone cannot do that job.",
+    "source": "https://www.cs.cmu.edu/~11755/lectures/pca.pdf"
+  },
+  {
+    "id": "practice-standardize",
+    "chapter": 5,
+    "kind": "scale",
+    "mode": "standardize",
+    "title": "Standardization changes the question.",
+    "question": "Should one standard deviation count equally?",
+    "body": "Subtract each training mean and divide by its training standard deviation. PCA then compares variation on a relative scale. This can help with unlike units, but it can also give a noisy feature more influence. Here x is a raw reading; μ and s are fitted training values.",
+    "takeaway": "Standardize for a reason, not as an automatic ritual.",
+    "formula": "y_{ij}=\\frac{x_{ij}-\\mu_j}{s_j}",
+    "prompt": "A tiny-variance sensor contains mostly measurement noise. Does scaling it to unit variance guarantee a better representation?",
+    "choices": [
+      "Yes, all features then become equally reliable",
+      "No, it can increase the noise feature's influence",
+      "Yes, its values become Gaussian"
+    ],
+    "correct": 1,
+    "feedback": [
+      "Equal variance does not imply equal reliability.",
+      "Correct. Scaling changes relative weight; it does not repair a poor measurement.",
+      "An affine rescaling does not generally change a distribution into a Gaussian."
+    ],
+    "notes": "[Compare the original-scale and standardized views.] Standardization gives each feature the same training variance. A change of one now means one standard deviation of that feature. This can be useful when metres, seconds, and counts appear together. It is still a choice about distance. [Point to the noisy feature in the prompt.] A small scale does not tell us that a feature deserves more trust. Dividing by that scale can make its noise matter more. A constant feature needs separate handling because its standard deviation is zero. [Pause for the choice.] Keep the means and scales: future observations must use the same conversion.",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html"
+  },
+  {
+    "id": "practice-weighted-loss",
+    "chapter": 5,
+    "kind": "scale",
+    "mode": "weighted-loss",
+    "title": "Translate the loss back into original units.",
+    "question": "What did standardized PCA actually minimize?",
+    "body": "After standardizing, reconstruct in the scaled space and then undo the scaling. Each original squared error is weighted by the inverse squared scale. The best scaled reconstruction need not be the best raw-unit reconstruction.",
+    "takeaway": "Always state the metric with the reconstruction guarantee.",
+    "formula": "L_{\\mathrm{scaled}}=\\sum_{i,j}\\frac{(x_{ij}-\\hat{x}_{ij})^2}{s_j^2}",
+    "prompt": "A feature has scale 10 and another has scale 1. Under this loss, which raw error contributes equally to an error of 1 in the second feature?",
+    "choices": [
+      "An error of 10 in the first feature",
+      "An error of 1 in the first feature",
+      "An error of 100 in the first feature"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Yes. Both become a scaled error of 1, then a squared contribution of 1.",
+      "That error becomes 0.1 after scaling and contributes only 0.01.",
+      "That error becomes 10 after scaling and contributes 100."
+    ],
+    "notes": "[Point to one denominator at a time.] The scale is part of the loss. If a feature's scale is ten, a raw error of ten becomes an error of one in the standardized space. A raw error of one in a feature whose scale is one has the same cost. [Ask the learner to compare the two contributions.] Undoing the units after reconstruction does not undo the objective used to choose the subspace. This is why two correct PCA runs can produce different reconstructions. They may be optimizing different distances. [Return to the task statement.] Report the scaling choice beside any claim that the answer is best.",
+    "source": "https://stat.cmu.edu/~cshalizi/dm/19/lectures/05/lecture-05.html"
+  },
+  {
+    "id": "practice-whiten",
+    "chapter": 5,
+    "kind": "scale",
+    "mode": "whiten",
+    "title": "Whitening changes score scale.",
+    "question": "What if a later method wants equal score variances?",
+    "body": "PCA scores are uncorrelated, but their variances differ. Divide each retained score by the square root of its positive eigenvalue to give unit sample variance. Small-variance directions become larger relative to the others.",
+    "takeaway": "Whitening removes relative variance scale; it is a separate choice.",
+    "formula": "\\tilde z_{ij}=z_{ij}/\\sqrt{\\lambda_j},\\qquad \\lambda_j>0",
+    "prompt": "Which operation is whitening?",
+    "choices": [
+      "Subtract the feature means",
+      "Discard the last component",
+      "Rescale component scores to unit variance"
+    ],
+    "correct": 2,
+    "feedback": [
+      "That is centering, which changes the origin.",
+      "That is truncation, which removes dimensions.",
+      "Correct. Whitening changes the relative scale of retained coordinates."
+    ],
+    "notes": "[Compare the component variances before and after whitening.] Rotation removed cross-covariances. It did not make the spreads equal. Whitening adds a division by each retained standard deviation. [Trace one score through that division.] The direction with less variance receives a larger multiplier. That can suit a later method's assumptions, but it can also increase the influence of weak or noisy directions. A zero eigenvalue cannot be handled by this ordinary division. If you store the positive scale factors, you can reverse the rescaling before decoding. Dropped components remain lost. [Pause.] Name centering, rotation, truncation, and whitening as four different operations.",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html"
+  },
+  {
+    "id": "practice-budget",
+    "chapter": 5,
+    "kind": "spectrum",
+    "mode": "budget",
+    "title": "Choose k from an error budget.",
+    "question": "How much squared variation may we discard?",
+    "body": "For our centered data and fixed metric, discarded eigenvalues add to normalized reconstruction loss. A scree plot shows the spectrum. A cumulative plot helps choose k for a stated retained-variance target.",
+    "takeaway": "Explained variance is an accounting measure for this metric.",
+    "formula": "\\frac{\\|X-\\hat X_k\\|_F^2}{n-1}=\\sum_{j>k}\\lambda_j",
+    "prompt": "Eigenvalues are 8, 1, 1. What is the smallest k that retains at least 90% of total variance?",
+    "choices": [
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": 1,
+    "feedback": [
+      "One component keeps 8 of 10, or 80%.",
+      "Yes. Two keep 9 of 10 and leave normalized loss 1.",
+      "Three meet the target, but two already suffice."
+    ],
+    "notes": "[Read the three eigenvalues as a budget.] We have ten units of total variance. Keeping the first component keeps eight and leaves two. Keeping the first two keeps nine and leaves one. [Pause for the smallest acceptable choice.] This is a precise use of explained variance: it controls reconstruction loss on these data in this metric. It does not tell us what a missed feature means. An elbow in a larger spectrum can suggest a useful cutoff, but it is a heuristic. The acceptable error still comes from the task. [Point ahead to validation.] We also need to learn whether the chosen representation works on new observations.",
+    "source": "https://stat.cmu.edu/~cshalizi/dm/19/lectures/05/lecture-05.html"
+  },
+  {
+    "id": "practice-validation",
+    "chapter": 5,
+    "kind": "spectrum",
+    "mode": "validation",
+    "title": "Test the purpose, not just the spectrum.",
+    "question": "Which validation score should choose k?",
+    "body": "For compression, compare reconstruction error and storage cost. For prediction, compare the later model's validation error. Pure reconstruction error usually favors more components, so an error target or a cost is needed to justify compression.",
+    "takeaway": "The component count belongs to the whole task.",
+    "prompt": "You need accurate fault prediction from a short representation. Which evidence should guide k?",
+    "choices": [
+      "Training explained variance alone",
+      "The first visible elbow alone",
+      "Validation fault error together with the size constraint"
+    ],
+    "correct": 2,
+    "feedback": [
+      "Training spread does not measure how well faults are predicted.",
+      "An elbow can suggest candidates, but it does not validate fault prediction.",
+      "Yes. Evaluate the goal and the constraint together."
+    ],
+    "notes": "[Point to the task before reading either curve.] Suppose our goal is to predict a fault. The best reconstruction count may not give the best fault prediction. We must fit the full candidate pipeline on training data and compare its predictions on validation data. [Pause for the choice.] If the goal is compression instead, compare reconstruction with the cost of storing more scores. Keeping more directions cannot worsen projection error for a fixed nested basis, so error alone does not reward a shorter description. Choose an acceptable error or a storage tradeoff. Reserve separate test data for the final assessment after these choices are complete.",
+    "source": "https://scikit-learn.org/stable/auto_examples/cross_decomposition/plot_pcr_vs_pls.html"
+  },
+  {
+    "id": "practice-pipeline",
+    "chapter": 5,
+    "kind": "code",
+    "mode": "pipeline",
+    "title": "Split before learning the representation.",
+    "question": "Can an unsupervised step leak test information?",
+    "body": "Yes. Means, scales, feature filters, and PCA directions are learned from observations. Fit them inside each training fold. Transform validation or test observations with those stored values.",
+    "takeaway": "No labels does not mean no leakage.",
+    "steps": [
+      [
+        "Split",
+        "Choose training, validation, and final test data."
+      ],
+      [
+        "Fit",
+        "Learn preprocessing and PCA only from training data."
+      ],
+      [
+        "Apply",
+        "Use the stored transformations on held-out data."
+      ]
+    ],
+    "prompt": "PCA uses no target labels. May we fit it on all rows before a prediction benchmark?",
+    "choices": [
+      "Yes, because labels are hidden",
+      "No, test features would influence the learned representation",
+      "Only if we keep two components"
+    ],
+    "correct": 1,
+    "feedback": [
+      "The learned mean and directions still depend on test observations.",
+      "Correct. Fit every learned transformation within the training split.",
+      "The component count does not remove the leakage."
+    ],
+    "notes": "[Trace the arrows from training data to fitted transformations.] PCA learns from feature values even when it never reads a target. If test observations help determine the mean or direction, the representation has already seen part of the test distribution. [Point to the separate transform arrow.] A pipeline keeps the distinction clear: fit on training data, then apply the stored rule elsewhere. Repeat that fitting inside each training fold when comparing settings. Do not recompute the test mean just because the test table looks shifted. [Pause for the diagnostic choice.] That shift may be exactly the difficulty the final evaluation needs to reveal.",
+    "source": "https://scikit-learn.org/stable/common_pitfalls.html"
+  },
+  {
+    "id": "practice-frozen-transform",
+    "chapter": 5,
+    "kind": "code",
+    "mode": "frozen-transform",
+    "title": "Give tomorrow the same ruler.",
+    "question": "How do we score one new observation?",
+    "body": "Use the training mean, chosen training scales, and retained directions. Compute the new score. To reconstruct, reverse those operations in the correct order and restore the mean. Here x_new denotes a raw observation.",
+    "takeaway": "A fitted PCA model includes preprocessing, not only eigenvectors.",
+    "formula": "z_{\\mathrm{new}}=(x_{\\mathrm{new}}-\\mu_{\\mathrm{train}})^TW_k",
+    "prompt": "For the unscaled formula shown, what happens if we center each new observation on itself?",
+    "choices": [
+      "Its centered vector becomes zero",
+      "It gets a more accurate score",
+      "Only the sign changes"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Exactly. You erase the observation's displacement from the training mean.",
+      "Self-centering removes all coordinates of that single observation.",
+      "This changes every coordinate to zero, not merely its orientation."
+    ],
+    "notes": "[Follow one new row through the displayed formula.] The stored mean marks the origin of the training coordinate system. Subtract it, then project onto the stored directions. This formula shows the unscaled case; if the model used feature scaling, apply its stored scales before projection. [Pause at the self-centering choice.] A single observation centered on itself becomes zero. It has lost the very differences we meant to describe. Decode a score using the same directions, undo any scaling, and restore the training mean. Save the feature names and their order too. A correct matrix multiplied by shuffled columns answers a different question.",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html"
+  },
+  {
+    "id": "practice-svd",
+    "chapter": 5,
+    "kind": "code",
+    "mode": "svd",
+    "title": "Compute the same answer through SVD.",
+    "question": "Must code build the covariance matrix?",
+    "body": "No. For centered X, right singular vectors give principal directions. Squared singular values divided by n−1 give sample variances. Direct SVD avoids explicitly forming the p by p covariance matrix.",
+    "takeaway": "Covariance explains the objective; SVD can compute its solution.",
+    "formula": "X=U\\Sigma V^T,\\qquad \\lambda_j=\\sigma_j^2/(n-1)",
+    "prompt": "Rows are observations and columns are features. Which SVD vectors are the feature-space principal directions?",
+    "choices": [
+      "Columns of U",
+      "Columns of V",
+      "The singular values alone"
+    ],
+    "correct": 1,
+    "feedback": [
+      "U describes coordinates in observation space for this matrix orientation.",
+      "Correct. V has feature-space directions, and XV gives the scores.",
+      "Singular values give magnitudes, not feature-space directions."
+    ],
+    "notes": "[Point to the dimensions of X, then to V.] We have already proved the optimization result. SVD is another route to the same directions. With observations in rows, the right singular vectors live in feature space. Multiplying X by them produces the component scores. [Trace the variance formula.] Squaring each singular value and dividing by n minus one gives the sample variance in that direction. Forming covariance can be convenient when features are few, but direct SVD avoids its full feature-by-feature storage. Solver choice is a computational decision. Check numerical accuracy and resource use for the actual matrix, rather than treating one implementation path as the definition of PCA.",
+    "source": "https://www.cs.cmu.edu/~11755/lectures/pca.pdf"
+  },
+  {
+    "id": "practice-sparse",
+    "chapter": 5,
+    "kind": "rank",
+    "mode": "sparse",
+    "title": "A sparse table needs a storage plan.",
+    "question": "What happens when we subtract a dense mean?",
+    "body": "Many document or count matrices store mostly zeros. Explicit centering can turn those zeros into nonzero entries. Uncentered truncated SVD can preserve sparse storage, but it optimizes a different problem from centered PCA.",
+    "takeaway": "A useful shortcut can change the objective.",
+    "prompt": "You replace centered PCA with uncentered truncated SVD. Which statement is safe?",
+    "choices": [
+      "They are always identical",
+      "Only the runtime changes",
+      "The mean structure can change the retained directions"
+    ],
+    "correct": 2,
+    "feedback": [
+      "Centered variation and distance from the origin are different objectives.",
+      "The computation and the mathematical input both change.",
+      "Correct. Explain the new objective before comparing results."
+    ],
+    "notes": "[Point to a stored zero in a sparse matrix.] A zero is cheap to store because we can omit it. Subtract a nonzero column mean and that entry is no longer zero. Explicit centering can therefore make a large sparse problem expensive. Some solvers handle centering without materializing every entry; another option is uncentered truncated SVD. [Pause at the comparison.] That second option preserves a different quantity: variation about the origin includes the mean structure. It can be useful, but we must name the change. Inspect memory, centering support, and the intended task before choosing an algorithm just because its name contains SVD.",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html"
+  },
+  {
+    "id": "practice-checks",
+    "chapter": 5,
+    "kind": "code",
+    "mode": "checks",
+    "title": "Check identities with a purpose.",
+    "question": "What would reveal an implementation mistake?",
+    "body": "Check centering, orthonormal directions, score variances, and reconstruction error. Compare SVD and covariance solutions up to signs or tied subspaces. Numerical agreement checks code; it does not replace the proof.",
+    "takeaway": "Test quantities that should stay invariant.",
+    "steps": [
+      [
+        "Center",
+        "Column means should be near zero."
+      ],
+      [
+        "Project",
+        "WᵀW should be near the identity."
+      ],
+      [
+        "Account",
+        "Retained plus residual variation should equal total variation."
+      ]
+    ],
+    "prompt": "Two solvers return opposite signs for one isolated principal direction. Their reconstructions agree. Is that a failure?",
+    "choices": [
+      "No, direction and score signs cancel in reconstruction",
+      "Yes, only one sign can be correct",
+      "Yes, eigenvalues must also become negative"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Correct. Reversing both signs leaves the reconstructed point unchanged.",
+      "An eigenvector's sign is arbitrary.",
+      "Changing the vector sign does not change its eigenvalue."
+    ],
+    "notes": "[Read each check as a question about the objects.] Did we center the right axis? Are our retained directions unit length and perpendicular? Do score variances match the selected eigenvalues? Does the retained-plus-residual accounting still hold? These checks can expose a transpose, scaling, or indexing error. [Show the sign diagnostic.] A reversed direction is not automatically wrong: the score reverses too, and their product stays the same. Tied eigenvalues require comparing subspaces rather than demanding identical columns. Use tolerances for floating-point arithmetic. A successful numerical check supports this implementation on the tested cases; the general guarantee still comes from the argument we proved.",
+    "source": "https://www.cs.cmu.edu/~11755/lectures/pca.pdf"
+  },
+  {
+    "id": "limits-small-signal",
+    "chapter": 6,
+    "kind": "nuisance",
+    "mode": "low-variance",
+    "title": "The small direction may hold the answer.",
+    "question": "Can excellent reconstruction lose a useful distinction?",
+    "body": "Imagine a large horizontal variation unrelated to a fault, while the fault label changes vertically. One-component PCA keeps the horizontal spread. Its reconstruction is optimal, yet its scores can lose the fault distinction.",
+    "takeaway": "Large variance is not the same as task importance.",
+    "prompt": "The fault label depends only on the small vertical coordinate. What can horizontal one-component PCA guarantee?",
+    "choices": [
+      "Best fault prediction",
+      "Best squared reconstruction among lines",
+      "Preservation of every label"
+    ],
+    "correct": 1,
+    "feedback": [
+      "The unsupervised objective never used the fault labels.",
+      "Yes. Its proven guarantee still holds, even when the representation is poor for prediction.",
+      "A small discarded direction can contain all the label information."
+    ],
+    "notes": "[Show the elongated cloud before revealing its labels.] The long horizontal direction is an excellent description of where the points lie. Now reveal a fault label that changes only with the small vertical displacement. [Compare points that share a horizontal score.] The projection merges cases that the prediction task needs to separate. Nothing failed in the eigenvalue calculation. PCA solved the stated reconstruction problem. The problem was treating that guarantee as a prediction guarantee. [Pause for the choice.] Diagnose this by evaluating the later task on held-out data and by inspecting what changes in the discarded directions. The remedy may be a larger k or a different method.",
+    "source": "https://scikit-learn.org/stable/auto_examples/cross_decomposition/plot_pcr_vs_pls.html"
+  },
+  {
+    "id": "limits-supervised",
+    "chapter": 6,
+    "kind": "decision",
+    "mode": "choose-method",
+    "title": "Let the target influence the choice.",
+    "question": "Which alternative answers a prediction question?",
+    "body": "Compare more PCA components, a regularized model on the original features, and supervised reduction such as partial least squares. Supervised methods can use target information when choosing directions. They still require honest validation.",
+    "takeaway": "Change the criterion when the task changes.",
+    "prompt": "What is a fair response to the small-signal failure?",
+    "choices": [
+      "Declare that PCA never helps prediction",
+      "Tune PCA until the final test score looks good",
+      "Compare complete candidate pipelines on validation data"
+    ],
+    "correct": 2,
+    "feedback": [
+      "One counterexample refutes a universal guarantee, not every useful application.",
+      "Repeated use of the final test set turns it into tuning data.",
+      "Correct. Compare task performance while keeping the final test assessment separate."
+    ],
+    "notes": "[Return to the lost vertical distinction.] First try the simplest repair: retain enough components to keep it. The cost is a larger representation. A model on the original features is another important baseline. Supervised dimension reduction can use the target while forming its directions, which addresses a different objective from PCA. [Pause at the three proposed responses.] None of these names promises the winner on new data. Fit each full pipeline fairly, select settings using validation data, and assess the chosen process on untouched test data. The previous scene showed why a method can fail. This comparison supplies evidence for which remedy helps this task.",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.cross_decomposition.PLSRegression.html"
+  },
+  {
+    "id": "limits-outlier",
+    "chapter": 6,
+    "kind": "outlier",
+    "mode": "influence",
+    "title": "One distant point can steer the line.",
+    "question": "Why does squared loss make this happen?",
+    "body": "Moving a point far away increases its squared deviations rapidly. Its contribution can dominate covariance and rotate the leading direction. Inspect influential observations and their origin before deciding how to respond.",
+    "takeaway": "Sensitivity follows from the objective, not just the solver.",
+    "prompt": "A distant point rotates the first component. What should happen before removing it?",
+    "choices": [
+      "Check whether it is an error or a meaningful rare case",
+      "Delete it because PCA dislikes it",
+      "Standardize and assume the problem is solved"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Yes. A measurement failure and a real extreme call for different responses.",
+      "Removing a valid extreme changes which population you describe.",
+      "Standard scaling does not make ordinary covariance resistant to extreme observations."
+    ],
+    "notes": "[Start with the clean cloud, then move one point outward.] Its squared distance grows faster than its distance. The covariance sums include those large squares and products, so this point can acquire great influence over the direction. [Compare the fit before and after the move.] That is a mechanism we can inspect. It does not tell us whether the point is wrong. A sensor error may need correction; a rare but real event may be the most important observation in the task. Check provenance and compare sensitivity. [Pause for the diagnostic choice.] A robust method changes how unusual observations affect the result, and that change also needs justification.",
+    "source": "https://arxiv.org/pdf/0912.3599"
+  },
+  {
+    "id": "limits-robust",
+    "chapter": 6,
+    "kind": "outlier",
+    "mode": "robust",
+    "title": "A robust model adds assumptions.",
+    "question": "What kind of corruption do we think occurred?",
+    "body": "Some methods use resistant covariance estimates. Another model separates a matrix into low-rank structure and sparse corruption. These are different assumptions. A component that is both sparse and low rank makes that separation ambiguous. In this model, S means sparse corruption, not covariance.",
+    "takeaway": "Match the repair to the failure mechanism.",
+    "formula": "M=L+S",
+    "prompt": "A matrix has one nonzero entry. Can its values alone uniquely tell us whether it belongs to L or S?",
+    "choices": [
+      "Yes, because it is sparse",
+      "No, it is both sparse and low rank",
+      "Yes, because it has a large value"
+    ],
+    "correct": 1,
+    "feedback": [
+      "Sparsity does not prevent a matrix from also having low rank.",
+      "Correct. Additional assumptions are needed to identify the two parts.",
+      "Magnitude alone does not resolve which part generated the entry."
+    ],
+    "notes": "[Point to the two terms in the proposed split.] A low-rank-plus-sparse model says most structured variation is shared across dimensions while a limited set of entries is corrupted. That is one specific model, not a general definition of every robust PCA method. [Use the one-entry matrix in the prompt.] It is sparse and also rank one. Without more assumptions, the split cannot be unique. Recovery results impose conditions on structure and corruption. In practice, compare the repaired representation with known measurement behavior and the task. Suppressing a real rare event can be costly. A more resistant fit is useful only when its assumptions suit what went wrong.",
+    "source": "https://arxiv.org/pdf/0912.3599"
+  },
+  {
+    "id": "limits-curve",
+    "chapter": 6,
+    "kind": "curve",
+    "mode": "linear-failure",
+    "title": "A curved path is not a straight subspace.",
+    "question": "Can one latent quantity still defeat one-component PCA?",
+    "body": "A point traveling around a circle can be described by an angle. A single straight-line projection merges different positions on that circle. Intrinsic dimension and linear approximation dimension are different ideas.",
+    "takeaway": "PCA's guarantee is about linear subspaces.",
+    "prompt": "Two points on a circle have the same horizontal coordinate. Can that single score always recover which point we meant?",
+    "choices": [
+      "Yes, the circle has one angular coordinate",
+      "Yes, if the eigenvector is normalized",
+      "No, the projection can merge them"
+    ],
+    "correct": 2,
+    "feedback": [
+      "A one-dimensional curved description need not be a one-dimensional linear projection.",
+      "Unit length makes comparisons fair; it does not make a many-to-one map invertible.",
+      "Correct. The lost distinction shows the limit of a straight-line representation."
+    ],
+    "notes": "[Trace a point around the curve.] One changing angle locates it on the circle, but that coordinate is nonlinear in the displayed axes. Project the circle onto a horizontal line and two different positions can share a score. Rotate the line and the same issue remains. [Ask the learner to identify a colliding pair.] This does not contradict our proof: the proof compared straight subspaces, not all possible descriptions. Structured reconstruction residuals can reveal that a line misses curvature. Keeping both original coordinates preserves the circle, but gives up the one-number compression. A nonlinear method may fit the structure better, provided we test the new objective and its assumptions.",
+    "source": "https://www.cs.cmu.edu/~11755/lectures/pca.pdf"
+  },
+  {
+    "id": "limits-nonlinear",
+    "chapter": 6,
+    "kind": "curve",
+    "mode": "nonlinear",
+    "title": "A better picture may solve another problem.",
+    "question": "What does the nonlinear method preserve?",
+    "body": "Kernel PCA, neighborhood embeddings, and autoencoders offer different representations. Compare their objectives, reconstruction, new-data behavior, and stability. A separated two-dimensional picture is not proof that the original data contain separate groups.",
+    "takeaway": "Choose an alternative by its guarantee and evidence.",
+    "prompt": "Changing an embedding setting creates clearer islands. What should you conclude first?",
+    "choices": [
+      "The display depends on the chosen settings",
+      "The true classes have been proved",
+      "Every island has equal density in the original space"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Yes. Check stability and the original data before interpreting those islands.",
+      "A visualization alone does not prove the existence or meaning of classes.",
+      "The embedding can alter apparent spacing and density."
+    ],
+    "notes": "[Compare the intended linear and nonlinear representations.] Different methods preserve different relationships. A neighborhood method may emphasize nearby points; its settings can change how tightly the display packs them. Kernel PCA performs PCA in a chosen feature space, and returning to the original coordinates is a separate problem. An autoencoder learns an encoder and decoder with its own training choices. [Pause at the islands question.] Judge the result against the task: reconstruction, prediction, neighborhood preservation, or exploration. Vary important settings and test new data. A visually pleasing map is useful evidence for investigation, but it is not a substitute for validating the interpretation.",
+    "source": "https://umap-learn.readthedocs.io/en/latest/parameters.html"
+  },
+  {
+    "id": "limits-stability",
+    "chapter": 6,
+    "kind": "mixture",
+    "mode": "stability",
+    "title": "An axis can wobble while a plane stays useful.",
+    "question": "What changes when eigenvalues nearly tie?",
+    "body": "With equal leading eigenvalues, many directions are equally optimal. With nearly equal values, small data changes can rotate individual axes. A larger retained subspace may remain stable when it has a clear gap from discarded directions.",
+    "takeaway": "Inspect the eigengap at the boundary you use.",
+    "prompt": "Eigenvalues are 5, 5, 1. Two runs choose different first axes inside the same leading plane. Is that necessarily an error?",
+    "choices": [
+      "Yes, the first axis must be unique",
+      "No, the leading eigenspace permits different optimal axes",
+      "Yes, the plane cannot be reconstructed"
+    ],
+    "correct": 1,
+    "feedback": [
+      "The repeated largest eigenvalue removes uniqueness of an individual first axis.",
+      "Correct. Compare the subspace and reconstruction, not only the column labels.",
+      "The same leading plane can produce the same two-component reconstruction."
+    ],
+    "notes": "[Make the two displayed eigenvalues equal.] Moving weight between these directions no longer changes the variance. There is no unique best line in this plane. Now imagine the two values are merely close: small changes in observations can change which axis comes first. [Read the three-eigenvalue example.] The leading plane can still be well separated from the third direction. That distinction matters when people give individual components strong names. Compare subspaces, spectra, and resampled fits, not only vector signs. For time-dependent data, use resampling or validation that respects time. Stability supports an interpretation; it does not turn a descriptive axis into a cause.",
+    "source": "https://ocw.mit.edu/courses/18-642-topics-in-mathematics-with-applications-in-finance-fall-2024/1W7E-UsRG0zyYe1J1vHunh3QNejR5wd7v_transcript.pdf"
+  },
+  {
+    "id": "limits-duplicate",
+    "chapter": 6,
+    "kind": "nuisance",
+    "mode": "duplicate",
+    "title": "Counting a feature twice gives it more weight.",
+    "question": "Does a larger table contain more evidence?",
+    "body": "Copying a column adds another copy of its squared reconstruction error to the objective. Many measurements of one concept can make that concept dominate. Standardizing the copies does not remove their repeated weight.",
+    "takeaway": "Feature selection is part of the definition of the problem.",
+    "prompt": "You duplicate one standardized feature ten times. What has changed?",
+    "choices": [
+      "Only the file size",
+      "The amount of independent evidence",
+      "The relative weight of that measurement in the objective"
+    ],
+    "correct": 2,
+    "feedback": [
+      "Each copy adds another term to the distance calculation.",
+      "Exact copies do not create independent observations or measurements.",
+      "Correct. Repetition changes the geometry even when each column has unit variance."
+    ],
+    "notes": "[Point to one column, then its copies.] These copies do not add a new fact. They do add new coordinates to the squared-distance sum. An error in this measurement now appears repeatedly, so fitting it becomes more valuable to the optimizer. [Pause for the choice.] This is a subtle reason why a dominant component may describe how we built the table rather than a fundamental factor in the world. Inspect groups of related features and choose whether equal weight per column is intended. Removing copies or using domain weights can help, but each changes the target. Record that decision before interpreting the resulting components.",
+    "source": "https://stat.cmu.edu/~cshalizi/dm/19/lectures/05/lecture-05.html"
+  },
+  {
+    "id": "limits-latent",
+    "chapter": 6,
+    "kind": "decision",
+    "mode": "latent-model",
+    "title": "A component is not automatically a hidden cause.",
+    "question": "What extra claim does a latent-variable model make?",
+    "body": "PCA supplies a descriptive optimum. Factor analysis and probabilistic PCA add a model of latent variables and noise. Uncorrelated PCA scores need not be independent, and a fitted latent model does not establish causality.",
+    "takeaway": "Statistical structure and causal explanation need different evidence.",
+    "prompt": "PC1 has positive weights on several measures. What does PCA alone establish?",
+    "choices": [
+      "Those measures contribute to a high-variance linear score",
+      "One hidden cause generated every measure",
+      "The component is independent of every other component"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Yes. That is a descriptive statement tied to the measured features and metric.",
+      "Causal interpretation needs assumptions and evidence beyond the decomposition.",
+      "PCA guarantees sample decorrelation in its eigenbasis, not general independence."
+    ],
+    "notes": "[Read the descriptive claim before the causal claims.] Positive weights tell us how the score combines the measured variables. They do not identify why those variables move together. Factor analysis adds a generative model with latent factors and feature-specific Gaussian noise variances. Probabilistic PCA uses a more restricted isotropic noise model. Those models can answer additional statistical questions when their assumptions are useful. [Pause for the choice.] Neither a component name nor a successful model fit proves a cause. Even zero covariance leaves room for nonlinear dependence. Use domain evidence and explicit assumptions when moving from a compact description to an explanation of the system.",
+    "source": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.FactorAnalysis.html"
+  },
+  {
+    "id": "application-seurat",
+    "chapter": 6,
+    "kind": "decision",
+    "mode": "seurat",
+    "title": "Cells: a small component can mark a rare group.",
+    "question": "How does a real workflow choose what to retain?",
+    "body": "The Seurat guided tutorial applies PCA to scaled selected gene features, inspects loadings, and uses scores downstream. Its example warns that later components can reflect rare immune subsets and recommends checking sensitivity to the component count.",
+    "takeaway": "A cutoff must respect the scientific question.",
+    "prompt": "A rare cell group appears only after retaining more components. Which response is strongest?",
+    "choices": [
+      "Discard it because its variance is small",
+      "Inspect markers, quality, and sensitivity before interpreting it",
+      "Declare a new cell type from the plot alone"
+    ],
+    "correct": 1,
+    "feedback": [
+      "Rarity can make a meaningful group's contribution to total variance small.",
+      "Yes. Combine the representation with domain evidence and robustness checks.",
+      "A visual group alone does not establish its biological identity."
+    ],
+    "notes": "[Identify the matrix axes: cells and measured gene features.] In the Seurat tutorial, preprocessing and feature selection come before PCA. The resulting scores support later analysis; loading inspection helps explain which features contribute. The current tutorial explicitly notes rare immune subsets associated with later components and asks users to vary the retained count. [Pause at the scenario.] A low-variance direction may still matter to a question about rare cells. Inspect relevant markers, measurement quality, and sensitivity rather than choosing from an elbow alone. This is a documented workflow example, not a guarantee that any later component is biological signal. Our lesson does not reproduce or validate that biological analysis.",
+    "source": "https://satijalab.org/seurat/articles/pbmc3k_tutorial.html"
+  },
+  {
+    "id": "application-dinov2",
+    "chapter": 6,
+    "kind": "decision",
+    "mode": "dinov2",
+    "title": "Vision features: PCA can make a representation visible.",
+    "question": "What produced the features, and what produced the colors?",
+    "body": "DINOv2's paper visualizes learned image-patch features with PCA. Its illustrated procedure filters patches using a first component, then maps three components to colors. The neural encoder learns the features; PCA helps inspect them.",
+    "takeaway": "A visualization of learned structure is not the learning algorithm.",
+    "prompt": "What can a coherent PCA color map establish by itself?",
+    "choices": [
+      "PCA learned the vision encoder",
+      "Every matching color proves the same semantic object part",
+      "The selected feature projections have a visible pattern worth investigating"
+    ],
+    "correct": 2,
+    "feedback": [
+      "The pretrained neural model supplied the patch features.",
+      "Colors depend on the fit, signs, scaling, and selected patches; semantics need further evidence.",
+      "Correct. The map is an inspection tool, not a universal semantic guarantee."
+    ],
+    "notes": "[Trace image patches to feature vectors, then to three color coordinates.] DINOv2 supplies learned feature vectors. PCA is applied afterward to inspect their variation. The paper's qualitative example filters patches using a first component and performs another PCA on retained patches across related images. Three scores become color channels. [Pause for the diagnostic choice.] The colors can reveal useful correspondences, but they are not intrinsic semantic labels. Eigenvector signs and the fitted patch set affect them. Compare related images using a shared fitted basis if you want comparable colors. This is a documented use of PCA in modern representation analysis; we are not claiming to run the model here.",
+    "source": "https://arxiv.org/html/2304.07193v2#S7.SS5"
+  },
+  {
+    "id": "application-temporal",
+    "chapter": 6,
+    "kind": "decision",
+    "mode": "temporal",
+    "title": "Tomorrow may have a different pattern.",
+    "question": "How do we evaluate a representation learned from history?",
+    "body": "Yield changes across maturities provide one same-unit PCA application. The fit depends on the historical window and weighting. Evaluate on later observations and inspect whether the retained subspace still describes the variation you need.",
+    "takeaway": "A historical optimum is not a future guarantee.",
+    "prompt": "You will fit on past observations and apply the model to future ones. Which evaluation best matches that use?",
+    "choices": [
+      "Fit on all dates, then report training variance",
+      "Fit on earlier periods and assess later periods",
+      "Recenter each future day using that day's full future dataset"
+    ],
+    "correct": 1,
+    "feedback": [
+      "That measures a fit that has already seen the later observations.",
+      "Correct. Preserve the intended direction of time in the evaluation.",
+      "Use only information that would have been available at the prediction or analysis time."
+    ],
+    "notes": "[Point to maturities as features and dates as observations.] A yield-change example uses comparable units, so retaining relative volatility can be meaningful. The fitted directions can describe shared shifts and contrasts across maturities. They depend on which history we include and how we weight it. [Move the evaluation boundary forward in the timeline.] Assess a fit made from the past on later observations. Inspect reconstruction, the spectrum, and the task's actual loss as conditions change. A longer window supplies more observations but may mix different regimes; a shorter window can be noisier. This is a statistical workflow example, not a claim about current markets or a trading recommendation.",
+    "source": "https://ocw.mit.edu/courses/18-642-topics-in-mathematics-with-applications-in-finance-fall-2024/1W7E-UsRG0zyYe1J1vHunh3QNejR5wd7v_transcript.pdf"
+  },
+  {
+    "id": "practice-live-diagnosis",
+    "chapter": 6,
+    "kind": "live",
+    "mode": "diagnose",
+    "title": "Change one point. Explain both outcomes.",
+    "question": "Which identity survives, and which interpretation may fail?",
+    "body": "Use the notebook controls to move a point and rotate the ruler. Check the retained-plus-residual identity. Then explain how the changed point affects the preferred direction and whether the point deserves that influence.",
+    "takeaway": "An invariant can remain correct while the practical answer becomes poor.",
+    "prompt": "A moved point changes the preferred line, but kept plus lost variation still equals total. What follows?",
+    "choices": [
+      "The accounting can be correct while the fit becomes unsuitable",
+      "The identity proves the point is reliable",
+      "The unchanged identity proves the same line is still optimal"
+    ],
+    "correct": 0,
+    "feedback": [
+      "Yes. Algebraic correctness and practical suitability are separate checks.",
+      "The identity says nothing about measurement quality.",
+      "The total is fixed only while comparing directions for the same dataset; changing data can change the optimum."
+    ],
+    "notes": "[Use the native notebook angle control, then move the selected point.] First verify that the displayed quantities come from the same updated dataset. For a fixed dataset, rotating the ruler changes the retained and lost parts while preserving their sum. Moving a point changes the dataset, so the total itself may change. [Pause and ask which statement still holds.] The decomposition identity remains valid. The best direction can move, and its usefulness can change. Now explain whether the moved point represents corruption or an event the task needs. Do not let a successful arithmetic check answer that separate question. Record your diagnosis and the evidence you would request next.",
+    "source": "https://arxiv.org/pdf/0912.3599"
+  },
+  {
+    "id": "practice-decision-final",
+    "chapter": 6,
+    "kind": "decision",
+    "mode": "decision-final",
+    "title": "Make the choice reviewable.",
+    "question": "Can someone else tell what your PCA result means?",
+    "body": "State the task, observations, features, preprocessing, component count, and validation. Show the score pattern with its loadings and reconstruction limits. Name a plausible failure and the evidence that would change your decision.",
+    "takeaway": "A useful PCA result includes a justified decision, not only a plot.",
+    "steps": [
+      [
+        "Purpose",
+        "What must this representation preserve?"
+      ],
+      [
+        "Evidence",
+        "Which held-out or domain checks support the choice?"
+      ],
+      [
+        "Boundary",
+        "What would make us revise it?"
+      ]
+    ],
+    "prompt": "A report says only: 'Two PCs explain 95%, so the system is understood.' Which response is best?",
+    "choices": [
+      "Accept it because 95% is high",
+      "Ask what metric, task, validation, and interpretation support the claim",
+      "Reject every two-component representation"
+    ],
+    "correct": 1,
+    "feedback": [
+      "A high retained fraction does not establish scientific understanding or task success.",
+      "Correct. Those details connect the mathematical result to its intended use.",
+      "Two components may be useful; the unsupported inference is the problem."
+    ],
+    "notes": "[Read the report's claim aloud, then pause.] We now have enough understanding to be precise about both its strength and its gap. Ninety-five percent can be a clear accounting statement, once the data and metric are specified. It does not by itself establish prediction, causality, or scientific meaning. [Point to purpose, evidence, and boundary.] Make your own result reviewable: describe what was measured, what was transformed, what was kept, and what was checked. Include one plausible failure and a test that could change your conclusion. The next part asks you to rebuild the explanation for another audience. Keep the mathematical guarantee and its boundary together.",
+    "source": "https://stat.cmu.edu/~cshalizi/dm/19/lectures/05/lecture-05.html"
+  }
+]

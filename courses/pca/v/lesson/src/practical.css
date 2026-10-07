@@ -1,0 +1,387 @@
+.pv {
+  font-size: 14px;
+  line-height: 1.45;
+  min-width: 0;
+}
+.pv .eyebrow {
+  margin-bottom: 12px;
+}
+.pv svg text {
+  font-size: 11px;
+}
+.pv figure {
+  margin: 0;
+}
+.pv-cloud svg {
+  width: 100%;
+  display: block;
+  max-height: 290px;
+}
+.pv-cloud figcaption {
+  font-size: 12px;
+  color: #45666c;
+  margin: 2px 0 14px;
+}
+.pv .pv-small {
+  font-size: 9px;
+  fill: #5e7479;
+}
+.pv-slider {
+  display: block;
+  margin: 15px 0;
+}
+.pv-slider > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 12px;
+}
+.pv-slider input {
+  width: 100%;
+  margin: 11px 0 0;
+  accent-color: #167c80;
+  cursor: ew-resize;
+}
+.pv-stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 13px 0;
+}
+.pv-stat {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px;
+  background: #eaf1eb;
+  border-radius: 8px;
+}
+.pv-stat span {
+  display: block;
+  font-size: 10px;
+  color: #526d70;
+}
+.pv-stat strong {
+  display: block;
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.pv-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.pv button {
+  font-size: 12px;
+}
+.pv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.55;
+  margin: 15px 0;
+  text-align: left;
+}
+.pv-table td,
+.pv-table th {
+  padding: 11px 9px;
+  border-bottom: 1px solid #d8e4dd;
+  vertical-align: top;
+}
+.pv-table th {
+  font-weight: 700;
+  color: #29585e;
+}
+.pv-table tbody th {
+  width: 29%;
+}
+.pv-table thead {
+  background: #e8f0e9;
+}
+.pv-bars {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+.pv-bar-row {
+  display: grid;
+  grid-template-columns: minmax(90px,1fr) minmax(60px,1.3fr) 45px;
+  gap: 10px;
+  align-items: center;
+  font-size: 11px;
+}
+.pv-bar-row > div {
+  height: 18px;
+  background: #e8ece4;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.pv-bar-row i {
+  display: block;
+  height: 100%;
+  background: #167c80;
+}
+.pv-bar-row:nth-child(2) i {
+  background: #c08735;
+}
+.pv-bar-row b {
+  text-align: right;
+}
+.pv-spectrum {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px 0 10px;
+  max-width: 340px;
+  margin: auto;
+}
+.pv-spectrum > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.pv-spectrum b {
+  font-size: 24px;
+}
+.pv-column {
+  height: 170px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #829e99;
+  background: #f0f3ed;
+}
+.pv-column i {
+  width: 100%;
+  background: #d6dccc;
+  border: 1px solid #b8c6bc;
+  border-radius: 4px 4px 0 0;
+}
+.pv-column i.kept {
+  background: #167c80;
+  border-color: #167c80;
+}
+.pv-matrix {
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 10px auto;
+  text-align: center;
+}
+.pv-matrix caption {
+  font-size: 11px;
+  color: #526c71;
+  margin-bottom: 8px;
+}
+.pv-matrix td {
+  padding: 12px 15px;
+  background: #eaf1eb;
+  border: 3px solid #fcfdf8;
+  min-width: 45px;
+}
+.pv-matrix-equation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  margin: 30px 0;
+}
+.pv-matrix-equation > span {
+  font-size: 22px;
+}
+.pv-matrix-equation .pv-matrix td {
+  padding: 10px;
+}
+.pv-feature-strip {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.pv-feature-strip span {
+  padding: 12px 18px;
+  border-radius: 5px;
+  background: #dbece7;
+  border: 1px solid #92b7ae;
+}
+.pv-feature-strip .other {
+  background: #faeaca;
+  border-color: #cba86b;
+}
+.pv-label-key {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin: 15px 0;
+}
+.pv-label-key span:first-child {
+  color: #a95620;
+}
+.pv-label-key span + span {
+  color: #167c80;
+}
+.pv-code {
+  list-style: decimal;
+  list-style-position: outside;
+  margin: 0;
+  padding: 10px 0 10px 28px;
+  background: #eef2ec;
+  border-radius: 8px;
+  overflow-x: auto;
+  max-width: 100%;
+  font-size: 10px;
+  color: #65817c;
+}
+.pv-code li {
+  padding: 0 0 0 3px;
+  border-left: 3px solid transparent;
+}
+.pv-code li.active {
+  background: #d6e9df;
+  border-left-color: #167c80;
+  color: #174d48;
+}
+.pv-code li button {
+  display: block;
+  width: 100%;
+  padding: 9px 8px;
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+  background: transparent;
+  white-space: pre;
+  color: #2a474e;
+}
+.pv-code code {
+  font: 11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+.pv-code-detail {
+  background: #e4f0e8;
+  padding: 12px 15px;
+  border-radius: 7px;
+  margin: 12px 0;
+  font-size: 12px;
+}
+.pv-code-detail p {
+  margin: 6px 0 0;
+}
+.pv-code-detail b {
+  color: #167c80;
+}
+.pv-flow {
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+}
+.pv-flow li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #eaf1eb;
+  border: 1px solid #d4e1d7;
+  border-radius: 9px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 14px;
+}
+.pv-flow li:not(:last-child):after {
+  content: '↓';
+  position: absolute;
+  left: 30px;
+  bottom: -23px;
+  color: #167c80;
+  font-size: 20px;
+}
+.pv-flow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #167c80;
+  color: #fff;
+  border-radius: 50%;
+  height: 28px;
+  min-width: 28px;
+  font-size: 12px;
+}
+.pv-timeline {
+  display: flex;
+  gap: 4px;
+  margin: 25px 0;
+}
+.pv-timeline > span {
+  flex: 1;
+  text-align: center;
+  background: #edf0e7;
+  border-bottom: 4px solid #d4dccf;
+  padding: 16px 3px;
+  font-size: 13px;
+}
+.pv-timeline > span.train {
+  background: #dcece4;
+  border-color: #167c80;
+}
+.pv-timeline > span.test {
+  background: #fae9ce;
+  border-color: #b66630;
+}
+.pv-timeline small {
+  display: block;
+  font-size: 8px;
+  margin-top: 7px;
+}
+.pv .feedback {
+  font-size: 13px;
+  margin: 14px 0;
+}
+.pv .caption {
+  font-size: 11px;
+  line-height: 1.55;
+}
+.pv > svg {
+  width: 100%;
+  max-height: 290px;
+}
+.pv .math {
+  font-size: 15px;
+}
+@media (max-width:600px) {
+  .pv-matrix-equation {
+    gap: 3px;
+  }
+  .pv-matrix-equation .pv-matrix td {
+    padding: 7px;
+    min-width: 28px;
+  }
+  .pv-table {
+    font-size: 11px;
+  }
+  .pv-table td,
+  .pv-table th {
+    padding: 9px 6px;
+  }
+  .pv-stat strong {
+    font-size: 18px;
+  }
+  .pv-spectrum {
+    gap: 25px;
+  }
+  .pv-code code {
+    font-size: 10px;
+  }
+  .pv-flow li {
+    font-size: 13px;
+    padding: 12px;
+  }
+  .pv-timeline > span {
+    font-size: 11px;
+  }
+  .pv-timeline small {
+    font-size: 7px;
+  }
+}

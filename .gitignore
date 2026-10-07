@@ -9,3 +9,7 @@ node_modules/
 !.env.example
 *.pid
 research-cache/
+
+.runtime/
+courses/pca/v/.locks/
+courses/pca/v/.owners/
